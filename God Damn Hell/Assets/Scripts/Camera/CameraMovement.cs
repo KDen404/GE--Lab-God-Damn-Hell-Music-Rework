@@ -15,7 +15,7 @@ public class CameraMovement : MonoBehaviour
 
         playerMovement = FindObjectOfType<PlayerMovement>();
     }
-    void Update()
+    void LateUpdate()
     {
         cameraPosition = new Vector3(playerMovement.transform.position.x, 13, playerMovement.transform.position.z - 8);
         transform.position = cameraPosition;
