@@ -18,5 +18,12 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical")) * movementSpeed * Time.deltaTime;
         player.MovePosition(transform.position + movement);
+
+        Vector3 mousePosition = Input.mousePosition;
+        Vector3 objectPosition = Camera.main.WorldToScreenPoint(transform.position);
+        mousePosition.x = mousePosition.x - objectPosition.x;
+        mousePosition.y = mousePosition.y - objectPosition.y;
+        float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
+        player.MoveRotation(Quaternion.Euler(new Vector3(0, -angle, 0)));
     }
 }
