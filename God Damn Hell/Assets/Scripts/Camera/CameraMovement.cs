@@ -5,19 +5,25 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     private Quaternion cameraRotation;
-    private PlayerMovement playerMovement;
+    public PlayerMovement playerMovement;
     private Vector3 cameraPosition;
+
+    // Temporary variables to figure out perfect settings
+    public int Angle = 60;
+    public int Height = 13;
+    public int Distance = 8;
 
     void Start()
     {
-        cameraRotation.eulerAngles = new Vector3(60, 0, 0);
-        transform.localRotation = cameraRotation;
-
-        playerMovement = FindObjectOfType<PlayerMovement>();
+        
     }
     void LateUpdate()
     {
-        cameraPosition = new Vector3(playerMovement.transform.position.x, 13, playerMovement.transform.position.z - 8);
+        cameraPosition = new Vector3(playerMovement.transform.position.x, Height, playerMovement.transform.position.z - Distance);
         transform.position = cameraPosition;
+
+        // Once the settings have been figured out this should be moved to Start()
+        cameraRotation.eulerAngles = new Vector3(Angle, 0, 0);
+        transform.localRotation = cameraRotation;
     }
 }
