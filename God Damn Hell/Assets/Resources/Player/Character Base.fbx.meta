@@ -20,7 +20,7 @@ ModelImporter:
     second: Armature|Run_Sword_And_Shield (1)
   - first:
       74: 6204641183251495225
-    second: Armature|0T_Pose (3)
+    second: Armature|0T_Pose
   - first:
       74: -8384043226727341471
     second: Armature|Into_Block_Sword_and_Shield
@@ -65,7 +65,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|0T_Pose (3)
+      name: Armature|0T_Pose
       takeName: Armature|0T_Pose
       internalID: 0
       firstFrame: 0
