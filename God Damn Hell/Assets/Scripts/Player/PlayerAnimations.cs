@@ -6,6 +6,7 @@ public class PlayerAnimations : MonoBehaviour
 {
     private Animator animator;
     public PlayerMovement playermovement;
+    public PlayerStats playerstats;
     private float angle;
     private Vector2 movementAxis;
 
@@ -19,10 +20,12 @@ public class PlayerAnimations : MonoBehaviour
     {
         Run();
         Attack();
+        Die();
 
         Debug.Log("MovementForward: " + animator.GetFloat("MovementForward") + " and MovementSides: " + animator.GetFloat("MovementSides"));
     }
 
+    // Angle calculations for rotations are being used to determine which animations play depending on the cursors position
     private void Run()
     {
         angle = playermovement.angle;
@@ -113,6 +116,14 @@ public class PlayerAnimations : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
         {
             animator.SetTrigger("AttackTrigger");
+        }
+    }
+
+    private void Die()
+    {
+        if (playerstats.healthPoints <= 0 && !animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+        {
+            animator.SetTrigger("IsDead");
         }
     }
 }

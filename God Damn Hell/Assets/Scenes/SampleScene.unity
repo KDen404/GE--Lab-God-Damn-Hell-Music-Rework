@@ -943,6 +943,7 @@ GameObject:
   - component: {fileID: 1374388268}
   - component: {fileID: 1374388265}
   - component: {fileID: 1374388264}
+  - component: {fileID: 1374388269}
   m_Layer: 0
   m_Name: Player Object
   m_TagString: Player
@@ -993,6 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playermovement: {fileID: 1374388264}
+  playerstats: {fileID: 1374388269}
 --- !u!23 &1374388266
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1065,6 +1067,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!114 &1374388269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374388262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603b20896512b54489b9f1d657a7b49e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 2
 --- !u!4 &1396376543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bbce7bb76a76495448f0eb62c59edac9, type: 3}
