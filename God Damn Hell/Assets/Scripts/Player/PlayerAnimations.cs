@@ -9,6 +9,7 @@ public class PlayerAnimations : MonoBehaviour
     public PlayerStats playerstats;
     private float angle;
     private Vector2 movementAxis;
+    public bool stopRotation = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +22,7 @@ public class PlayerAnimations : MonoBehaviour
         Run();
         Attack();
         Die();
-
-        Debug.Log("MovementForward: " + animator.GetFloat("MovementForward") + " and MovementSides: " + animator.GetFloat("MovementSides"));
+        Block();
     }
 
     // Angle calculations for rotations are being used to determine which animations play depending on the cursors position
@@ -121,9 +121,30 @@ public class PlayerAnimations : MonoBehaviour
 
     private void Die()
     {
-        if (playerstats.healthPoints <= 0 && !animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+        if (playerstats.healthPoints <= 0)
         {
-            animator.SetTrigger("IsDead");
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+            {
+                animator.SetTrigger("IsDead");
+            }
+
+            stopRotation = true;
+        }
+        else
+        {
+            stopRotation = false;
+        }
+    }
+
+    private void Block()
+    {
+        if (Input.GetAxis("Fire2") != 0)
+        {
+            animator.SetBool("isBlocking", true);
+        }
+        else
+        {
+            animator.SetBool("isBlocking", false);
         }
     }
 }
