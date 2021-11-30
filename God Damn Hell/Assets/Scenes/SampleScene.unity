@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -297,6 +297,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c70c60c82c7f10049b6649a52271dab8, type: 3}
   m_PrefabInstance: {fileID: 623844145}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &352056751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 765bc998d27b66d44bf91aa22f454cff, type: 3}
+  m_PrefabInstance: {fileID: 1046190217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &352056754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352056751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 533f34218b4d4a14280d8668ee434a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &352056755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352056751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10671614, y: 3.0240703, z: 0.4411454}
+  m_Center: {x: 1.6410075, y: 3.1174352, z: 0.000610389}
+--- !u!54 &352056756
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352056751}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &497766882
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +869,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49a021f2567d41d46a91f9d2c5d0aba4, type: 3}
   m_PrefabInstance: {fileID: 769775954}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1029622333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5f2643bf015de7446a4b99e11a6d3c79, type: 3}
+  m_PrefabInstance: {fileID: 76569304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1029622334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029622333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.17867886, y: 1.3908811, z: 1.3908806}
+  m_Center: {x: -1.866955, y: 1.9834253, z: -0.0017819785}
 --- !u!1001 &1046190217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1030,7 +1094,6 @@ GameObject:
   - component: {fileID: 1374388265}
   - component: {fileID: 1374388264}
   - component: {fileID: 1374388269}
-  - component: {fileID: 1374388270}
   m_Layer: 0
   m_Name: Player Object
   m_TagString: Player
@@ -1169,18 +1232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 2
---- !u!114 &1374388270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374388262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 533f34218b4d4a14280d8668ee434a68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1374388271
 BoxCollider:
   m_ObjectHideFlags: 0
