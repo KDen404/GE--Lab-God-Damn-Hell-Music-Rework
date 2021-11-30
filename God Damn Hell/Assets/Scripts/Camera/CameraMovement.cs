@@ -19,9 +19,9 @@ public class CameraMovement : MonoBehaviour
     }
     void LateUpdate()
     {
+        // Code can get removed and be replaced with a constraint on the object once settings have been figured out
         transform.position = new Vector3(playerObject.transform.position.x, Height, playerObject.transform.position.z - Distance);
 
-        //Once the settings have been figured out this should be moved to Start()
         cameraRotation.eulerAngles = new Vector3(Angle, 0, 0);
         transform.localRotation = cameraRotation;
     }
