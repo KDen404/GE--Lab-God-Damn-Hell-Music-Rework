@@ -8,6 +8,7 @@ public class Hit : MonoBehaviour
     {
         if (other.gameObject.transform.parent.tag == "Enemy")
         {
+            // <EnemyStats> should just be stats once actual enemies exist
             other.gameObject.transform.parent.GetComponent<EnemyStats>().healthPoints--;
             Debug.Log("Hit the enemy!");
         }
