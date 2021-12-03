@@ -590,6 +590,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1832745156 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3340821567255477765, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+  m_PrefabInstance: {fileID: 3340821566064595920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3340821566064595920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -597,6 +602,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3340821566274758242, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1832745156}
+    - target: {fileID: 3340821566654011886, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: m_Size.x
+      value: 0.17867874
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340821566654011886, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: m_Size.y
+      value: 4.336597
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340821566654011886, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: m_Size.z
+      value: 2.359536
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340821566654011886, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: m_Center.x
+      value: -1.8669549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340821566654011886, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: m_Center.y
+      value: 2.0118692
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340821566654011886, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: m_Center.z
+      value: 0.4825447
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340821567255477765, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bef5970967dc7604aae2aad68f176303, type: 2}
     - target: {fileID: 3340821567399859190, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: m_Name
       value: Player Object
