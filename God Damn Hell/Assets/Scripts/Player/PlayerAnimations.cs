@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerAnimations : MonoBehaviour
 {
     private Animator animator;
-    public PlayerMovement playermovement;
-    public PlayerStats playerstats;
+    private PlayerMovement playermovement;
+    private PlayerStats playerstats;
     private float angle;
     private Vector2 movementAxis;
     private float timeSinceAttack;
@@ -16,6 +16,8 @@ public class PlayerAnimations : MonoBehaviour
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        playerstats = GetComponent<PlayerStats>();
+        playermovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -124,7 +126,7 @@ public class PlayerAnimations : MonoBehaviour
     {
         if (playerstats.healthPoints <= 0)
         {
-            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+            if (!animator.GetCurrentAnimatorStateInfo(1).IsName("Die"))
             {
                 animator.SetTrigger("IsDead");
             }

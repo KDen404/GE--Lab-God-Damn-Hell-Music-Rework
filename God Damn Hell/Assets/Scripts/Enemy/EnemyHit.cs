@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class EnemyHit : MonoBehaviour
 {
-    public PlayerStats playerStats;
+    private PlayerStats playerStats;
+
+    private void Start()
+    {
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+    }
 
     public virtual void OnCollisionEnter(Collision other)
     {

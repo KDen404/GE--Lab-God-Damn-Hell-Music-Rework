@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     // Once actual enemies exist this should be changed to protected
-    public int healthPoints = 10;       //warum float???
+    public int healthPoints = 10;
 
     public float movementspeed = 2.5f;
 
