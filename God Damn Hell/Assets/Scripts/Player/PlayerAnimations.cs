@@ -9,6 +9,7 @@ public class PlayerAnimations : MonoBehaviour
     public PlayerStats playerstats;
     private float angle;
     private Vector2 movementAxis;
+    private float timeSinceAttack;
     public bool stopRotation = false;
 
     // Start is called before the first frame update
@@ -113,7 +114,7 @@ public class PlayerAnimations : MonoBehaviour
     private void Attack()
     {
         // Attacks if the player currently is in the idle state (else it queues and starts once arrived)
-        if (Input.GetButtonDown("Fire1") && animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        if (Input.GetButtonDown("Fire1"))
         {
             animator.SetTrigger("AttackTrigger");
         }
