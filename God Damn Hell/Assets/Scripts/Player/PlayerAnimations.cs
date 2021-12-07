@@ -12,12 +12,20 @@ public class PlayerAnimations : MonoBehaviour
     private float timeSinceAttack;
     public bool stopRotation = false;
 
+    public GameObject sword;
+    private Collider swordCollider;
+
+    public GameObject shield;
+    private Collider shieldCollider;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
         playerstats = GetComponent<PlayerStats>();
         playermovement = GetComponent<PlayerMovement>();
+        swordCollider = sword.GetComponent<BoxCollider>();
+        shieldCollider = shield.GetComponent<BoxCollider>();
     }
 
     private void Update()
@@ -115,10 +123,18 @@ public class PlayerAnimations : MonoBehaviour
 
     private void Attack()
     {
-        // Attacks if the player currently is in the idle state (else it queues and starts once arrived)
         if (Input.GetButtonDown("Fire1"))
         {
             animator.SetTrigger("AttackTrigger");
+        }
+
+        if (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack"))
+        {
+            swordCollider.enabled = true;
+        }
+        else
+        {
+            swordCollider.enabled = false;
         }
     }
 
@@ -148,6 +164,15 @@ public class PlayerAnimations : MonoBehaviour
         else
         {
             animator.SetBool("isBlocking", false);
+        }
+
+        if (animator.GetCurrentAnimatorStateInfo(1).IsName("Block"))
+        {
+            shieldCollider.enabled = true;
+        }
+        else
+        {
+            shieldCollider.enabled = false;
         }
     }
 }
