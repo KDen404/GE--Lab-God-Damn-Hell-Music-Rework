@@ -5,12 +5,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5f;
-    public Rigidbody player;
+    private Rigidbody player;
     public float angle;
     private bool stopRotation;
-    public PlayerAnimations playerAnimations;
+    private PlayerAnimations playerAnimations;
 
-    private Vector3 movement;
+    private void Start()
+    {
+        player = GetComponent<Rigidbody>();
+        playerAnimations = GetComponent<PlayerAnimations>();
+    }
 
     private void Update()
     {
