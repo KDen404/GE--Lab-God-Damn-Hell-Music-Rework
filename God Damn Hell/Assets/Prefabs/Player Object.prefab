@@ -263,7 +263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopRotation: 0
-  sword: {fileID: 0}
+  sword: {fileID: 2494310650950989320}
+  shield: {fileID: 2494310651391112281}
 --- !u!114 &3340821567399859192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1133,7 +1134,7 @@ Animator:
   m_GameObject: {fileID: 2494310649980611520}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4d5fcd37a3bb91048ad3c96a16777ea8, type: 3}
-  m_Controller: {fileID: 9100000, guid: 1a15d34e6f73ca64589b87703c74668e, type: 2}
+  m_Controller: {fileID: 9100000, guid: bef5970967dc7604aae2aad68f176303, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
