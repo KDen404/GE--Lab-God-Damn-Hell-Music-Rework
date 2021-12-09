@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class EnemyAnimations : MonoBehaviour
 {
-    private Animator animator;
+    // General variables
+    public Animator animator;
     private GameObject player;
     private EnemyStats enemyStats;
 
+    // HP
     private int tempHealthPoints;
+
+    // Attack
+    private float timeSinceLastAttack;
+    private float randFloat;
 
     private void Start()
     {
-        animator = GetComponentInChildren<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         enemyStats = GetComponent<EnemyStats>();
         tempHealthPoints = enemyStats.healthPoints;
@@ -33,9 +38,13 @@ public class EnemyAnimations : MonoBehaviour
 
     public virtual void Attack()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 7)
+        timeSinceLastAttack += Time.deltaTime;
+
+        if (Vector3.Distance(transform.position, player.transform.position) < 5 && timeSinceLastAttack > 1.5f)
         {
-            animator.SetTrigger("AttackTrigger");
+            randFloat = Random.Range(0f, 1f);
+            animator.SetFloat("AttackFloat", randFloat);
+            timeSinceLastAttack = 0f;
         }
     }
 

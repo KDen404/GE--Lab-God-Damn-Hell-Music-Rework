@@ -9,8 +9,9 @@ public class PlayerAnimations : MonoBehaviour
     private PlayerStats playerstats;
     private float angle;
     private Vector2 movementAxis;
-    private float timeSinceAttack;
+    private int tempHealth;
     public bool stopRotation = false;
+    public bool stopMovement = false;
 
     public GameObject sword;
     private Collider swordCollider;
@@ -26,6 +27,7 @@ public class PlayerAnimations : MonoBehaviour
         playermovement = GetComponent<PlayerMovement>();
         swordCollider = sword.GetComponent<BoxCollider>();
         shieldCollider = shield.GetComponent<BoxCollider>();
+        tempHealth = playerstats.healthPoints;
     }
 
     private void Update()
@@ -34,11 +36,13 @@ public class PlayerAnimations : MonoBehaviour
         Attack();
         Die();
         Block();
+        GetHit();
     }
 
     // Angle calculations for rotations are being used to determine which animations play depending on the cursors position
     private void Run()
     {
+
         angle = playermovement.angle;
 
         movementAxis.x = Input.GetAxisRaw("Horizontal");
@@ -142,16 +146,16 @@ public class PlayerAnimations : MonoBehaviour
     {
         if (playerstats.healthPoints <= 0)
         {
-            if (!animator.GetCurrentAnimatorStateInfo(1).IsName("Die"))
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
             {
                 animator.SetTrigger("IsDead");
+                animator.SetLayerWeight(1, 0f);
             }
 
             stopRotation = true;
-        }
-        else
-        {
-            stopRotation = false;
+            stopMovement = true;
+            
+
         }
     }
 
@@ -173,6 +177,17 @@ public class PlayerAnimations : MonoBehaviour
         else
         {
             shieldCollider.enabled = false;
+        }
+    }
+
+    private void GetHit()
+    {
+        if (tempHealth != playerstats.healthPoints)
+        {
+            float randFloat = Random.Range(0f, 1f);
+            animator.SetFloat("GetHitFloat", randFloat);
+            animator.SetTrigger("GetHitTrigger");
+            tempHealth = playerstats.healthPoints;
         }
     }
 }

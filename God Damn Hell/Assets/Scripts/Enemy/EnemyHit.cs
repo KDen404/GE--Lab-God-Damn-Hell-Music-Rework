@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class EnemyHit : MonoBehaviour
 {
-    private PlayerStats playerStats;
+    public Animator animator;
+    float lastHit = 0;
 
-    private void Start()
+    private void Update()
     {
-        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        lastHit += Time.deltaTime;
     }
 
-    public virtual void OnCollisionEnter(Collision other)
+    public virtual void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.transform.parent.tag == "Player")
+        if (lastHit >= 1f && other.gameObject.transform.tag == "Player" && (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackLeft") || animator.GetCurrentAnimatorStateInfo(1).IsName("AttackRight")))
         {
-            playerStats.healthPoints--;
+            other.gameObject.GetComponent<PlayerStats>().healthPoints--;
+            lastHit = 0;
         }
     }
 }
