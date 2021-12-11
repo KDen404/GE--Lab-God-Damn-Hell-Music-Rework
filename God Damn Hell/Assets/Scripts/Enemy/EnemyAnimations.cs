@@ -40,7 +40,7 @@ public class EnemyAnimations : MonoBehaviour
     {
         timeSinceLastAttack += Time.deltaTime;
 
-        if (Vector3.Distance(transform.position, player.transform.position) < 5 && timeSinceLastAttack > 1.5f)
+        if (Vector3.Distance(transform.position, player.transform.position) < 3 && timeSinceLastAttack > 1.5f)
         {
             randFloat = Random.Range(0f, 1f);
             animator.SetFloat("AttackFloat", randFloat);
