@@ -5,13 +5,10 @@ using UnityEngine;
 public class Hit : MonoBehaviour
 {
     public Animator animator;
-    private GameObject player;
+    public GameObject player;
     private float lastHit;
 
-    private void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
+    public int tempKnockbackStrength = 5;
 
     private void Update()
     {
@@ -20,15 +17,12 @@ public class Hit : MonoBehaviour
 
     public virtual void OnTriggerEnter(Collider other)
     {
-        if (lastHit >= 1f)
+        if (lastHit >= 1f && other.gameObject.transform.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(1).IsName("Attack"))
         {
-            if (other.gameObject.transform.parent.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(1).IsName("Attack"))
-            {
-                other.gameObject.transform.parent.GetComponent<EnemyStats>().healthPoints--;
-                Vector3 direction = (other.transform.position - player.transform.position);
-                other.gameObject.GetComponent<Rigidbody>().AddForce(direction * 3, ForceMode.Impulse);
-                lastHit = 0;
-            }
+            other.gameObject.transform.GetComponent<EnemyStats>().healthPoints--;
+            Vector3 direction = (other.transform.position - player.transform.position);
+            other.gameObject.GetComponent<Rigidbody>().AddForce(direction * tempKnockbackStrength, ForceMode.Impulse);
+            lastHit = 0;
         }
     }
 

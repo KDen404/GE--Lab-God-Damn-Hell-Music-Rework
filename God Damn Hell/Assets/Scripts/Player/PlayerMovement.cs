@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody player;
     public float angle;
     private bool stopRotation;
+    private bool stopMovement;
     private PlayerAnimations playerAnimations;
 
     private void Start()
@@ -19,21 +20,25 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         stopRotation = playerAnimations.stopRotation;
+        stopMovement = playerAnimations.stopMovement;
     }
 
     private void FixedUpdate()
     {
-        playerMove();
-        playerRotate();
+        PlayerMove();
+        PlayerRotate();
     }
 
-    private void playerMove()
+    private void PlayerMove()
     {
         // Moves the player object with WADS
-        player.MovePosition(new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical")) * movementSpeed * Time.deltaTime + transform.position);
+        if (stopMovement == false)
+        {
+            player.MovePosition(new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical")) * movementSpeed * Time.deltaTime + transform.position);
+        }
     }
 
-    private void playerRotate()
+    private void PlayerRotate()
     {
         // Calculates the rotation using cursor position and player position
         if (stopRotation == false)
