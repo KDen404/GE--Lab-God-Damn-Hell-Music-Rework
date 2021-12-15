@@ -13,7 +13,7 @@ public class InstantiateEnemies : MonoBehaviour
     {
             for (int i = 0; i < floors.Length; i++)
             {
-                Instantiate(demonFighterPreFab, floors[i].transform.position, Quaternion.identity, enemies.transform);
+                Instantiate(demonFighterPreFab, new Vector3(floors[i].transform.position.x, 0.3f, floors[i].transform.position.z), Quaternion.identity, enemies.transform);
             }
     }
 }
