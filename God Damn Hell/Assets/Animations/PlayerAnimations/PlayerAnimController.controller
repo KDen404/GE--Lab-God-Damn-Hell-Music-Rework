@@ -653,11 +653,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:God Damn Hell/Assets/Animations/PlayerAnimations/PlayerAnimations.controller
-  m_Name: PlayerAnimations
-=======
   m_Name: PlayerAnimController
->>>>>>> Enemy-Animations:God Damn Hell/Assets/Animations/PlayerAnimations/PlayerAnimController.controller
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: AttackTrigger
