@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: fa2bf5ebfee4965429cc7aa35327c7e4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DemonFighterPreFab: {fileID: 919132149155446097, guid: f4885f575e9dfab4da03c3ff572c5cd0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
