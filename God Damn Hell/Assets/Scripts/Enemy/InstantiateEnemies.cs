@@ -4,24 +4,16 @@ using UnityEngine;
 
 public class InstantiateEnemies : MonoBehaviour
 {
-    public GameObject DemonFighterPreFab;
-    public GameObject[] Floors;
-    public int amountOfEnemies = 1;
-    private bool hasBeenTriggered = false;
-
+    public GameObject demonFighterPreFab;
+    public GameObject[] floors;
+    public GameObject enemies;
 
     // Spawns an enemy on every "tile" of ground -> tiles need to be put in the array
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (hasBeenTriggered == false)
-        {
-            for (int i = 0; i < Floors.Length; i++)
+            for (int i = 0; i < floors.Length; i++)
             {
-                Instantiate(DemonFighterPreFab, Floors[i].transform);
+                Instantiate(demonFighterPreFab, floors[i].transform.position, Quaternion.identity, enemies.transform);
             }
-
-            Debug.Log("Enemies should spawn now!");
-        }
-        hasBeenTriggered = true;
     }
 }
