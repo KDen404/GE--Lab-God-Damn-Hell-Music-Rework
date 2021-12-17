@@ -139,7 +139,7 @@ public class PlayerAnimations : MonoBehaviour
             animator.SetTrigger("AttackTrigger");
         }
 
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack"))
+        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
             swordCollider.enabled = true;
         }
@@ -159,8 +159,7 @@ public class PlayerAnimations : MonoBehaviour
             animator.SetLayerWeight(2, 0f);
             animator.SetLayerWeight(3, 0f);
 
-            stopRotation = true;
-            stopMovement = true;
+            playermovement.enabled = false;
         }
     }
 
@@ -176,7 +175,7 @@ public class PlayerAnimations : MonoBehaviour
         }
 
         // Activates / deactivate colliders to avoid unintended blocking and hitbox shenanigans
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("Block"))
+        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Block"))
         {
             shieldCollider.enabled = true;
         }
