@@ -86,7 +86,7 @@ public class EnemyAnimations : MonoBehaviour
         // Play animation when dead
         if (enemyStats.healthPoints <= 0)
         {
-            if (!animator.GetCurrentAnimatorStateInfo(1).IsName("Death"))
+            if (!animator.GetCurrentAnimatorStateInfo(3).IsName("Death"))
             {
                 animator.SetBool("IsDeadBool", true);
             }

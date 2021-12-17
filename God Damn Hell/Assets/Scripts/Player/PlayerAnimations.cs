@@ -21,10 +21,10 @@ public class PlayerAnimations : MonoBehaviour
     public bool stopMovement = false;
 
     // Attack
-    public GameObject sword;
-    private Collider swordCollider;
-    public GameObject shield;
-    private Collider shieldCollider;
+    public BoxCollider swordCollider;
+    public BoxCollider shieldCollider;
+
+    //AttackBlock is in EnemyHit!
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +32,6 @@ public class PlayerAnimations : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         playerstats = GetComponent<PlayerStats>();
         playermovement = GetComponent<PlayerMovement>();
-        swordCollider = sword.GetComponent<BoxCollider>();
-        shieldCollider = shield.GetComponent<BoxCollider>();
         tempHealth = playerstats.healthPoints;
     }
 
