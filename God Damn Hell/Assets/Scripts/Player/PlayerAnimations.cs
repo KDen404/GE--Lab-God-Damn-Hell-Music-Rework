@@ -21,10 +21,10 @@ public class PlayerAnimations : MonoBehaviour
     public bool stopMovement = false;
 
     // Attack
-    public GameObject sword;
-    private Collider swordCollider;
-    public GameObject shield;
-    private Collider shieldCollider;
+    public BoxCollider swordCollider;
+    public BoxCollider shieldCollider;
+
+    //AttackBlock is in EnemyHit!
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +32,6 @@ public class PlayerAnimations : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         playerstats = GetComponent<PlayerStats>();
         playermovement = GetComponent<PlayerMovement>();
-        swordCollider = sword.GetComponent<BoxCollider>();
-        shieldCollider = shield.GetComponent<BoxCollider>();
         tempHealth = playerstats.healthPoints;
     }
 
@@ -139,7 +137,7 @@ public class PlayerAnimations : MonoBehaviour
             animator.SetTrigger("AttackTrigger");
         }
 
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack"))
+        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
             swordCollider.enabled = true;
         }
@@ -159,8 +157,7 @@ public class PlayerAnimations : MonoBehaviour
             animator.SetLayerWeight(2, 0f);
             animator.SetLayerWeight(3, 0f);
 
-            stopRotation = true;
-            stopMovement = true;
+            playermovement.enabled = false;
         }
     }
 
@@ -176,7 +173,7 @@ public class PlayerAnimations : MonoBehaviour
         }
 
         // Activates / deactivate colliders to avoid unintended blocking and hitbox shenanigans
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("Block"))
+        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Block"))
         {
             shieldCollider.enabled = true;
         }
