@@ -27,12 +27,12 @@ public class DemonFighterAnimations : MonoBehaviour
     // Die
     private float timeDead;
     public bool isDead;
+    private Collider demonFighterCollider;
 
     // IdleWalk
     private float randIdleWaitTime;
     private float timeCount;
     private NavMeshAgent agent;
-    private bool destinationReached = true;
     private Vector3 newDestination;
 
     private void Start()
@@ -44,6 +44,7 @@ public class DemonFighterAnimations : MonoBehaviour
 
         leftHandCollider = leftHand.GetComponent<BoxCollider>();
         rightHandCollider = rightHand.GetComponent<BoxCollider>();
+        demonFighterCollider = GetComponent<BoxCollider>();
 
         randIdleWaitTime = Random.Range(2f, 8f);
         agent = GetComponent<NavMeshAgent>();
@@ -117,6 +118,8 @@ public class DemonFighterAnimations : MonoBehaviour
                 animator.SetBool("IsDeadBool", true);
                 GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 isDead = true;
+                demonFighterMovement.enabled = false;
+                demonFighterCollider.enabled = false;
             }
         }
 
@@ -176,7 +179,6 @@ public class DemonFighterAnimations : MonoBehaviour
         else
         {
             animator.SetFloat("WalkRunFloat", 0f);
-            destinationReached = true;
         }
     }
 }
