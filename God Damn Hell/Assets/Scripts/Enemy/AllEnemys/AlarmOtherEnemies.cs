@@ -54,7 +54,7 @@ public class AlarmOtherEnemies : MonoBehaviour
                 if (Vector3.Distance(transform.GetChild(listOfActivatedEnemys[activEnemy]).position, transform.GetChild(notActivatedEnemyList[unactiveEnemy]).position) <= alarmEnemyRange)
                 {
                     activityHasChanged = true;
-                    transform.GetChild(notActivatedEnemyList[unactiveEnemy]).GetComponentInChildren<EnemyMovement>().activated = true;
+                    transform.GetChild(notActivatedEnemyList[unactiveEnemy]).GetComponentInChildren<Stats>().activated = true;
                 }
             }
         }          
@@ -80,7 +80,7 @@ public class AlarmOtherEnemies : MonoBehaviour
         {
             //transform.GetChild(i).GetComponentInChildren<EnemyMovement>().positionInChilds = i;     // gives each child their position
 
-            if (transform.GetChild(i).GetComponentInChildren<EnemyMovement>().activated)
+            if (transform.GetChild(i).GetComponentInChildren<Stats>().activated)
             {
                 listOfActivatedEnemys.Add(i);
                 activeLength += 1;

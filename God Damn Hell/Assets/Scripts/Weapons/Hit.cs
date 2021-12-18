@@ -6,22 +6,35 @@ public class Hit : MonoBehaviour
 {
     public Animator animator;
     public GameObject player;
+    private Transform enemy;
     private float lastHit;
+    private float addForceTime = 1f;
 
-    public int tempKnockbackStrength = 5;
+    public int tempKnockbackStrength = 10;
 
     private void Update()
     {
         lastHit += Time.deltaTime;
+        addForceTime += Time.deltaTime;
+
+        if (addForceTime <= 0.5f)
+        {
+            enemy.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
+        }
     }
 
     public virtual void OnTriggerEnter(Collider other)
     {
         if (lastHit >= 1f && other.gameObject.transform.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
-            other.gameObject.transform.GetComponent<EnemyStats>().healthPoints--;
+            other.gameObject.transform.GetComponent<Stats>().healthPoints--;
             Vector3 direction = (other.transform.position - player.transform.position);
-            other.gameObject.GetComponent<Rigidbody>().AddForce(direction * tempKnockbackStrength, ForceMode.Impulse);
+            //other.gameObject.transform.GetChild(0).GetComponent<Rigidbody>().AddForce(direction * tempKnockbackStrength, ForceMode.Impulse);
+            addForceTime = 0;
+            enemy = other.transform;
+
+            //other.gameObject.GetComponent<>().GetHit();
+
             lastHit = 0;
         }
     }
