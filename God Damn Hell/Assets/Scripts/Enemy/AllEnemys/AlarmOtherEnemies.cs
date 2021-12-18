@@ -11,7 +11,7 @@ if an enemy in Range has already seen a player object
 public class AlarmOtherEnemies : MonoBehaviour
 {
     private int enemyNumber;
-    private int alarmEnemyRange = 15;
+    private int alarmEnemyRange = 10;
     private List<int> listOfActivatedEnemys = new List<int>();    //list of all activated enemys
     private List<int> notActivatedEnemyList = new List<int>();   //list of all unactive enemys
 
