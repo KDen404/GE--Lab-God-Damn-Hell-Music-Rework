@@ -1,17 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-<<<<<<< Updated upstream:God Damn Hell/Assets/Scripts/Enemy/EnemyMovement.cs
-/*current Problems/ To Fix:
-
-Important:
-rotate enemy, instead of lookat?   abrupt change
-Death animation
-destroy after a certain time
-
-
-=======
 public class DemonFighterMovement : MonoBehaviour
 {
     private Stats demonFighterStats;
@@ -19,64 +10,33 @@ public class DemonFighterMovement : MonoBehaviour
     private float aggroRange;
     private NavMeshAgent agent;
     private DemonFighterAnimations demonFighterAnimations;
->>>>>>> Stashed changes:God Damn Hell/Assets/Scripts/Enemy/DemonFighter/DemonFighterMovement.cs
-
-Optional: 
-gets the position in childs, of the parent
-player = not the name but GetComponent
-
-*/
-
-public class EnemyMovement : MonoBehaviour
-{
-    public EnemyStats enemystats;
-
-    private GameObject player;
-    
-    private float enemySpeed = 0;
-    private float aggroRange = 0;
-
-    //test
-    public bool activated = false;
-    private bool facesPlayer = true;
-    
-    //public int positionInChilds;
+    private bool activated;
 
     private void Start()
     {
         player = GameObject.Find("Player Object");
-<<<<<<< Updated upstream:God Damn Hell/Assets/Scripts/Enemy/EnemyMovement.cs
-        enemySpeed = enemystats.movementspeed;
-        aggroRange = enemystats.aggroRange;
-=======
+        enemySpeed = demonFighterStats.movementspeed;
+        aggroRange = demonFighterStats.aggroRange;
+        activated = GetComponent<Stats>.activated;
+
         agent = GetComponent<NavMeshAgent>();
         demonFighterStats = gameObject.GetComponent<Stats>();
         demonFighterAnimations = GetComponent<DemonFighterAnimations>();
 
         agent.speed = demonFighterStats.movementspeed;
         aggroRange = demonFighterStats.aggroRange;
->>>>>>> Stashed changes:God Damn Hell/Assets/Scripts/Enemy/DemonFighter/DemonFighterMovement.cs
     }
 
     private void FixedUpdate()
     {
-<<<<<<< Updated upstream:God Damn Hell/Assets/Scripts/Enemy/EnemyMovement.cs
-        movement();
-        death();
-
-
-=======
-        //movement();
         navmovement();
->>>>>>> Stashed changes:God Damn Hell/Assets/Scripts/Enemy/DemonFighter/DemonFighterMovement.cs
     }
 
 
-    private void movement()
+    private void navmovement()
     {
         if (activated && demonFighterAnimations.isDead == false)
         {
-<<<<<<< Updated upstream:God Damn Hell/Assets/Scripts/Enemy/EnemyMovement.cs
             if (facesPlayer)
             {
                 transform.LookAt(new Vector3(player.transform.position.x,this.transform.position.y, player.transform.position.z));
@@ -85,7 +45,7 @@ public class EnemyMovement : MonoBehaviour
             else
             {
                 //rotate to Player over time
-=======
+
             agent.destination = player.transform.position;
             agent.speed = 5f;
 
@@ -96,7 +56,6 @@ public class EnemyMovement : MonoBehaviour
             else
             {
                 demonFighterAnimations.inAttackRange = false;
->>>>>>> Stashed changes:God Damn Hell/Assets/Scripts/Enemy/DemonFighter/DemonFighterMovement.cs
             }
         }
         else
@@ -109,22 +68,14 @@ public class EnemyMovement : MonoBehaviour
             }
         }
     }
-
-<<<<<<< Updated upstream:God Damn Hell/Assets/Scripts/Enemy/EnemyMovement.cs
-    private void death()
-    {
-        if(enemystats.healthPoints == 0)
-        {
-            //deathanimation
-            
-
-            GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
-            Destroy(gameObject);
-        }
     }
 
-=======
->>>>>>> Stashed changes:God Damn Hell/Assets/Scripts/Enemy/DemonFighter/DemonFighterMovement.cs
 
-
-}
+//    if (Vector3.Distance(transform.position, player.transform.position) <= 4)
+//            {
+//                demonFighterAnimations.inAttackRange = true;
+//            }
+//            else
+//{
+//    demonFighterAnimations.inAttackRange = false;
+//}
