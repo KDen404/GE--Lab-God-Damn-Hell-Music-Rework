@@ -42,7 +42,7 @@ public class AlarmOtherEnemies : MonoBehaviour
                 if (Vector3.Distance(transform.GetChild(listOfActivatedEnemys[activEnemy]).position, transform.GetChild(notActivatedEnemyList[unactiveEnemy]).position) <= alarmEnemyRange)
                 {
                     activityHasChanged = true;
-                    transform.GetChild(notActivatedEnemyList[unactiveEnemy]).GetComponentInChildren<EnemyMovement>().activated = true;
+                    transform.GetChild(notActivatedEnemyList[unactiveEnemy]).GetComponentInChildren<Stats>().activated = true;
                 }
             }
         }
@@ -60,7 +60,7 @@ public class AlarmOtherEnemies : MonoBehaviour
         for (int i = 0; i < enemyNumber; i++)
         {
 
-            if (transform.GetChild(i).GetComponentInChildren<EnemyMovement>().activated)
+            if (transform.GetChild(i).GetComponentInChildren<Stats>().activated)
             {
                 listOfActivatedEnemys.Add(i);
             }

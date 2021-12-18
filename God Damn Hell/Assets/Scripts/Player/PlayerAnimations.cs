@@ -132,7 +132,7 @@ public class PlayerAnimations : MonoBehaviour
 
     private void Attack()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
             animator.SetTrigger("AttackTrigger");
         }
