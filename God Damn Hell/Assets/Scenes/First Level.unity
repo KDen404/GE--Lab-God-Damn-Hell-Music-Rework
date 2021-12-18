@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 1
+    agentRadius: 1.55
     agentHeight: 5.7
     agentSlope: 45
     agentClimb: 0.4
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.33333334
+    cellSize: 0.51666665
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2bf5ebfee4965429cc7aa35327c7e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demonFighterPreFab: {fileID: 1953947405763616907, guid: 33643df5cea3d1a4da4ac35071946a1e, type: 3}
+  demonFighterPreFab: {fileID: 5648358945693428400, guid: fa1e954c2bc12b142a2e50740d1439e3, type: 3}
   floors:
   - {fileID: 1354776885}
   - {fileID: 2082863114}
