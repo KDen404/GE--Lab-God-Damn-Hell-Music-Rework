@@ -9,6 +9,7 @@ public class DemonFighterMovement : MonoBehaviour
     private float aggroRange;
     private NavMeshAgent agent;
     public bool activated = false;
+    public int demonFighterRunSpeed = 6;
 
 
     private void Start()
@@ -34,6 +35,8 @@ public class DemonFighterMovement : MonoBehaviour
         if (activated)
         {
             agent.destination = player.transform.position;
+            agent.speed = demonFighterRunSpeed;
+            demonFighterAnimations.animator.SetFloat("WalkRunFloat", 1f);
 
             if (Vector3.Distance(transform.position, player.transform.position) <= 4)
             {

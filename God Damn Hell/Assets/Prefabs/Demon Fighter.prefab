@@ -1698,6 +1698,8 @@ GameObject:
   - component: {fileID: 5648358945693428402}
   - component: {fileID: 5648358945693428403}
   - component: {fileID: 5648358945693428413}
+  - component: {fileID: 2732958964173340370}
+  - component: {fileID: -5864289042268020020}
   m_Layer: 0
   m_Name: Demon Fighter
   m_TagString: Enemy
@@ -1747,7 +1749,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &5648358945693428403
 MonoBehaviour:
@@ -1763,7 +1765,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 10
   movementspeed: 2.5
-  aggroRange: 0
+  aggroRange: 10
+  activated: 0
 --- !u!114 &5648358945693428413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,11 +1780,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5688606930959994286}
+  knockbackStrength: 4
   inAttackRange: 0
   leftHand: {fileID: 3153287027355334597}
   rightHand: {fileID: 9077769598434076502}
-<<<<<<< Updated upstream
-=======
   isDead: 0
 --- !u!114 &2732958964173340370
 MonoBehaviour:
@@ -1796,6 +1798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
+  demonFighterRunSpeed: 6
 --- !u!195 &-5864289042268020020
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1818,7 +1821,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
->>>>>>> Stashed changes
 --- !u!1 &5785463436633723182
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ public class DemonFighterAnimations : MonoBehaviour
 {
     // General variables
     public Animator animator;
-    private GameObject player;
     private Stats demonFighterStats;
     private DemonFighterMovement demonFighterMovement;
 
@@ -34,11 +33,10 @@ public class DemonFighterAnimations : MonoBehaviour
     private float timeCount;
     private NavMeshAgent agent;
     private bool destinationReached = true;
+    private Vector3 newDestination;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-
         demonFighterStats = GetComponent<Stats>();
         demonFighterMovement = GetComponent<DemonFighterMovement>();
 
@@ -61,8 +59,6 @@ public class DemonFighterAnimations : MonoBehaviour
         Die();
         GetHit();
         IdleWalk();
-
-
     }
 
     public virtual void Run()
@@ -167,21 +163,20 @@ public class DemonFighterAnimations : MonoBehaviour
         if (timeCount >= randIdleWaitTime && demonFighterMovement.activated == false)
         {
             agent.speed = 3f;
-            Vector3 newDestination = transform.position + new Vector3(Random.Range(-8, 8), 0f, Random.Range(-8, 8));
+            newDestination = new Vector3(Random.Range(-8, 8), 0f, Random.Range(-8, 8)) + transform.position;
             agent.destination = newDestination;
             randIdleWaitTime = Random.Range(2f, 8f);
             timeCount = 0f;
-            destinationReached = false;
+        }
 
-            if (destinationReached == false)
-            {
-                animator.SetFloat("WalkRunFloat", 0.5f);
-            }
-            else if (agent.destination == newDestination)
-            {
-                animator.SetFloat("WalkRunFloat", 0f);
-                destinationReached = true;
-            }
+        if (agent.remainingDistance >= 0.1)
+        {
+            animator.SetFloat("WalkRunFloat", 0.5f);
+        }
+        else
+        {
+            animator.SetFloat("WalkRunFloat", 0f);
+            destinationReached = true;
         }
     }
 }
