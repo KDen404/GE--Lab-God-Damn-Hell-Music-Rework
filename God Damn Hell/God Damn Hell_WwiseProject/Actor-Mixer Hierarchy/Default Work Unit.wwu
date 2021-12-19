@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Devils step" ID="{CAA43D79-034F-4DA9-8A2A-B372EEC9633E}" ShortID="169474836">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2F3F80CD-98A8-4AA1-A7CF-F14CB9324F32}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{67144F2C-E4DA-469A-8455-4F9A29B9D07A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Devils step" ID="{896CBB44-F5D0-4D16-B4C0-FC0C61736560}">
+							<Language>SFX</Language>
+							<AudioFile>Devils step.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="206766459"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Devils step" ID="{896CBB44-F5D0-4D16-B4C0-FC0C61736560}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
