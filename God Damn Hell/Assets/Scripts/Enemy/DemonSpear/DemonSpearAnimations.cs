@@ -34,10 +34,6 @@ public class DemonSpearAnimations : MonoBehaviour
         {
             animator.SetFloat("WalkRunFloat", 1);
         }
-        else
-        {
-            animator.SetFloat("WalkRunFloat", 0);
-        }
     }
 
     private void Attack()
@@ -46,6 +42,8 @@ public class DemonSpearAnimations : MonoBehaviour
         {
             animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
         }
+
+
     }
 
     private void Die()

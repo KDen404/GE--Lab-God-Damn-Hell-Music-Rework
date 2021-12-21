@@ -36,7 +36,6 @@ public class DemonFighterMovement : MonoBehaviour
         {
             agent.destination = player.transform.position;
             agent.speed = demonFighterRunSpeed;
-            demonFighterAnimations.animator.SetFloat("WalkRunFloat", 1f);
 
             if (Vector3.Distance(transform.position, player.transform.position) <= 4)
             {
