@@ -38,7 +38,7 @@ public class DemonSpearMovement : MonoBehaviour
         {
             agent.destination = player.transform.position;
 
-            if (Vector3.Distance(transform.position, player.transform.position) <= 4)
+            if (Vector3.Distance(transform.position, player.transform.position) <= 6)
             {
                 demonSpearAnimations.inAttackRange = true;
             }
