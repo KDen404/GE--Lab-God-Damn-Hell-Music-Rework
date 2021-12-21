@@ -25,26 +25,20 @@ public class DemonFighterAnimations : MonoBehaviour
 
     // Die
     private float timeDead;
-    public bool isDead;
+    private bool isDead;
     private Collider demonFighterCollider;
 
     // IdleWalk
     private float randIdleWaitTime;
     private float timeCount;
     private NavMeshAgent agent;
-    private Vector3 newDestination;
 
     private void Start()
     {
         demonFighterStats = GetComponent<Stats>();
         demonFighterMovement = GetComponent<DemonFighterMovement>();
-
         tempHealthPoints = GetComponent<Stats>().healthPoints;
-
-        leftHandCollider = leftHand.GetComponent<BoxCollider>();
-        rightHandCollider = rightHand.GetComponent<BoxCollider>();
         demonFighterCollider = GetComponent<BoxCollider>();
-
         randIdleWaitTime = Random.Range(2f, 8f);
         agent = GetComponent<NavMeshAgent>();
     }
@@ -113,7 +107,7 @@ public class DemonFighterAnimations : MonoBehaviour
             }
         }
 
-        if (animator.GetBool("IsDeadBool") == true)
+        if (isDead == true)
         {
             timeDead += Time.deltaTime;
 
@@ -155,8 +149,8 @@ public class DemonFighterAnimations : MonoBehaviour
     {
         if (timeCount >= randIdleWaitTime && demonFighterMovement.activated == false)
         {
-            agent.speed = 3f;
-            newDestination = new Vector3(Random.Range(-8, 8), 0f, Random.Range(-8, 8)) + transform.position;
+            agent.speed = demonFighterStats.movementspeed;
+            Vector3 newDestination = new Vector3(Random.Range(-8, 8), 0f, Random.Range(-8, 8)) + transform.position;
             agent.destination = newDestination;
             randIdleWaitTime = Random.Range(2f, 8f);
             timeCount = 0f;

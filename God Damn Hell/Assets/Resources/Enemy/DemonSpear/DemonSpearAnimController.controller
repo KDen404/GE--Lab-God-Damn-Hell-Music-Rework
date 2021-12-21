@@ -296,7 +296,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Attack Layer
     m_StateMachine: {fileID: 347480782749116056}
-    m_Mask: {fileID: 31900000, guid: 83f07cec3b1258e4abfe5e2c2d4f4d24, type: 2}
+    m_Mask: {fileID: 31900000, guid: 25b4433b8c6ef7a49a714de89fead143, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -308,7 +308,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: HitLayer
     m_StateMachine: {fileID: 754994387782825170}
-    m_Mask: {fileID: 31900000, guid: 83f07cec3b1258e4abfe5e2c2d4f4d24, type: 2}
+    m_Mask: {fileID: 31900000, guid: 25b4433b8c6ef7a49a714de89fead143, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 1
@@ -320,7 +320,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: DeathLayer
     m_StateMachine: {fileID: 6096121607674299108}
-    m_Mask: {fileID: 31900000, guid: 0c59493f261cb3b40b56642f57dcbabd, type: 2}
+    m_Mask: {fileID: 31900000, guid: c5aeb3b263132c04b9957052d5b265eb, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0

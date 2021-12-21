@@ -37,7 +37,6 @@ public class DemonSpearMovement : MonoBehaviour
         if (activated)
         {
             agent.destination = player.transform.position;
-            agent.speed = demonFighterRunSpeed;
 
             if (Vector3.Distance(transform.position, player.transform.position) <= 4)
             {

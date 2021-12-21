@@ -26,7 +26,7 @@ public class DemonFighterHit : MonoBehaviour
         // lastHit acts as a cooldown so the player cant get hit multiple times within one animation
         if (lastHit >= 1f && other.gameObject.transform.tag == "Player" && (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackLeft") || animator.GetCurrentAnimatorStateInfo(1).IsName("AttackRight")))
         {
-            other.gameObject.GetComponent<PlayerStats>().healthPoints--;
+            other.gameObject.GetComponent<PlayerStats>().healthPoints--; // Needs an actual number later on
             lastHit = 0;
         }
         else if (other.gameObject.transform.tag == "Shield")
