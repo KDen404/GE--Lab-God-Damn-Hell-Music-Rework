@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class DemonFighterAnimations : MonoBehaviour
 {
-    // General variables
+    // General fields
     public Animator animator;
     private Stats demonFighterStats;
     private DemonFighterMovement demonFighterMovement;
@@ -18,7 +18,6 @@ public class DemonFighterAnimations : MonoBehaviour
 
     // Attack
     public bool inAttackRange = false;
-    private float randFloat;
     public GameObject leftHand;
     public GameObject rightHand;
     private Collider leftHandCollider;
@@ -62,29 +61,20 @@ public class DemonFighterAnimations : MonoBehaviour
         IdleWalk();
     }
 
-    public virtual void Run()
+    private void Run()
     {
         if (demonFighterMovement.activated == true)
         {
             animator.SetFloat("WalkRunFloat", 1f);
         }
-        else
-        {
-            animator.SetFloat("WalkRunFloat", 0f);
-        }
     }
 
-    public virtual void Attack()
+    private void Attack()
     {
         // If the player is close enough start attacking
         if (inAttackRange == true)
         {
-            randFloat = Random.Range(0f, 1f);
-            animator.SetFloat("AttackFloat", randFloat);
-        }
-        else
-        {
-            animator.SetFloat("AttackFloat", 0f);
+            animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
         }
 
         // Activates / deactivates the collider
@@ -108,7 +98,7 @@ public class DemonFighterAnimations : MonoBehaviour
     }
 
 
-    public virtual void Die()
+    private void Die()
     {
         // Play animation when dead
         if (demonFighterStats.healthPoints <= 0)
@@ -141,7 +131,7 @@ public class DemonFighterAnimations : MonoBehaviour
         }
     }
 
-    public virtual void GetHit()
+    private void GetHit()
     {
         if (tempHealthPoints != demonFighterStats.healthPoints)
         {
@@ -161,7 +151,7 @@ public class DemonFighterAnimations : MonoBehaviour
         }
     }
 
-    public virtual void IdleWalk()
+    private void IdleWalk()
     {
         if (timeCount >= randIdleWaitTime && demonFighterMovement.activated == false)
         {
