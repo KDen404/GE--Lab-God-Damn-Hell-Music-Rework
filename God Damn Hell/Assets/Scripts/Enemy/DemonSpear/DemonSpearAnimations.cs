@@ -3,50 +3,52 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class DemonFighterAnimations : MonoBehaviour
+public class DemonSpearAnimations : MonoBehaviour
 {
     // General fields
     public Animator animator;
-    private Stats demonFighterStats;
-    private DemonFighterMovement demonFighterMovement;
+    private Stats demonSpearStats;
+    private DemonSpearMovement demonSpearMovement;
 
-    // GetHit
-    private int tempHealthPoints;
-    private float pushbackTime = 1;
-    private bool getsPushedBack = false;
-    public int knockbackStrength = 4;
+    // Run
+    public int runSpeed = 6;
 
     // Attack
     public bool inAttackRange = false;
-    public GameObject leftHand;
-    public GameObject rightHand;
-    private Collider leftHandCollider;
-    private Collider rightHandCollider;
+    public Collider spearCollider;
+    private Collider demonSpearCollider;
 
     // Die
-    private float timeDead;
     private bool isDead;
-    private Collider demonFighterCollider;
+    private float timeDead;
+
+    // GetHit
+    private int tempHealthPoints;
+    private bool getsPushedBack = false;
+    private float pushbackTime;
+    public int knockbackStrength = 5;
 
     // IdleWalk
-    private float randIdleWaitTime;
     private float timeCount;
+    private float randIdleWaitTime;
     private NavMeshAgent agent;
 
     private void Start()
     {
-        demonFighterStats = GetComponent<Stats>();
-        demonFighterMovement = GetComponent<DemonFighterMovement>();
-        tempHealthPoints = GetComponent<Stats>().healthPoints;
-        demonFighterCollider = GetComponent<BoxCollider>();
+        demonSpearStats = GetComponent<Stats>();
+        demonSpearMovement = GetComponent<DemonSpearMovement>();
+        demonSpearCollider = GetComponent<BoxCollider>();
+
+        tempHealthPoints = demonSpearStats.healthPoints;
+
         randIdleWaitTime = Random.Range(2f, 8f);
         agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
-        timeCount += Time.deltaTime;
         pushbackTime += Time.deltaTime;
+        timeCount += Time.deltaTime;
 
         Run();
         Attack();
@@ -57,53 +59,43 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void Run()
     {
-        if (demonFighterMovement.activated == true)
+        if (demonSpearMovement.activated == true)
         {
+            agent.speed = runSpeed;
             animator.SetFloat("WalkRunFloat", 1f);
         }
     }
 
     private void Attack()
     {
-        // If the player is close enough start attacking
         if (inAttackRange == true)
         {
             animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
         }
 
         // Activates / deactivates the collider
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackLeft"))
+        if (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2"))
         {
-            leftHandCollider.enabled = true;
+            spearCollider.enabled = true;
         }
         else
         {
-            leftHandCollider.enabled = false;
-        }
-
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackRight"))
-        {
-            rightHandCollider.enabled = true;
-        }
-        else
-        {
-            rightHandCollider.enabled = false;
+            spearCollider.enabled = false;
         }
     }
-
 
     private void Die()
     {
         // Play animation when dead
-        if (demonFighterStats.healthPoints <= 0)
+        if (demonSpearStats.healthPoints <= 0)
         {
             if (!animator.GetCurrentAnimatorStateInfo(3).IsName("Death"))
             {
                 animator.SetBool("IsDeadBool", true);
                 GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 isDead = true;
-                demonFighterMovement.enabled = false;
-                demonFighterCollider.enabled = false;
+                demonSpearMovement.enabled = false;
+                demonSpearCollider.enabled = false;
             }
         }
 
@@ -127,12 +119,12 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void GetHit()
     {
-        if (tempHealthPoints != demonFighterStats.healthPoints)
+        if (tempHealthPoints != demonSpearStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
             getsPushedBack = true;
             pushbackTime = 0f;
-            tempHealthPoints = demonFighterStats.healthPoints;
+            tempHealthPoints = demonSpearStats.healthPoints;
         }
 
         if (getsPushedBack == true && pushbackTime <= 0.5f)
@@ -147,9 +139,9 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void IdleWalk()
     {
-        if (timeCount >= randIdleWaitTime && demonFighterMovement.activated == false)
+        if (timeCount >= randIdleWaitTime && demonSpearMovement.activated == false)
         {
-            agent.speed = demonFighterStats.movementspeed;
+            agent.speed = demonSpearStats.movementspeed;
             Vector3 newDestination = new Vector3(Random.Range(-8, 8), 0f, Random.Range(-8, 8)) + transform.position;
             agent.destination = newDestination;
             randIdleWaitTime = Random.Range(2f, 8f);

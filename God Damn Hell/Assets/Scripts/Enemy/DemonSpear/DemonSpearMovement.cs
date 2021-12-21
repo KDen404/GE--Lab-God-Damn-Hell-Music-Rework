@@ -1,10 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class DemonFighterMovement : MonoBehaviour
+public class DemonSpearMovement : MonoBehaviour
 {
-    private Stats demonFighterStats;
-    private DemonFighterAnimations demonFighterAnimations;
+    private Stats demonSpearStats;
+    private DemonSpearAnimations demonSpearAnimations;
     private GameObject player;
     private float aggroRange;
     private NavMeshAgent agent;
@@ -16,34 +18,33 @@ public class DemonFighterMovement : MonoBehaviour
     {
         player = GameObject.Find("Player Object");
         agent = GetComponent<NavMeshAgent>();
-        demonFighterStats = GetComponent<Stats>();
-        demonFighterAnimations = GetComponent<DemonFighterAnimations>();
-        activated = demonFighterStats.activated;
+        demonSpearStats = GetComponent<Stats>();
+        demonSpearAnimations = GetComponent<DemonSpearAnimations>();
+        activated = demonSpearStats.activated;
 
-        agent.speed = demonFighterStats.movementspeed;
-        aggroRange = demonFighterStats.aggroRange;
+        agent.speed = demonSpearStats.movementspeed;
+        aggroRange = demonSpearStats.aggroRange;
     }
 
-    private void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
         navmovement();
     }
-
 
     private void navmovement()
     {
         if (activated)
         {
             agent.destination = player.transform.position;
-            agent.speed = demonFighterRunSpeed;
 
-            if (Vector3.Distance(transform.position, player.transform.position) <= 4)
+            if (Vector3.Distance(transform.position, player.transform.position) <= 6)
             {
-                demonFighterAnimations.inAttackRange = true;
+                demonSpearAnimations.inAttackRange = true;
             }
             else
             {
-                demonFighterAnimations.inAttackRange = false;
+                demonSpearAnimations.inAttackRange = false;
             }
         }
         else
@@ -59,3 +60,4 @@ public class DemonFighterMovement : MonoBehaviour
         }
     }
 }
+
