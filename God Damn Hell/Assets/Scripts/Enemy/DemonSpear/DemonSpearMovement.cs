@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,8 +8,7 @@ public class DemonSpearMovement : MonoBehaviour
     private GameObject player;
     private float aggroRange;
     private NavMeshAgent agent;
-    public bool activated = false;
-    public int demonFighterRunSpeed = 6;
+    public bool activated;
 
 
     private void Start()
@@ -26,8 +23,7 @@ public class DemonSpearMovement : MonoBehaviour
         aggroRange = demonSpearStats.aggroRange;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         navmovement();
     }

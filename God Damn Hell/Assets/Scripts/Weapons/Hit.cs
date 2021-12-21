@@ -29,11 +29,8 @@ public class Hit : MonoBehaviour
         {
             other.gameObject.transform.GetComponent<Stats>().healthPoints--;
             Vector3 direction = (other.transform.position - player.transform.position);
-            //other.gameObject.transform.GetChild(0).GetComponent<Rigidbody>().AddForce(direction * tempKnockbackStrength, ForceMode.Impulse);
             addForceTime = 0;
             enemy = other.transform;
-
-            //other.gameObject.GetComponent<>().GetHit();
 
             lastHit = 0;
         }

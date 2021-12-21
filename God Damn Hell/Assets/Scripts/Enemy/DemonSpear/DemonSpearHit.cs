@@ -21,7 +21,7 @@ public class DemonSpearHit : MonoBehaviour
 
     public virtual void OnTriggerEnter(Collider other)
     {
-        // Colliders are on the enemies hands, code below only works if the target hit is the player
+        // Collider is on the enemies spear, code below only works if the target hit is the player
         // lastHit acts as a cooldown so the player cant get hit multiple times within one animation
         if (lastHit >= 1f && other.gameObject.transform.tag == "Player" && (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2")))
         {

@@ -18,10 +18,8 @@ public class DemonFighterAnimations : MonoBehaviour
 
     // Attack
     public bool inAttackRange = false;
-    public GameObject leftHand;
-    public GameObject rightHand;
-    private Collider leftHandCollider;
-    private Collider rightHandCollider;
+    public Collider leftHandCollider;
+    public Collider rightHandCollider;
 
     // Die
     private float timeDead;

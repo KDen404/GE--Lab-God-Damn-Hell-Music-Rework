@@ -1782,9 +1782,8 @@ MonoBehaviour:
   animator: {fileID: 5688606930959994286}
   knockbackStrength: 4
   inAttackRange: 0
-  leftHand: {fileID: 3153287027355334597}
-  rightHand: {fileID: 9077769598434076502}
-  isDead: 0
+  leftHandCollider: {fileID: 4566672803003381672}
+  rightHandCollider: {fileID: 5859606112042328417}
 --- !u!114 &2732958964173340370
 MonoBehaviour:
   m_ObjectHideFlags: 0
