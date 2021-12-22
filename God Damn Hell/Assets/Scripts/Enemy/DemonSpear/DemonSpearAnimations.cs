@@ -139,22 +139,25 @@ public class DemonSpearAnimations : MonoBehaviour
 
     private void IdleWalk()
     {
-        if (timeCount >= randIdleWaitTime && demonSpearMovement.activated == false)
+        if (demonSpearMovement.activated == false)
         {
-            agent.speed = demonSpearStats.movementspeed;
-            Vector3 newDestination = new Vector3(Random.Range(-8, 8), 0f, Random.Range(-8, 8)) + transform.position;
-            agent.destination = newDestination;
-            randIdleWaitTime = Random.Range(2f, 8f);
-            timeCount = 0f;
-        }
+            if (timeCount >= randIdleWaitTime)
+            {
+                agent.speed = demonSpearStats.movementspeed;
+                Vector3 newDestination = new Vector3(Random.Range(-8, 8), 0f, Random.Range(-8, 8)) + transform.position;
+                agent.destination = newDestination;
+                randIdleWaitTime = Random.Range(2f, 8f);
+                timeCount = 0f;
+            }
 
-        if (agent.remainingDistance >= 0.1)
-        {
-            animator.SetFloat("WalkRunFloat", 0.5f);
-        }
-        else
-        {
-            animator.SetFloat("WalkRunFloat", 0f);
+            if (agent.remainingDistance >= 0.1)
+            {
+                animator.SetFloat("WalkRunFloat", 0.5f);
+            }
+            else
+            {
+                animator.SetFloat("WalkRunFloat", 0f);
+            }
         }
     }
 }
