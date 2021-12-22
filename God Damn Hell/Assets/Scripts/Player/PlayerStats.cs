@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int healthPoints = 20;
+    public int maxHealthPoints = 20;
+    public int currentHealthPoints = 20;
 }

@@ -32,7 +32,7 @@ public class PlayerAnimations : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         playerstats = GetComponent<PlayerStats>();
         playermovement = GetComponent<PlayerMovement>();
-        tempHealth = playerstats.healthPoints;
+        tempHealth = playerstats.currentHealthPoints;
     }
 
     private void Update()
@@ -150,7 +150,7 @@ public class PlayerAnimations : MonoBehaviour
     private void Die()
     {
         // Plays the death animation and sets the weight of all other layers to 0 so no animations can be played anymore
-        if (playerstats.healthPoints <= 0)
+        if (playerstats.currentHealthPoints <= 0)
         {
             animator.SetBool("isDeadBool", true);
             animator.SetLayerWeight(1, 0f);
@@ -186,12 +186,12 @@ public class PlayerAnimations : MonoBehaviour
     private void GetHit()
     {
         // Start() creates a copy of healthPoints and if the hp change the animation plays and the copy gets updated
-        if (tempHealth != playerstats.healthPoints)
+        if (tempHealth != playerstats.currentHealthPoints)
         {
             float randFloat = Random.Range(0f, 1f);
             animator.SetFloat("GetHitFloat", randFloat);
             animator.SetTrigger("GetHitTrigger");
-            tempHealth = playerstats.healthPoints;
+            tempHealth = playerstats.currentHealthPoints;
         }
     }
 }
