@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 407 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g transform="matrix(5.12243e-18,-0.0836557,0.209376,1.28206e-17,-10.0256,120.384)">
+        <g transform="matrix(-0.945833,0,0,-1,1401,1997.85)">
+            <g transform="matrix(1.09019,0,0,1.06955,-64.9364,-70.9546)">
+                <path d="M100,981.215L150.597,981.215L152.249,396.671L374.156,117.015L720,117.015L720,100L352.314,100L100,378.059L100,981.215Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1.03036,0,0,1.06955,-58.9536,-67.2112)">
+                <path d="M100,100L321.075,100C183.187,134.918 185.843,242.789 100,340.603L100,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:7.88px;"/>
+                <g transform="matrix(1.02611,0,0,0.934976,17.198,25.4418)">
+                    <path d="M80.695,299.266C103.924,242.496 143.648,164.882 146.908,108.112C304.973,96.385 456.804,81.6 720,121.431" style="fill:none;stroke:white;stroke-width:8px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(-0.945833,0,0,1,1401,40)">
+            <g transform="matrix(1.09019,0,0,1.06955,-64.9364,-70.9546)">
+                <path d="M100,981.215L150.597,981.215L152.249,396.671L374.156,117.015L720,117.015L720,100L352.314,100L100,378.059L100,981.215Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1.03036,0,0,1.06955,-58.9536,-67.2112)">
+                <path d="M100,100L321.075,100C183.187,134.918 185.843,242.789 100,340.603L100,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:7.88px;"/>
+                <g transform="matrix(1.02611,0,0,0.934976,17.198,25.4418)">
+                    <path d="M80.695,299.266C103.924,242.496 143.648,164.882 146.908,108.112C304.973,96.385 456.804,81.6 720,121.431" style="fill:none;stroke:white;stroke-width:8px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0.945833,0,0,-1,39,1997.85)">
+            <g transform="matrix(1.09019,0,0,1.06955,-64.9364,-70.9546)">
+                <path d="M100,981.215L150.597,981.215L152.249,396.671L374.156,117.015L720,117.015L720,100L352.314,100L100,378.059L100,981.215Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1.03036,0,0,1.06955,-58.9536,-67.2112)">
+                <path d="M100,100L321.075,100C183.187,134.918 185.843,242.789 100,340.603L100,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:7.88px;"/>
+                <g transform="matrix(1.02611,0,0,0.934976,17.198,25.4418)">
+                    <path d="M80.695,299.266C103.924,242.496 143.648,164.882 146.908,108.112C304.973,96.385 456.804,81.6 720,121.431" style="fill:none;stroke:white;stroke-width:8px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0.945833,-4.10537e-48,0,1,39,40)">
+            <g transform="matrix(1.09019,0,0,1.06955,-64.9364,-70.9546)">
+                <path d="M100,981.215L150.597,981.215L152.249,396.671L374.156,117.015L720,117.015L720,100L352.314,100L100,378.059L100,981.215Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1.03036,0,0,1.06955,-58.9536,-67.2112)">
+                <path d="M100,100L321.075,100C183.187,134.918 185.843,242.789 100,340.603L100,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:7.88px;"/>
+                <g transform="matrix(1.02611,0,0,0.934976,17.198,25.4418)">
+                    <path d="M80.695,299.266C103.924,242.496 143.648,164.882 146.908,108.112C304.973,96.385 456.804,81.6 720,121.431" style="fill:none;stroke:white;stroke-width:8px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(7.31956e-16,4.7761,-11.9538,2.92452e-16,4459.3,-158.595)">
+            <text x="177.305px" y="330.685px" style="font-family:'Castellar', sans-serif;font-size:50px;fill:white;">Pla<tspan x="274.351px " y="330.685px ">y</tspan></text>
+        </g>
+    </g>
+</svg>
