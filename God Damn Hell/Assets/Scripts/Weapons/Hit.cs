@@ -8,32 +8,32 @@ public class Hit : MonoBehaviour
     public GameObject player;
     private Transform enemy;
     private float lastHit;
-    private float addForceTime = 1f;
 
-    public int tempKnockbackStrength = 10;
+    public int tempKnockbackStrength = 13;
 
     private void Update()
     {
         lastHit += Time.deltaTime;
-        addForceTime += Time.deltaTime;
-
-        if (addForceTime <= 0.5f)
-        {
-            enemy.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
-        }
     }
 
-    public virtual void OnTriggerEnter(Collider other)
+    private  void OnTriggerEnter(Collider other)
     {
+        // lastHit so the player cant hit the enemy more than once in one animation turn
+        // and checking if the player is actually attacking or else the weapon can damage just by colliding with an enemy outside any animation
         if (lastHit >= 1f && other.gameObject.transform.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
             other.gameObject.transform.GetComponent<Stats>().healthPoints--;
-            Vector3 direction = (other.transform.position - player.transform.position);
-            addForceTime = 0;
             enemy = other.transform;
-
+            StartCoroutine(AddForceSimulation(enemy));
             lastHit = 0;
         }
+    }
+
+    private IEnumerator AddForceSimulation(Transform enemy)
+    {
+        enemy.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
+        yield return new WaitForSeconds(0.5f);
+        yield break;
     }
 
 
