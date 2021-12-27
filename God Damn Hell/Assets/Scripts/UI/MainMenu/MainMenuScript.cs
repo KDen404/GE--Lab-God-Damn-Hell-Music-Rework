@@ -11,6 +11,6 @@ public class MainMenuScript : MonoBehaviour
         {
             child.gameObject.SetActive(false);
         }
-        transform.Find("MainMenu").gameObject.SetActive(true);
+        transform.Find("MainMenuBackground").gameObject.SetActive(true);
     }
 }
