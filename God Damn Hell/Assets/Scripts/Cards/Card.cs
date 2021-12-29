@@ -6,9 +6,10 @@ using UnityEngine;
 public class Card : ScriptableObject
 {
     public Sprite cardsprite;   // also divideable into artwork, description, basic card border
-    public Mesh equipment;
+    public string itemname;
 
     public int defense;     //optional
     public int cost;
+
 }
     
