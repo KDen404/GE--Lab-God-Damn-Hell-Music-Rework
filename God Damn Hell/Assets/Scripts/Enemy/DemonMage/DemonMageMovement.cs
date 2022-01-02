@@ -36,8 +36,8 @@ public class DemonMageMovement : MonoBehaviour
     {
         if (activated)
         {
-            agent.destination = player.transform.position;
             agent.speed = demonMageRunSpeed;
+            agent.destination = player.transform.position;
 
             if (Vector3.Distance(transform.position, player.transform.position) <= 4)
             {

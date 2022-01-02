@@ -102,25 +102,17 @@ public class DemonFighterAnimations : MonoBehaviour
                 isDead = true;
                 demonFighterMovement.enabled = false;
                 demonFighterCollider.enabled = false;
+                StartCoroutine(DieCoroutine());
             }
         }
+    }
 
-        if (isDead == true)
-        {
-            timeDead += Time.deltaTime;
-
-            // Disable animator after 1.5s so it cant attack anymore
-            if (timeDead > 1.5f)
-            {
-                animator.enabled = false;
-            }
-
-            // Despawn after 5s
-            if (timeDead >= 5)
-            {
-                Destroy(gameObject);
-            }
-        }
+    private IEnumerator DieCoroutine()
+    {
+        yield return new WaitForSeconds(1.5f);
+        animator.enabled = false;
+        yield return new WaitForSeconds(3.5f);
+        Destroy(gameObject);
     }
 
     private void GetHit()
@@ -131,15 +123,6 @@ public class DemonFighterAnimations : MonoBehaviour
             getsPushedBack = true;
             pushbackTime = 0f;
             tempHealthPoints = demonFighterStats.healthPoints;
-        }
-
-        if (getsPushedBack == true && pushbackTime <= 0.5f)
-        {
-            transform.position += -transform.forward * knockbackStrength * Time.deltaTime;
-        }
-        else
-        {
-            getsPushedBack = false;
         }
     }
 

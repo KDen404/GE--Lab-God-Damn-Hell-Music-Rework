@@ -13,21 +13,17 @@ public class DemonMageAnimations : MonoBehaviour
     // GetHit
     private int tempHealthPoints;
     private float pushbackTime = 1;
-    private bool getsPushedBack = false;
     public int knockbackStrength = 4;
 
     // Attack
     public bool inAttackRange = false;
     private float random;
-    public GameObject pyroballEmpty;
-    public GameObject fireballEmpty;
     public GameObject pyroball;
     public GameObject fireball;
-    private GameObject player;
+    private GameObject castedObject;
+    private Transform player;
 
     // Die
-    private float timeDead;
-    private bool isDead;
     private Collider demonMageCollider;
 
     // IdleWalk
@@ -43,13 +39,12 @@ public class DemonMageAnimations : MonoBehaviour
         demonMageCollider = GetComponent<BoxCollider>();
         randIdleWaitTime = Random.Range(2f, 8f);
         agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void Update()
     {
         timeCount += Time.deltaTime;
-        pushbackTime += Time.deltaTime;
 
         Run();
         Attack();
@@ -62,14 +57,22 @@ public class DemonMageAnimations : MonoBehaviour
     {
         if (demonMageMovement.activated == true)
         {
-            animator.SetFloat("WalkRunFloat", 1f);
+            if (agent.remainingDistance <= 8)
+            {
+                agent.ResetPath();
+                animator.SetFloat("WalkRunFloat", 0f);
+            }
+            else
+            {
+                animator.SetFloat("WalkRunFloat", 1f);
+            }
         }
     }
 
     private void Attack()
     {
         // If the player is close enough start attacking
-        if (inAttackRange == true)
+        if (inAttackRange == true && castedObject == null)
         {
             animator.SetFloat("AttackFloat", random = Random.Range(0f, 1f));
             StartCoroutine(DemonMageCast());
@@ -82,19 +85,16 @@ public class DemonMageAnimations : MonoBehaviour
 
     private IEnumerator DemonMageCast()
     {
+        Vector3 targetPosition = player.position;
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(1).length);
 
         if (random < 0.2f)
         {
-            GameObject newPyroball;
-            newPyroball = Instantiate(pyroball, pyroballEmpty.transform);
-            newPyroball.transform.position = Vector3.MoveTowards(newPyroball.transform.position, player.transform.position, 100f);
+            castedObject = Instantiate(pyroball, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z + 0.5f), Quaternion.identity);
         }
         else
         {
-            GameObject newFireball;
-            newFireball = Instantiate(fireball, fireballEmpty.transform);
-            newFireball.transform.position = Vector3.MoveTowards(newFireball.transform.position, player.transform.position, 100f);
+            castedObject = Instantiate(fireball, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z + 0.5f), Quaternion.identity);
         }
     }
 
@@ -107,28 +107,19 @@ public class DemonMageAnimations : MonoBehaviour
             {
                 animator.SetBool("IsDeadBool", true);
                 GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
-                isDead = true;
                 demonMageMovement.enabled = false;
                 demonMageCollider.enabled = false;
+                StartCoroutine(DieCoroutine());
             }
         }
+    }
 
-        if (isDead == true)
-        {
-            timeDead += Time.deltaTime;
-
-            // Disable animator after 1.5s so it cant attack anymore
-            if (timeDead > 1.5f)
-            {
-                animator.enabled = false;
-            }
-
-            // Despawn after 5s
-            if (timeDead >= 5)
-            {
-                Destroy(gameObject);
-            }
-        }
+    private IEnumerator DieCoroutine()
+    {
+        yield return new WaitForSeconds(1.5f);
+        animator.enabled = false;
+        yield return new WaitForSeconds(3.5f);
+        Destroy(gameObject);
     }
 
     private void GetHit()
@@ -136,18 +127,8 @@ public class DemonMageAnimations : MonoBehaviour
         if (tempHealthPoints != demonMageStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
-            getsPushedBack = true;
             pushbackTime = 0f;
             tempHealthPoints = demonMageStats.healthPoints;
-        }
-
-        if (getsPushedBack == true && pushbackTime <= 0.5f)
-        {
-            transform.position += -transform.forward * knockbackStrength * Time.deltaTime;
-        }
-        else
-        {
-            getsPushedBack = false;
         }
     }
 
