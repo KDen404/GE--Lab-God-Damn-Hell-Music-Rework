@@ -18,9 +18,15 @@ public class DemonMageHit : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerStats>().currentHealthPoints--; // Needs an actual number later on
             Destroy(gameObject);
-            Debug.Log("Destroy ball");
+            Debug.Log("Hit player, destroy object");
         }
-
-        Debug.Log("Player not hit");
+        else if (other.gameObject.transform.tag == "Enemy")
+        {
+        }
+        else
+        {
+            Destroy(gameObject);
+            Debug.Log("Hit nothing, destroy object");
+        }
     }
 }

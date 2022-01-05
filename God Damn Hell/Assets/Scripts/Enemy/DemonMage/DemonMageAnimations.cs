@@ -12,7 +12,6 @@ public class DemonMageAnimations : MonoBehaviour
 
     // GetHit
     private int tempHealthPoints;
-    private float pushbackTime = 1;
     public int knockbackStrength = 4;
 
     // Attack
@@ -21,6 +20,8 @@ public class DemonMageAnimations : MonoBehaviour
     public GameObject pyroball;
     public GameObject fireball;
     private GameObject castedObject;
+    public Transform pyroballEmpty;
+    public Transform fireballEmpty;
     private Transform player;
 
     // Die
@@ -72,7 +73,7 @@ public class DemonMageAnimations : MonoBehaviour
     private void Attack()
     {
         // If the player is close enough start attacking
-        if (inAttackRange == true && castedObject == null)
+        if (inAttackRange == true && (!animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || !animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2")))
         {
             animator.SetFloat("AttackFloat", random = Random.Range(0f, 1f));
             StartCoroutine(DemonMageCast());
@@ -85,17 +86,18 @@ public class DemonMageAnimations : MonoBehaviour
 
     private IEnumerator DemonMageCast()
     {
-        Vector3 targetPosition = player.position;
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(1).length);
 
-        if (random < 0.2f)
+        if (random < 0.2f && random > 0f)
         {
-            castedObject = Instantiate(pyroball, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z + 0.5f), Quaternion.identity);
+            Instantiate(pyroball, transform.position + new Vector3(0f, 1f, 0f), Quaternion.identity);
         }
-        else
+        else if (random > 0.2f)
         {
-            castedObject = Instantiate(fireball, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z + 0.5f), Quaternion.identity);
+            Instantiate(fireball, transform.position + new Vector3(0f, 3f, 0f), Quaternion.identity);
         }
+
+        Debug.Log(castedObject);
     }
 
     private void Die()
@@ -127,7 +129,6 @@ public class DemonMageAnimations : MonoBehaviour
         if (tempHealthPoints != demonMageStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
-            pushbackTime = 0f;
             tempHealthPoints = demonMageStats.healthPoints;
         }
     }
