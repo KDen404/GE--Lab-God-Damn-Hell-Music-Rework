@@ -18,6 +18,7 @@ public class DemonMageHit : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerStats>().currentHealthPoints--; // Needs an actual number later on
             Destroy(gameObject);
+            AkSoundEngine.PostEvent("FireballHit", gameObject);
             Debug.Log("Hit player, destroy object");
         }
         else if (other.gameObject.transform.tag == "Enemy")
@@ -26,6 +27,7 @@ public class DemonMageHit : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            AkSoundEngine.PostEvent("FireballHit", gameObject);
             Debug.Log("Hit nothing, destroy object");
         }
     }

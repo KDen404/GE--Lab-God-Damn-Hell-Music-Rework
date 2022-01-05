@@ -12,8 +12,7 @@ public class DemonFighterAnimations : MonoBehaviour
 
     // GetHit
     private int tempHealthPoints;
-    private float pushbackTime = 1;
-    private bool getsPushedBack = false;
+
     public int knockbackStrength = 4;
 
     // Attack
@@ -43,9 +42,6 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void Update()
     {
-        timeCount += Time.deltaTime;
-        pushbackTime += Time.deltaTime;
-
         Run();
         Attack();
         Die();
@@ -58,6 +54,7 @@ public class DemonFighterAnimations : MonoBehaviour
         if (demonFighterMovement.activated == true)
         {
             animator.SetFloat("WalkRunFloat", 1f);
+            AkSoundEngine.PostEvent("DemonFighterRun", gameObject);
         }
     }
 
@@ -98,8 +95,8 @@ public class DemonFighterAnimations : MonoBehaviour
             if (!animator.GetCurrentAnimatorStateInfo(3).IsName("Death"))
             {
                 animator.SetBool("IsDeadBool", true);
+                AkSoundEngine.PostEvent("DemonFighterDeath", gameObject);
                 GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
-                isDead = true;
                 demonFighterMovement.enabled = false;
                 demonFighterCollider.enabled = false;
                 StartCoroutine(DieCoroutine());
@@ -120,8 +117,7 @@ public class DemonFighterAnimations : MonoBehaviour
         if (tempHealthPoints != demonFighterStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
-            getsPushedBack = true;
-            pushbackTime = 0f;
+            AkSoundEngine.PostEvent("DemonFighterGotHit", gameObject);
             tempHealthPoints = demonFighterStats.healthPoints;
         }
     }
@@ -142,6 +138,7 @@ public class DemonFighterAnimations : MonoBehaviour
             if (agent.remainingDistance >= 0.1)
             {
                 animator.SetFloat("WalkRunFloat", 0.5f);
+                AkSoundEngine.PostEvent("DemonFighterWalk", gameObject);
             }
             else
             {

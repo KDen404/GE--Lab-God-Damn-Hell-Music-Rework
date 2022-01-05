@@ -18,14 +18,8 @@ public class DemonSpearAnimations : MonoBehaviour
     public Collider spearCollider;
     private Collider demonSpearCollider;
 
-    // Die
-    private bool isDead;
-    private float timeDead;
-
     // GetHit
     private int tempHealthPoints;
-    private bool getsPushedBack = false;
-    private float pushbackTime;
     public int knockbackStrength = 5;
 
     // IdleWalk
@@ -47,9 +41,6 @@ public class DemonSpearAnimations : MonoBehaviour
 
     private void Update()
     {
-        pushbackTime += Time.deltaTime;
-        timeCount += Time.deltaTime;
-
         Run();
         Attack();
         Die();
@@ -63,6 +54,7 @@ public class DemonSpearAnimations : MonoBehaviour
         {
             agent.speed = runSpeed;
             animator.SetFloat("WalkRunFloat", 1f);
+            AkSoundEngine.PostEvent("DemonSpearRun", gameObject);
         }
     }
 
@@ -71,6 +63,7 @@ public class DemonSpearAnimations : MonoBehaviour
         if (inAttackRange == true)
         {
             animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
+            AkSoundEngine.PostEvent("SpearSwing", gameObject);
         }
 
         // Activates / deactivates the collider
@@ -92,8 +85,8 @@ public class DemonSpearAnimations : MonoBehaviour
             if (!animator.GetCurrentAnimatorStateInfo(3).IsName("Death"))
             {
                 animator.SetBool("IsDeadBool", true);
+                AkSoundEngine.PostEvent("DemonSpearDeath", gameObject);
                 GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
-                isDead = true;
                 demonSpearMovement.enabled = false;
                 demonSpearCollider.enabled = false;
                 StartCoroutine(DieCoroutine());
@@ -114,8 +107,7 @@ public class DemonSpearAnimations : MonoBehaviour
         if (tempHealthPoints != demonSpearStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
-            getsPushedBack = true;
-            pushbackTime = 0f;
+            AkSoundEngine.PostEvent("DemonSpearGotHit", gameObject);
             tempHealthPoints = demonSpearStats.healthPoints;
         }
     }
@@ -136,6 +128,7 @@ public class DemonSpearAnimations : MonoBehaviour
             if (agent.remainingDistance >= 0.1)
             {
                 animator.SetFloat("WalkRunFloat", 0.5f);
+                AkSoundEngine.PostEvent("DemonSpearWalk", gameObject);
             }
             else
             {
