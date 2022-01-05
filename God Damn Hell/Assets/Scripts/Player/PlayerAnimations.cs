@@ -53,6 +53,11 @@ public class PlayerAnimations : MonoBehaviour
         movementAxis.x = Input.GetAxisRaw("Horizontal");
         movementAxis.y = Input.GetAxisRaw("Vertical");
 
+        if (movementAxis.x != 0 ||movementAxis.y != 0)
+        {
+            AkSoundEngine.PostEvent("PlayerRun", gameObject);
+        }
+
         if (angle <= 180 && angle > 90)
         {
             if (angle <= 180 && angle > 150)
@@ -135,6 +140,7 @@ public class PlayerAnimations : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && !animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
             animator.SetTrigger("AttackTrigger");
+            AkSoundEngine.PostEvent("SwordSwing", gameObject);
         }
 
         if (animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
@@ -156,8 +162,8 @@ public class PlayerAnimations : MonoBehaviour
             animator.SetLayerWeight(1, 0f);
             animator.SetLayerWeight(2, 0f);
             animator.SetLayerWeight(3, 0f);
-
             playermovement.enabled = false;
+            AkSoundEngine.PostEvent("PlayerDeath", gameObject);
         }
     }
 
@@ -192,6 +198,7 @@ public class PlayerAnimations : MonoBehaviour
             animator.SetFloat("GetHitFloat", randFloat);
             animator.SetTrigger("GetHitTrigger");
             tempHealth = playerstats.currentHealthPoints;
+            AkSoundEngine.PostEvent("PlayerGotHit", gameObject);
         }
     }
 }

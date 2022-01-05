@@ -8,43 +8,42 @@ public class Hit : MonoBehaviour
     public GameObject player;
     private Transform enemy;
     private float lastHit;
-    private float addForceTime = 1f;
+    private float pushbackTime;
+    private float countPushBack;
+    private bool enemyHit = false;
 
-    public int tempKnockbackStrength = 10;
+    public int tempKnockbackStrength = 13;
 
     private void Update()
     {
         lastHit += Time.deltaTime;
-        addForceTime += Time.deltaTime;
 
-        if (addForceTime <= 0.5f)
+        // Currently only one enemy of all enemies hit gets knockbacked, can be fixed by using arrays
+        if (enemyHit == true)
         {
-            enemy.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
+            countPushBack += Time.deltaTime;
+            // Should be a vector for a proper knockback simulation
+            enemy.transform.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
+
+            if (countPushBack >= 0.5f)
+            {
+                enemyHit = false;
+            }
         }
     }
 
-    public virtual void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
+        // lastHit so the player cant hit the enemy more than once in one animation turn
+        // and checking if the player is actually attacking or else the weapon can damage just by colliding with an enemy outside any animation
         if (lastHit >= 1f && other.gameObject.transform.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
             other.gameObject.transform.GetComponent<Stats>().healthPoints--;
-            Vector3 direction = (other.transform.position - player.transform.position);
-            addForceTime = 0;
+            AkSoundEngine.PostEvent("PlayerHitsEnemy", gameObject);
             enemy = other.transform;
-
             lastHit = 0;
+            countPushBack = 0;
+            enemyHit = true;
         }
     }
-
-
-    //public virtual void OnCollisionEnter(Collision other)
-    //{
-    //    if (other.gameObject.transform.parent.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(1).IsName("Attack"))
-    //    {
-    //        // <EnemyStats> should just be stats once actual enemies exist
-    //        other.gameObject.transform.parent.GetComponent<EnemyStats>().healthPoints--;
-    //        Debug.Log("Hit the enemy!");
-    //        //other.gameObject.GetComponent<Rigidbody>().AddForce(-other.transform.forward * 100, ForceMode.Impulse);
-    //    }
-    //}
 }
