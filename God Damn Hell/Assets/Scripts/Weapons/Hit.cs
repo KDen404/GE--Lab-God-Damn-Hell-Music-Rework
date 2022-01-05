@@ -22,6 +22,7 @@ public class Hit : MonoBehaviour
         if (enemyHit == true)
         {
             countPushBack += Time.deltaTime;
+            // Should be a vector for a proper knockback simulation
             enemy.transform.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
 
             if (countPushBack >= 0.5f)
@@ -38,6 +39,7 @@ public class Hit : MonoBehaviour
         if (lastHit >= 1f && other.gameObject.transform.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
             other.gameObject.transform.GetComponent<Stats>().healthPoints--;
+            AkSoundEngine.PostEvent("PlayerHitsEnemy", gameObject);
             enemy = other.transform;
             lastHit = 0;
             countPushBack = 0;
