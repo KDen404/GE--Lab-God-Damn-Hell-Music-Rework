@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}">
+					<ChildrenList>
+						<Action Name="" ID="{652FAE91-2B8B-48F9-9748-B5E588587717}" ShortID="368938746">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Devils step" ID="{CAA43D79-034F-4DA9-8A2A-B372EEC9633E}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
