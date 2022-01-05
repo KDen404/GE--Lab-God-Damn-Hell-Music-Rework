@@ -3,28 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class DemonFighterAnimations : MonoBehaviour
+public class DemonMageAnimations : MonoBehaviour
 {
     // General fields
     public Animator animator;
-    private Stats demonFighterStats;
-    private DemonFighterMovement demonFighterMovement;
+    private Stats demonMageStats;
+    private DemonMageMovement demonMageMovement;
 
     // GetHit
     private int tempHealthPoints;
-    private float pushbackTime = 1;
-    private bool getsPushedBack = false;
     public int knockbackStrength = 4;
 
     // Attack
     public bool inAttackRange = false;
-    public Collider leftHandCollider;
-    public Collider rightHandCollider;
+    private float random;
+    public GameObject pyroball;
+    public GameObject fireball;
+    private GameObject castedObject;
+    public Transform pyroballEmpty;
+    public Transform fireballEmpty;
+    private Transform player;
 
     // Die
-    private float timeDead;
-    private bool isDead;
-    private Collider demonFighterCollider;
+    private Collider demonMageCollider;
 
     // IdleWalk
     private float randIdleWaitTime;
@@ -33,18 +34,18 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void Start()
     {
-        demonFighterStats = GetComponent<Stats>();
-        demonFighterMovement = GetComponent<DemonFighterMovement>();
+        demonMageStats = GetComponent<Stats>();
+        demonMageMovement = GetComponent<DemonMageMovement>();
         tempHealthPoints = GetComponent<Stats>().healthPoints;
-        demonFighterCollider = GetComponent<BoxCollider>();
+        demonMageCollider = GetComponent<BoxCollider>();
         randIdleWaitTime = Random.Range(2f, 8f);
         agent = GetComponent<NavMeshAgent>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void Update()
     {
         timeCount += Time.deltaTime;
-        pushbackTime += Time.deltaTime;
 
         Run();
         Attack();
@@ -55,53 +56,61 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void Run()
     {
-        if (demonFighterMovement.activated == true)
+        if (demonMageMovement.activated == true)
         {
-            animator.SetFloat("WalkRunFloat", 1f);
+            if (agent.remainingDistance <= 8)
+            {
+                agent.ResetPath();
+                animator.SetFloat("WalkRunFloat", 0f);
+            }
+            else
+            {
+                animator.SetFloat("WalkRunFloat", 1f);
+            }
         }
     }
 
     private void Attack()
     {
         // If the player is close enough start attacking
-        if (inAttackRange == true)
+        if (inAttackRange == true && (!animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || !animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2")))
         {
-            animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
-        }
-
-        // Activates / deactivates the collider
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackLeft"))
-        {
-            leftHandCollider.enabled = true;
+            animator.SetFloat("AttackFloat", random = Random.Range(0f, 1f));
+            StartCoroutine(DemonMageCast());
         }
         else
         {
-            leftHandCollider.enabled = false;
-        }
-
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackRight"))
-        {
-            rightHandCollider.enabled = true;
-        }
-        else
-        {
-            rightHandCollider.enabled = false;
+            random = 0f;
         }
     }
 
+    private IEnumerator DemonMageCast()
+    {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(1).length);
+
+        if (random < 0.2f && random > 0f)
+        {
+            Instantiate(pyroball, transform.position + new Vector3(0f, 1f, 0f), Quaternion.identity);
+        }
+        else if (random > 0.2f)
+        {
+            Instantiate(fireball, transform.position + new Vector3(0f, 3f, 0f), Quaternion.identity);
+        }
+
+        Debug.Log(castedObject);
+    }
 
     private void Die()
     {
         // Play animation when dead
-        if (demonFighterStats.healthPoints <= 0)
+        if (demonMageStats.healthPoints <= 0)
         {
             if (!animator.GetCurrentAnimatorStateInfo(3).IsName("Death"))
             {
                 animator.SetBool("IsDeadBool", true);
                 GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
-                isDead = true;
-                demonFighterMovement.enabled = false;
-                demonFighterCollider.enabled = false;
+                demonMageMovement.enabled = false;
+                demonMageCollider.enabled = false;
                 StartCoroutine(DieCoroutine());
             }
         }
@@ -117,22 +126,20 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void GetHit()
     {
-        if (tempHealthPoints != demonFighterStats.healthPoints)
+        if (tempHealthPoints != demonMageStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
-            getsPushedBack = true;
-            pushbackTime = 0f;
-            tempHealthPoints = demonFighterStats.healthPoints;
+            tempHealthPoints = demonMageStats.healthPoints;
         }
     }
 
     private void IdleWalk()
     {
-        if (demonFighterMovement.activated == false)
+        if (demonMageMovement.activated == false)
         {
             if (timeCount >= randIdleWaitTime)
             {
-                agent.speed = demonFighterStats.movementspeed;
+                agent.speed = demonMageStats.movementspeed;
                 Vector3 newDestination = new Vector3(Random.Range(-8, 8), 0f, Random.Range(-8, 8)) + transform.position;
                 agent.destination = newDestination;
                 randIdleWaitTime = Random.Range(2f, 8f);
