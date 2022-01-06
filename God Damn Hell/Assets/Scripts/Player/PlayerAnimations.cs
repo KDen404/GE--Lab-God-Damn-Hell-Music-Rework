@@ -53,7 +53,7 @@ public class PlayerAnimations : MonoBehaviour
         movementAxis.x = Input.GetAxisRaw("Horizontal");
         movementAxis.y = Input.GetAxisRaw("Vertical");
 
-        if (movementAxis.x != 0 ||movementAxis.y != 0)
+        if (movementAxis.x != 0 || movementAxis.y != 0)
         {
             AkSoundEngine.PostEvent("PlayerRun", gameObject);
         }
@@ -63,17 +63,17 @@ public class PlayerAnimations : MonoBehaviour
             if (angle <= 180 && angle > 150)
             {
                 animator.SetFloat("MovementForward", -movementAxis.x);
-                animator.SetFloat("MovementSides", movementAxis.y);
+                animator.SetFloat("MovementSides", -movementAxis.y);
             }
             else if (angle < 150 && angle > 120)
             {
                 animator.SetFloat("MovementForward", movementAxis.y);
-                animator.SetFloat("MovementSides", movementAxis.x);
+                animator.SetFloat("MovementSides", -movementAxis.x);
             }
             else if (angle < 120 && angle >= 90)
             {
                 animator.SetFloat("MovementForward", movementAxis.y);
-                animator.SetFloat("MovementSides", movementAxis.x);
+                animator.SetFloat("MovementSides", -movementAxis.x);
             }
         }
 
@@ -82,17 +82,17 @@ public class PlayerAnimations : MonoBehaviour
             if (angle <= 90 && angle > 60)
             {
                 animator.SetFloat("MovementForward", movementAxis.y);
-                animator.SetFloat("MovementSides", movementAxis.x);
+                animator.SetFloat("MovementSides", -movementAxis.x);
             }
             else if (angle < 60 && angle > 30)
             {
                 animator.SetFloat("MovementForward", movementAxis.y);
-                animator.SetFloat("MovementSides", movementAxis.x);
+                animator.SetFloat("MovementSides", -movementAxis.x);
             }
             else if (angle < 30 && angle >= 0)
             {
                 animator.SetFloat("MovementForward", movementAxis.x);
-                animator.SetFloat("MovementSides", movementAxis.y);
+                animator.SetFloat("MovementSides", -movementAxis.y);
             }
         }
 
@@ -101,17 +101,17 @@ public class PlayerAnimations : MonoBehaviour
             if (angle >= -180 && angle < -150)
             {
                 animator.SetFloat("MovementForward", -movementAxis.x);
-                animator.SetFloat("MovementSides", -movementAxis.y);
+                animator.SetFloat("MovementSides", movementAxis.y);
             }
             else if (angle > -150 && angle < -120)
             {
                 animator.SetFloat("MovementForward", -movementAxis.y);
-                animator.SetFloat("MovementSides", -movementAxis.x);
+                animator.SetFloat("MovementSides", movementAxis.x);
             }
             else if (angle > -120 && angle <= -90)
             {
                 animator.SetFloat("MovementForward", -movementAxis.y);
-                animator.SetFloat("MovementSides", -movementAxis.x);
+                animator.SetFloat("MovementSides", movementAxis.x);
             }
         }
 
@@ -120,17 +120,17 @@ public class PlayerAnimations : MonoBehaviour
             if (angle >= -90 && angle < -60)
             {
                 animator.SetFloat("MovementForward", -movementAxis.y);
-                animator.SetFloat("MovementSides", -movementAxis.x);
+                animator.SetFloat("MovementSides", movementAxis.x);
             }
             else if (angle > -60 && angle < -30)
             {
                 animator.SetFloat("MovementForward", -movementAxis.y);
-                animator.SetFloat("MovementSides", -movementAxis.x);
+                animator.SetFloat("MovementSides", movementAxis.x);
             }
             else if (angle > -30 && angle <= 0)
             {
                 animator.SetFloat("MovementForward", movementAxis.x);
-                animator.SetFloat("MovementSides", -movementAxis.y);
+                animator.SetFloat("MovementSides", movementAxis.y);
             }
         }
     }
