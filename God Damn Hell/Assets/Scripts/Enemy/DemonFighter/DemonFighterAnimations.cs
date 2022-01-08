@@ -88,7 +88,6 @@ public class DemonFighterAnimations : MonoBehaviour
         }
     }
 
-
     private void Die()
     {
         // Play animation when dead
@@ -98,7 +97,7 @@ public class DemonFighterAnimations : MonoBehaviour
             {
                 animator.SetBool("IsDeadBool", true);
                 AkSoundEngine.PostEvent("DemonFighterDeath", gameObject);
-                GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
+                //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 demonFighterMovement.enabled = false;
                 demonFighterCollider.enabled = false;
                 StartCoroutine(DieCoroutine());
@@ -109,8 +108,6 @@ public class DemonFighterAnimations : MonoBehaviour
     private IEnumerator DieCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
-        animator.enabled = false;
-        yield return new WaitForSeconds(3.5f);
         Destroy(gameObject);
     }
 

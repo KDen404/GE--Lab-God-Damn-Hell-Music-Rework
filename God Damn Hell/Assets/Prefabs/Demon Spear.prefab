@@ -64,8 +64,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4040928, y: 2.9210575, z: 0.8623499}
-  m_Center: {x: -0.033244967, y: 1.5905579, z: 0.027199537}
+  m_Size: {x: 1.4040928, y: 3.9524474, z: 0.8623499}
+  m_Center: {x: -0.033244967, y: 2.1062524, z: 0.027199537}
 --- !u!114 &1897509408213797481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
   animator: {fileID: 1897509406810914439}
   runSpeed: 6
   inAttackRange: 0
-  spearCollider: {fileID: 1897509408213797478}
+  spearCollider: {fileID: 1897509407798513337}
   knockbackStrength: 5
 --- !u!114 &1897509408213797480
 MonoBehaviour:
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd1afa1cc35d5743881d564e56857e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 10
+  healthPoints: 1
   movementspeed: 2.5
   aggroRange: 10
   activated: 0
