@@ -12,6 +12,7 @@ public class Deathscreen : MonoBehaviour
 
     private Color imageColor;
     private Color messageColor;
+    private float timediff = 0f;
 
 
     private void Start()
@@ -38,10 +39,12 @@ public class Deathscreen : MonoBehaviour
             if(player.GetComponent<PlayerStats>().currentHealthPoints <= 0) {
                 deathpanel.gameObject.SetActive(true);
 
-                imageColor.a += 0.002f;
+                timediff = Time.deltaTime / 3f;
+
+                imageColor.a += timediff;
                 deathpanel.gameObject.GetComponent<Image>().color = imageColor;
             
-                messageColor.a += 0.002f;
+                messageColor.a += timediff;
                 deathMessage.color = messageColor;
 
                 if(imageColor.a >= 1f)
