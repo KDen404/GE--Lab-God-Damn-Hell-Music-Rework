@@ -41,6 +41,8 @@ public class DemonSpearAnimations : MonoBehaviour
 
     private void Update()
     {
+        timeCount += Time.deltaTime;
+
         Run();
         Attack();
         Die();
@@ -86,7 +88,8 @@ public class DemonSpearAnimations : MonoBehaviour
             {
                 animator.SetBool("IsDeadBool", true);
                 AkSoundEngine.PostEvent("DemonSpearDeath", gameObject);
-                GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
+                //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
+                //Debug.Log("activity changed");
                 demonSpearMovement.enabled = false;
                 demonSpearCollider.enabled = false;
                 StartCoroutine(DieCoroutine());
@@ -97,8 +100,6 @@ public class DemonSpearAnimations : MonoBehaviour
     private IEnumerator DieCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
-        animator.enabled = false;
-        yield return new WaitForSeconds(3.5f);
         Destroy(gameObject);
     }
 
