@@ -21,8 +21,6 @@ public class DemonFighterAnimations : MonoBehaviour
     public Collider rightHandCollider;
 
     // Die
-    private float timeDead;
-    private bool isDead;
     private Collider demonFighterCollider;
 
     // IdleWalk
