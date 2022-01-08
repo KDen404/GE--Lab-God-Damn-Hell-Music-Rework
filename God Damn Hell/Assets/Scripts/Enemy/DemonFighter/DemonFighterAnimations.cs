@@ -42,6 +42,8 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void Update()
     {
+        timeCount += Time.deltaTime;
+
         Run();
         Attack();
         Die();

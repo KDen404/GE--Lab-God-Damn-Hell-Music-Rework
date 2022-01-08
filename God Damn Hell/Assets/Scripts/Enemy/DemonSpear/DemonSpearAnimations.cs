@@ -41,6 +41,8 @@ public class DemonSpearAnimations : MonoBehaviour
 
     private void Update()
     {
+        timeCount += Time.deltaTime;
+
         Run();
         Attack();
         Die();
