@@ -92,6 +92,7 @@ public class DemonSpearAnimations : MonoBehaviour
                 //Debug.Log("activity changed");
                 demonSpearMovement.enabled = false;
                 demonSpearCollider.enabled = false;
+                agent.enabled = false;
                 StartCoroutine(DieCoroutine());
             }
         }

@@ -114,6 +114,7 @@ public class DemonMageAnimations : MonoBehaviour
                 GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 demonMageMovement.enabled = false;
                 demonMageCollider.enabled = false;
+                agent.enabled = false;
                 StartCoroutine(DieCoroutine());
             }
         }

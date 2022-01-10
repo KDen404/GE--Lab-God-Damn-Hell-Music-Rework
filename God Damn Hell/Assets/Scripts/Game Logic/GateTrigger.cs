@@ -8,8 +8,11 @@ public class GateTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        gatelogic.CloseGates();
-        transform.parent.transform.GetComponent<EnemyTracker>().triggered = true;
-        Destroy(gameObject);
+        if (other.gameObject.tag == "Player")
+        {
+            gatelogic.CloseGates();
+            transform.parent.transform.GetComponent<EnemyTracker>().triggered = true;
+            Destroy(gameObject);
+        }
     }
 }

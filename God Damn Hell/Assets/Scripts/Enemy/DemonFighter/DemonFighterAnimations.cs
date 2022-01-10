@@ -98,6 +98,7 @@ public class DemonFighterAnimations : MonoBehaviour
                 //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 demonFighterMovement.enabled = false;
                 demonFighterCollider.enabled = false;
+                agent.enabled = false;
                 StartCoroutine(DieCoroutine());
             }
         }

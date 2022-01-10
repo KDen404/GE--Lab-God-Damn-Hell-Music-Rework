@@ -12,7 +12,7 @@ public class Hit : MonoBehaviour
     private float countPushBack;
     private bool enemyHit = false;
 
-    public int tempKnockbackStrength = 13;
+    private float tempKnockbackStrength = 1.5f;
 
     private void Update()
     {
@@ -23,7 +23,8 @@ public class Hit : MonoBehaviour
         {
             countPushBack += Time.deltaTime;
             // Should be a vector for a proper knockback simulation
-            enemy.transform.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
+            //enemy.transform.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
+            enemy.transform.position += (enemy.transform.position - player.transform.position) * tempKnockbackStrength * Time.deltaTime;
 
             if (countPushBack >= 0.5f)
             {
