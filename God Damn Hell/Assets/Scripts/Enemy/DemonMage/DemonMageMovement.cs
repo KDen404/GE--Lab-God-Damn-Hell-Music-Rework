@@ -39,9 +39,10 @@ public class DemonMageMovement : MonoBehaviour
             agent.speed = demonMageRunSpeed;
             agent.destination = player.transform.position;
 
-            if (Vector3.Distance(transform.position, player.transform.position) <= 4)
+            if (agent.remainingDistance <= 8)
             {
                 demonMageAnimations.inAttackRange = true;
+
             }
             else
             {

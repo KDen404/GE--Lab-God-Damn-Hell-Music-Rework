@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 1.2
-    agentHeight: 5.7
+    agentRadius: 0.8
+    agentHeight: 3.6
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.4
+    cellSize: 0.26666668
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -1867,7 +1867,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &121575057
 PrefabInstance:
@@ -2760,7 +2760,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163028169}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa2bf5ebfee4965429cc7aa35327c7e4, type: 3}
   m_Name: 
@@ -2768,6 +2768,7 @@ MonoBehaviour:
   EnemyPrefabs:
   - {fileID: 1897509408213797483, guid: e8de496ac544c874cbd31ddaa8caab06, type: 3}
   - {fileID: 5648358945693428400, guid: fa1e954c2bc12b142a2e50740d1439e3, type: 3}
+  - {fileID: 376578658589127319, guid: 56d4328632c60564191089cac15b76b2, type: 3}
   floors:
   - {fileID: 1854230813}
   - {fileID: 473549555}
@@ -18889,7 +18890,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1653058925
 MonoBehaviour:
@@ -24877,7 +24878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1591103877022060369, guid: b730b5b49fc543f4aaf999d87ee27b46, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1591103877022060369, guid: b730b5b49fc543f4aaf999d87ee27b46, type: 3}
       propertyPath: m_AnchorMax.x
@@ -25312,7 +25313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7105396838946744868, guid: db80c50ee6d1df8478d71d09b30d3ceb, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7105396838946744868, guid: db80c50ee6d1df8478d71d09b30d3ceb, type: 3}
       propertyPath: m_AnchorMax.x

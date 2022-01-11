@@ -12,7 +12,7 @@ public class InstantiateEnemies : MonoBehaviour
     {
             for (int i = 0; i < floors.Length; i++)
             {
-                Instantiate(EnemyPrefabs[Random.Range(0, EnemyPrefabs.Length - 1)], floors[i].transform.position, Quaternion.identity, floors[i].transform.parent.parent);
+                Instantiate(EnemyPrefabs[i * 3 % 2], floors[i].transform.position, Quaternion.identity, floors[i].transform.parent.parent);
             }
     }
 }

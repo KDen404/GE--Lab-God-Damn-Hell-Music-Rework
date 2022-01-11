@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3162541825874768270}
   - component: {fileID: 3713324313937937553}
   - component: {fileID: -7492507096816253072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DemonMagePyroball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120877211919455206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7848350696072397742}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 3047914066435820648}
   - component: {fileID: 3315520467373463144}
   - component: {fileID: 5311771640427950082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

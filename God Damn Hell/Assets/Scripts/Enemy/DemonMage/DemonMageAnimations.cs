@@ -22,7 +22,7 @@ public class DemonMageAnimations : MonoBehaviour
     private GameObject castedObject;
     public Transform pyroballEmpty;
     public Transform fireballEmpty;
-    private Transform player;
+    private bool isCasting = false;
 
     // Die
     private Collider demonMageCollider;
@@ -40,7 +40,6 @@ public class DemonMageAnimations : MonoBehaviour
         demonMageCollider = GetComponent<BoxCollider>();
         randIdleWaitTime = Random.Range(2f, 8f);
         agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void Update()
@@ -74,32 +73,27 @@ public class DemonMageAnimations : MonoBehaviour
     private void Attack()
     {
         // If the player is close enough start attacking
-        if (inAttackRange == true && (!animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || !animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2")))
+        if (inAttackRange == true && isCasting == false)
         {
-            animator.SetFloat("AttackFloat", random = Random.Range(0f, 1f));
+            animator.SetFloat("AttackFloat", 1f);
+            isCasting = true;
             AkSoundEngine.PostEvent("DemonMageCast", gameObject);
             StartCoroutine(DemonMageCast());
         }
         else
         {
-            random = 0f;
+            animator.SetFloat("AttackFloat", 0f);
+            if (!animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1"))
+            {
+                isCasting = false;
+            }
         }
     }
 
     private IEnumerator DemonMageCast()
     {
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(1).length);
-
-        if (random < 0.2f && random > 0f)
-        {
-            Instantiate(pyroball, transform.position + new Vector3(0f, 1f, 0f), Quaternion.identity);
-        }
-        else if (random > 0.2f)
-        {
-            Instantiate(fireball, transform.position + new Vector3(0f, 3f, 0f), Quaternion.identity);
-        }
-
-        Debug.Log(castedObject);
+        yield return new WaitForSeconds(1f);
+        Instantiate(fireball, new Vector3(transform.position.x, 3f, transform.position.z + 2), transform.rotation);
     }
 
     private void Die()
@@ -111,7 +105,7 @@ public class DemonMageAnimations : MonoBehaviour
             {
                 animator.SetBool("IsDeadBool", true);
                 AkSoundEngine.PostEvent("DemonMageDeath", gameObject);
-                GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
+                //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 demonMageMovement.enabled = false;
                 demonMageCollider.enabled = false;
                 agent.enabled = false;

@@ -21,9 +21,6 @@ public class DemonMageHit : MonoBehaviour
             AkSoundEngine.PostEvent("FireballHit", gameObject);
             Debug.Log("Hit player, destroy object");
         }
-        else if (other.gameObject.transform.tag == "Enemy")
-        {
-        }
         else
         {
             Destroy(gameObject);
