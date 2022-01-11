@@ -47,7 +47,8 @@ public class DemonSpearMovement : MonoBehaviour
         {
             if ((Vector3.Distance(transform.position, player.transform.position) <= aggroRange))    //if the Player is in a certain distance
             {
-                if (Vector3.Angle(transform.forward, player.transform.position - transform.position) <= 40) //if the player is in the view field of the enemy
+                if ((Vector3.Angle(transform.forward, player.transform.position - transform.position) <= 40) //if the player is in the view field of the enemy
+                    || (Vector3.Distance(transform.position, player.transform.position) <= aggroRange / 2))  // or very close
                 {
                     activated = true;
                     GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
