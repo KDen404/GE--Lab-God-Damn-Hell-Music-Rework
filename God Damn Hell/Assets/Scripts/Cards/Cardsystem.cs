@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Cardsystem : MonoBehaviour
 {
     public GameObject player;
     private string searchedItem;
     
-    public void equipOnClick(Card card)
+    public void equipOnClick(GameObject card)
     {
-        searchedItem = card.itemname;
+        searchedItem = card.GetComponent<Card>().itemname;
         searchForItem(player.transform);
     }
 
