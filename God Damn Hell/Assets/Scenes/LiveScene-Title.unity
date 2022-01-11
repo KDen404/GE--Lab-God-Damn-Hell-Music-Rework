@@ -927,6 +927,47 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: a0af5abcdcd766b49a1903b953f88534, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 332711cf021b07649b53ca0e0189f2e0, type: 3}
+--- !u!1 &421450550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8654997181991920665, guid: a1694509317b3454bbaeec4dbeeebb40, type: 3}
+  m_PrefabInstance: {fileID: 8654997183190798788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &421450552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421450550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aad8c4943d77f64ba5009c7cef676b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!114 &421450553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421450550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e08dc9561387e4793875cc0ad664ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &446573201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4196,6 +4237,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 806511308}
+    - target: {fileID: 3014578280176539674, guid: a1694509317b3454bbaeec4dbeeebb40, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3014578280408543358, guid: a1694509317b3454bbaeec4dbeeebb40, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8654997181523310876, guid: a1694509317b3454bbaeec4dbeeebb40, type: 3}
       propertyPath: m_Name
       value: MainMenuUI
@@ -4244,5 +4293,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8654997181991920676, guid: a1694509317b3454bbaeec4dbeeebb40, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a1694509317b3454bbaeec4dbeeebb40, type: 3}

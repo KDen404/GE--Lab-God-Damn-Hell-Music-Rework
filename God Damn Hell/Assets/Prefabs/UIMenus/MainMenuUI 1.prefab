@@ -766,7 +766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8654997181991920666
 Transform:
   m_ObjectHideFlags: 0
@@ -2139,79 +2139,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5893334967946374769, guid: efbc3eda4006aa14990c30b930cf1fce, type: 3}
   m_PrefabInstance: {fileID: 8654997181375384558}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8654997181629188573
+--- !u!114 &8654997183094592827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3014578279676795356}
+  m_GameObject: {fileID: 3014578279242783361}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemname: Potion
-  defense: 0
-  cost: 0
---- !u!114 &8654997182560279899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3014578280649788543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemname: Character LeatherBottom
-  defense: 0
-  cost: 0
---- !u!114 &8654997182589599182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3014578280238409118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemname: Character IronBottom
-  defense: 0
-  cost: 0
---- !u!114 &8654997182816763738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3014578279782412975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemname: Character LeatherHead
-  defense: 0
-  cost: 0
---- !u!114 &8654997182936354514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3014578279491328966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemname: Character Sword
+  itemname: Character IronHead
   defense: 0
   cost: 0
 --- !u!114 &8654997183046497725
@@ -2229,19 +2169,64 @@ MonoBehaviour:
   itemname: Character LeatherTop
   defense: 0
   cost: 0
---- !u!114 &8654997183094592827
+--- !u!114 &8654997182936354514
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3014578279242783361}
+  m_GameObject: {fileID: 3014578279491328966}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemname: Character IronHead
+  itemname: Character Sword
+  defense: 0
+  cost: 0
+--- !u!114 &8654997181629188573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014578279676795356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemname: Potion
+  defense: 0
+  cost: 0
+--- !u!114 &8654997182816763738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014578279782412975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemname: Character LeatherHead
+  defense: 0
+  cost: 0
+--- !u!114 &8654997182589599182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014578280238409118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemname: Character IronBottom
   defense: 0
   cost: 0
 --- !u!114 &8654997183178504465
@@ -2257,6 +2242,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemname: Character IronTop
+  defense: 0
+  cost: 0
+--- !u!114 &8654997182560279899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014578280649788543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemname: Character LeatherBottom
   defense: 0
   cost: 0
 --- !u!1001 &8654997182676833540
