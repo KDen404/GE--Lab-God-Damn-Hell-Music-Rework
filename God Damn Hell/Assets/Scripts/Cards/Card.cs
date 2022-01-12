@@ -8,6 +8,7 @@ public class Card : MonoBehaviour
 
     public int defense;     
     public int cost;
-
+    //public enum itemtype{head, top, bottom};
+    public string itemtype; // should be one of the types
 }
     
