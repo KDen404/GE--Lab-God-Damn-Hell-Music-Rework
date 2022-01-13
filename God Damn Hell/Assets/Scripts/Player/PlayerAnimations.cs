@@ -12,6 +12,7 @@ public class PlayerAnimations : MonoBehaviour
     // Run
     private float angle;
     private Vector2 movementAxis;
+    private uint playingID; // Sound
 
     // GetHit
     private int tempHealth;
@@ -55,7 +56,8 @@ public class PlayerAnimations : MonoBehaviour
 
         if (movementAxis.x != 0 || movementAxis.y != 0)
         {
-            AkSoundEngine.PostEvent("PlayerRun", gameObject);
+            playingID = AkSoundEngine.PostEvent("PlayerRun", gameObject);
+            AkSoundEngine.StopPlayingID(playingID, 500, AkCurveInterpolation.AkCurveInterpolation_Constant);
         }
 
         if (angle <= 180 && angle > 90)
