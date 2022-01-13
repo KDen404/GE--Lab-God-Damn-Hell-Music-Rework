@@ -192,7 +192,7 @@ public class PlayerAnimations : MonoBehaviour
     private void GetHit()
     {
         // Start() creates a copy of healthPoints and if the hp change the animation plays and the copy gets updated
-        if (tempHealth >= playerstats.currentHealthPoints)
+        if (tempHealth > playerstats.currentHealthPoints)
         {
             float randFloat = Random.Range(0f, 1f);
             animator.SetFloat("GetHitFloat", randFloat);
