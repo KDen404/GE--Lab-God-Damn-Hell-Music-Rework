@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 2cf0a6c6ff06204e849dee12c2032dc7
       Path: Events\Default Work Unit\Main_Menu
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 253.93124
+      minDuration: 253.93124
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

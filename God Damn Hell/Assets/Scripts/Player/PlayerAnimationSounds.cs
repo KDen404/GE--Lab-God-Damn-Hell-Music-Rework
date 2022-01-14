@@ -8,5 +8,25 @@ public class PlayerAnimationSounds : MonoBehaviour
     {
         AkSoundEngine.PostEvent("PlayerRun", gameObject);
     }
+
+    public void SwordSwingSound()
+    {
+        AkSoundEngine.PostEvent("SwordSwing", gameObject);
+    }
+
+    public void DeathSound()
+    {
+        AkSoundEngine.PostEvent("PlayerDeath", gameObject);
+    }
+
+    public void PlayerGotHit()
+    {
+        AkSoundEngine.PostEvent("PlayerGotHit", gameObject);
+    }
+
+    public void AttackBlockSound()
+    {
+        AkSoundEngine.PostEvent("AttackBlocked", gameObject);
+    }
 }
 

@@ -179,7 +179,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -8384043226727341471, guid: 4d5fcd37a3bb91048ad3c96a16777ea8, type: 3}
+  m_Motion: {fileID: 7400000, guid: 5ded43d185f54d54c8cf42c792a4221c, type: 2}
   m_Tag: 
   m_SpeedParameter: MovementForward
   m_MirrorParameter: 
@@ -230,7 +230,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -5219792900994269182, guid: 4d5fcd37a3bb91048ad3c96a16777ea8, type: 3}
+  m_Motion: {fileID: 7400000, guid: 858f5bdac057f0d408c30c5f021f4cac, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1323,7 +1323,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7048744585371162242, guid: 4d5fcd37a3bb91048ad3c96a16777ea8, type: 3}
+    m_Motion: {fileID: 7400000, guid: 7b9fd59338026a84bbf432116ddcdf15, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -1331,7 +1331,7 @@ BlendTree:
     m_DirectBlendParameter: MovementForward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 3482978819869603229, guid: 4d5fcd37a3bb91048ad3c96a16777ea8, type: 3}
+    m_Motion: {fileID: 7400000, guid: a6e488eddf82af24fb1a0a28a325438d, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -1366,7 +1366,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 4576277367695410566, guid: 4d5fcd37a3bb91048ad3c96a16777ea8, type: 3}
+  m_Motion: {fileID: 7400000, guid: e2ee88496d8b798419bd67fe03e34683, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1548,7 +1548,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 184687723582539658, guid: 4d5fcd37a3bb91048ad3c96a16777ea8, type: 3}
+  m_Motion: {fileID: 7400000, guid: 8b549c55291ea72489e1c67e099b2f36, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

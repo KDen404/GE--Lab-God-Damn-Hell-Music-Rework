@@ -1,20 +1,619 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\GE Lab\GE--Lab-God-Damn-Hell\God Damn Hell\God Damn Hell_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\GE Lab\GE--Lab-God-Damn-Hell\God Damn Hell\God Damn Hell_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\GE Lab\GE--Lab-God-Damn-Hell\God Damn Hell\God Damn Hell_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Projekte Studium\GE-Lab\God Damn Hell\God Damn Hell_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Projekte Studium\GE-Lab\God Damn Hell\God Damn Hell_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Projekte Studium\GE-Lab\God Damn Hell\God Damn Hell_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\GE Lab\GE--Lab-God-Damn-Hell\God Damn Hell\God Damn Hell_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Projekte Studium\GE-Lab\God Damn Hell\God Damn Hell_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1069431850" Language="SFX" Hash="559701604">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3964335501" Name="PlayerRun" ObjectPath="\Events\Default Work Unit\Player\PlayerRun" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="19659747" Language="SFX">
+							<ShortName>steps\PlayerSteps4.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps4_20D55A70.wem</Path>
+						</File>
+						<File Id="116019335" Language="SFX">
+							<ShortName>steps\PlayerSteps7.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps7_09BB2C46.wem</Path>
+						</File>
+						<File Id="189785139" Language="SFX">
+							<ShortName>steps\PlayerSteps5.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps5_856957A0.wem</Path>
+						</File>
+						<File Id="195857176" Language="SFX">
+							<ShortName>steps\PlayerSteps11.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps11_7D0BDC31.wem</Path>
+						</File>
+						<File Id="778336763" Language="SFX">
+							<ShortName>steps\PlayerSteps6.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps6_40650A5B.wem</Path>
+						</File>
+						<File Id="844310729" Language="SFX">
+							<ShortName>steps\PlayerSteps8.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps8_F11E7416.wem</Path>
+						</File>
+						<File Id="855460903" Language="SFX">
+							<ShortName>steps\PlayerSteps12.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps12_9CFA85C5.wem</Path>
+						</File>
+						<File Id="934188357" Language="SFX">
+							<ShortName>steps\PlayerSteps9.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps9_9F289A33.wem</Path>
+						</File>
+						<File Id="950158012" Language="SFX">
+							<ShortName>steps\PlayerSteps1.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps1_AF6B13CF.wem</Path>
+						</File>
+						<File Id="950707559" Language="SFX">
+							<ShortName>steps\PlayerSteps10.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps10_41BEC1DF.wem</Path>
+						</File>
+						<File Id="951640190" Language="SFX">
+							<ShortName>steps\PlayerSteps3.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps3_B1E6D478.wem</Path>
+						</File>
+						<File Id="954900024" Language="SFX">
+							<ShortName>steps\PlayerSteps2.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps2_EF2AAA75.wem</Path>
+						</File>
+						<File Id="1023572150" Language="SFX">
+							<ShortName>steps\PlayerSteps13.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps13_1B150117.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1328934038" Name="SwordSwing" ObjectPath="\Events\Default Work Unit\Player\SwordSwing" DurationType="OneShot" DurationMin="0.503433" DurationMax="0.681812">
+					<IncludedMemoryFiles>
+						<File Id="215669193" Language="SFX">
+							<ShortName>sword_swoosh-16.wav</ShortName>
+							<Path>SFX\sword_swoosh-16_F2382A79.wem</Path>
+						</File>
+						<File Id="286525752" Language="SFX">
+							<ShortName>sword_swoosh-06.wav</ShortName>
+							<Path>SFX\sword_swoosh-06_1C5E255C.wem</Path>
+						</File>
+						<File Id="300789840" Language="SFX">
+							<ShortName>sword_swoosh-14.wav</ShortName>
+							<Path>SFX\sword_swoosh-14_767F51A5.wem</Path>
+						</File>
+						<File Id="413299443" Language="SFX">
+							<ShortName>sword_swoosh-02.wav</ShortName>
+							<Path>SFX\sword_swoosh-02_6EC86333.wem</Path>
+						</File>
+						<File Id="658697373" Language="SFX">
+							<ShortName>sword_swoosh-07.wav</ShortName>
+							<Path>SFX\sword_swoosh-07_7F40F135.wem</Path>
+						</File>
+						<File Id="740253206" Language="SFX">
+							<ShortName>sword_swoosh-09.wav</ShortName>
+							<Path>SFX\sword_swoosh-09_728E34CE.wem</Path>
+						</File>
+						<File Id="743011640" Language="SFX">
+							<ShortName>sword_swoosh-15.wav</ShortName>
+							<Path>SFX\sword_swoosh-15_33C11275.wem</Path>
+						</File>
+						<File Id="754560035" Language="SFX">
+							<ShortName>sword_swoosh-13.wav</ShortName>
+							<Path>SFX\sword_swoosh-13_3049199D.wem</Path>
+						</File>
+						<File Id="833641402" Language="SFX">
+							<ShortName>sword_swoosh-03.wav</ShortName>
+							<Path>SFX\sword_swoosh-03_974BFA51.wem</Path>
+						</File>
+						<File Id="894742505" Language="SFX">
+							<ShortName>sword_swoosh-05.wav</ShortName>
+							<Path>SFX\sword_swoosh-05_7EE2B8B2.wem</Path>
+						</File>
+						<File Id="965087322" Language="SFX">
+							<ShortName>sword_swoosh-04.wav</ShortName>
+							<Path>SFX\sword_swoosh-04_410D53C6.wem</Path>
+						</File>
+						<File Id="978745908" Language="SFX">
+							<ShortName>sword_swoosh-10.wav</ShortName>
+							<Path>SFX\sword_swoosh-10_30A3CE4D.wem</Path>
+						</File>
+						<File Id="1007199149" Language="SFX">
+							<ShortName>sword_swoosh-08.wav</ShortName>
+							<Path>SFX\sword_swoosh-08_92E6426A.wem</Path>
+						</File>
+						<File Id="1026807264" Language="SFX">
+							<ShortName>sword_swoosh-01.wav</ShortName>
+							<Path>SFX\sword_swoosh-01_952C93AF.wem</Path>
+						</File>
+						<File Id="1051229601" Language="SFX">
+							<ShortName>sword_swoosh-11.wav</ShortName>
+							<Path>SFX\sword_swoosh-11_B2B7C6FB.wem</Path>
+						</File>
+						<File Id="1056415832" Language="SFX">
+							<ShortName>sword_swoosh-12.wav</ShortName>
+							<Path>SFX\sword_swoosh-12_5F1C7B7B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2010665979">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2005704188" Language="SFX" Hash="155794133">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_Menu</ObjectPath>
+			<ShortName>Main_Menu</ShortName>
+			<Path>Main_Menu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2005704188" Name="Main_Menu" ObjectPath="\Events\Default Work Unit\Main_Menu" DurationType="OneShot" DurationMin="253.931244" DurationMax="253.931244">
+					<IncludedMemoryFiles>
+						<File Id="206766459" Language="SFX">
+							<ShortName>Devils step.wav</ShortName>
+							<Path>SFX\Devils step_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2242381963" Language="SFX" Hash="3163247637">
+			<ObjectPath>\SoundBanks\Default Work Unit\Enemies</ObjectPath>
+			<ShortName>Enemies</ShortName>
+			<Path>Enemies.bnk</Path>
+			<IncludedEvents>
+				<Event Id="725206385" Name="DemonFighterDeath" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterDeath" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3929558812" Name="DemonFighterGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterGotHit" DurationType="OneShot" DurationMin="0.841333" DurationMax="1.046208">
+					<IncludedMemoryFiles>
+						<File Id="6507290" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-2.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-2_10C4C929.wem</Path>
+						</File>
+						<File Id="9950599" Language="SFX">
+							<ShortName>Sword_Hit_slash-15.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-15_10C4C929.wem</Path>
+						</File>
+						<File Id="58095289" Language="SFX">
+							<ShortName>Sword_Hit_slash-19.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-19_10C4C929.wem</Path>
+						</File>
+						<File Id="142777623" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-1.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-1_10C4C929.wem</Path>
+						</File>
+						<File Id="179311268" Language="SFX">
+							<ShortName>Sword_Hit_slash-02.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-02_10C4C929.wem</Path>
+						</File>
+						<File Id="232424747" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-3.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-3_10C4C929.wem</Path>
+						</File>
+						<File Id="232636705" Language="SFX">
+							<ShortName>Sword_Hit_slash-09.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-09_10C4C929.wem</Path>
+						</File>
+						<File Id="304736161" Language="SFX">
+							<ShortName>Sword_Hit_slash-10.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-10_10C4C929.wem</Path>
+						</File>
+						<File Id="320821969" Language="SFX">
+							<ShortName>Sword_Hit_slash-17.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-17_10C4C929.wem</Path>
+						</File>
+						<File Id="377089585" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-4.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-4_10C4C929.wem</Path>
+						</File>
+						<File Id="384340456" Language="SFX">
+							<ShortName>Sword_Hit_slash-16.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-16_10C4C929.wem</Path>
+						</File>
+						<File Id="508315313" Language="SFX">
+							<ShortName>Sword_Hit_slash-12.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-12_10C4C929.wem</Path>
+						</File>
+						<File Id="555420738" Language="SFX">
+							<ShortName>Sword_Hit_slash-06.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-06_10C4C929.wem</Path>
+						</File>
+						<File Id="608810738" Language="SFX">
+							<ShortName>Sword_Hit_slash-04.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-04_10C4C929.wem</Path>
+						</File>
+						<File Id="655105608" Language="SFX">
+							<ShortName>Sword_Hit_slash-13.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-13_10C4C929.wem</Path>
+						</File>
+						<File Id="723717117" Language="SFX">
+							<ShortName>Sword_Hit_slash-03.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-03_10C4C929.wem</Path>
+						</File>
+						<File Id="728065248" Language="SFX">
+							<ShortName>Sword_Hit_slash-18.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-18_10C4C929.wem</Path>
+						</File>
+						<File Id="892443816" Language="SFX">
+							<ShortName>Sword_Hit_slash-07.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-07_10C4C929.wem</Path>
+						</File>
+						<File Id="925379347" Language="SFX">
+							<ShortName>Sword_Hit_slash-14.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-14_10C4C929.wem</Path>
+						</File>
+						<File Id="945160037" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-5.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-5_10C4C929.wem</Path>
+						</File>
+						<File Id="946420853" Language="SFX">
+							<ShortName>Sword_Hit_slash-11.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-11_10C4C929.wem</Path>
+						</File>
+						<File Id="996943855" Language="SFX">
+							<ShortName>Sword_Hit_slash-01.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-01_10C4C929.wem</Path>
+						</File>
+						<File Id="1006104691" Language="SFX">
+							<ShortName>Sword_Hit_slash-08.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-08_10C4C929.wem</Path>
+						</File>
+						<File Id="1039975061" Language="SFX">
+							<ShortName>Sword_Hit_slash-05.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="440531392" Name="DemonFighterHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterHit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="36191336" Name="DemonFighterRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterRun" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3496783742" Name="DemonFighterWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterWalk" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1895283565" Name="DemonMageGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageGotHit" DurationType="OneShot" DurationMin="0.841333" DurationMax="1.046208">
+					<IncludedMemoryFiles>
+						<File Id="6507290" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-2.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-2_10C4C929.wem</Path>
+						</File>
+						<File Id="9950599" Language="SFX">
+							<ShortName>Sword_Hit_slash-15.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-15_10C4C929.wem</Path>
+						</File>
+						<File Id="58095289" Language="SFX">
+							<ShortName>Sword_Hit_slash-19.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-19_10C4C929.wem</Path>
+						</File>
+						<File Id="142777623" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-1.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-1_10C4C929.wem</Path>
+						</File>
+						<File Id="179311268" Language="SFX">
+							<ShortName>Sword_Hit_slash-02.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-02_10C4C929.wem</Path>
+						</File>
+						<File Id="232424747" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-3.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-3_10C4C929.wem</Path>
+						</File>
+						<File Id="232636705" Language="SFX">
+							<ShortName>Sword_Hit_slash-09.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-09_10C4C929.wem</Path>
+						</File>
+						<File Id="304736161" Language="SFX">
+							<ShortName>Sword_Hit_slash-10.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-10_10C4C929.wem</Path>
+						</File>
+						<File Id="320821969" Language="SFX">
+							<ShortName>Sword_Hit_slash-17.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-17_10C4C929.wem</Path>
+						</File>
+						<File Id="377089585" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-4.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-4_10C4C929.wem</Path>
+						</File>
+						<File Id="384340456" Language="SFX">
+							<ShortName>Sword_Hit_slash-16.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-16_10C4C929.wem</Path>
+						</File>
+						<File Id="508315313" Language="SFX">
+							<ShortName>Sword_Hit_slash-12.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-12_10C4C929.wem</Path>
+						</File>
+						<File Id="555420738" Language="SFX">
+							<ShortName>Sword_Hit_slash-06.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-06_10C4C929.wem</Path>
+						</File>
+						<File Id="608810738" Language="SFX">
+							<ShortName>Sword_Hit_slash-04.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-04_10C4C929.wem</Path>
+						</File>
+						<File Id="655105608" Language="SFX">
+							<ShortName>Sword_Hit_slash-13.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-13_10C4C929.wem</Path>
+						</File>
+						<File Id="723717117" Language="SFX">
+							<ShortName>Sword_Hit_slash-03.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-03_10C4C929.wem</Path>
+						</File>
+						<File Id="728065248" Language="SFX">
+							<ShortName>Sword_Hit_slash-18.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-18_10C4C929.wem</Path>
+						</File>
+						<File Id="892443816" Language="SFX">
+							<ShortName>Sword_Hit_slash-07.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-07_10C4C929.wem</Path>
+						</File>
+						<File Id="925379347" Language="SFX">
+							<ShortName>Sword_Hit_slash-14.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-14_10C4C929.wem</Path>
+						</File>
+						<File Id="945160037" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-5.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-5_10C4C929.wem</Path>
+						</File>
+						<File Id="946420853" Language="SFX">
+							<ShortName>Sword_Hit_slash-11.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-11_10C4C929.wem</Path>
+						</File>
+						<File Id="996943855" Language="SFX">
+							<ShortName>Sword_Hit_slash-01.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-01_10C4C929.wem</Path>
+						</File>
+						<File Id="1006104691" Language="SFX">
+							<ShortName>Sword_Hit_slash-08.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-08_10C4C929.wem</Path>
+						</File>
+						<File Id="1039975061" Language="SFX">
+							<ShortName>Sword_Hit_slash-05.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4294451055" Name="DemonMageRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageRun" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2140539667" Name="DemonMageWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageWalk" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2102040365" Name="DemonSpearDeath" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearDeath" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4061880024" Name="DemonSpearGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearGotHit" DurationType="OneShot" DurationMin="0.841333" DurationMax="1.046208">
+					<IncludedMemoryFiles>
+						<File Id="6507290" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-2.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-2_10C4C929.wem</Path>
+						</File>
+						<File Id="9950599" Language="SFX">
+							<ShortName>Sword_Hit_slash-15.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-15_10C4C929.wem</Path>
+						</File>
+						<File Id="58095289" Language="SFX">
+							<ShortName>Sword_Hit_slash-19.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-19_10C4C929.wem</Path>
+						</File>
+						<File Id="142777623" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-1.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-1_10C4C929.wem</Path>
+						</File>
+						<File Id="179311268" Language="SFX">
+							<ShortName>Sword_Hit_slash-02.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-02_10C4C929.wem</Path>
+						</File>
+						<File Id="232424747" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-3.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-3_10C4C929.wem</Path>
+						</File>
+						<File Id="232636705" Language="SFX">
+							<ShortName>Sword_Hit_slash-09.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-09_10C4C929.wem</Path>
+						</File>
+						<File Id="304736161" Language="SFX">
+							<ShortName>Sword_Hit_slash-10.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-10_10C4C929.wem</Path>
+						</File>
+						<File Id="320821969" Language="SFX">
+							<ShortName>Sword_Hit_slash-17.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-17_10C4C929.wem</Path>
+						</File>
+						<File Id="377089585" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-4.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-4_10C4C929.wem</Path>
+						</File>
+						<File Id="384340456" Language="SFX">
+							<ShortName>Sword_Hit_slash-16.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-16_10C4C929.wem</Path>
+						</File>
+						<File Id="508315313" Language="SFX">
+							<ShortName>Sword_Hit_slash-12.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-12_10C4C929.wem</Path>
+						</File>
+						<File Id="555420738" Language="SFX">
+							<ShortName>Sword_Hit_slash-06.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-06_10C4C929.wem</Path>
+						</File>
+						<File Id="608810738" Language="SFX">
+							<ShortName>Sword_Hit_slash-04.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-04_10C4C929.wem</Path>
+						</File>
+						<File Id="655105608" Language="SFX">
+							<ShortName>Sword_Hit_slash-13.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-13_10C4C929.wem</Path>
+						</File>
+						<File Id="723717117" Language="SFX">
+							<ShortName>Sword_Hit_slash-03.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-03_10C4C929.wem</Path>
+						</File>
+						<File Id="728065248" Language="SFX">
+							<ShortName>Sword_Hit_slash-18.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-18_10C4C929.wem</Path>
+						</File>
+						<File Id="892443816" Language="SFX">
+							<ShortName>Sword_Hit_slash-07.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-07_10C4C929.wem</Path>
+						</File>
+						<File Id="925379347" Language="SFX">
+							<ShortName>Sword_Hit_slash-14.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-14_10C4C929.wem</Path>
+						</File>
+						<File Id="945160037" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-5.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-5_10C4C929.wem</Path>
+						</File>
+						<File Id="946420853" Language="SFX">
+							<ShortName>Sword_Hit_slash-11.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-11_10C4C929.wem</Path>
+						</File>
+						<File Id="996943855" Language="SFX">
+							<ShortName>Sword_Hit_slash-01.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-01_10C4C929.wem</Path>
+						</File>
+						<File Id="1006104691" Language="SFX">
+							<ShortName>Sword_Hit_slash-08.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-08_10C4C929.wem</Path>
+						</File>
+						<File Id="1039975061" Language="SFX">
+							<ShortName>Sword_Hit_slash-05.wav</ShortName>
+							<Path>SFX\Sword_Hit_slash-05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="804613244" Name="DemonSpearHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearHit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="537156876" Name="DemonSpearRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearRun" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3167257242" Name="DemonSpearWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearWalk" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2005704188" Name="Main_Menu" ObjectPath="\Events\Default Work Unit\Main_Menu" DurationType="OneShot" DurationMin="253.931244" DurationMax="253.931244">
+					<IncludedMemoryFiles>
+						<File Id="206766459" Language="SFX">
+							<ShortName>Devils step.wav</ShortName>
+							<Path>SFX\Devils step_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1656947812" Name="PlayerDeath" ObjectPath="\Events\Default Work Unit\Player\PlayerDeath" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="855695183" Name="PlayerGotHit" ObjectPath="\Events\Default Work Unit\Player\PlayerGotHit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2034904168" Name="PlayerHitsEnemy" ObjectPath="\Events\Default Work Unit\Player\PlayerHitsEnemy" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3964335501" Name="PlayerRun" ObjectPath="\Events\Default Work Unit\Player\PlayerRun" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="19659747" Language="SFX">
+							<ShortName>steps\PlayerSteps4.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps4_20D55A70.wem</Path>
+						</File>
+						<File Id="116019335" Language="SFX">
+							<ShortName>steps\PlayerSteps7.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps7_09BB2C46.wem</Path>
+						</File>
+						<File Id="189785139" Language="SFX">
+							<ShortName>steps\PlayerSteps5.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps5_856957A0.wem</Path>
+						</File>
+						<File Id="195857176" Language="SFX">
+							<ShortName>steps\PlayerSteps11.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps11_7D0BDC31.wem</Path>
+						</File>
+						<File Id="778336763" Language="SFX">
+							<ShortName>steps\PlayerSteps6.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps6_40650A5B.wem</Path>
+						</File>
+						<File Id="844310729" Language="SFX">
+							<ShortName>steps\PlayerSteps8.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps8_F11E7416.wem</Path>
+						</File>
+						<File Id="855460903" Language="SFX">
+							<ShortName>steps\PlayerSteps12.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps12_9CFA85C5.wem</Path>
+						</File>
+						<File Id="934188357" Language="SFX">
+							<ShortName>steps\PlayerSteps9.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps9_9F289A33.wem</Path>
+						</File>
+						<File Id="950158012" Language="SFX">
+							<ShortName>steps\PlayerSteps1.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps1_AF6B13CF.wem</Path>
+						</File>
+						<File Id="950707559" Language="SFX">
+							<ShortName>steps\PlayerSteps10.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps10_41BEC1DF.wem</Path>
+						</File>
+						<File Id="951640190" Language="SFX">
+							<ShortName>steps\PlayerSteps3.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps3_B1E6D478.wem</Path>
+						</File>
+						<File Id="954900024" Language="SFX">
+							<ShortName>steps\PlayerSteps2.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps2_EF2AAA75.wem</Path>
+						</File>
+						<File Id="1023572150" Language="SFX">
+							<ShortName>steps\PlayerSteps13.wav</ShortName>
+							<Path>SFX\steps\PlayerSteps13_1B150117.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="478914142" Name="SpearSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\SpearSwing" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1328934038" Name="SwordSwing" ObjectPath="\Events\Default Work Unit\Player\SwordSwing" DurationType="OneShot" DurationMin="0.503433" DurationMax="0.681812">
+					<IncludedMemoryFiles>
+						<File Id="215669193" Language="SFX">
+							<ShortName>sword_swoosh-16.wav</ShortName>
+							<Path>SFX\sword_swoosh-16_F2382A79.wem</Path>
+						</File>
+						<File Id="286525752" Language="SFX">
+							<ShortName>sword_swoosh-06.wav</ShortName>
+							<Path>SFX\sword_swoosh-06_1C5E255C.wem</Path>
+						</File>
+						<File Id="300789840" Language="SFX">
+							<ShortName>sword_swoosh-14.wav</ShortName>
+							<Path>SFX\sword_swoosh-14_767F51A5.wem</Path>
+						</File>
+						<File Id="413299443" Language="SFX">
+							<ShortName>sword_swoosh-02.wav</ShortName>
+							<Path>SFX\sword_swoosh-02_6EC86333.wem</Path>
+						</File>
+						<File Id="658697373" Language="SFX">
+							<ShortName>sword_swoosh-07.wav</ShortName>
+							<Path>SFX\sword_swoosh-07_7F40F135.wem</Path>
+						</File>
+						<File Id="740253206" Language="SFX">
+							<ShortName>sword_swoosh-09.wav</ShortName>
+							<Path>SFX\sword_swoosh-09_728E34CE.wem</Path>
+						</File>
+						<File Id="743011640" Language="SFX">
+							<ShortName>sword_swoosh-15.wav</ShortName>
+							<Path>SFX\sword_swoosh-15_33C11275.wem</Path>
+						</File>
+						<File Id="754560035" Language="SFX">
+							<ShortName>sword_swoosh-13.wav</ShortName>
+							<Path>SFX\sword_swoosh-13_3049199D.wem</Path>
+						</File>
+						<File Id="833641402" Language="SFX">
+							<ShortName>sword_swoosh-03.wav</ShortName>
+							<Path>SFX\sword_swoosh-03_974BFA51.wem</Path>
+						</File>
+						<File Id="894742505" Language="SFX">
+							<ShortName>sword_swoosh-05.wav</ShortName>
+							<Path>SFX\sword_swoosh-05_7EE2B8B2.wem</Path>
+						</File>
+						<File Id="965087322" Language="SFX">
+							<ShortName>sword_swoosh-04.wav</ShortName>
+							<Path>SFX\sword_swoosh-04_410D53C6.wem</Path>
+						</File>
+						<File Id="978745908" Language="SFX">
+							<ShortName>sword_swoosh-10.wav</ShortName>
+							<Path>SFX\sword_swoosh-10_30A3CE4D.wem</Path>
+						</File>
+						<File Id="1007199149" Language="SFX">
+							<ShortName>sword_swoosh-08.wav</ShortName>
+							<Path>SFX\sword_swoosh-08_92E6426A.wem</Path>
+						</File>
+						<File Id="1026807264" Language="SFX">
+							<ShortName>sword_swoosh-01.wav</ShortName>
+							<Path>SFX\sword_swoosh-01_952C93AF.wem</Path>
+						</File>
+						<File Id="1051229601" Language="SFX">
+							<ShortName>sword_swoosh-11.wav</ShortName>
+							<Path>SFX\sword_swoosh-11_B2B7C6FB.wem</Path>
+						</File>
+						<File Id="1056415832" Language="SFX">
+							<ShortName>sword_swoosh-12.wav</ShortName>
+							<Path>SFX\sword_swoosh-12_5F1C7B7B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
