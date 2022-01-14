@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 66687670ee694d489d62771cc1401dcb
     GuidInternal: 
-    m_lastTime: -8585594394289828387
+    m_lastTime: -8585594305660132562
     List:
     - name: Enemies
       guid: 1ac8e7d03180264a9b66060591639457
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 96f2b1fe20fa0144813ad43ca98083c2
     GuidInternal: 
-    m_lastTime: -8585594313504137767
+    m_lastTime: -8585594305673206713
     List:
     - name: AttackBlocked
       guid: 44282d15a635f34ab222814e82d1f867
@@ -515,8 +515,8 @@ MonoBehaviour:
         guid: 3019900727b088438f60c4274010b18d
       Path: Events\Default Work Unit\Music\IngameMusic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Main_Menu
       guid: 2cf0a6c6ff06204e849dee12c2032dc7
       id: 2005704188
@@ -731,7 +731,7 @@ MonoBehaviour:
     m_lastTime: -8585599460244775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000d0000000e000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

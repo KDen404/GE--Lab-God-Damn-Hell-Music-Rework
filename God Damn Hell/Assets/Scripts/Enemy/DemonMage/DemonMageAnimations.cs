@@ -65,7 +65,6 @@ public class DemonMageAnimations : MonoBehaviour
             else
             {
                 animator.SetFloat("WalkRunFloat", 1f);
-                AkSoundEngine.PostEvent("DemonMageRun", gameObject);
             }
         }
     }
@@ -77,7 +76,6 @@ public class DemonMageAnimations : MonoBehaviour
         {
             animator.SetFloat("AttackFloat", 1f);
             isCasting = true;
-            AkSoundEngine.PostEvent("DemonMageCast", gameObject);
             StartCoroutine(DemonMageCast());
         }
         else
@@ -104,7 +102,6 @@ public class DemonMageAnimations : MonoBehaviour
             if (!animator.GetCurrentAnimatorStateInfo(3).IsName("Death"))
             {
                 animator.SetBool("IsDeadBool", true);
-                AkSoundEngine.PostEvent("DemonMageDeath", gameObject);
                 //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 demonMageMovement.enabled = false;
                 demonMageCollider.enabled = false;
@@ -128,7 +125,6 @@ public class DemonMageAnimations : MonoBehaviour
         {
             animator.SetTrigger("GetHitTrigger");
             tempHealthPoints = demonMageStats.healthPoints;
-            AkSoundEngine.PostEvent("DemonMageGotHit", gameObject);
         }
     }
 
@@ -148,7 +144,6 @@ public class DemonMageAnimations : MonoBehaviour
             if (agent.remainingDistance >= 0.1)
             {
                 animator.SetFloat("WalkRunFloat", 0.5f);
-                AkSoundEngine.PostEvent("DemonMageWalk", gameObject);
             }
             else
             {
