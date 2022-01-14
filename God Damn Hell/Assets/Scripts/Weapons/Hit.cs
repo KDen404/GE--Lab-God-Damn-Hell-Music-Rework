@@ -8,7 +8,6 @@ public class Hit : MonoBehaviour
     public GameObject player;
     private Transform enemy;
     private float lastHit;
-    private float pushbackTime;
     private float countPushBack;
     private bool enemyHit = false;
 
@@ -40,7 +39,6 @@ public class Hit : MonoBehaviour
         if (lastHit >= 1f && other.gameObject.transform.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
         {
             other.gameObject.transform.GetComponent<Stats>().healthPoints--;
-            AkSoundEngine.PostEvent("PlayerHitsEnemy", gameObject);
             enemy = other.transform;
             lastHit = 0;
             countPushBack = 0;

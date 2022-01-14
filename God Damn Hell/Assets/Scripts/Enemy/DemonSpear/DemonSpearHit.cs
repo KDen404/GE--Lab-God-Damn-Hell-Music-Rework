@@ -26,13 +26,11 @@ public class DemonSpearHit : MonoBehaviour
         if (lastHit >= 1f && other.gameObject.transform.tag == "Player" && (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2")))
         {
             other.gameObject.GetComponent<PlayerStats>().currentHealthPoints--; // Needs an actual number later on
-            AkSoundEngine.PostEvent("DemonSpearHit", gameObject);
             lastHit = 0;
         }
         else if (other.gameObject.transform.tag == "Shield")
         {
             playerAnimator.SetTrigger("AttackBlockTrigger");
-            AkSoundEngine.PostEvent("DemonSpearHitShield", gameObject);
             spearCollider.enabled = false;
         }
     }
