@@ -9,6 +9,11 @@ public class DemonFighterAnimationSounds : MonoBehaviour
         AkSoundEngine.PostEvent("DemonFighterRun", gameObject);
     }
 
+    public void DemonFighterClawSwingSound()
+    {
+        AkSoundEngine.PostEvent("FighterSwing", gameObject);
+    }
+
     public void DemonFighterDeathSound()
     {
         AkSoundEngine.PostEvent("DemonFighterDeath", gameObject);
