@@ -20,20 +20,19 @@ public class DemonFighterHit : MonoBehaviour
         lastHit += Time.deltaTime;
     }
 
-    public virtual void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         // Colliders are on the enemies hands, code below only works if the target hit is the player
         // lastHit acts as a cooldown so the player cant get hit multiple times within one animation
         if (lastHit >= 1f && other.gameObject.transform.tag == "Player" && (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackLeft") || animator.GetCurrentAnimatorStateInfo(1).IsName("AttackRight")))
         {
             other.gameObject.GetComponent<PlayerStats>().currentHealthPoints--; // Needs an actual number later on
-            AkSoundEngine.PostEvent("DemonFighterHit", gameObject);
             lastHit = 0;
         }
         else if (other.gameObject.transform.tag == "Shield")
         {
             playerAnimator.SetTrigger("AttackBlockTrigger");
-            AkSoundEngine.PostEvent("DemonFighterHitShield", gameObject);
+            //AkSoundEngine.PostEvent("DemonFighterHitShield", gameObject);
             leftHandCollider.enabled = false;
             rightHandCollider.enabled = false;
         }
