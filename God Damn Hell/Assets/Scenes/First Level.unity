@@ -7281,7 +7281,7 @@ GameObject:
   - component: {fileID: 566922131}
   m_Layer: 0
   m_Name: Room 7 Bedroom
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8866,7 +8866,7 @@ GameObject:
   - component: {fileID: 666892576}
   m_Layer: 0
   m_Name: Room 9 Throneroom
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11585,7 +11585,7 @@ GameObject:
   - component: {fileID: 956395045}
   m_Layer: 0
   m_Name: Room 5 Junction
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15211,7 +15211,7 @@ GameObject:
   - component: {fileID: 1261939282}
   m_Layer: 0
   m_Name: Room 6 Library
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16266,7 +16266,7 @@ GameObject:
   - component: {fileID: 1405950006}
   m_Layer: 0
   m_Name: Room 2 Fountain
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16978,7 +16978,7 @@ GameObject:
   - component: {fileID: 1446894313}
   m_Layer: 0
   m_Name: Room 8 Hallway 3
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18846,7 +18846,7 @@ GameObject:
   - component: {fileID: 1621704886}
   m_Layer: 0
   m_Name: Room 4 Hallway 2
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19971,7 +19971,7 @@ GameObject:
   - component: {fileID: 1723791052}
   m_Layer: 0
   m_Name: Room 3 Fireplace
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21211,7 +21211,7 @@ GameObject:
   - component: {fileID: 1865301352}
   m_Layer: 0
   m_Name: Room 1 Hallway
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
