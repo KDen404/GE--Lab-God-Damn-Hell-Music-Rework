@@ -3,17 +3,170 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}">
+				<Folder Name="Player" ID="{F6D3A597-070C-4407-A85B-BD38BE9F9864}" ShortID="928311028">
 					<ChildrenList>
-						<Action Name="" ID="{652FAE91-2B8B-48F9-9748-B5E588587717}" ShortID="368938746">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Devils step" ID="{CAA43D79-034F-4DA9-8A2A-B372EEC9633E}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="PlayerRun" ID="{09F0E0E7-E63F-434F-80FF-4515EC78639B}">
+							<ChildrenList>
+								<Action Name="" ID="{CA2B2F11-63D9-4A73-B3DC-01D03602F904}" ShortID="523770784">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps" ID="{46002CCC-020A-42DA-877C-0D0710FF15B0}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SwordSwing" ID="{D3727280-BC01-4B38-95D3-80C995C1D3F7}">
+							<ChildrenList>
+								<Action Name="" ID="{21FC7BBD-5505-43D1-87DA-47041CAF78E7}" ShortID="747953480">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sword" ID="{379B823F-456F-4765-BFA9-8EA4D4BEB86D}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerDeath" ID="{7905BF3E-D2A8-46CB-B5C5-D776C70013A5}">
+							<ChildrenList>
+								<Action Name="" ID="{E368EF40-8A32-4A26-97F4-2F73B9ABF054}" ShortID="541190784">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Death" ID="{76174437-1E30-4B1C-BFB0-EF9DDFCF8E81}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerGotHit" ID="{618976C6-DEFA-4574-9E39-011E43CF52B8}">
+							<ChildrenList>
+								<Action Name="" ID="{9556E24D-EB72-4C15-8B6D-7E8A119F70D8}" ShortID="393688300">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GotHit" ID="{2E1E00E1-B0DB-4A61-BA10-348212CE6DE4}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AttackBlocked" ID="{152D2844-35A6-4AF3-B222-814E82D1F867}">
+							<ChildrenList>
+								<Action Name="" ID="{7FBF3DF6-FA0A-4EE3-9533-F96F2DBCE657}" ShortID="176932711">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Block" ID="{A14116FA-6BB1-4ABA-9C1D-7A6B94E0A110}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="Enemy" ID="{3B21BE8E-D122-4A5C-9232-8D21CD065945}" ShortID="854290316">
+					<ChildrenList>
+						<Folder Name="DemonFighter" ID="{C32A6207-BD1F-4E6D-9827-8145D69136ED}" ShortID="165291422">
+							<ChildrenList>
+								<Event Name="DemonFighterRun" ID="{E7AEDCF1-69BF-475A-A8C2-0B939643C4CA}"/>
+								<Event Name="DemonFighterWalk" ID="{A4466311-2A3C-43B1-9234-5706942471B7}"/>
+								<Event Name="DemonFighterDeath" ID="{3B82A28A-5A2D-4A90-9CFB-2B2573E872DF}"/>
+								<Event Name="DemonFighterGotHit" ID="{7D8BA12A-5E7A-4EAF-AE60-4C777D19F439}">
+									<ChildrenList>
+										<Action Name="" ID="{9470039F-E639-4BDD-8B72-02F1E46A2136}" ShortID="619779932">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DemonGotHit" ID="{9C3AB932-4EC7-4848-873A-6046BC4B1078}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="FighterSwing" ID="{8AA7C42C-089E-45F4-8090-53ADEF1BE168}">
+									<ChildrenList>
+										<Action Name="" ID="{90A4563F-B21C-44C8-8285-60DE104D428E}" ShortID="381906570">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ClawSwoosh" ID="{7CF33B78-27E4-40DB-9C7B-5BE52C31BAC7}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="DemonMage" ID="{9869B799-2A65-4B12-92F3-F2A1892A62DE}" ShortID="852966067">
+							<ChildrenList>
+								<Event Name="DemonMageRun" ID="{1D85E5A5-D92D-4844-864D-52C1CF98341C}"/>
+								<Event Name="DemonMageWalk" ID="{25F1A6C5-8C3F-4C8D-994F-9B1CA33AA1BA}"/>
+								<Event Name="DemonMageGotHit" ID="{8ECE0F64-2F41-4F17-9F86-55AADD5550E6}">
+									<ChildrenList>
+										<Action Name="" ID="{41552055-9EBB-485C-B172-AF934AE3A509}" ShortID="845227347">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DemonGotHit" ID="{9C3AB932-4EC7-4848-873A-6046BC4B1078}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="DemonSpear" ID="{BB308AF8-5C23-4E70-8306-2B3787461D9D}" ShortID="934862384">
+							<ChildrenList>
+								<Event Name="DemonSpearRun" ID="{E524BB91-6414-4615-A248-C14EBC598237}"/>
+								<Event Name="DemonSpearWalk" ID="{59D63C3E-5FA0-49CA-ABAA-0D0F0E582D76}"/>
+								<Event Name="SpearSwing" ID="{D6A79C5D-B797-4EDE-B05A-7B0C58C5DE1C}">
+									<ChildrenList>
+										<Action Name="" ID="{ABA05B5D-C7DD-4C42-8FFB-4B3057BE929B}" ShortID="570696328">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Swoosh" ID="{C2E96791-6AAD-424F-9790-7D0EC0D8A304}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="DemonSpearDeath" ID="{84725145-4DBA-4BC9-BACC-7AEC97CA6C80}"/>
+								<Event Name="DemonSpearGotHit" ID="{318A1B11-5450-4B34-92B7-9BA7964586A3}">
+									<ChildrenList>
+										<Action Name="" ID="{02B936FB-FDE3-4963-8B83-1886354750BE}" ShortID="444675396">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DemonGotHit" ID="{9C3AB932-4EC7-4848-873A-6046BC4B1078}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{F2C74C9D-7D29-4970-ABA0-D1156E7D9637}" ShortID="93621167">
+					<ChildrenList>
+						<Event Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}">
+							<ChildrenList>
+								<Action Name="" ID="{652FAE91-2B8B-48F9-9748-B5E588587717}" ShortID="368938746">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainTheme" ID="{CAA43D79-034F-4DA9-8A2A-B372EEC9633E}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="IngameMusic" ID="{07901930-B027-4388-8F60-C4274010B18D}">
+							<ChildrenList>
+								<Action Name="" ID="{C24F11A8-8045-467F-9808-D32C5493B59D}" ShortID="271783724">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="IngameMusic" ID="{A103350D-E414-41AB-9FD1-39FB382BD6D6}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1700,6 +1700,7 @@ GameObject:
   - component: {fileID: 5648358945693428413}
   - component: {fileID: 2732958964173340370}
   - component: {fileID: -5864289042268020020}
+  - component: {fileID: -1137573404883563978}
   m_Layer: 6
   m_Name: Demon Fighter
   m_TagString: Enemy
@@ -1820,6 +1821,30 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-1137573404883563978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648358945693428400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ece7027e97381c469e268d6cbe5df86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3a2f066c154458b40bdf586ebe9e215d, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &5785463436633723182
 GameObject:
   m_ObjectHideFlags: 0

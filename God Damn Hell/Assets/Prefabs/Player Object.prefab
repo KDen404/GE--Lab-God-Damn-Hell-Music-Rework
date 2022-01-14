@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 3340821567399859193}
   - component: {fileID: 3340821567399859192}
   - component: {fileID: 3340821567399859197}
+  - component: {fileID: 8340032333808400630}
   m_Layer: 0
   m_Name: Player Object
   m_TagString: Player
@@ -279,6 +280,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealthPoints: 20
   currentHealthPoints: 20
+--- !u!114 &8340032333808400630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3340821567399859190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ece7027e97381c469e268d6cbe5df86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c4d3460d982014b4f860768ff4c57015, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &3340821567415760266
 GameObject:
   m_ObjectHideFlags: 0
