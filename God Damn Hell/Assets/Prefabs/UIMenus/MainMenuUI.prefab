@@ -2155,7 +2155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5893334967376601166, guid: efbc3eda4006aa14990c30b930cf1fce, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5893334967387734213, guid: efbc3eda4006aa14990c30b930cf1fce, type: 3}
       propertyPath: m_Type
@@ -2693,38 +2693,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5893334967435219507, guid: efbc3eda4006aa14990c30b930cf1fce, type: 3}
   m_PrefabInstance: {fileID: 5852809117710525706}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5852809119533291509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67569455767236016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemname: Character IronTop
-  defense: 0
-  cost: 0
-  itemtype: top
---- !u!114 &5852809119396830041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67569454800220753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemname: Character LeatherTop
-  defense: 0
-  cost: 0
-  itemtype: top
 --- !u!114 &5852809119449398239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2741,22 +2709,22 @@ MonoBehaviour:
   defense: 0
   cost: 0
   itemtype: head
---- !u!114 &5852809118899614655
+--- !u!114 &5852809119396830041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67569455975342747}
+  m_GameObject: {fileID: 67569454800220753}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemname: Character LeatherBottom
+  itemname: Character LeatherTop
   defense: 0
   cost: 0
-  itemtype: bottom
+  itemtype: top
 --- !u!114 &5852809119270117430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2773,38 +2741,6 @@ MonoBehaviour:
   defense: 0
   cost: 0
   itemtype: 
---- !u!114 &5852809118945694506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67569455581449082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemname: Character IronBottom
-  defense: 0
-  cost: 0
-  itemtype: bottom
---- !u!114 &5852809119154704830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67569455129386059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemname: Character LeatherHead
-  defense: 0
-  cost: 0
-  itemtype: head
 --- !u!114 &5852809117985236793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2821,6 +2757,70 @@ MonoBehaviour:
   defense: 0
   cost: 0
   itemtype: 
+--- !u!114 &5852809119154704830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67569455129386059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemname: Character LeatherHead
+  defense: 0
+  cost: 0
+  itemtype: head
+--- !u!114 &5852809118945694506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67569455581449082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemname: Character IronBottom
+  defense: 0
+  cost: 0
+  itemtype: bottom
+--- !u!114 &5852809119533291509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67569455767236016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemname: Character IronTop
+  defense: 0
+  cost: 0
+  itemtype: top
+--- !u!114 &5852809118899614655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67569455975342747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a913448afcff4c87ea03d1140c0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemname: Character LeatherBottom
+  defense: 0
+  cost: 0
+  itemtype: bottom
 --- !u!1001 &5852809119028427744
 PrefabInstance:
   m_ObjectHideFlags: 0
