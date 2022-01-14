@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class DemonFighterAnimationSounds : MonoBehaviour
 {
-    public void DemonFighterRun()
+    public void DemonFighterRunSound()
     {
         AkSoundEngine.PostEvent("DemonFighterRun", gameObject);
     }
 
-    public void DemonFighterDeath()
+    public void DemonFighterDeathSound()
     {
         AkSoundEngine.PostEvent("DemonFighterDeath", gameObject);
     }
 
-    public void DemonFighterGotHit()
+    public void DemonFighterGotHitSound()
     {
         AkSoundEngine.PostEvent("DemonFighterGotHit", gameObject);
     }
 
-    public void DemonFighterWalk()
+    public void DemonFighterWalkSound()
     {
         AkSoundEngine.PostEvent("DemonFighterWalk", gameObject);
     }

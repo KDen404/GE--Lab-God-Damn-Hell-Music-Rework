@@ -19,7 +19,7 @@ public class PlayerAnimationSounds : MonoBehaviour
         AkSoundEngine.PostEvent("PlayerDeath", gameObject);
     }
 
-    public void PlayerGotHit()
+    public void PlayerGotHitSound()
     {
         AkSoundEngine.PostEvent("PlayerGotHit", gameObject);
     }

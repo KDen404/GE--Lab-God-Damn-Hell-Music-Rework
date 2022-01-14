@@ -32,7 +32,6 @@ public class DemonFighterHit : MonoBehaviour
         else if (other.gameObject.transform.tag == "Shield")
         {
             playerAnimator.SetTrigger("AttackBlockTrigger");
-            //AkSoundEngine.PostEvent("DemonFighterHitShield", gameObject);
             leftHandCollider.enabled = false;
             rightHandCollider.enabled = false;
         }
