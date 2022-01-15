@@ -64,6 +64,10 @@ public class DemonFighterAnimations : MonoBehaviour
         {
             animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
         }
+        else
+        {
+            animator.SetFloat("AttackFloat", 0f);
+        }
 
         // Activates / deactivates the collider
         if (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackLeft"))
