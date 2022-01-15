@@ -7,11 +7,10 @@ this Script is for the purpose of alarming other enemies,
 if an enemy in Range has already seen a player object
 */
 
-
-public class AlarmOtherEnemies : MonoBehaviour
+public class AlarmOtherEnemiesRework : MonoBehaviour
 {
-    private int enemyNumber;
-    private int alarmEnemyRange = 10;
+    private int alarmEnemyRange = 15;
+
     private List<int> listOfActivatedEnemys = new List<int>();    //list of all activated enemys
     private List<int> notActivatedEnemyList = new List<int>();   //list of all unactive enemys
 
@@ -21,7 +20,7 @@ public class AlarmOtherEnemies : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        
         if (activityHasChanged)
         {
             updateActivity();
@@ -46,27 +45,27 @@ public class AlarmOtherEnemies : MonoBehaviour
                 }
             }
         }
-
     }
 
     private void updateActivity()   // updates the lists of activated/deactivated enemys
     {
-        enemyNumber = transform.childCount;
         activityHasChanged = false;
 
         listOfActivatedEnemys.Clear();
         notActivatedEnemyList.Clear();
 
-        for (int i = 0; i < enemyNumber; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
-
-            if (transform.GetChild(i).GetComponentInChildren<Stats>().activated)
-            {
-                listOfActivatedEnemys.Add(i);
-            }
-            else
-            {
-                notActivatedEnemyList.Add(i);
+            if (transform.GetChild(i).tag == "Enemy") {
+                
+                if (transform.GetChild(i).GetComponent<Stats>().activated)   
+                {
+                    listOfActivatedEnemys.Add(i);
+                }
+                else
+                {
+                    notActivatedEnemyList.Add(i);
+                }
             }
         }
     }

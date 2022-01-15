@@ -32,7 +32,7 @@ public class DemonFighterMovement : MonoBehaviour
 
     private void navmovement()
     {
-        if (activated)
+        if (demonFighterStats.activated)
         {
             agent.destination = player.transform.position;
             agent.speed = demonFighterRunSpeed;
@@ -53,8 +53,9 @@ public class DemonFighterMovement : MonoBehaviour
                 if ((Vector3.Angle(transform.forward, player.transform.position - transform.position) <= 40) // if the player is in the view field of the enemy
                     || (Vector3.Distance(transform.position, player.transform.position) <= aggroRange/2))      // or very close
                 {
+                    demonFighterStats.activated = true;
                     activated = true;
-                    //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
+                    GetComponentInParent<AlarmOtherEnemiesRework>().activityHasChanged = true;
                 }
                 
             }

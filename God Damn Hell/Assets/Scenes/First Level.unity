@@ -7279,6 +7279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566922130}
   - component: {fileID: 566922131}
+  - component: {fileID: 566922132}
   m_Layer: 0
   m_Name: Room 7 Bedroom
   m_TagString: Room
@@ -7322,6 +7323,19 @@ MonoBehaviour:
   enemies: []
   triggered: 0
   gatelogic: {fileID: 163028172}
+--- !u!114 &566922132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566922129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c1052c454c564c875a66fcfbf9e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityHasChanged: 1
 --- !u!1001 &573079153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11595,6 +11609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 956395044}
   - component: {fileID: 956395045}
+  - component: {fileID: 956395046}
   m_Layer: 0
   m_Name: Room 5 Junction
   m_TagString: Room
@@ -11637,6 +11652,19 @@ MonoBehaviour:
   enemies: []
   triggered: 0
   gatelogic: {fileID: 163028172}
+--- !u!114 &956395046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956395043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c1052c454c564c875a66fcfbf9e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityHasChanged: 1
 --- !u!1001 &956726364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15221,6 +15249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1261939281}
   - component: {fileID: 1261939282}
+  - component: {fileID: 1261939283}
   m_Layer: 0
   m_Name: Room 6 Library
   m_TagString: Room
@@ -15266,6 +15295,19 @@ MonoBehaviour:
   enemies: []
   triggered: 0
   gatelogic: {fileID: 163028172}
+--- !u!114 &1261939283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261939280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c1052c454c564c875a66fcfbf9e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityHasChanged: 1
 --- !u!4 &1267919009 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5981135510093245926, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
@@ -16276,6 +16318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1405950005}
   - component: {fileID: 1405950006}
+  - component: {fileID: 1405950007}
   m_Layer: 0
   m_Name: Room 2 Fountain
   m_TagString: Room
@@ -16320,6 +16363,19 @@ MonoBehaviour:
   enemies: []
   triggered: 0
   gatelogic: {fileID: 163028172}
+--- !u!114 &1405950007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405950004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c1052c454c564c875a66fcfbf9e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityHasChanged: 1
 --- !u!1001 &1409361237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16988,6 +17044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1446894312}
   - component: {fileID: 1446894313}
+  - component: {fileID: 1446894314}
   m_Layer: 0
   m_Name: Room 8 Hallway 3
   m_TagString: Room
@@ -17030,6 +17087,19 @@ MonoBehaviour:
   enemies: []
   triggered: 0
   gatelogic: {fileID: 163028172}
+--- !u!114 &1446894314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446894311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c1052c454c564c875a66fcfbf9e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityHasChanged: 1
 --- !u!1001 &1448013051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18856,6 +18926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1621704885}
   - component: {fileID: 1621704886}
+  - component: {fileID: 1621704887}
   m_Layer: 0
   m_Name: Room 4 Hallway 2
   m_TagString: Room
@@ -18897,6 +18968,19 @@ MonoBehaviour:
   enemies: []
   triggered: 0
   gatelogic: {fileID: 163028172}
+--- !u!114 &1621704887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621704884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c1052c454c564c875a66fcfbf9e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityHasChanged: 1
 --- !u!1 &1641869941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 89c0fe1737b731149b7e43a62f287f96, type: 3}
@@ -19981,6 +20065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723791051}
   - component: {fileID: 1723791052}
+  - component: {fileID: 1723791053}
   m_Layer: 0
   m_Name: Room 3 Fireplace
   m_TagString: Room
@@ -20030,6 +20115,19 @@ MonoBehaviour:
   enemies: []
   triggered: 0
   gatelogic: {fileID: 163028172}
+--- !u!114 &1723791053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723791050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c1052c454c564c875a66fcfbf9e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityHasChanged: 1
 --- !u!1001 &1727402665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25679,6 +25777,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7105396837147429694, guid: db80c50ee6d1df8478d71d09b30d3ceb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105396837147429694, guid: db80c50ee6d1df8478d71d09b30d3ceb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25
+      objectReference: {fileID: 0}
     - target: {fileID: 7105396838946744868, guid: db80c50ee6d1df8478d71d09b30d3ceb, type: 3}
       propertyPath: m_Pivot.x
       value: 0

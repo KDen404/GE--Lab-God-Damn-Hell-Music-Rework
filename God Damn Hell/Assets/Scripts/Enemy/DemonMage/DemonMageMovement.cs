@@ -34,7 +34,7 @@ public class DemonMageMovement : MonoBehaviour
 
     private void navmovement()
     {
-        if (activated)
+        if (demonMageStats.activated)
         {
             agent.speed = demonMageRunSpeed;
             agent.destination = player.transform.position;
@@ -56,8 +56,9 @@ public class DemonMageMovement : MonoBehaviour
                 if ((Vector3.Angle(transform.forward, player.transform.position - transform.position) <= 40) //if the player is in the view field of the enemy
                     || (Vector3.Distance(transform.position, player.transform.position) <= aggroRange / 2))  // or very close
                 {
+                    demonMageStats.activated = true;
                     activated = true;
-                    //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
+                    GetComponentInParent<AlarmOtherEnemiesRework>().activityHasChanged = true;
                 }
             }
         }

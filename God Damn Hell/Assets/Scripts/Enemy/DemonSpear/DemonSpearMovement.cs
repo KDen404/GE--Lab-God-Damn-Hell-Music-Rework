@@ -30,7 +30,7 @@ public class DemonSpearMovement : MonoBehaviour
 
     private void navmovement()
     {
-        if (activated)
+        if (demonSpearStats.activated)
         {
             agent.destination = player.transform.position;
 
@@ -51,7 +51,8 @@ public class DemonSpearMovement : MonoBehaviour
                     || (Vector3.Distance(transform.position, player.transform.position) <= aggroRange / 2))  // or very close
                 {
                     activated = true;
-                    //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
+                    demonSpearStats.activated = true;
+                    GetComponentInParent<AlarmOtherEnemiesRework>().activityHasChanged = true;
                 }
             }
         }
