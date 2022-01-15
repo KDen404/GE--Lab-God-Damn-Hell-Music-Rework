@@ -51,7 +51,7 @@ public class DemonSpearMovement : MonoBehaviour
                     || (Vector3.Distance(transform.position, player.transform.position) <= aggroRange / 2))  // or very close
                 {
                     activated = true;
-                    GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
+                    //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 }
             }
         }

@@ -3,66 +3,83 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
+
 public class Cardsystem : MonoBehaviour
 {
     public GameObject player;
     private string searchedItem;
-    private GameObject currentCard;     // the current card thats being checked
-    
-    private string savegamepPath;
-    private string savegameData;
-    private string[] equipment = {"emptyString", "emptyString", "emptyString" };    // current equipment
+    private GameObject currentCard = null;     // the current card thats being checked, only needed in Main Menu
+  
+    private string savegamePath;
+    public static Savegame savegame = null;
+
 
     private void Start()
     {
-        savegamepPath = Path.Combine(Application.persistentDataPath, "cardSavegame.json");
+        savegamePath = Path.Combine(Application.persistentDataPath, "savegame.json");
+        if (savegame != null)
+        { 
+            LoadSavegame();
+        }
+        else
+        {
+            savegame = new Savegame();
+        }
+        equipFromSavegame();
     }
 
+    public void LoadSavegame()
+    {
+        if (File.Exists(savegamePath))
+        {
+            savegame = JsonUtility.FromJson<Savegame>(File.ReadAllText(savegamePath));
+        }
+    }
 
-    public void equipOnClick(GameObject card)
+    public void SaveSavegame()
+    {
+        File.WriteAllText(savegamePath, JsonUtility.ToJson(savegame));
+    }
+
+    public void equipFromSavegame()
+    {
+        
+        searchedItem = savegame.equipmentSafedataHead;
+        searchForItem(player.transform);
+
+        searchedItem = savegame.equipmentSafedataTop;
+        searchForItem(player.transform);
+
+        searchedItem = savegame.equipmentSafedataBottom;
+        searchForItem(player.transform);
+    }
+
+    public void equipOnClick(GameObject card)   // equips the Item attached to the clicked button and saves it to savegame;
     {
         currentCard = card;
         searchedItem = currentCard.GetComponent<Card>().itemname;
-        searchForItem(player.transform);        // recursive function to serch for the Item thats supposed to be equipped;
+        searchForItem(player.transform);  // recursive function to serch for the Item thats supposed to be equipped; 
     }
 
-    private void safeItemName()     // saves the Item for Scene changes at Scenechange only the information in equipment will be safed to json
+    private void saveItemNameToSavegame()     // saves the Item to the corresponding slot, for Scenechanges, into savegame
     {
-        if (currentCard.GetComponent<Card>().itemtype == "head")
-        {
-            equipment[0] = searchedItem;
-        }
-        else if (currentCard.GetComponent<Card>().itemtype == "top")
-        {
-            equipment[1] = searchedItem;
-        }
-        else if (currentCard.GetComponent<Card>().itemtype == "bottom")
-        {
-            equipment[2] = searchedItem;
-        }
-
-        for(int i = 0; i<3; i++)
-        {
-            Debug.Log(equipment[i]);
+        if(currentCard != null) {                                   // if outside of Main Menu (Live Scene), saving is not needed
+            if (currentCard.GetComponent<Card>().itemtype == "head")
+            {
+                savegame.equipmentSafedataHead = searchedItem;
+            }
+            else if (currentCard.GetComponent<Card>().itemtype == "top")
+            {
+                savegame.equipmentSafedataTop = searchedItem;
+            }
+            else if (currentCard.GetComponent<Card>().itemtype == "bottom")
+            {
+                savegame.equipmentSafedataBottom = searchedItem;
+            }
         }
     }
 
-    public void jsonForSceneChange()
-    {
-        
-
-        Safegame equipmentJsonFile = new Safegame();
-        equipmentJsonFile.equipmentSafedata = equipment;
-
-        savegameData = JsonUtility.ToJson(equipmentJsonFile);
-        File.WriteAllText(savegamepPath, savegameData);
-        Debug.Log("Savegamepfad ist " + savegamepPath);
-    }
-
-
-
-
-    private void searchForItem(Transform childToTest)
+    private void searchForItem(Transform childToTest)   // equips the searched item if it exists
     {
         for (int i = 0; i < childToTest.childCount; ++i)
         {
@@ -79,8 +96,10 @@ public class Cardsystem : MonoBehaviour
                     childToTest.parent.transform.GetChild(i).gameObject.SetActive(false);
                 }
                 childToTest.gameObject.SetActive(invertState);
-                safeItemName();
+
+                saveItemNameToSavegame();
             }
         }
+        
     }
 }
