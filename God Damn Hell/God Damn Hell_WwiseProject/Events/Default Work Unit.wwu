@@ -156,10 +156,10 @@
 						</Event>
 						<Event Name="IngameMusic" ID="{07901930-B027-4388-8F60-C4274010B18D}">
 							<ChildrenList>
-								<Action Name="" ID="{C24F11A8-8045-467F-9808-D32C5493B59D}" ShortID="271783724">
+								<Action Name="" ID="{E173750E-18B3-44F6-BD9A-B581C666959F}" ShortID="430640306">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="IngameMusic" ID="{A103350D-E414-41AB-9FD1-39FB382BD6D6}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+											<ObjectRef Name="InGameMusicAsLoop" ID="{9809B02E-CB67-4608-92A1-50C1D44D4736}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

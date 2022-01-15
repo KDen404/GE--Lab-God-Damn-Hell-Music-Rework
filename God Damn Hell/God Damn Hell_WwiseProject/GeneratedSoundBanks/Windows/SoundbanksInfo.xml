@@ -733,7 +733,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="304731213">
+		<SoundBank Id="3991942870" Language="SFX" Hash="1325801604">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -742,7 +742,11 @@
 					<IncludedMemoryFiles>
 						<File Id="529376960" Language="SFX">
 							<ShortName>IngameMusic.wav</ShortName>
-							<Path>SFX\IngameMusic_D79FB2B7.wem</Path>
+							<Path>SFX\IngameMusic_473538CB.wem</Path>
+						</File>
+						<File Id="794817073" Language="SFX">
+							<ShortName>IngameMusic.wav</ShortName>
+							<Path>SFX\IngameMusic_8F5AC696.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

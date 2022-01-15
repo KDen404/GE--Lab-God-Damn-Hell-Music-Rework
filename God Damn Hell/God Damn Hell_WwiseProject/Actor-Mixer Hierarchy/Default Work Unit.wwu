@@ -35,12 +35,13 @@
 								<ActiveSource Name="Devils step" ID="{896CBB44-F5D0-4D16-B4C0-FC0C61736560}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="IngameMusic" ID="{A103350D-E414-41AB-9FD1-39FB382BD6D6}" ShortID="74129188">
+						<RandomSequenceContainer Name="InGameMusicAsLoop" ID="{9809B02E-CB67-4608-92A1-50C1D44D4736}" ShortID="361410170">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-31</Value>
+										<Value>-38</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -53,19 +54,82 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="IngameMusic" ID="{CE5AA5CF-B15A-459B-86D7-5935E7A2FB68}">
-									<Language>SFX</Language>
-									<AudioFile>IngameMusic.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="529376960"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="IngameMusicStart" ID="{A103350D-E414-41AB-9FD1-39FB382BD6D6}" ShortID="74129188">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2F3F80CD-98A8-4AA1-A7CF-F14CB9324F32}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{67144F2C-E4DA-469A-8455-4F9A29B9D07A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IngameMusic" ID="{CE5AA5CF-B15A-459B-86D7-5935E7A2FB68}">
+											<PropertyList>
+												<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="57"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>IngameMusic.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="794817073"/>
+											</MediaIDList>
+											<PluginInnerObjectList>
+												<List Name="Markers">
+													<PluginInnerObject Name="" ID="{A891368B-7A5D-4624-A9EC-E0F1F7F6A311}" PluginName="Marker" CompanyID="0" PluginID="993">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value=" "/>
+															<Property Name="Time" Type="Real64" Value="19.1262931034483"/>
+														</PropertyList>
+													</PluginInnerObject>
+												</List>
+											</PluginInnerObjectList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="IngameMusic" ID="{CE5AA5CF-B15A-459B-86D7-5935E7A2FB68}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="InGameMusicLOOP" ID="{0D8D693E-E518-4FEB-8F1C-57986B820F28}" ShortID="574546675">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2F3F80CD-98A8-4AA1-A7CF-F14CB9324F32}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{67144F2C-E4DA-469A-8455-4F9A29B9D07A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IngameMusic" ID="{A674690D-1447-4526-9630-4318A55BBBB9}">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="96.0062358276644"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="57"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>IngameMusic.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="529376960"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="IngameMusic" ID="{A674690D-1447-4526-9630-4318A55BBBB9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="IngameMusic" ID="{CE5AA5CF-B15A-459B-86D7-5935E7A2FB68}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<Playlist>
+								<ItemRef Name="IngameMusicStart" ID="{A103350D-E414-41AB-9FD1-39FB382BD6D6}"/>
+								<ItemRef Name="InGameMusicLOOP" ID="{0D8D693E-E518-4FEB-8F1C-57986B820F28}"/>
+							</Playlist>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{4394846C-7B76-4C4F-A931-7FE2442127A1}" ShortID="333062963">
