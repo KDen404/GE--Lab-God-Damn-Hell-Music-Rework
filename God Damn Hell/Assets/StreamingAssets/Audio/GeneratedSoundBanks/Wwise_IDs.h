@@ -26,11 +26,14 @@ namespace AK
         static const AkUniqueID DEMONSPEARRUN = 537156876U;
         static const AkUniqueID DEMONSPEARWALK = 3167257242U;
         static const AkUniqueID FIGHTERSWING = 2867028574U;
+        static const AkUniqueID GATECLOSE = 3619229476U;
+        static const AkUniqueID GATEOPEN = 3677793184U;
         static const AkUniqueID INGAMEMUSIC = 1545821079U;
         static const AkUniqueID MAIN_MENU = 2005704188U;
         static const AkUniqueID PLAYERDEATH = 1656947812U;
         static const AkUniqueID PLAYERGOTHIT = 855695183U;
         static const AkUniqueID PLAYERRUN = 3964335501U;
+        static const AkUniqueID POTDRINK = 2903112632U;
         static const AkUniqueID SPEARSWING = 478914142U;
         static const AkUniqueID SWORDSWING = 1328934038U;
     } // namespace EVENTS
@@ -40,6 +43,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID MAIN_MENU = 2005704188U;
+        static const AkUniqueID MISC = 3062523257U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
     } // namespace BANKS

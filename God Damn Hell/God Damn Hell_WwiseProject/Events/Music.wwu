@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" SchemaVersion="103" RootDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" ParentDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}">
+	<Events>
+		<WorkUnit Name="Music" ID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" OwnerID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="IngameMusic" ID="{07901930-B027-4388-8F60-C4274010B18D}">
+					<ChildrenList>
+						<Action Name="" ID="{E173750E-18B3-44F6-BD9A-B581C666959F}" ShortID="430640306">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGameMusicAsLoop" ID="{9809B02E-CB67-4608-92A1-50C1D44D4736}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}">
+					<ChildrenList>
+						<Action Name="" ID="{652FAE91-2B8B-48F9-9748-B5E588587717}" ShortID="368938746">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainTheme" ID="{CAA43D79-034F-4DA9-8A2A-B372EEC9633E}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

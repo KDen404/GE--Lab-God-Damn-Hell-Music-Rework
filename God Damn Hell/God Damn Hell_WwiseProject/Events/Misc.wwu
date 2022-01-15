@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" SchemaVersion="103" RootDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" ParentDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}">
+	<Events>
+		<WorkUnit Name="Misc" ID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" OwnerID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="PotDrink" ID="{17624818-50DD-404F-A145-74FF45F84A41}"/>
+				<Event Name="GateOpen" ID="{DFF2D0D4-CA37-4D99-B47A-3BB5A7362679}"/>
+				<Event Name="GateClose" ID="{70C0B3B3-6697-4865-9AE2-2EDC56AF7111}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

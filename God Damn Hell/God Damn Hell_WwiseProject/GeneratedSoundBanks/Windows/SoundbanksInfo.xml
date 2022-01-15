@@ -733,6 +733,16 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
+		<SoundBank Id="3062523257" Language="SFX" Hash="2208580073">
+			<ObjectPath>\SoundBanks\Default Work Unit\Misc</ObjectPath>
+			<ShortName>Misc</ShortName>
+			<Path>Misc.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3619229476" Name="GateClose" ObjectPath="\Events\Default Work Unit\Misc\GateClose" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3677793184" Name="GateOpen" ObjectPath="\Events\Default Work Unit\Misc\GateOpen" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2903112632" Name="PotDrink" ObjectPath="\Events\Default Work Unit\Misc\PotDrink" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX" Hash="1325801604">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>

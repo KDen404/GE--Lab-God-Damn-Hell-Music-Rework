@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" SchemaVersion="103" RootDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" ParentDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}">
+	<Events>
+		<WorkUnit Name="Player" ID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" OwnerID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="PlayerRun" ID="{09F0E0E7-E63F-434F-80FF-4515EC78639B}">
+					<ChildrenList>
+						<Action Name="" ID="{CA2B2F11-63D9-4A73-B3DC-01D03602F904}" ShortID="523770784">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{46002CCC-020A-42DA-877C-0D0710FF15B0}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SwordSwing" ID="{D3727280-BC01-4B38-95D3-80C995C1D3F7}">
+					<ChildrenList>
+						<Action Name="" ID="{21FC7BBD-5505-43D1-87DA-47041CAF78E7}" ShortID="747953480">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sword" ID="{379B823F-456F-4765-BFA9-8EA4D4BEB86D}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayerGotHit" ID="{618976C6-DEFA-4574-9E39-011E43CF52B8}">
+					<ChildrenList>
+						<Action Name="" ID="{9556E24D-EB72-4C15-8B6D-7E8A119F70D8}" ShortID="393688300">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GotHit" ID="{2E1E00E1-B0DB-4A61-BA10-348212CE6DE4}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayerDeath" ID="{7905BF3E-D2A8-46CB-B5C5-D776C70013A5}">
+					<ChildrenList>
+						<Action Name="" ID="{E368EF40-8A32-4A26-97F4-2F73B9ABF054}" ShortID="541190784">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Death" ID="{76174437-1E30-4B1C-BFB0-EF9DDFCF8E81}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AttackBlocked" ID="{152D2844-35A6-4AF3-B222-814E82D1F867}">
+					<ChildrenList>
+						<Action Name="" ID="{7FBF3DF6-FA0A-4EE3-9533-F96F2DBCE657}" ShortID="176932711">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Block" ID="{A14116FA-6BB1-4ABA-9C1D-7A6B94E0A110}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

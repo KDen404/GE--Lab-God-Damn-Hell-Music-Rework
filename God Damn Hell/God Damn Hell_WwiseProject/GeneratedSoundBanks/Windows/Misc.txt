@@ -1,0 +1,5 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2903112632	PotDrink			\Default Work Unit\Misc\PotDrink	
+	3619229476	GateClose			\Default Work Unit\Misc\GateClose	
+	3677793184	GateOpen			\Default Work Unit\Misc\GateOpen	
+
