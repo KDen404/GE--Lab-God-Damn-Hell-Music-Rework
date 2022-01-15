@@ -55,6 +55,10 @@ public class DemonFighterAnimations : MonoBehaviour
         {
             animator.SetFloat("WalkRunFloat", 1f);
         }
+        else
+        {
+            animator.SetFloat("WalkRunFloat", 0f);
+        }
     }
 
     private void Attack()
