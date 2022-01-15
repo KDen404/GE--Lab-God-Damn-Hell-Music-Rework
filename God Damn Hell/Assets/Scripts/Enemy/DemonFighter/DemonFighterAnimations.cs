@@ -105,6 +105,7 @@ public class DemonFighterAnimations : MonoBehaviour
     private IEnumerator DieCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
+        GetComponentInParent<AlarmOtherEnemiesRework>().activityHasChanged = true;
         Destroy(gameObject);
     }
 

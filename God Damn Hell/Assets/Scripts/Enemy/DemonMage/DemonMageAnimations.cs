@@ -116,6 +116,7 @@ public class DemonMageAnimations : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         animator.enabled = false;
         yield return new WaitForSeconds(3.5f);
+        GetComponentInParent<AlarmOtherEnemiesRework>().activityHasChanged = true;
         Destroy(gameObject);
     }
 
