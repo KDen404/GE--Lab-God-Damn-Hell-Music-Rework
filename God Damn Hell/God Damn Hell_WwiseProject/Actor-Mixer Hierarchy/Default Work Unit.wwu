@@ -120,6 +120,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Flesh" ID="{84EF92BD-A4EC-46FA-8DE3-68658F1D25AE}" ShortID="318991780">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -265,6 +266,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="SwordImpact" ID="{0CAA0537-BAB1-44E7-AFDF-99B74FE05F69}" ShortID="618690915">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -759,8 +761,9 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Swoosh_Player" ID="{65C72B5D-D778-4989-BCC9-22EAB84798B1}" ShortID="695880284">
+								<RandomSequenceContainer Name="Swoosh" ID="{65C72B5D-D778-4989-BCC9-22EAB84798B1}" ShortID="695880284">
 									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
 									</PropertyList>
@@ -1597,7 +1600,7 @@
 							<ObjectLists/>
 							<Playlist>
 								<ItemRef Name="Silence" ID="{C8EBB9B2-0B56-40F6-9022-4FCAC9BF2F36}"/>
-								<ItemRef Name="Swoosh_Player" ID="{65C72B5D-D778-4989-BCC9-22EAB84798B1}"/>
+								<ItemRef Name="Swoosh" ID="{65C72B5D-D778-4989-BCC9-22EAB84798B1}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="DemonDeath" ID="{4FAE947D-9A6F-4DC7-83D2-99407623E476}" ShortID="676990476">
@@ -1615,6 +1618,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="DeathSFX" ID="{599D39A5-FE65-43C7-A802-C63DC5F4A31A}" ShortID="453861772">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2F3F80CD-98A8-4AA1-A7CF-F14CB9324F32}"/>
@@ -1653,6 +1659,7 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="DemonSpearHit" ID="{9913402E-3EF0-401F-BF89-F1F8B3E74B51}" ShortID="249917464">
 							<PropertyList>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1696,6 +1703,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Swoosh_Player" ID="{FE5EEF2B-E7A6-4730-ADFC-992786E589A3}" ShortID="218817137">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
 											</PropertyList>
@@ -2556,6 +2564,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Swoosh_Player" ID="{200A48F0-BFC6-4697-B648-2B079083FBC4}" ShortID="937009886">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
 											</PropertyList>
@@ -3411,6 +3420,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Swoosh_Player" ID="{0306E19B-D12A-4B3C-80D6-8CD4CC65A9F6}" ShortID="572720506">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
 											</PropertyList>
@@ -4275,6 +4285,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Step sound" ID="{F973870F-BE99-47B6-BCEA-C65B11DEC972}" ShortID="567490145">
 									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
@@ -5414,6 +5425,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Swoosh_Player" ID="{54875E69-6304-4830-A6EB-33AC803CDBD9}" ShortID="138064416">
 									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
 									</PropertyList>
@@ -6298,6 +6310,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Flesh" ID="{A8378922-C764-434B-89A4-094E8B888F91}" ShortID="979341337">
 											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 											</PropertyList>
 											<ReferenceList>
@@ -6646,6 +6659,7 @@
 								</BlendContainer>
 								<RandomSequenceContainer Name="PlayerDeathSound" ID="{96C2C02B-B2D9-4B9E-9F77-B92A4F6B6E0A}" ShortID="68395346">
 									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-10</Value>
@@ -6882,6 +6896,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="ShieldScratch" ID="{782CDE68-E5EA-41C7-976D-3B454C3F4F97}" ShortID="909042966">
 									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>

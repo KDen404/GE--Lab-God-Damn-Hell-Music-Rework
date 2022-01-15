@@ -40,6 +40,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ENEMIES = 2242381963U;
         static const AkUniqueID MAIN_MENU = 2005704188U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
     } // namespace BANKS
 

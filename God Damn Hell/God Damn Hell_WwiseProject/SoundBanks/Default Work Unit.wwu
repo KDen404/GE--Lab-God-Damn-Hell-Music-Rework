@@ -12,16 +12,21 @@
 				</SoundBank>
 				<SoundBank Name="Player" ID="{8E14432A-0677-4E10-BC3C-63CAADEA081F}">
 					<ObjectInclusionList>
-						<ObjectRef Name="PlayerRun" ID="{09F0E0E7-E63F-434F-80FF-4515EC78639B}" WorkUnitID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="SwordSwing" ID="{D3727280-BC01-4B38-95D3-80C995C1D3F7}" WorkUnitID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player" ID="{F6D3A597-070C-4407-A85B-BD38BE9F9864}" WorkUnitID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Enemies" ID="{D0E7C81A-8031-4A26-9B66-060591639457}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Default Work Unit" ID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" WorkUnitID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="SpearSwing" ID="{D6A79C5D-B797-4EDE-B05A-7B0C58C5DE1C}" WorkUnitID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Enemy" ID="{3B21BE8E-D122-4A5C-9232-8D21CD065945}" WorkUnitID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{EA420338-1D8B-4741-8A37-9524247F6AE3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="IngameMusic" ID="{07901930-B027-4388-8F60-C4274010B18D}" WorkUnitID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
