@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81453919ecae81844ba4b079d4c0cea1, type: 3}
   m_Name: AkWwiseProjectData
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier:
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     PathAndIcons:
@@ -23,8 +23,8 @@ MonoBehaviour:
       guid: 370de44575768f489e640f7dd0ba779e
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 370de44575768f489e640f7dd0ba779e
-    GuidInternal: 
-    m_lastTime: -8585599460244775808
+    GuidInternal:
+    m_lastTime: -8585594196204144032
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -37,8 +37,8 @@ MonoBehaviour:
       guid: 2c4f1467dae49a4684554f9a29b9d07a
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2c4f1467dae49a4684554f9a29b9d07a
-    GuidInternal: 
-    m_lastTime: -8585599460244775808
+    GuidInternal:
+    m_lastTime: -8585594196210884978
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -65,8 +65,8 @@ MonoBehaviour:
       guid: 66687670ee694d489d62771cc1401dcb
     ParentPath: SoundBanks\Default Work Unit
     guid: 66687670ee694d489d62771cc1401dcb
-    GuidInternal: 
-    m_lastTime: -8585593413759169875
+    GuidInternal:
+    m_lastTime: -8585593412004522970
     List:
     - name: Enemies
       guid: 1ac8e7d03180264a9b66060591639457
@@ -135,8 +135,8 @@ MonoBehaviour:
       guid: 96f2b1fe20fa0144813ad43ca98083c2
     ParentPath: Events\Default Work Unit
     guid: 96f2b1fe20fa0144813ad43ca98083c2
-    GuidInternal: 
-    m_lastTime: -8585594313504137767
+    GuidInternal:
+    m_lastTime: -8585593475082917330
     List:
     - name: AttackBlocked
       guid: 44282d15a635f34ab222814e82d1f867
@@ -699,8 +699,8 @@ MonoBehaviour:
       guid: 6998021113b3504b8077a724c13c14ad
     ParentPath: Game Parameters\Default Work Unit
     guid: 6998021113b3504b8077a724c13c14ad
-    GuidInternal: 
-    m_lastTime: -8585599460244775808
+    GuidInternal:
+    m_lastTime: -8585594196221329581
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -713,8 +713,8 @@ MonoBehaviour:
       guid: 7978cba7b82a99408f90c187c9a553d7
     ParentPath: States\Default Work Unit
     guid: 7978cba7b82a99408f90c187c9a553d7
-    GuidInternal: 
-    m_lastTime: -8585599460244775808
+    GuidInternal:
+    m_lastTime: -8585594196204164060
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -727,8 +727,8 @@ MonoBehaviour:
       guid: fcd0045ebe7a404680651efee7be0637
     ParentPath: Switches\Default Work Unit
     guid: fcd0045ebe7a404680651efee7be0637
-    GuidInternal: 
-    m_lastTime: -8585599460244775808
+    GuidInternal:
+    m_lastTime: -8585594196204154050
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -741,12 +741,12 @@ MonoBehaviour:
       guid: e8dee53f79efbe489ad73132f3cf0e2c
     ParentPath: Triggers\Default Work Unit
     guid: e8dee53f79efbe489ad73132f3cf0e2c
-    GuidInternal: 
-    m_lastTime: -8585599460244775808
+    GuidInternal:
+    m_lastTime: -8585594196204149043
     List: []
   ExpandedFileSystemItemIds: 0500000006000000080000000c0000000d0000000e0000002200000023000000
   ExpandedWaapiItemIds: 0500000006000000080000000c0000000d0000000e0000002200000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 1
-  CurrentPluginConfig: 
+  CurrentPluginConfig:
