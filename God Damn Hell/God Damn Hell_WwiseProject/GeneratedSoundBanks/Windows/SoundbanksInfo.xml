@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3937047630">
+		<SoundBank Id="1069431850" Language="SFX" Hash="2509572822">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -192,7 +192,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1328934038" Name="SwordSwing" ObjectPath="\Events\Default Work Unit\Player\SwordSwing" DurationType="OneShot" DurationMin="0.503433" DurationMax="0.681812">
+				<Event Id="1328934038" Name="SwordSwing" ObjectPath="\Events\Default Work Unit\Player\SwordSwing" DurationType="OneShot" DurationMin="0.203433" DurationMax="0.381812">
 					<IncludedMemoryFiles>
 						<File Id="215669193" Language="SFX">
 							<ShortName>sword_swoosh-16.wav</ShortName>
@@ -282,7 +282,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2242381963" Language="SFX" Hash="1454807283">
+		<SoundBank Id="2242381963" Language="SFX" Hash="1581807094">
 			<ObjectPath>\SoundBanks\Default Work Unit\Enemies</ObjectPath>
 			<ShortName>Enemies</ShortName>
 			<Path>Enemies.bnk</Path>
@@ -595,7 +595,7 @@
 				</Event>
 				<Event Id="537156876" Name="DemonSpearRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearRun" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3167257242" Name="DemonSpearWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearWalk" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2867028574" Name="FighterSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\FighterSwing" DurationType="OneShot" DurationMin="0.183433" DurationMax="0.361812">
+				<Event Id="2867028574" Name="FighterSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\FighterSwing" DurationType="OneShot" DurationMin="0.338367" DurationMax="0.667410">
 					<IncludedMemoryFiles>
 						<File Id="215669193" Language="SFX">
 							<ShortName>sword_swoosh-16.wav</ShortName>
@@ -733,12 +733,19 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2912411142">
+		<SoundBank Id="3991942870" Language="SFX" Hash="304731213">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1545821079" Name="IngameMusic" ObjectPath="\Events\Default Work Unit\Music\IngameMusic" DurationType="Infinite"/>
+				<Event Id="1545821079" Name="IngameMusic" ObjectPath="\Events\Default Work Unit\Music\IngameMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="529376960" Language="SFX">
+							<ShortName>IngameMusic.wav</ShortName>
+							<Path>SFX\IngameMusic_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

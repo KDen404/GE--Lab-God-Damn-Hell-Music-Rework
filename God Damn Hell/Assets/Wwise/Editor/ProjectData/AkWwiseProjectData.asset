@@ -509,8 +509,8 @@ MonoBehaviour:
         guid: 2cc4a78a9e08f445809053adef1be168
       Path: Events\Default Work Unit\Enemy\DemonFighter\FighterSwing
       maxAttenuation: 0
-      maxDuration: 0.361812
-      minDuration: 0.183433
+      maxDuration: 0.66741
+      minDuration: 0.338367
     - name: IngameMusic
       guid: 3019900727b088438f60c4274010b18d
       id: 1545821079
@@ -686,8 +686,8 @@ MonoBehaviour:
         guid: 807272d301bc384b95d380c995c1d3f7
       Path: Events\Default Work Unit\Player\SwordSwing
       maxAttenuation: 0
-      maxDuration: 0.681812
-      minDuration: 0.503433
+      maxDuration: 0.381812
+      minDuration: 0.203433
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -744,9 +744,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585599460244775808
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000080000000c0000000d000000
+  ExpandedFileSystemItemIds: 0500000006000000080000000c0000000d0000000e0000002200000023000000
+  ExpandedWaapiItemIds: 0500000006000000080000000c0000000d0000000e0000002200000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

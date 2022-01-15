@@ -1838,7 +1838,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3a2f066c154458b40bdf586ebe9e215d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 82c596acef8e0f1438432919a722d3a5, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
