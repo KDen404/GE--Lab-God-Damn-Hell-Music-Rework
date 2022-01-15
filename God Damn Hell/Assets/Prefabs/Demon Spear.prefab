@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 1
   movementspeed: 2.5
-  aggroRange: 10
+  aggroRange: 20
   activated: 0
 --- !u!195 &8255733972545835035
 NavMeshAgent:

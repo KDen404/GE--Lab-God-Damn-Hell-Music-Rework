@@ -1766,7 +1766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 1
   movementspeed: 2.5
-  aggroRange: 10
+  aggroRange: 20
   activated: 0
 --- !u!114 &5648358945693428413
 MonoBehaviour:
