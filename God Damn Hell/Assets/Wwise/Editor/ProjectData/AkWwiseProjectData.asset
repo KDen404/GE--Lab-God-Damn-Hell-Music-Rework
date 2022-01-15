@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 370de44575768f489e640f7dd0ba779e
     GuidInternal: 
-    m_lastTime: -8585593261845268682
+    m_lastTime: -8585593257559120588
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2c4f1467dae49a4684554f9a29b9d07a
     GuidInternal: 
-    m_lastTime: -8585593261851729122
+    m_lastTime: -8585593257573832828
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 66687670ee694d489d62771cc1401dcb
     GuidInternal: 
-    m_lastTime: -8585593253093067470
+    m_lastTime: -8585593248859599168
     List:
     - name: Enemies
       guid: 1ac8e7d03180264a9b66060591639457
@@ -150,558 +150,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 96f2b1fe20fa0144813ad43ca98083c2
     GuidInternal: 
-    m_lastTime: -8585593261859001649
-    List:
-    - name: AttackBlocked
-      guid: 44282d15a635f34ab222814e82d1f867
-      id: 1654192851
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Player
-        ObjectType: 4
-        guid: 97a5d3f60c070744a85bbd38be9f9864
-      - ElementName: AttackBlocked
-        ObjectType: 3
-        guid: 44282d15a635f34ab222814e82d1f867
-      Path: Events\Default Work Unit\Player\AttackBlocked
-      maxAttenuation: 0
-      maxDuration: 1.31602
-      minDuration: 1.133817
-    - name: DemonFighter
-      guid: 07622ac31fbd6d4e98278145d69136ed
-      id: 2444670597
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonFighter
-        ObjectType: 4
-        guid: 07622ac31fbd6d4e98278145d69136ed
-      Path: Events\Default Work Unit\Enemy\DemonFighter
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: DemonFighterDeath
-      guid: 8aa2823b2d5a904a9cfb2b2573e872df
-      id: 725206385
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonFighter
-        ObjectType: 4
-        guid: 07622ac31fbd6d4e98278145d69136ed
-      - ElementName: DemonFighterDeath
-        ObjectType: 3
-        guid: 8aa2823b2d5a904a9cfb2b2573e872df
-      Path: Events\Default Work Unit\Enemy\DemonFighter\DemonFighterDeath
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: DemonFighterGotHit
-      guid: 2aa18b7d7a5eaf4eae604c777d19f439
-      id: 3929558812
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonFighter
-        ObjectType: 4
-        guid: 07622ac31fbd6d4e98278145d69136ed
-      - ElementName: DemonFighterGotHit
-        ObjectType: 3
-        guid: 2aa18b7d7a5eaf4eae604c777d19f439
-      Path: Events\Default Work Unit\Enemy\DemonFighter\DemonFighterGotHit
-      maxAttenuation: 0
-      maxDuration: 0.773455
-      minDuration: 0.305093
-    - name: DemonFighterRun
-      guid: f1dcaee7bf695a47a8c20b939643c4ca
-      id: 36191336
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonFighter
-        ObjectType: 4
-        guid: 07622ac31fbd6d4e98278145d69136ed
-      - ElementName: DemonFighterRun
-        ObjectType: 3
-        guid: f1dcaee7bf695a47a8c20b939643c4ca
-      Path: Events\Default Work Unit\Enemy\DemonFighter\DemonFighterRun
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: DemonFighterWalk
-      guid: 116346a43c2ab14392345706942471b7
-      id: 3496783742
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonFighter
-        ObjectType: 4
-        guid: 07622ac31fbd6d4e98278145d69136ed
-      - ElementName: DemonFighterWalk
-        ObjectType: 3
-        guid: 116346a43c2ab14392345706942471b7
-      Path: Events\Default Work Unit\Enemy\DemonFighter\DemonFighterWalk
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: DemonMage
-      guid: 99b76998652a124b92f3f2a1892a62de
-      id: 2777782264
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonMage
-        ObjectType: 4
-        guid: 99b76998652a124b92f3f2a1892a62de
-      Path: Events\Default Work Unit\Enemy\DemonMage
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: DemonMageGotHit
-      guid: 640fce8e412f174f9f8655aadd5550e6
-      id: 1895283565
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonMage
-        ObjectType: 4
-        guid: 99b76998652a124b92f3f2a1892a62de
-      - ElementName: DemonMageGotHit
-        ObjectType: 3
-        guid: 640fce8e412f174f9f8655aadd5550e6
-      Path: Events\Default Work Unit\Enemy\DemonMage\DemonMageGotHit
-      maxAttenuation: 0
-      maxDuration: 0.773455
-      minDuration: 0.305093
-    - name: DemonMageRun
-      guid: a5e5851d2dd94448864d52c1cf98341c
-      id: 4294451055
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonMage
-        ObjectType: 4
-        guid: 99b76998652a124b92f3f2a1892a62de
-      - ElementName: DemonMageRun
-        ObjectType: 3
-        guid: a5e5851d2dd94448864d52c1cf98341c
-      Path: Events\Default Work Unit\Enemy\DemonMage\DemonMageRun
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: DemonMageWalk
-      guid: c5a6f1253f8c8d4c994f9b1ca33aa1ba
-      id: 2140539667
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonMage
-        ObjectType: 4
-        guid: 99b76998652a124b92f3f2a1892a62de
-      - ElementName: DemonMageWalk
-        ObjectType: 3
-        guid: c5a6f1253f8c8d4c994f9b1ca33aa1ba
-      Path: Events\Default Work Unit\Enemy\DemonMage\DemonMageWalk
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: DemonSpear
-      guid: f88a30bb235c704e83062b3787461d9d
-      id: 2894295441
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonSpear
-        ObjectType: 4
-        guid: f88a30bb235c704e83062b3787461d9d
-      Path: Events\Default Work Unit\Enemy\DemonSpear
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: DemonSpearDeath
-      guid: 45517284ba4dc94bbacc7aec97ca6c80
-      id: 2102040365
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonSpear
-        ObjectType: 4
-        guid: f88a30bb235c704e83062b3787461d9d
-      - ElementName: DemonSpearDeath
-        ObjectType: 3
-        guid: 45517284ba4dc94bbacc7aec97ca6c80
-      Path: Events\Default Work Unit\Enemy\DemonSpear\DemonSpearDeath
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: DemonSpearGotHit
-      guid: 111b8a315054344b92b79ba7964586a3
-      id: 4061880024
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonSpear
-        ObjectType: 4
-        guid: f88a30bb235c704e83062b3787461d9d
-      - ElementName: DemonSpearGotHit
-        ObjectType: 3
-        guid: 111b8a315054344b92b79ba7964586a3
-      Path: Events\Default Work Unit\Enemy\DemonSpear\DemonSpearGotHit
-      maxAttenuation: 0
-      maxDuration: 0.773455
-      minDuration: 0.305093
-    - name: DemonSpearRun
-      guid: 91bb24e514641546a248c14ebc598237
-      id: 537156876
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonSpear
-        ObjectType: 4
-        guid: f88a30bb235c704e83062b3787461d9d
-      - ElementName: DemonSpearRun
-        ObjectType: 3
-        guid: 91bb24e514641546a248c14ebc598237
-      Path: Events\Default Work Unit\Enemy\DemonSpear\DemonSpearRun
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: DemonSpearWalk
-      guid: 3e3cd659a05fca49abaa0d0f0e582d76
-      id: 3167257242
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonSpear
-        ObjectType: 4
-        guid: f88a30bb235c704e83062b3787461d9d
-      - ElementName: DemonSpearWalk
-        ObjectType: 3
-        guid: 3e3cd659a05fca49abaa0d0f0e582d76
-      Path: Events\Default Work Unit\Enemy\DemonSpear\DemonSpearWalk
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Enemy
-      guid: 8ebe213b22d15c4a92328d21cd065945
-      id: 2299321487
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      Path: Events\Default Work Unit\Enemy
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: FighterSwing
-      guid: 2cc4a78a9e08f445809053adef1be168
-      id: 2867028574
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonFighter
-        ObjectType: 4
-        guid: 07622ac31fbd6d4e98278145d69136ed
-      - ElementName: FighterSwing
-        ObjectType: 3
-        guid: 2cc4a78a9e08f445809053adef1be168
-      Path: Events\Default Work Unit\Enemy\DemonFighter\FighterSwing
-      maxAttenuation: 0
-      maxDuration: 0.66741
-      minDuration: 0.338367
-    - name: IngameMusic
-      guid: 3019900727b088438f60c4274010b18d
-      id: 1545821079
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Music
-        ObjectType: 4
-        guid: 9d4cc7f2297d7049aba0d1156e7d9637
-      - ElementName: IngameMusic
-        ObjectType: 3
-        guid: 3019900727b088438f60c4274010b18d
-      Path: Events\Default Work Unit\Music\IngameMusic
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Main_Menu
-      guid: 2cf0a6c6ff06204e849dee12c2032dc7
-      id: 2005704188
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Music
-        ObjectType: 4
-        guid: 9d4cc7f2297d7049aba0d1156e7d9637
-      - ElementName: Main_Menu
-        ObjectType: 3
-        guid: 2cf0a6c6ff06204e849dee12c2032dc7
-      Path: Events\Default Work Unit\Music\Main_Menu
-      maxAttenuation: 0
-      maxDuration: 253.93124
-      minDuration: 253.93124
-    - name: Music
-      guid: 9d4cc7f2297d7049aba0d1156e7d9637
-      id: 3991942870
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Music
-        ObjectType: 4
-        guid: 9d4cc7f2297d7049aba0d1156e7d9637
-      Path: Events\Default Work Unit\Music
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Player
-      guid: 97a5d3f60c070744a85bbd38be9f9864
-      id: 1069431850
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Player
-        ObjectType: 4
-        guid: 97a5d3f60c070744a85bbd38be9f9864
-      Path: Events\Default Work Unit\Player
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: PlayerDeath
-      guid: 3ebf0579a8d2cb46b5c5d776c70013a5
-      id: 1656947812
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Player
-        ObjectType: 4
-        guid: 97a5d3f60c070744a85bbd38be9f9864
-      - ElementName: PlayerDeath
-        ObjectType: 3
-        guid: 3ebf0579a8d2cb46b5c5d776c70013a5
-      Path: Events\Default Work Unit\Player\PlayerDeath
-      maxAttenuation: 0
-      maxDuration: 13.323538
-      minDuration: 12.429569
-    - name: PlayerGotHit
-      guid: c6768961fade74459e39011e43cf52b8
-      id: 855695183
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Player
-        ObjectType: 4
-        guid: 97a5d3f60c070744a85bbd38be9f9864
-      - ElementName: PlayerGotHit
-        ObjectType: 3
-        guid: c6768961fade74459e39011e43cf52b8
-      Path: Events\Default Work Unit\Player\PlayerGotHit
-      maxAttenuation: 0
-      maxDuration: 0.772455
-      minDuration: 0.304093
-    - name: PlayerRun
-      guid: e7e0f0093fe64f4380ff4515ec78639b
-      id: 3964335501
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Player
-        ObjectType: 4
-        guid: 97a5d3f60c070744a85bbd38be9f9864
-      - ElementName: PlayerRun
-        ObjectType: 3
-        guid: e7e0f0093fe64f4380ff4515ec78639b
-      Path: Events\Default Work Unit\Player\PlayerRun
-      maxAttenuation: 0
-      maxDuration: 0.486114
-      minDuration: 0.293186
-    - name: SpearSwing
-      guid: 5d9ca7d697b7de4eb05a7b0c58c5de1c
-      id: 478914142
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Enemy
-        ObjectType: 4
-        guid: 8ebe213b22d15c4a92328d21cd065945
-      - ElementName: DemonSpear
-        ObjectType: 4
-        guid: f88a30bb235c704e83062b3787461d9d
-      - ElementName: SpearSwing
-        ObjectType: 3
-        guid: 5d9ca7d697b7de4eb05a7b0c58c5de1c
-      Path: Events\Default Work Unit\Enemy\DemonSpear\SpearSwing
-      maxAttenuation: 0
-      maxDuration: 0.681812
-      minDuration: 0.503433
-    - name: SwordSwing
-      guid: 807272d301bc384b95d380c995c1d3f7
-      id: 1328934038
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Player
-        ObjectType: 4
-        guid: 97a5d3f60c070744a85bbd38be9f9864
-      - ElementName: SwordSwing
-        ObjectType: 3
-        guid: 807272d301bc384b95d380c995c1d3f7
-      Path: Events\Default Work Unit\Player\SwordSwing
-      maxAttenuation: 0
-      maxDuration: 0.381812
-      minDuration: 0.203433
+    m_lastTime: -8585593248860019346
+    List: []
   - PhysicalPath: Events\Enemy.wwu
     PathAndIcons:
     - ElementName: Events
@@ -716,7 +166,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Enemy
     guid: ece04a65bd84f141aac4a2bebacece28
     GuidInternal: 
-    m_lastTime: -8585593313205030527
+    m_lastTime: -8585593248860019346
     List:
     - name: DemonFighter
       guid: 07622ac31fbd6d4e98278145d69136ed
@@ -1091,7 +541,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Misc
     guid: 38851f663c90cb47ab344da8a1d968e0
     GuidInternal: 
-    m_lastTime: -8585593253093162994
+    m_lastTime: -8585593248859947893
     List:
     - name: GateClose
       guid: b3b3c070976665489ae22edc56af7111
@@ -1167,7 +617,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Music
     guid: b78cf16ee38bc442ac0cbbbc194feecb
     GuidInternal: 
-    m_lastTime: -8585593312825934456
+    m_lastTime: -8585593248859947893
     List:
     - name: IngameMusic
       guid: 3019900727b088438f60c4274010b18d
@@ -1223,7 +673,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Player
     guid: ba88319e4c7f1a409355cef3459a8722
     GuidInternal: 
-    m_lastTime: -8585593312626922391
+    m_lastTime: -8585593248859939244
     List:
     - name: AttackBlocked
       guid: 44282d15a635f34ab222814e82d1f867
@@ -1337,7 +787,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6998021113b3504b8077a724c13c14ad
     GuidInternal: 
-    m_lastTime: -8585593261859001649
+    m_lastTime: -8585593257590301419
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -1351,7 +801,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7978cba7b82a99408f90c187c9a553d7
     GuidInternal: 
-    m_lastTime: -8585593261845283628
+    m_lastTime: -8585593257559160599
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -1365,7 +815,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: fcd0045ebe7a404680651efee7be0637
     GuidInternal: 
-    m_lastTime: -8585593261845273681
+    m_lastTime: -8585593257559140606
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1379,10 +829,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e8dee53f79efbe489ad73132f3cf0e2c
     GuidInternal: 
-    m_lastTime: -8585593261845268682
+    m_lastTime: -8585593257559130582
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0d0000000e0000000f000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
