@@ -22,7 +22,7 @@ public class VictoryScreen : MonoBehaviour
         victorypanel.gameObject.GetComponent<Image>().color = imageColor;
 
         messageColor = victoryMessage.color;
-        messageColor.a = 0f;
+        messageColor.a = -0.3f;
         victoryMessage.color = messageColor;
 
         exitButton.gameObject.SetActive(false);
@@ -38,6 +38,7 @@ public class VictoryScreen : MonoBehaviour
         {
             if ( enemyInformation.GetComponent<TotalEnemyCount>().totalEnemiesAlive == 0)                                  
             {
+                Debug.Log(messageColor.a);
                 victorypanel.gameObject.SetActive(true);
 
                 timediff = Time.deltaTime / 3f;
