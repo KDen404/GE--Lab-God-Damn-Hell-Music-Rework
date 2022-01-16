@@ -14238,14 +14238,14 @@
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom>
-										<Attenuation Name="Attenuation (Custom)" ID="{27C6CE8D-6443-48C0-83DD-CD032E127391}" ShortID="530596465">
+										<Attenuation Name="Attenuation (Custom)" ID="{2846A7DC-874B-406A-BEB3-EB606BD49817}" ShortID="123165702">
 											<PropertyList>
 												<Property Name="RadiusMax" Type="Real64" Value="50"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{EE37C567-4D2F-40BF-A603-EC2B6F2C8073}">
+														<Curve Name="VolumeDry" ID="{0482708E-DB5E-4AA1-B448-91BFBCD02F3A}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -14663,7 +14663,7 @@
 									<ChildrenList>
 										<SourcePlugin Name="Wwise Silence" ID="{1CD7A4D2-9098-46F8-957D-7C8FDD708CAF}" ShortID="323060873" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 											<PropertyList>
-												<Property Name="Length" Type="Real32" Value="0.2"/>
+												<Property Name="Length" Type="Real32" Value="0.001"/>
 											</PropertyList>
 											<Language>SFX</Language>
 										</SourcePlugin>

@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="2110377091">
+		<SoundBank Id="1069431850" Language="SFX" Hash="1667714452">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1654192851" Name="AttackBlocked" ObjectPath="\Events\Default Work Unit\Player\AttackBlocked" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.333817" DurationMax="0.516020">
+				<Event Id="1654192851" Name="AttackBlocked" ObjectPath="\Events\Default Work Unit\Player\AttackBlocked" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.134817" DurationMax="0.317020">
 					<IncludedMemoryFiles>
 						<File Id="11928915" Language="SFX">
 							<ShortName>Scratch_wood_-11.wav</ShortName>
