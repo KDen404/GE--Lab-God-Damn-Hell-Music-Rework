@@ -39,6 +39,14 @@ public class VictoryScreen : MonoBehaviour
         {
             if ( enemyInformation.GetComponent<TotalEnemyCount>().totalEnemiesAlive == 0)                                  
             {
+                Debug.Log(messageColor.a);
+                victorypanel.gameObject.SetActive(true);
+
+                timediff = Time.deltaTime / 3f;
+
+                messageColor.a += timediff;
+                victoryMessage.color = messageColor;
+
                 if (this.transform.GetChild(1).gameObject.activeSelf)
                 {
                     //stoppt die musik beim auftreten des Victory Screens
@@ -49,14 +57,6 @@ public class VictoryScreen : MonoBehaviour
                         enemyInformation.GetComponent<InstantiateEnemies>().instantiatedEnemies[i].SetActive(false);
                     }
                 }
-
-                Debug.Log(messageColor.a);
-                victorypanel.gameObject.SetActive(true);
-
-                timediff = Time.deltaTime / 3f;
-
-                messageColor.a += timediff;
-                victoryMessage.color = messageColor;
 
                 if (messageColor.a >= 1f)
                 {

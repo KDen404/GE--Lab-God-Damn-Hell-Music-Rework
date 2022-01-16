@@ -37,19 +37,9 @@ public class Deathscreen : MonoBehaviour
         // the Codes function is to fade to black once the Player dies.
         // If the Exit Button gets activated we do not need all this code to run in the background anymore
         if(exitButton.gameObject.activeSelf == false)
-        {  
+        {   
             if(player.GetComponent<PlayerStats>().currentHealthPoints <= 0) {
-                if (this.transform.GetChild(0).gameObject.activeSelf)
-                {
-                    //stoppt die musik beim auftreten des Victory Screens
-                    level_empty.GetComponent<PlayMusicOnStart>().stop_music();
-                    //Deaktiviert alle Gegner wenn Victory screen aktiviert (stopt ebenfalls den sound bug)
-                    for (int i = 0; i < level_empty.GetComponent<InstantiateEnemies>().instantiatedEnemies.Count; i++)
-                    {
-                        level_empty.GetComponent<InstantiateEnemies>().instantiatedEnemies[i].SetActive(false);
-                    }
-                    
-                }
+                
                 deathpanel.gameObject.SetActive(true);
 
                 timediff = Time.deltaTime / 3f;
@@ -60,7 +50,19 @@ public class Deathscreen : MonoBehaviour
                 messageColor.a += timediff;
                 deathMessage.color = messageColor;
 
-                if(imageColor.a >= 1f)
+                if (this.transform.GetChild(0).gameObject.activeSelf)
+                {
+                    //stoppt die musik beim auftreten des Victory Screens
+                    level_empty.GetComponent<PlayMusicOnStart>().stop_music();
+                    //Deaktiviert alle Gegner wenn Victory screen aktiviert (stopt ebenfalls den sound bug)
+                    for (int i = 0; i < level_empty.GetComponent<InstantiateEnemies>().instantiatedEnemies.Count; i++)
+                    {
+                        level_empty.GetComponent<InstantiateEnemies>().instantiatedEnemies[i].SetActive(false);
+                    }
+
+                }
+
+                if (imageColor.a >= 1.0f)
                 {
                     exitButton.gameObject.SetActive(true);
 
