@@ -8514,11 +8514,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859197, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: maxHealthPoints
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859197, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: currentHealthPoints
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859199, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: m_Material

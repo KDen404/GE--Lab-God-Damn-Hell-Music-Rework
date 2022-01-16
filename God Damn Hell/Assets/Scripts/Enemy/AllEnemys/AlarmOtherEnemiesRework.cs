@@ -11,8 +11,8 @@ public class AlarmOtherEnemiesRework : MonoBehaviour
 {
     private int alarmEnemyRange = 15;
 
-    private List<int> listOfActivatedEnemys = new List<int>();    //list of all activated enemys
-    private List<int> notActivatedEnemyList = new List<int>();   //list of all unactive enemys
+    private List<int> listOfActivatedEnemys = new List<int>();    //list of all activated enemys by index in Children
+    private List<int> notActivatedEnemyList = new List<int>();   //list of all unactive enemys by index in Children
 
 
     public bool activityHasChanged = true;      //if a new Enemy has been set active ->  updates the lists of activated/deactivated enemys
