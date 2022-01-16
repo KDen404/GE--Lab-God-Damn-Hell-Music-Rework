@@ -137,15 +137,6 @@ public class PlayerAnimations : MonoBehaviour
         {
             animator.SetTrigger("AttackTrigger");
         }
-
-        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
-        {
-            swordCollider.enabled = true;
-        }
-        else
-        {
-            swordCollider.enabled = false;
-        }
     }
 
     private void Die()

@@ -7,7 +7,6 @@ public class Hit : MonoBehaviour
     public Animator animator;
     public GameObject player;
     private Transform enemy;
-    private float lastHit;
     private float countPushBack;
     private bool enemyHit = false;
 
@@ -15,7 +14,6 @@ public class Hit : MonoBehaviour
 
     private void Update()
     {
-        lastHit += Time.deltaTime;
 
         // Currently only one enemy of all enemies hit gets knockbacked, can be fixed by using arrays
         if (enemyHit == true)
@@ -36,11 +34,10 @@ public class Hit : MonoBehaviour
     {
         // lastHit so the player cant hit the enemy more than once in one animation turn
         // and checking if the player is actually attacking or else the weapon can damage just by colliding with an enemy outside any animation
-        if (lastHit >= 1f && other.gameObject.transform.tag == "Enemy" && animator.GetCurrentAnimatorStateInfo(2).IsName("Attack"))
+        if (other.gameObject.transform.tag == "Enemy")
         {
             other.gameObject.transform.GetComponent<Stats>().healthPoints--;
             enemy = other.transform;
-            lastHit = 0;
             countPushBack = 0;
             enemyHit = true;
         }
