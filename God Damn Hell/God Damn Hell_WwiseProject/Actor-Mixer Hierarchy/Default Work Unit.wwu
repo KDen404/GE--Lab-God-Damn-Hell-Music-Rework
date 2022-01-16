@@ -7171,7 +7171,7 @@
 																							<PointList>
 																								<Point>
 																									<XPos>0</XPos>
-																									<YPos>-0</YPos>
+																									<YPos>0</YPos>
 																									<Flags>5</Flags>
 																								</Point>
 																								<Point>
@@ -7635,7 +7635,7 @@
 																							<PointList>
 																								<Point>
 																									<XPos>0</XPos>
-																									<YPos>-0</YPos>
+																									<YPos>0</YPos>
 																									<Flags>5</Flags>
 																								</Point>
 																								<Point>
@@ -8048,7 +8048,7 @@
 																	<PointList>
 																		<Point>
 																			<XPos>0</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
@@ -8208,7 +8208,7 @@
 																					<PointList>
 																						<Point>
 																							<XPos>0</XPos>
-																							<YPos>-0</YPos>
+																							<YPos>0</YPos>
 																							<Flags>5</Flags>
 																						</Point>
 																						<Point>
@@ -8475,7 +8475,7 @@
 																					<PointList>
 																						<Point>
 																							<XPos>0</XPos>
-																							<YPos>-0</YPos>
+																							<YPos>0</YPos>
 																							<Flags>5</Flags>
 																						</Point>
 																						<Point>
@@ -8563,7 +8563,7 @@
 																							<PointList>
 																								<Point>
 																									<XPos>0</XPos>
-																									<YPos>-0</YPos>
+																									<YPos>0</YPos>
 																									<Flags>5</Flags>
 																								</Point>
 																								<Point>
@@ -9027,7 +9027,7 @@
 																							<PointList>
 																								<Point>
 																									<XPos>0</XPos>
-																									<YPos>-0</YPos>
+																									<YPos>0</YPos>
 																									<Flags>5</Flags>
 																								</Point>
 																								<Point>
@@ -13530,7 +13530,7 @@
 																					<PointList>
 																						<Point>
 																							<XPos>0</XPos>
-																							<YPos>-0</YPos>
+																							<YPos>0</YPos>
 																							<Flags>5</Flags>
 																						</Point>
 																						<Point>
@@ -13994,7 +13994,7 @@
 																					<PointList>
 																						<Point>
 																							<XPos>0</XPos>
-																							<YPos>-0</YPos>
+																							<YPos>0</YPos>
 																							<Flags>5</Flags>
 																						</Point>
 																						<Point>
@@ -15514,7 +15514,7 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -16417,9 +16417,14 @@
 								</RandomSequenceContainer>
 								<Sound Name="magic" ID="{608CB29F-A300-4CEB-A7E0-73C02E0A739A}" ShortID="367583719">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
+										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>False</Value>
+												<Value>0.4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-33</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -16431,7 +16436,24 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{67144F2C-E4DA-469A-8455-4F9A29B9D07A}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="magic pot" ID="{24A73AB0-525C-444D-B189-B00065BE4E48}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.267175572519084"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.755725190839695"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>magic pot.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="920465472"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="magic pot" ID="{24A73AB0-525C-444D-B189-B00065BE4E48}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>

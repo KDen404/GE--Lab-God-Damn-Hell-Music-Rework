@@ -50,20 +50,22 @@ public class Deathscreen : MonoBehaviour
                 messageColor.a += timediff;
                 deathMessage.color = messageColor;
 
-                if (this.transform.GetChild(0).gameObject.activeSelf)
-                {
-                    //stoppt die musik beim auftreten des Victory Screens
-                    level_empty.GetComponent<PlayMusicOnStart>().stop_music();
-                    //Deaktiviert alle Gegner wenn Victory screen aktiviert (stopt ebenfalls den sound bug)
-                    for (int i = 0; i < level_empty.GetComponent<InstantiateEnemies>().instantiatedEnemies.Count; i++)
-                    {
-                        level_empty.GetComponent<InstantiateEnemies>().instantiatedEnemies[i].SetActive(false);
-                    }
-
-                }
+                
 
                 if (imageColor.a >= 1.0f)
                 {
+                    if (this.transform.GetChild(0).gameObject.activeSelf)
+                    {
+                        //stoppt die musik beim auftreten des Victory Screens
+                        level_empty.GetComponent<PlayMusicOnStart>().stop_music();
+                        //Deaktiviert alle Gegner wenn Victory screen aktiviert (stopt ebenfalls den sound bug)
+                        for (int i = 0; i < level_empty.GetComponent<TotalEnemyCount>().totalEnemyCount.Count; i++)
+                        {
+                            level_empty.GetComponent<TotalEnemyCount>().totalEnemyCount[i].gameObject.SetActive(false);
+                        }
+
+                    }
+
                     exitButton.gameObject.SetActive(true);
 
                     imageColor.a = 1f;      //alpha value gets set back to 1 (not really needed but I prefer it this way)

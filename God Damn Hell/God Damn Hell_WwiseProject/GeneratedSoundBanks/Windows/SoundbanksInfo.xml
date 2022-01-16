@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="4031302862">
+		<SoundBank Id="1069431850" Language="SFX" Hash="2110377091">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -362,12 +362,12 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3686987424">
+		<SoundBank Id="1355168291" Language="SFX" Hash="705236619">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2005704188" Language="SFX" Hash="2251010969">
+		<SoundBank Id="2005704188" Language="SFX" Hash="2797317210">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_Menu</ObjectPath>
 			<ShortName>Main_Menu</ShortName>
 			<Path>Main_Menu.bnk</Path>
@@ -382,7 +382,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2242381963" Language="SFX" Hash="3107896845">
+		<SoundBank Id="2242381963" Language="SFX" Hash="2654251362">
 			<ObjectPath>\SoundBanks\Default Work Unit\Enemies</ObjectPath>
 			<ShortName>Enemies</ShortName>
 			<Path>Enemies.bnk</Path>
@@ -2093,7 +2093,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3062523257" Language="SFX" Hash="3308152881">
+		<SoundBank Id="3062523257" Language="SFX" Hash="49839623">
 			<ObjectPath>\SoundBanks\Default Work Unit\Misc</ObjectPath>
 			<ShortName>Misc</ShortName>
 			<Path>Misc.bnk</Path>
@@ -2158,122 +2158,173 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3677793184" Name="GateOpen" ObjectPath="\Events\Default Work Unit\Misc\GateOpen" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3983732716" Name="PotionSlurp" ObjectPath="\Events\Default Work Unit\Misc\PotionSlurp" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.667166" DurationMax="1.993994">
+				<Event Id="3677793184" Name="GateOpen" ObjectPath="\Events\Default Work Unit\Misc\GateOpen" MaxAttenuation="75.000000" DurationType="OneShot" DurationMin="0.348299" DurationMax="0.895419">
+					<IncludedMemoryFiles>
+						<File Id="72486231" Language="SFX">
+							<ShortName>ratter_inverted-06.wav</ShortName>
+							<Path>SFX\ratter_inverted-06_10C4C929.wem</Path>
+						</File>
+						<File Id="117984760" Language="SFX">
+							<ShortName>ratter_inverted-05.wav</ShortName>
+							<Path>SFX\ratter_inverted-05_10C4C929.wem</Path>
+						</File>
+						<File Id="483154713" Language="SFX">
+							<ShortName>ratter_inverted-01.wav</ShortName>
+							<Path>SFX\ratter_inverted-01_10C4C929.wem</Path>
+						</File>
+						<File Id="565425010" Language="SFX">
+							<ShortName>ratter_inverted-08.wav</ShortName>
+							<Path>SFX\ratter_inverted-08_10C4C929.wem</Path>
+						</File>
+						<File Id="603483560" Language="SFX">
+							<ShortName>ratter_inverted-02.wav</ShortName>
+							<Path>SFX\ratter_inverted-02_10C4C929.wem</Path>
+						</File>
+						<File Id="606974969" Language="SFX">
+							<ShortName>ratter_inverted-04.wav</ShortName>
+							<Path>SFX\ratter_inverted-04_10C4C929.wem</Path>
+						</File>
+						<File Id="614349174" Language="SFX">
+							<ShortName>ratter_inverted-03.wav</ShortName>
+							<Path>SFX\ratter_inverted-03_10C4C929.wem</Path>
+						</File>
+						<File Id="644031972" Language="SFX">
+							<ShortName>ratter_inverted-10.wav</ShortName>
+							<Path>SFX\ratter_inverted-10_10C4C929.wem</Path>
+						</File>
+						<File Id="901070741" Language="SFX">
+							<ShortName>ratter_inverted-07.wav</ShortName>
+							<Path>SFX\ratter_inverted-07_10C4C929.wem</Path>
+						</File>
+						<File Id="948568770" Language="SFX">
+							<ShortName>ratter_inverted-09.wav</ShortName>
+							<Path>SFX\ratter_inverted-09_10C4C929.wem</Path>
+						</File>
+						<File Id="1046708037" Language="SFX">
+							<ShortName>ratter_inverted-11.wav</ShortName>
+							<Path>SFX\ratter_inverted-11_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3983732716" Name="PotionSlurp" ObjectPath="\Events\Default Work Unit\Misc\PotionSlurp" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.900000" DurationMax="1.993994">
 					<IncludedMemoryFiles>
 						<File Id="5639057" Language="SFX">
 							<ShortName>Water_wiggle-10.wav</ShortName>
-							<Path>SFX\Water_wiggle-10_F3377E40.wem</Path>
+							<Path>SFX\Water_wiggle-10_D41735AF.wem</Path>
 						</File>
 						<File Id="40795977" Language="SFX">
 							<ShortName>Water_wiggle-09.wav</ShortName>
-							<Path>SFX\Water_wiggle-09_75683096.wem</Path>
+							<Path>SFX\Water_wiggle-09_EC3F3191.wem</Path>
 						</File>
 						<File Id="79933934" Language="SFX">
 							<ShortName>Water_wiggle-08.wav</ShortName>
-							<Path>SFX\Water_wiggle-08_512BFE41.wem</Path>
+							<Path>SFX\Water_wiggle-08_D81B09CF.wem</Path>
 						</File>
 						<File Id="164226321" Language="SFX">
 							<ShortName>Water_wiggle-14.wav</ShortName>
-							<Path>SFX\Water_wiggle-14_D227DD2E.wem</Path>
+							<Path>SFX\Water_wiggle-14_E5E18DD3.wem</Path>
 						</File>
 						<File Id="235591222" Language="SFX">
 							<ShortName>Water_wiggle-15.wav</ShortName>
-							<Path>SFX\Water_wiggle-15_3779AC35.wem</Path>
+							<Path>SFX\Water_wiggle-15_1E61114D.wem</Path>
 						</File>
 						<File Id="247713937" Language="SFX">
 							<ShortName>Water_wiggle-17.wav</ShortName>
-							<Path>SFX\Water_wiggle-17_7E960E63.wem</Path>
+							<Path>SFX\Water_wiggle-17_D99E728E.wem</Path>
 						</File>
 						<File Id="261928504" Language="SFX">
 							<ShortName>Water_wiggle-18.wav</ShortName>
-							<Path>SFX\Water_wiggle-18_1E6DC45A.wem</Path>
+							<Path>SFX\Water_wiggle-18_6C62091D.wem</Path>
 						</File>
 						<File Id="314562905" Language="SFX">
 							<ShortName>Water_wiggle-07.wav</ShortName>
-							<Path>SFX\Water_wiggle-07_B17DE86B.wem</Path>
+							<Path>SFX\Water_wiggle-07_5879AA8B.wem</Path>
 						</File>
 						<File Id="324278692" Language="SFX">
 							<ShortName>Slurp_fluid-03.wav</ShortName>
-							<Path>SFX\Slurp_fluid-03_5925F659.wem</Path>
+							<Path>SFX\Slurp_fluid-03_2F345767.wem</Path>
 						</File>
 						<File Id="359254337" Language="SFX">
 							<ShortName>Water_wiggle-16.wav</ShortName>
-							<Path>SFX\Water_wiggle-16_E8191916.wem</Path>
+							<Path>SFX\Water_wiggle-16_0B99023E.wem</Path>
 						</File>
 						<File Id="372934453" Language="SFX">
 							<ShortName>Slurp_fluid-01.wav</ShortName>
-							<Path>SFX\Slurp_fluid-01_B246AFE3.wem</Path>
+							<Path>SFX\Slurp_fluid-01_576B6286.wem</Path>
 						</File>
 						<File Id="378979345" Language="SFX">
 							<ShortName>Water_wiggle-20.wav</ShortName>
-							<Path>SFX\Water_wiggle-20_A74845F3.wem</Path>
+							<Path>SFX\Water_wiggle-20_E52F2E44.wem</Path>
 						</File>
 						<File Id="388070918" Language="SFX">
 							<ShortName>Water_wiggle-13.wav</ShortName>
-							<Path>SFX\Water_wiggle-13_B96A3A44.wem</Path>
+							<Path>SFX\Water_wiggle-13_22C439C7.wem</Path>
 						</File>
 						<File Id="401320048" Language="SFX">
 							<ShortName>Water_wiggle-01.wav</ShortName>
-							<Path>SFX\Water_wiggle-01_F80A06FB.wem</Path>
+							<Path>SFX\Water_wiggle-01_727F8FF3.wem</Path>
 						</File>
 						<File Id="484833414" Language="SFX">
 							<ShortName>Water_wiggle-11.wav</ShortName>
-							<Path>SFX\Water_wiggle-11_A4A81950.wem</Path>
+							<Path>SFX\Water_wiggle-11_C155EE88.wem</Path>
 						</File>
 						<File Id="485084476" Language="SFX">
 							<ShortName>Water_wiggle-05.wav</ShortName>
-							<Path>SFX\Water_wiggle-05_AD4B29BC.wem</Path>
+							<Path>SFX\Water_wiggle-05_A0C373EF.wem</Path>
 						</File>
 						<File Id="535187601" Language="SFX">
 							<ShortName>Water_wiggle-21.wav</ShortName>
-							<Path>SFX\Water_wiggle-21_D96DF0AB.wem</Path>
+							<Path>SFX\Water_wiggle-21_9E8F1E2C.wem</Path>
 						</File>
 						<File Id="552216735" Language="SFX">
 							<ShortName>Water_wiggle-12.wav</ShortName>
-							<Path>SFX\Water_wiggle-12_CD289B76.wem</Path>
+							<Path>SFX\Water_wiggle-12_FF0D536C.wem</Path>
 						</File>
 						<File Id="616749521" Language="SFX">
 							<ShortName>Slurp_fluid-05.wav</ShortName>
-							<Path>SFX\Slurp_fluid-05_78DAE56E.wem</Path>
+							<Path>SFX\Slurp_fluid-05_AF291A38.wem</Path>
 						</File>
 						<File Id="654912400" Language="SFX">
 							<ShortName>Water_wiggle-02.wav</ShortName>
-							<Path>SFX\Water_wiggle-02_1F830844.wem</Path>
+							<Path>SFX\Water_wiggle-02_C3DE6A19.wem</Path>
 						</File>
 						<File Id="661938081" Language="SFX">
 							<ShortName>Slurp_fluid-02.wav</ShortName>
-							<Path>SFX\Slurp_fluid-02_75E7441B.wem</Path>
+							<Path>SFX\Slurp_fluid-02_077F855A.wem</Path>
 						</File>
 						<File Id="674336694" Language="SFX">
 							<ShortName>Water_wiggle-04.wav</ShortName>
-							<Path>SFX\Water_wiggle-04_6BE346BA.wem</Path>
+							<Path>SFX\Water_wiggle-04_91CFE169.wem</Path>
 						</File>
 						<File Id="760057847" Language="SFX">
 							<ShortName>Water_wiggle-19.wav</ShortName>
-							<Path>SFX\Water_wiggle-19_5C3D543C.wem</Path>
+							<Path>SFX\Water_wiggle-19_BA9D5205.wem</Path>
 						</File>
 						<File Id="825080279" Language="SFX">
 							<ShortName>Slurp_fluid-04.wav</ShortName>
-							<Path>SFX\Slurp_fluid-04_7939A509.wem</Path>
+							<Path>SFX\Slurp_fluid-04_D3DBF540.wem</Path>
+						</File>
+						<File Id="920465472" Language="SFX">
+							<ShortName>magic pot.wav</ShortName>
+							<Path>SFX\magic pot_19580AB0.wem</Path>
 						</File>
 						<File Id="930071137" Language="SFX">
 							<ShortName>Water_wiggle-22.wav</ShortName>
-							<Path>SFX\Water_wiggle-22_EFB70A77.wem</Path>
+							<Path>SFX\Water_wiggle-22_ED97B6A0.wem</Path>
 						</File>
 						<File Id="1026201699" Language="SFX">
 							<ShortName>Water_wiggle-06.wav</ShortName>
-							<Path>SFX\Water_wiggle-06_B8AD3DC5.wem</Path>
+							<Path>SFX\Water_wiggle-06_4E133CE8.wem</Path>
 						</File>
 						<File Id="1040080044" Language="SFX">
 							<ShortName>Water_wiggle-03.wav</ShortName>
-							<Path>SFX\Water_wiggle-03_B9ACD56C.wem</Path>
+							<Path>SFX\Water_wiggle-03_E1607484.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="1325801604">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2420500008">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

@@ -14,7 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="GateOpen" ID="{DFF2D0D4-CA37-4D99-B47A-3BB5A7362679}"/>
+				<Event Name="GateOpen" ID="{DFF2D0D4-CA37-4D99-B47A-3BB5A7362679}">
+					<ChildrenList>
+						<Action Name="" ID="{4038AE56-3806-4EF5-93CA-154257A66A77}" ShortID="50736186">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gate Open" ID="{3AE75B59-F68F-4A5F-8DCD-EAFECC08B328}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="GateClose" ID="{70C0B3B3-6697-4865-9AE2-2EDC56AF7111}">
 					<ChildrenList>
 						<Action Name="" ID="{1ABDB905-8369-41CD-BFC6-670CADD46FBF}" ShortID="876486812">
