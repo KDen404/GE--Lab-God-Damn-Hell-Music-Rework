@@ -74,25 +74,6 @@ public class DemonFighterAnimations : MonoBehaviour
         {
             animator.SetFloat("AttackFloat", 0f);
         }
-
-        // Activates / deactivates the collider
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackLeft"))
-        {
-            leftHandCollider.enabled = true;
-        }
-        else
-        {
-            leftHandCollider.enabled = false;
-        }
-
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("AttackRight"))
-        {
-            rightHandCollider.enabled = true;
-        }
-        else
-        {
-            rightHandCollider.enabled = false;
-        }
     }
 
     private void Die()

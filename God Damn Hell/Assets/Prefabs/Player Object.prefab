@@ -280,6 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealthPoints: 20
   currentHealthPoints: 20
+  alive: 1
 --- !u!114 &8340032333808400630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,8 +488,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.17867874, y: 3.2700229, z: 3.1864088}
-  m_Center: {x: -1.8669549, y: 2.4442432, z: 0.07105165}
+  m_Size: {x: 0.17867874, y: 3.794673, z: 4.4784365}
+  m_Center: {x: -1.8669549, y: 2.7065682, z: 0.18685935}
 --- !u!1001 &3340821566393895554
 PrefabInstance:
   m_ObjectHideFlags: 0

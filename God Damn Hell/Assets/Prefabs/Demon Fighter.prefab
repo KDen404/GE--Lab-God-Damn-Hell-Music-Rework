@@ -1887,6 +1887,7 @@ GameObject:
   - component: {fileID: 4712181040052951632}
   - component: {fileID: 5688606930959994286}
   - component: {fileID: 4389899158967947959}
+  - component: {fileID: 2882290409954536419}
   m_Layer: 6
   m_Name: DemonFighter Variant
   m_TagString: Untagged
@@ -1941,6 +1942,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca93a2277dc8484fb551477e76e7d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2882290409954536419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846186940692747875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246e84b78706d314bbe8c17369192818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHandCollider: {fileID: 4566672803003381672}
+  rightHandCollider: {fileID: 5859606112042328417}
 --- !u!1 &5981859816129292453
 GameObject:
   m_ObjectHideFlags: 0

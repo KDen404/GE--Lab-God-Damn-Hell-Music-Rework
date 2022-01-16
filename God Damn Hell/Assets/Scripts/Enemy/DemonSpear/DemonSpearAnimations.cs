@@ -70,15 +70,15 @@ public class DemonSpearAnimations : MonoBehaviour
             animator.SetFloat("AttackFloat", 0f);
         }
 
-        // Activates / deactivates the collider
-        if (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2"))
-        {
-            spearCollider.enabled = true;
-        }
-        else
-        {
-            spearCollider.enabled = false;
-        }
+        //// Activates / deactivates the collider
+        //if (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2"))
+        //{
+        //    spearCollider.enabled = true;
+        //}
+        //else
+        //{
+        //    spearCollider.enabled = false;
+        //}
     }
 
     private void Die()
