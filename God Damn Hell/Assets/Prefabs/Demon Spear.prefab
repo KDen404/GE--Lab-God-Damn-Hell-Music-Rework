@@ -702,4 +702,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1897509406810914439}
-  spearCollider: {fileID: 1897509408213797478}
+  spearCollider: {fileID: 1897509407798513337}
