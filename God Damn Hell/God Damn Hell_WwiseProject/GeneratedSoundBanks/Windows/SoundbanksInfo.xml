@@ -2093,7 +2093,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3062523257" Language="SFX" Hash="49839623">
+		<SoundBank Id="3062523257" Language="SFX" Hash="4097808297">
 			<ObjectPath>\SoundBanks\Default Work Unit\Misc</ObjectPath>
 			<ShortName>Misc</ShortName>
 			<Path>Misc.bnk</Path>
