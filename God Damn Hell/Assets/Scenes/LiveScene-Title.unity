@@ -3827,6 +3827,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 67569455077737796, guid: de3553414224c734db09e5e42c6e48a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5852809117858174968, guid: de3553414224c734db09e5e42c6e48a6, type: 3}
       propertyPath: m_Name
       value: MainMenuUI
