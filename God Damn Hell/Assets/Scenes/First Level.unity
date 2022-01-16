@@ -2902,7 +2902,6 @@ MonoBehaviour:
   - {fileID: 1642147582}
   - {fileID: 956726367}
   - {fileID: 956726366}
-  instantiatedEnemies: []
 --- !u!4 &163028171
 Transform:
   m_ObjectHideFlags: 0
@@ -8522,11 +8521,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859197, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: maxHealthPoints
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859197, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: currentHealthPoints
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859199, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: m_Material
