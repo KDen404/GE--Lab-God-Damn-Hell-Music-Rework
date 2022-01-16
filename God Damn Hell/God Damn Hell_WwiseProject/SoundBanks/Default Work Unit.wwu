@@ -13,6 +13,11 @@
 				<SoundBank Name="Player" ID="{8E14432A-0677-4E10-BC3C-63CAADEA081F}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Player" ID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" WorkUnitID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerRun" ID="{09F0E0E7-E63F-434F-80FF-4515EC78639B}" WorkUnitID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerGotHit" ID="{618976C6-DEFA-4574-9E39-011E43CF52B8}" WorkUnitID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerDeath" ID="{7905BF3E-D2A8-46CB-B5C5-D776C70013A5}" WorkUnitID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AttackBlocked" ID="{152D2844-35A6-4AF3-B222-814E82D1F867}" WorkUnitID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SwordSwing" ID="{D3727280-BC01-4B38-95D3-80C995C1D3F7}" WorkUnitID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -20,6 +25,9 @@
 				<SoundBank Name="Enemies" ID="{D0E7C81A-8031-4A26-9B66-060591639457}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Enemy" ID="{654AE0EC-84BD-41F1-AAC4-A2BEBACECE28}" WorkUnitID="{654AE0EC-84BD-41F1-AAC4-A2BEBACECE28}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DemonMage" ID="{9869B799-2A65-4B12-92F3-F2A1892A62DE}" WorkUnitID="{654AE0EC-84BD-41F1-AAC4-A2BEBACECE28}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DemonFighter" ID="{C32A6207-BD1F-4E6D-9827-8145D69136ED}" WorkUnitID="{654AE0EC-84BD-41F1-AAC4-A2BEBACECE28}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DemonSpear" ID="{BB308AF8-5C23-4E70-8306-2B3787461D9D}" WorkUnitID="{654AE0EC-84BD-41F1-AAC4-A2BEBACECE28}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -33,7 +41,10 @@
 				</SoundBank>
 				<SoundBank Name="Misc" ID="{9D40B53B-E25C-4B9C-AA92-AF0354DF3283}">
 					<ObjectInclusionList>
+						<ObjectRef Name="PotionSlurp" ID="{17624818-50DD-404F-A145-74FF45F84A41}" WorkUnitID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Misc" ID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" WorkUnitID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GateClose" ID="{70C0B3B3-6697-4865-9AE2-2EDC56AF7111}" WorkUnitID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GateOpen" ID="{DFF2D0D4-CA37-4D99-B47A-3BB5A7362679}" WorkUnitID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID DEMONFIGHTERGOTHIT = 3929558812U;
         static const AkUniqueID DEMONFIGHTERRUN = 36191336U;
         static const AkUniqueID DEMONFIGHTERWALK = 3496783742U;
+        static const AkUniqueID DEMONMAGEDEATH = 4120985678U;
         static const AkUniqueID DEMONMAGEGOTHIT = 1895283565U;
         static const AkUniqueID DEMONMAGERUN = 4294451055U;
         static const AkUniqueID DEMONMAGEWALK = 2140539667U;
@@ -33,7 +34,7 @@ namespace AK
         static const AkUniqueID PLAYERDEATH = 1656947812U;
         static const AkUniqueID PLAYERGOTHIT = 855695183U;
         static const AkUniqueID PLAYERRUN = 3964335501U;
-        static const AkUniqueID POTDRINK = 2903112632U;
+        static const AkUniqueID POTIONSLURP = 3983732716U;
         static const AkUniqueID SPEARSWING = 478914142U;
         static const AkUniqueID SWORDSWING = 1328934038U;
     } // namespace EVENTS

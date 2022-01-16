@@ -3,9 +3,29 @@
 	<Events>
 		<WorkUnit Name="Misc" ID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" OwnerID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="PotDrink" ID="{17624818-50DD-404F-A145-74FF45F84A41}"/>
+				<Event Name="PotionSlurp" ID="{17624818-50DD-404F-A145-74FF45F84A41}">
+					<ChildrenList>
+						<Action Name="" ID="{A6E8DDB3-D44B-4104-81B1-F27A0D9CA015}" ShortID="29185024">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pot" ID="{E7472594-4B83-44E4-A1E1-354E3EA80861}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="GateOpen" ID="{DFF2D0D4-CA37-4D99-B47A-3BB5A7362679}"/>
-				<Event Name="GateClose" ID="{70C0B3B3-6697-4865-9AE2-2EDC56AF7111}"/>
+				<Event Name="GateClose" ID="{70C0B3B3-6697-4865-9AE2-2EDC56AF7111}">
+					<ChildrenList>
+						<Action Name="" ID="{1ABDB905-8369-41CD-BFC6-670CADD46FBF}" ShortID="876486812">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gate Close" ID="{A6269CC7-7FB6-4237-B186-7392172571DB}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

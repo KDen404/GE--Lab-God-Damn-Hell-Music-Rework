@@ -9,6 +9,8 @@ public class Deathscreen : MonoBehaviour
     public Text deathMessage;
     public Button exitButton;
     public GameObject deathpanel;
+    public GameObject level_empty;
+
 
     private Color imageColor;
     private Color messageColor;
@@ -37,6 +39,10 @@ public class Deathscreen : MonoBehaviour
         if(exitButton.gameObject.activeSelf == false)
         {
             if(player.GetComponent<PlayerStats>().currentHealthPoints <= 0) {
+                if (this.transform.GetChild(0).gameObject.activeSelf)
+                {
+                    level_empty.GetComponent<PlayMusicOnStart>().stop_music();
+                }
                 deathpanel.gameObject.SetActive(true);
 
                 timediff = Time.deltaTime / 3f;

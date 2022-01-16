@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class PlayMusicOnStart : MonoBehaviour
 {
+    private uint IngameMusicEvent; 
     void Start()
     {
-        AkSoundEngine.PostEvent("IngameMusic", gameObject);
+        IngameMusicEvent = AkSoundEngine.PostEvent("IngameMusic", gameObject);
+    }
+
+    public void stop_music()
+    {
+        AkSoundEngine.StopPlayingID(IngameMusicEvent, 1000, AkCurveInterpolation.AkCurveInterpolation_Constant);
     }
 
 }

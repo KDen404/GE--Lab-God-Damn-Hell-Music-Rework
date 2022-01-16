@@ -5,9 +5,39 @@
 			<ChildrenList>
 				<Folder Name="DemonFighter" ID="{C32A6207-BD1F-4E6D-9827-8145D69136ED}" ShortID="165291422">
 					<ChildrenList>
-						<Event Name="DemonFighterRun" ID="{E7AEDCF1-69BF-475A-A8C2-0B939643C4CA}"/>
-						<Event Name="DemonFighterWalk" ID="{A4466311-2A3C-43B1-9234-5706942471B7}"/>
-						<Event Name="DemonFighterDeath" ID="{3B82A28A-5A2D-4A90-9CFB-2B2573E872DF}"/>
+						<Event Name="DemonFighterRun" ID="{E7AEDCF1-69BF-475A-A8C2-0B939643C4CA}">
+							<ChildrenList>
+								<Action Name="" ID="{8A3B8D4E-27E6-491C-A386-209312DDDF14}" ShortID="584396720">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DemonStep" ID="{1D5D7ABF-9655-423B-82F6-748D2332744A}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DemonFighterWalk" ID="{A4466311-2A3C-43B1-9234-5706942471B7}">
+							<ChildrenList>
+								<Action Name="" ID="{4A48A768-9333-4F32-97EF-05FE4CD536BE}" ShortID="963904522">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DemonStep" ID="{CE53BF56-7818-48AF-9025-3908FBB29C87}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DemonFighterDeath" ID="{3B82A28A-5A2D-4A90-9CFB-2B2573E872DF}">
+							<ChildrenList>
+								<Action Name="" ID="{84E76A46-9BE6-4A0A-AE7E-252AD8CC4423}" ShortID="622964217">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DemonDeathNormal" ID="{17F5AAA1-812C-47E1-9C1E-B5A854820D55}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="DemonFighterGotHit" ID="{7D8BA12A-5E7A-4EAF-AE60-4C777D19F439}">
 							<ChildrenList>
 								<Action Name="" ID="{9470039F-E639-4BDD-8B72-02F1E46A2136}" ShortID="619779932">
@@ -34,20 +64,50 @@
 				</Folder>
 				<Folder Name="DemonSpear" ID="{BB308AF8-5C23-4E70-8306-2B3787461D9D}" ShortID="934862384">
 					<ChildrenList>
-						<Event Name="DemonSpearRun" ID="{E524BB91-6414-4615-A248-C14EBC598237}"/>
-						<Event Name="DemonSpearWalk" ID="{59D63C3E-5FA0-49CA-ABAA-0D0F0E582D76}"/>
-						<Event Name="SpearSwing" ID="{D6A79C5D-B797-4EDE-B05A-7B0C58C5DE1C}">
+						<Event Name="DemonSpearRun" ID="{E524BB91-6414-4615-A248-C14EBC598237}">
 							<ChildrenList>
-								<Action Name="" ID="{ABA05B5D-C7DD-4C42-8FFB-4B3057BE929B}" ShortID="570696328">
+								<Action Name="" ID="{6C34225F-9EC0-4460-B378-75105264712E}" ShortID="1000968727">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Swoosh" ID="{C2E96791-6AAD-424F-9790-7D0EC0D8A304}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+											<ObjectRef Name="DemonStep" ID="{1D5D7ABF-9655-423B-82F6-748D2332744A}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="DemonSpearDeath" ID="{84725145-4DBA-4BC9-BACC-7AEC97CA6C80}"/>
+						<Event Name="DemonSpearWalk" ID="{59D63C3E-5FA0-49CA-ABAA-0D0F0E582D76}">
+							<ChildrenList>
+								<Action Name="" ID="{0CD075D1-E209-4AC6-86BF-7D355558E9FE}" ShortID="676706556">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DemonStep" ID="{CE53BF56-7818-48AF-9025-3908FBB29C87}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpearSwing" ID="{D6A79C5D-B797-4EDE-B05A-7B0C58C5DE1C}">
+							<ChildrenList>
+								<Action Name="" ID="{E135DF9E-F847-4DFE-9CBC-8692886C6A0B}" ShortID="468326017">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Attack" ID="{C2EB3AD8-B1B7-48D7-9789-12DA776DEC14}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DemonSpearDeath" ID="{84725145-4DBA-4BC9-BACC-7AEC97CA6C80}">
+							<ChildrenList>
+								<Action Name="" ID="{DC806710-1E0D-4C5A-8845-8439D093A4C8}" ShortID="752849267">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DemonDeathSpear" ID="{4FAE947D-9A6F-4DC7-83D2-99407623E476}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="DemonSpearGotHit" ID="{318A1B11-5450-4B34-92B7-9BA7964586A3}">
 							<ChildrenList>
 								<Action Name="" ID="{02B936FB-FDE3-4963-8B83-1886354750BE}" ShortID="444675396">
@@ -63,14 +123,45 @@
 				</Folder>
 				<Folder Name="DemonMage" ID="{9869B799-2A65-4B12-92F3-F2A1892A62DE}" ShortID="852966067">
 					<ChildrenList>
-						<Event Name="DemonMageRun" ID="{1D85E5A5-D92D-4844-864D-52C1CF98341C}"/>
-						<Event Name="DemonMageWalk" ID="{25F1A6C5-8C3F-4C8D-994F-9B1CA33AA1BA}"/>
+						<Event Name="DemonMageRun" ID="{1D85E5A5-D92D-4844-864D-52C1CF98341C}">
+							<ChildrenList>
+								<Action Name="" ID="{650D2533-7284-42A6-BCF0-B7E8D9ACAA76}" ShortID="146409956">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DemonStep" ID="{1D5D7ABF-9655-423B-82F6-748D2332744A}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DemonMageWalk" ID="{25F1A6C5-8C3F-4C8D-994F-9B1CA33AA1BA}">
+							<ChildrenList>
+								<Action Name="" ID="{E332F9DB-6F63-4540-BE37-BE76528F97A4}" ShortID="829289405">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DemonStep" ID="{CE53BF56-7818-48AF-9025-3908FBB29C87}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="DemonMageGotHit" ID="{8ECE0F64-2F41-4F17-9F86-55AADD5550E6}">
 							<ChildrenList>
 								<Action Name="" ID="{41552055-9EBB-485C-B172-AF934AE3A509}" ShortID="845227347">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="DemonGotHit" ID="{9C3AB932-4EC7-4848-873A-6046BC4B1078}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DemonMageDeath" ID="{907A1A38-1C09-44CC-8D8B-8A3DE2EE122C}">
+							<ChildrenList>
+								<Action Name="" ID="{A137744A-D0CE-47EE-A0AF-5C29E30C81E1}" ShortID="274465469">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DemonDeathNormal" ID="{17F5AAA1-812C-47E1-9C1E-B5A854820D55}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

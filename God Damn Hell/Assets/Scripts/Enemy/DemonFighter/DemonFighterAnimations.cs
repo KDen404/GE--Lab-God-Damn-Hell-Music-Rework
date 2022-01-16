@@ -28,6 +28,8 @@ public class DemonFighterAnimations : MonoBehaviour
     private float timeCount;
     private NavMeshAgent agent;
 
+    private bool game_active = true;
+
     private void Start()
     {
         demonFighterStats = GetComponent<Stats>();

@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 5981135510093245926}
   - component: {fileID: 7028369745644691090}
   - component: {fileID: 5183106796254944894}
+  - component: {fileID: -4482212948697837939}
   m_Layer: 9
   m_Name: Bottle
   m_TagString: Untagged
@@ -193,6 +194,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.34891775, y: 0.37432453, z: 0.30624354}
   m_Center: {x: -0.0017488152, y: 0.23802908, z: -0.0097230375}
+--- !u!114 &-4482212948697837939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362059747644241756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ece7027e97381c469e268d6cbe5df86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d3d3f2b5309f0164eaecd43f5e1dc699, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &6572121784104227171
 GameObject:
   m_ObjectHideFlags: 0

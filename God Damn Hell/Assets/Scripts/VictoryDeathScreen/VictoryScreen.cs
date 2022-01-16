@@ -9,6 +9,7 @@ public class VictoryScreen : MonoBehaviour
     public Text victoryMessage;
     public Button exitButton;
     public GameObject victorypanel;
+    public GameObject player;
 
     private Color imageColor;
     private Color messageColor;
@@ -38,6 +39,11 @@ public class VictoryScreen : MonoBehaviour
         {
             if ( enemyInformation.GetComponent<TotalEnemyCount>().totalEnemiesAlive == 0)                                  
             {
+                if (this.transform.GetChild(1).gameObject.activeSelf)
+                {
+                    enemyInformation.GetComponent<PlayMusicOnStart>().stop_music();
+                }
+
                 Debug.Log(messageColor.a);
                 victorypanel.gameObject.SetActive(true);
 

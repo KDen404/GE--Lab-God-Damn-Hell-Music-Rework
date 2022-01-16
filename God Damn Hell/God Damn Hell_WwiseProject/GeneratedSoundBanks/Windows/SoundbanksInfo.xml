@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Language="SFX" Hash="2509572822">
+		<SoundBank Id="1069431850" Language="SFX" Hash="4031302862">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1654192851" Name="AttackBlocked" ObjectPath="\Events\Default Work Unit\Player\AttackBlocked" DurationType="OneShot" DurationMin="1.133817" DurationMax="1.316020">
+				<Event Id="1654192851" Name="AttackBlocked" ObjectPath="\Events\Default Work Unit\Player\AttackBlocked" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.333817" DurationMax="0.516020">
 					<IncludedMemoryFiles>
 						<File Id="11928915" Language="SFX">
 							<ShortName>Scratch_wood_-11.wav</ShortName>
@@ -76,11 +76,43 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1656947812" Name="PlayerDeath" ObjectPath="\Events\Default Work Unit\Player\PlayerDeath" DurationType="OneShot" DurationMin="12.429569" DurationMax="13.323538">
+				<Event Id="1656947812" Name="PlayerDeath" ObjectPath="\Events\Default Work Unit\Player\PlayerDeath" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="11.121379" DurationMax="12.242012">
 					<IncludedMemoryFiles>
+						<File Id="6507290" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-2.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-2_10C4C929.wem</Path>
+						</File>
+						<File Id="10195113" Language="SFX">
+							<ShortName>Body_drop-10.wav</ShortName>
+							<Path>SFX\Body_drop-10_10C4C929.wem</Path>
+						</File>
 						<File Id="24461324" Language="SFX">
 							<ShortName>Player_Death-04.wav</ShortName>
 							<Path>SFX\Player_Death-04_15C684EB.wem</Path>
+						</File>
+						<File Id="44324885" Language="SFX">
+							<ShortName>Body_drop-16.wav</ShortName>
+							<Path>SFX\Body_drop-16_10C4C929.wem</Path>
+						</File>
+						<File Id="67213548" Language="SFX">
+							<ShortName>Body_drop-17.wav</ShortName>
+							<Path>SFX\Body_drop-17_10C4C929.wem</Path>
+						</File>
+						<File Id="79386932" Language="SFX">
+							<ShortName>Body_drop-02.wav</ShortName>
+							<Path>SFX\Body_drop-02_10C4C929.wem</Path>
+						</File>
+						<File Id="100649528" Language="SFX">
+							<ShortName>Body_drop-15.wav</ShortName>
+							<Path>SFX\Body_drop-15_10C4C929.wem</Path>
+						</File>
+						<File Id="142777623" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-1.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-1_10C4C929.wem</Path>
+						</File>
+						<File Id="161961000" Language="SFX">
+							<ShortName>Body_drop-13.wav</ShortName>
+							<Path>SFX\Body_drop-13_10C4C929.wem</Path>
 						</File>
 						<File Id="213449927" Language="SFX">
 							<ShortName>evil_laughter-02.wav</ShortName>
@@ -90,6 +122,22 @@
 							<ShortName>Monk_Chore.wav</ShortName>
 							<Path>SFX\Monk_Chore_44D8D24B.wem</Path>
 						</File>
+						<File Id="232424747" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-3.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-3_10C4C929.wem</Path>
+						</File>
+						<File Id="255977918" Language="SFX">
+							<ShortName>Body_drop-06.wav</ShortName>
+							<Path>SFX\Body_drop-06_10C4C929.wem</Path>
+						</File>
+						<File Id="296731365" Language="SFX">
+							<ShortName>Body_drop-09.wav</ShortName>
+							<Path>SFX\Body_drop-09_10C4C929.wem</Path>
+						</File>
+						<File Id="300011866" Language="SFX">
+							<ShortName>Body_drop-03.wav</ShortName>
+							<Path>SFX\Body_drop-03_10C4C929.wem</Path>
+						</File>
 						<File Id="329448096" Language="SFX">
 							<ShortName>evil_laughter-01.wav</ShortName>
 							<Path>SFX\evil_laughter-01_DF7F96AB.wem</Path>
@@ -97,6 +145,14 @@
 						<File Id="331423277" Language="SFX">
 							<ShortName>Player_Death-02.wav</ShortName>
 							<Path>SFX\Player_Death-02_1F56E848.wem</Path>
+						</File>
+						<File Id="377089585" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-4.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-4_10C4C929.wem</Path>
+						</File>
+						<File Id="408725488" Language="SFX">
+							<ShortName>Body_drop-05.wav</ShortName>
+							<Path>SFX\Body_drop-05_10C4C929.wem</Path>
 						</File>
 						<File Id="498088858" Language="SFX">
 							<ShortName>Player_Death-05.wav</ShortName>
@@ -106,13 +162,57 @@
 							<ShortName>evil_laughter-03.wav</ShortName>
 							<Path>SFX\evil_laughter-03_B6AAB8EF.wem</Path>
 						</File>
+						<File Id="679461730" Language="SFX">
+							<ShortName>Body_drop-11.wav</ShortName>
+							<Path>SFX\Body_drop-11_10C4C929.wem</Path>
+						</File>
+						<File Id="680110789" Language="SFX">
+							<ShortName>Body_drop-08.wav</ShortName>
+							<Path>SFX\Body_drop-08_10C4C929.wem</Path>
+						</File>
+						<File Id="712942219" Language="SFX">
+							<ShortName>Body_drop-14.wav</ShortName>
+							<Path>SFX\Body_drop-14_10C4C929.wem</Path>
+						</File>
 						<File Id="807337138" Language="SFX">
 							<ShortName>Player_Death-06.wav</ShortName>
 							<Path>SFX\Player_Death-06_10C4C929.wem</Path>
 						</File>
+						<File Id="813197766" Language="SFX">
+							<ShortName>Body_drop-04.wav</ShortName>
+							<Path>SFX\Body_drop-04_10C4C929.wem</Path>
+						</File>
+						<File Id="864660415" Language="SFX">
+							<ShortName>Body_drop-07.wav</ShortName>
+							<Path>SFX\Body_drop-07_10C4C929.wem</Path>
+						</File>
+						<File Id="917863250" Language="SFX">
+							<ShortName>Body_drop-19.wav</ShortName>
+							<Path>SFX\Body_drop-19_10C4C929.wem</Path>
+						</File>
+						<File Id="929295031" Language="SFX">
+							<ShortName>Body_drop-01.wav</ShortName>
+							<Path>SFX\Body_drop-01_10C4C929.wem</Path>
+						</File>
+						<File Id="945160037" Language="SFX">
+							<ShortName>zapsplat_flesh_impact-5.wav</ShortName>
+							<Path>SFX\zapsplat_flesh_impact-5_10C4C929.wem</Path>
+						</File>
+						<File Id="948354709" Language="SFX">
+							<ShortName>Body_drop-18.wav</ShortName>
+							<Path>SFX\Body_drop-18_10C4C929.wem</Path>
+						</File>
+						<File Id="971210847" Language="SFX">
+							<ShortName>Body_drop-12.wav</ShortName>
+							<Path>SFX\Body_drop-12_10C4C929.wem</Path>
+						</File>
+						<File Id="1047246517" Language="SFX">
+							<ShortName>Body_drop-20.wav</ShortName>
+							<Path>SFX\Body_drop-20_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="855695183" Name="PlayerGotHit" ObjectPath="\Events\Default Work Unit\Player\PlayerGotHit" DurationType="OneShot" DurationMin="0.304093" DurationMax="0.772455">
+				<Event Id="855695183" Name="PlayerGotHit" ObjectPath="\Events\Default Work Unit\Player\PlayerGotHit" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.304093" DurationMax="0.918609">
 					<IncludedMemoryFiles>
 						<File Id="6507290" Language="SFX">
 							<ShortName>zapsplat_flesh_impact-2.wav</ShortName>
@@ -136,7 +236,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3964335501" Name="PlayerRun" ObjectPath="\Events\Default Work Unit\Player\PlayerRun" DurationType="OneShot" DurationMin="0.293186" DurationMax="0.486114">
+				<Event Id="3964335501" Name="PlayerRun" ObjectPath="\Events\Default Work Unit\Player\PlayerRun" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.392186" DurationMax="0.585114">
 					<IncludedMemoryFiles>
 						<File Id="19659747" Language="SFX">
 							<ShortName>steps\PlayerSteps4.wav</ShortName>
@@ -192,7 +292,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1328934038" Name="SwordSwing" ObjectPath="\Events\Default Work Unit\Player\SwordSwing" DurationType="OneShot" DurationMin="0.203433" DurationMax="0.381812">
+				<Event Id="1328934038" Name="SwordSwing" ObjectPath="\Events\Default Work Unit\Player\SwordSwing" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.203433" DurationMax="0.381812">
 					<IncludedMemoryFiles>
 						<File Id="215669193" Language="SFX">
 							<ShortName>sword_swoosh-16.wav</ShortName>
@@ -262,7 +362,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2010665979">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3686987424">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -282,13 +382,124 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2242381963" Language="SFX" Hash="1581807094">
+		<SoundBank Id="2242381963" Language="SFX" Hash="3107896845">
 			<ObjectPath>\SoundBanks\Default Work Unit\Enemies</ObjectPath>
 			<ShortName>Enemies</ShortName>
 			<Path>Enemies.bnk</Path>
 			<IncludedEvents>
-				<Event Id="725206385" Name="DemonFighterDeath" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterDeath" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3929558812" Name="DemonFighterGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterGotHit" DurationType="OneShot" DurationMin="0.305093" DurationMax="0.773455">
+				<Event Id="725206385" Name="DemonFighterDeath" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterDeath" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.966286" DurationMax="1.137033">
+					<IncludedMemoryFiles>
+						<File Id="10195113" Language="SFX">
+							<ShortName>Body_drop-10.wav</ShortName>
+							<Path>SFX\Body_drop-10_10C4C929.wem</Path>
+						</File>
+						<File Id="44324885" Language="SFX">
+							<ShortName>Body_drop-16.wav</ShortName>
+							<Path>SFX\Body_drop-16_10C4C929.wem</Path>
+						</File>
+						<File Id="67213548" Language="SFX">
+							<ShortName>Body_drop-17.wav</ShortName>
+							<Path>SFX\Body_drop-17_10C4C929.wem</Path>
+						</File>
+						<File Id="79386932" Language="SFX">
+							<ShortName>Body_drop-02.wav</ShortName>
+							<Path>SFX\Body_drop-02_10C4C929.wem</Path>
+						</File>
+						<File Id="100649528" Language="SFX">
+							<ShortName>Body_drop-15.wav</ShortName>
+							<Path>SFX\Body_drop-15_10C4C929.wem</Path>
+						</File>
+						<File Id="161961000" Language="SFX">
+							<ShortName>Body_drop-13.wav</ShortName>
+							<Path>SFX\Body_drop-13_10C4C929.wem</Path>
+						</File>
+						<File Id="255215428" Language="SFX">
+							<ShortName>Demon_death_normal_size-01.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-01_10C4C929.wem</Path>
+						</File>
+						<File Id="255977918" Language="SFX">
+							<ShortName>Body_drop-06.wav</ShortName>
+							<Path>SFX\Body_drop-06_10C4C929.wem</Path>
+						</File>
+						<File Id="296731365" Language="SFX">
+							<ShortName>Body_drop-09.wav</ShortName>
+							<Path>SFX\Body_drop-09_10C4C929.wem</Path>
+						</File>
+						<File Id="300011866" Language="SFX">
+							<ShortName>Body_drop-03.wav</ShortName>
+							<Path>SFX\Body_drop-03_10C4C929.wem</Path>
+						</File>
+						<File Id="408725488" Language="SFX">
+							<ShortName>Body_drop-05.wav</ShortName>
+							<Path>SFX\Body_drop-05_10C4C929.wem</Path>
+						</File>
+						<File Id="679461730" Language="SFX">
+							<ShortName>Body_drop-11.wav</ShortName>
+							<Path>SFX\Body_drop-11_10C4C929.wem</Path>
+						</File>
+						<File Id="680110789" Language="SFX">
+							<ShortName>Body_drop-08.wav</ShortName>
+							<Path>SFX\Body_drop-08_10C4C929.wem</Path>
+						</File>
+						<File Id="712942219" Language="SFX">
+							<ShortName>Body_drop-14.wav</ShortName>
+							<Path>SFX\Body_drop-14_10C4C929.wem</Path>
+						</File>
+						<File Id="741727147" Language="SFX">
+							<ShortName>Demon_death_normal_size-06.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-06_10C4C929.wem</Path>
+						</File>
+						<File Id="742454251" Language="SFX">
+							<ShortName>Demon_death_normal_size-02.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-02_10C4C929.wem</Path>
+						</File>
+						<File Id="756991715" Language="SFX">
+							<ShortName>Demon_death_normal_size-04.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-04_10C4C929.wem</Path>
+						</File>
+						<File Id="813197766" Language="SFX">
+							<ShortName>Body_drop-04.wav</ShortName>
+							<Path>SFX\Body_drop-04_10C4C929.wem</Path>
+						</File>
+						<File Id="864660415" Language="SFX">
+							<ShortName>Body_drop-07.wav</ShortName>
+							<Path>SFX\Body_drop-07_10C4C929.wem</Path>
+						</File>
+						<File Id="917863250" Language="SFX">
+							<ShortName>Body_drop-19.wav</ShortName>
+							<Path>SFX\Body_drop-19_10C4C929.wem</Path>
+						</File>
+						<File Id="929295031" Language="SFX">
+							<ShortName>Body_drop-01.wav</ShortName>
+							<Path>SFX\Body_drop-01_10C4C929.wem</Path>
+						</File>
+						<File Id="948354709" Language="SFX">
+							<ShortName>Body_drop-18.wav</ShortName>
+							<Path>SFX\Body_drop-18_10C4C929.wem</Path>
+						</File>
+						<File Id="971210847" Language="SFX">
+							<ShortName>Body_drop-12.wav</ShortName>
+							<Path>SFX\Body_drop-12_10C4C929.wem</Path>
+						</File>
+						<File Id="985685596" Language="SFX">
+							<ShortName>Demon_death_normal_size-03.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-03_10C4C929.wem</Path>
+						</File>
+						<File Id="989528968" Language="SFX">
+							<ShortName>Demon_death_normal_size-05.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-05_10C4C929.wem</Path>
+						</File>
+						<File Id="995812692" Language="SFX">
+							<ShortName>Demon_death_normal_size-07.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-07_10C4C929.wem</Path>
+						</File>
+						<File Id="1047246517" Language="SFX">
+							<ShortName>Body_drop-20.wav</ShortName>
+							<Path>SFX\Body_drop-20_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3929558812" Name="DemonFighterGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterGotHit" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.305093" DurationMax="0.773455">
 					<IncludedMemoryFiles>
 						<File Id="6507290" Language="SFX">
 							<ShortName>zapsplat_flesh_impact-2.wav</ShortName>
@@ -388,9 +599,431 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="36191336" Name="DemonFighterRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterRun" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3496783742" Name="DemonFighterWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterWalk" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1895283565" Name="DemonMageGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageGotHit" DurationType="OneShot" DurationMin="0.305093" DurationMax="0.773455">
+				<Event Id="36191336" Name="DemonFighterRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterRun" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.109796" DurationMax="0.826181">
+					<IncludedMemoryFiles>
+						<File Id="24804190" Language="SFX">
+							<ShortName>demon_step_scratch_silent-11.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-11_10C4C929.wem</Path>
+						</File>
+						<File Id="71401492" Language="SFX">
+							<ShortName>Enemy_step_base-26.wav</ShortName>
+							<Path>SFX\Enemy_step_base-26_10C4C929.wem</Path>
+						</File>
+						<File Id="98842079" Language="SFX">
+							<ShortName>Enemy_step_base-16.wav</ShortName>
+							<Path>SFX\Enemy_step_base-16_10C4C929.wem</Path>
+						</File>
+						<File Id="171160132" Language="SFX">
+							<ShortName>demon_step_scratch_silent-01.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-01_10C4C929.wem</Path>
+						</File>
+						<File Id="196366852" Language="SFX">
+							<ShortName>Enemy_step_base-22.wav</ShortName>
+							<Path>SFX\Enemy_step_base-22_10C4C929.wem</Path>
+						</File>
+						<File Id="207758985" Language="SFX">
+							<ShortName>demon_step_scratch_silent-08.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-08_10C4C929.wem</Path>
+						</File>
+						<File Id="255408422" Language="SFX">
+							<ShortName>Enemy_step_base-24.wav</ShortName>
+							<Path>SFX\Enemy_step_base-24_10C4C929.wem</Path>
+						</File>
+						<File Id="258511751" Language="SFX">
+							<ShortName>Enemy_step_base-02.wav</ShortName>
+							<Path>SFX\Enemy_step_base-02_10C4C929.wem</Path>
+						</File>
+						<File Id="277298309" Language="SFX">
+							<ShortName>demon_step_scratch_silent-05.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-05_10C4C929.wem</Path>
+						</File>
+						<File Id="295774334" Language="SFX">
+							<ShortName>Enemy_step_base-05.wav</ShortName>
+							<Path>SFX\Enemy_step_base-05_10C4C929.wem</Path>
+						</File>
+						<File Id="301701354" Language="SFX">
+							<ShortName>Enemy_step_base-17.wav</ShortName>
+							<Path>SFX\Enemy_step_base-17_10C4C929.wem</Path>
+						</File>
+						<File Id="353955088" Language="SFX">
+							<ShortName>Enemy_step_base-09.wav</ShortName>
+							<Path>SFX\Enemy_step_base-09_10C4C929.wem</Path>
+						</File>
+						<File Id="367061680" Language="SFX">
+							<ShortName>demon_step_scratch_silent-09.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-09_10C4C929.wem</Path>
+						</File>
+						<File Id="396207608" Language="SFX">
+							<ShortName>Enemy_step_base-07.wav</ShortName>
+							<Path>SFX\Enemy_step_base-07_10C4C929.wem</Path>
+						</File>
+						<File Id="467956749" Language="SFX">
+							<ShortName>Enemy_step_base-01.wav</ShortName>
+							<Path>SFX\Enemy_step_base-01_10C4C929.wem</Path>
+						</File>
+						<File Id="492608243" Language="SFX">
+							<ShortName>demon_step_scratch_silent-03.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-03_10C4C929.wem</Path>
+						</File>
+						<File Id="560799079" Language="SFX">
+							<ShortName>Enemy_step_base-06.wav</ShortName>
+							<Path>SFX\Enemy_step_base-06_10C4C929.wem</Path>
+						</File>
+						<File Id="600863541" Language="SFX">
+							<ShortName>Enemy_step_base-20.wav</ShortName>
+							<Path>SFX\Enemy_step_base-20_10C4C929.wem</Path>
+						</File>
+						<File Id="604415728" Language="SFX">
+							<ShortName>Enemy_step_base-25.wav</ShortName>
+							<Path>SFX\Enemy_step_base-25_10C4C929.wem</Path>
+						</File>
+						<File Id="641160198" Language="SFX">
+							<ShortName>Enemy_step_base-04.wav</ShortName>
+							<Path>SFX\Enemy_step_base-04_10C4C929.wem</Path>
+						</File>
+						<File Id="641475269" Language="SFX">
+							<ShortName>Enemy_step_base-10.wav</ShortName>
+							<Path>SFX\Enemy_step_base-10_10C4C929.wem</Path>
+						</File>
+						<File Id="666415761" Language="SFX">
+							<ShortName>Enemy_step_base-03.wav</ShortName>
+							<Path>SFX\Enemy_step_base-03_10C4C929.wem</Path>
+						</File>
+						<File Id="730804282" Language="SFX">
+							<ShortName>Enemy_step_base-12.wav</ShortName>
+							<Path>SFX\Enemy_step_base-12_10C4C929.wem</Path>
+						</File>
+						<File Id="783788799" Language="SFX">
+							<ShortName>Enemy_step_base-13.wav</ShortName>
+							<Path>SFX\Enemy_step_base-13_10C4C929.wem</Path>
+						</File>
+						<File Id="785809794" Language="SFX">
+							<ShortName>Enemy_step_base-15.wav</ShortName>
+							<Path>SFX\Enemy_step_base-15_10C4C929.wem</Path>
+						</File>
+						<File Id="813265807" Language="SFX">
+							<ShortName>demon_step_scratch_silent-07.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-07_10C4C929.wem</Path>
+						</File>
+						<File Id="832786376" Language="SFX">
+							<ShortName>Enemy_step_base-19.wav</ShortName>
+							<Path>SFX\Enemy_step_base-19_10C4C929.wem</Path>
+						</File>
+						<File Id="833624610" Language="SFX">
+							<ShortName>Enemy_step_base-08.wav</ShortName>
+							<Path>SFX\Enemy_step_base-08_10C4C929.wem</Path>
+						</File>
+						<File Id="856926027" Language="SFX">
+							<ShortName>demon_step_scratch_silent-04.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-04_10C4C929.wem</Path>
+						</File>
+						<File Id="861058294" Language="SFX">
+							<ShortName>Enemy_step_base-23.wav</ShortName>
+							<Path>SFX\Enemy_step_base-23_10C4C929.wem</Path>
+						</File>
+						<File Id="894401206" Language="SFX">
+							<ShortName>Enemy_step_base-14.wav</ShortName>
+							<Path>SFX\Enemy_step_base-14_10C4C929.wem</Path>
+						</File>
+						<File Id="929662836" Language="SFX">
+							<ShortName>Enemy_step_base-21.wav</ShortName>
+							<Path>SFX\Enemy_step_base-21_10C4C929.wem</Path>
+						</File>
+						<File Id="940788076" Language="SFX">
+							<ShortName>demon_step_scratch_silent-06.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-06_10C4C929.wem</Path>
+						</File>
+						<File Id="952264963" Language="SFX">
+							<ShortName>Enemy_step_base-11.wav</ShortName>
+							<Path>SFX\Enemy_step_base-11_10C4C929.wem</Path>
+						</File>
+						<File Id="991791601" Language="SFX">
+							<ShortName>demon_step_scratch_silent-02.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-02_10C4C929.wem</Path>
+						</File>
+						<File Id="998089398" Language="SFX">
+							<ShortName>demon_step_scratch_silent-10.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-10_10C4C929.wem</Path>
+						</File>
+						<File Id="1023197066" Language="SFX">
+							<ShortName>demon_step_scratch_silent-12.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-12_10C4C929.wem</Path>
+						</File>
+						<File Id="1038418626" Language="SFX">
+							<ShortName>Enemy_step_base-18.wav</ShortName>
+							<Path>SFX\Enemy_step_base-18_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3496783742" Name="DemonFighterWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\DemonFighterWalk" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.123242" DurationMax="0.927357">
+					<IncludedMemoryFiles>
+						<File Id="24804190" Language="SFX">
+							<ShortName>demon_step_scratch_silent-11.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-11_10C4C929.wem</Path>
+						</File>
+						<File Id="71401492" Language="SFX">
+							<ShortName>Enemy_step_base-26.wav</ShortName>
+							<Path>SFX\Enemy_step_base-26_10C4C929.wem</Path>
+						</File>
+						<File Id="98842079" Language="SFX">
+							<ShortName>Enemy_step_base-16.wav</ShortName>
+							<Path>SFX\Enemy_step_base-16_10C4C929.wem</Path>
+						</File>
+						<File Id="171160132" Language="SFX">
+							<ShortName>demon_step_scratch_silent-01.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-01_10C4C929.wem</Path>
+						</File>
+						<File Id="196366852" Language="SFX">
+							<ShortName>Enemy_step_base-22.wav</ShortName>
+							<Path>SFX\Enemy_step_base-22_10C4C929.wem</Path>
+						</File>
+						<File Id="207758985" Language="SFX">
+							<ShortName>demon_step_scratch_silent-08.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-08_10C4C929.wem</Path>
+						</File>
+						<File Id="255408422" Language="SFX">
+							<ShortName>Enemy_step_base-24.wav</ShortName>
+							<Path>SFX\Enemy_step_base-24_10C4C929.wem</Path>
+						</File>
+						<File Id="258511751" Language="SFX">
+							<ShortName>Enemy_step_base-02.wav</ShortName>
+							<Path>SFX\Enemy_step_base-02_10C4C929.wem</Path>
+						</File>
+						<File Id="277298309" Language="SFX">
+							<ShortName>demon_step_scratch_silent-05.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-05_10C4C929.wem</Path>
+						</File>
+						<File Id="295774334" Language="SFX">
+							<ShortName>Enemy_step_base-05.wav</ShortName>
+							<Path>SFX\Enemy_step_base-05_10C4C929.wem</Path>
+						</File>
+						<File Id="301701354" Language="SFX">
+							<ShortName>Enemy_step_base-17.wav</ShortName>
+							<Path>SFX\Enemy_step_base-17_10C4C929.wem</Path>
+						</File>
+						<File Id="353955088" Language="SFX">
+							<ShortName>Enemy_step_base-09.wav</ShortName>
+							<Path>SFX\Enemy_step_base-09_10C4C929.wem</Path>
+						</File>
+						<File Id="367061680" Language="SFX">
+							<ShortName>demon_step_scratch_silent-09.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-09_10C4C929.wem</Path>
+						</File>
+						<File Id="396207608" Language="SFX">
+							<ShortName>Enemy_step_base-07.wav</ShortName>
+							<Path>SFX\Enemy_step_base-07_10C4C929.wem</Path>
+						</File>
+						<File Id="467956749" Language="SFX">
+							<ShortName>Enemy_step_base-01.wav</ShortName>
+							<Path>SFX\Enemy_step_base-01_10C4C929.wem</Path>
+						</File>
+						<File Id="492608243" Language="SFX">
+							<ShortName>demon_step_scratch_silent-03.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-03_10C4C929.wem</Path>
+						</File>
+						<File Id="560799079" Language="SFX">
+							<ShortName>Enemy_step_base-06.wav</ShortName>
+							<Path>SFX\Enemy_step_base-06_10C4C929.wem</Path>
+						</File>
+						<File Id="600863541" Language="SFX">
+							<ShortName>Enemy_step_base-20.wav</ShortName>
+							<Path>SFX\Enemy_step_base-20_10C4C929.wem</Path>
+						</File>
+						<File Id="604415728" Language="SFX">
+							<ShortName>Enemy_step_base-25.wav</ShortName>
+							<Path>SFX\Enemy_step_base-25_10C4C929.wem</Path>
+						</File>
+						<File Id="641160198" Language="SFX">
+							<ShortName>Enemy_step_base-04.wav</ShortName>
+							<Path>SFX\Enemy_step_base-04_10C4C929.wem</Path>
+						</File>
+						<File Id="641475269" Language="SFX">
+							<ShortName>Enemy_step_base-10.wav</ShortName>
+							<Path>SFX\Enemy_step_base-10_10C4C929.wem</Path>
+						</File>
+						<File Id="666415761" Language="SFX">
+							<ShortName>Enemy_step_base-03.wav</ShortName>
+							<Path>SFX\Enemy_step_base-03_10C4C929.wem</Path>
+						</File>
+						<File Id="730804282" Language="SFX">
+							<ShortName>Enemy_step_base-12.wav</ShortName>
+							<Path>SFX\Enemy_step_base-12_10C4C929.wem</Path>
+						</File>
+						<File Id="783788799" Language="SFX">
+							<ShortName>Enemy_step_base-13.wav</ShortName>
+							<Path>SFX\Enemy_step_base-13_10C4C929.wem</Path>
+						</File>
+						<File Id="785809794" Language="SFX">
+							<ShortName>Enemy_step_base-15.wav</ShortName>
+							<Path>SFX\Enemy_step_base-15_10C4C929.wem</Path>
+						</File>
+						<File Id="813265807" Language="SFX">
+							<ShortName>demon_step_scratch_silent-07.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-07_10C4C929.wem</Path>
+						</File>
+						<File Id="832786376" Language="SFX">
+							<ShortName>Enemy_step_base-19.wav</ShortName>
+							<Path>SFX\Enemy_step_base-19_10C4C929.wem</Path>
+						</File>
+						<File Id="833624610" Language="SFX">
+							<ShortName>Enemy_step_base-08.wav</ShortName>
+							<Path>SFX\Enemy_step_base-08_10C4C929.wem</Path>
+						</File>
+						<File Id="856926027" Language="SFX">
+							<ShortName>demon_step_scratch_silent-04.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-04_10C4C929.wem</Path>
+						</File>
+						<File Id="861058294" Language="SFX">
+							<ShortName>Enemy_step_base-23.wav</ShortName>
+							<Path>SFX\Enemy_step_base-23_10C4C929.wem</Path>
+						</File>
+						<File Id="894401206" Language="SFX">
+							<ShortName>Enemy_step_base-14.wav</ShortName>
+							<Path>SFX\Enemy_step_base-14_10C4C929.wem</Path>
+						</File>
+						<File Id="929662836" Language="SFX">
+							<ShortName>Enemy_step_base-21.wav</ShortName>
+							<Path>SFX\Enemy_step_base-21_10C4C929.wem</Path>
+						</File>
+						<File Id="940788076" Language="SFX">
+							<ShortName>demon_step_scratch_silent-06.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-06_10C4C929.wem</Path>
+						</File>
+						<File Id="952264963" Language="SFX">
+							<ShortName>Enemy_step_base-11.wav</ShortName>
+							<Path>SFX\Enemy_step_base-11_10C4C929.wem</Path>
+						</File>
+						<File Id="991791601" Language="SFX">
+							<ShortName>demon_step_scratch_silent-02.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-02_10C4C929.wem</Path>
+						</File>
+						<File Id="998089398" Language="SFX">
+							<ShortName>demon_step_scratch_silent-10.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-10_10C4C929.wem</Path>
+						</File>
+						<File Id="1023197066" Language="SFX">
+							<ShortName>demon_step_scratch_silent-12.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-12_10C4C929.wem</Path>
+						</File>
+						<File Id="1038418626" Language="SFX">
+							<ShortName>Enemy_step_base-18.wav</ShortName>
+							<Path>SFX\Enemy_step_base-18_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4120985678" Name="DemonMageDeath" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageDeath" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.966286" DurationMax="1.137033">
+					<IncludedMemoryFiles>
+						<File Id="10195113" Language="SFX">
+							<ShortName>Body_drop-10.wav</ShortName>
+							<Path>SFX\Body_drop-10_10C4C929.wem</Path>
+						</File>
+						<File Id="44324885" Language="SFX">
+							<ShortName>Body_drop-16.wav</ShortName>
+							<Path>SFX\Body_drop-16_10C4C929.wem</Path>
+						</File>
+						<File Id="67213548" Language="SFX">
+							<ShortName>Body_drop-17.wav</ShortName>
+							<Path>SFX\Body_drop-17_10C4C929.wem</Path>
+						</File>
+						<File Id="79386932" Language="SFX">
+							<ShortName>Body_drop-02.wav</ShortName>
+							<Path>SFX\Body_drop-02_10C4C929.wem</Path>
+						</File>
+						<File Id="100649528" Language="SFX">
+							<ShortName>Body_drop-15.wav</ShortName>
+							<Path>SFX\Body_drop-15_10C4C929.wem</Path>
+						</File>
+						<File Id="161961000" Language="SFX">
+							<ShortName>Body_drop-13.wav</ShortName>
+							<Path>SFX\Body_drop-13_10C4C929.wem</Path>
+						</File>
+						<File Id="255215428" Language="SFX">
+							<ShortName>Demon_death_normal_size-01.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-01_10C4C929.wem</Path>
+						</File>
+						<File Id="255977918" Language="SFX">
+							<ShortName>Body_drop-06.wav</ShortName>
+							<Path>SFX\Body_drop-06_10C4C929.wem</Path>
+						</File>
+						<File Id="296731365" Language="SFX">
+							<ShortName>Body_drop-09.wav</ShortName>
+							<Path>SFX\Body_drop-09_10C4C929.wem</Path>
+						</File>
+						<File Id="300011866" Language="SFX">
+							<ShortName>Body_drop-03.wav</ShortName>
+							<Path>SFX\Body_drop-03_10C4C929.wem</Path>
+						</File>
+						<File Id="408725488" Language="SFX">
+							<ShortName>Body_drop-05.wav</ShortName>
+							<Path>SFX\Body_drop-05_10C4C929.wem</Path>
+						</File>
+						<File Id="679461730" Language="SFX">
+							<ShortName>Body_drop-11.wav</ShortName>
+							<Path>SFX\Body_drop-11_10C4C929.wem</Path>
+						</File>
+						<File Id="680110789" Language="SFX">
+							<ShortName>Body_drop-08.wav</ShortName>
+							<Path>SFX\Body_drop-08_10C4C929.wem</Path>
+						</File>
+						<File Id="712942219" Language="SFX">
+							<ShortName>Body_drop-14.wav</ShortName>
+							<Path>SFX\Body_drop-14_10C4C929.wem</Path>
+						</File>
+						<File Id="741727147" Language="SFX">
+							<ShortName>Demon_death_normal_size-06.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-06_10C4C929.wem</Path>
+						</File>
+						<File Id="742454251" Language="SFX">
+							<ShortName>Demon_death_normal_size-02.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-02_10C4C929.wem</Path>
+						</File>
+						<File Id="756991715" Language="SFX">
+							<ShortName>Demon_death_normal_size-04.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-04_10C4C929.wem</Path>
+						</File>
+						<File Id="813197766" Language="SFX">
+							<ShortName>Body_drop-04.wav</ShortName>
+							<Path>SFX\Body_drop-04_10C4C929.wem</Path>
+						</File>
+						<File Id="864660415" Language="SFX">
+							<ShortName>Body_drop-07.wav</ShortName>
+							<Path>SFX\Body_drop-07_10C4C929.wem</Path>
+						</File>
+						<File Id="917863250" Language="SFX">
+							<ShortName>Body_drop-19.wav</ShortName>
+							<Path>SFX\Body_drop-19_10C4C929.wem</Path>
+						</File>
+						<File Id="929295031" Language="SFX">
+							<ShortName>Body_drop-01.wav</ShortName>
+							<Path>SFX\Body_drop-01_10C4C929.wem</Path>
+						</File>
+						<File Id="948354709" Language="SFX">
+							<ShortName>Body_drop-18.wav</ShortName>
+							<Path>SFX\Body_drop-18_10C4C929.wem</Path>
+						</File>
+						<File Id="971210847" Language="SFX">
+							<ShortName>Body_drop-12.wav</ShortName>
+							<Path>SFX\Body_drop-12_10C4C929.wem</Path>
+						</File>
+						<File Id="985685596" Language="SFX">
+							<ShortName>Demon_death_normal_size-03.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-03_10C4C929.wem</Path>
+						</File>
+						<File Id="989528968" Language="SFX">
+							<ShortName>Demon_death_normal_size-05.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-05_10C4C929.wem</Path>
+						</File>
+						<File Id="995812692" Language="SFX">
+							<ShortName>Demon_death_normal_size-07.wav</ShortName>
+							<Path>SFX\Demon_death_normal_size-07_10C4C929.wem</Path>
+						</File>
+						<File Id="1047246517" Language="SFX">
+							<ShortName>Body_drop-20.wav</ShortName>
+							<Path>SFX\Body_drop-20_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1895283565" Name="DemonMageGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageGotHit" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.305093" DurationMax="0.773455">
 					<IncludedMemoryFiles>
 						<File Id="6507290" Language="SFX">
 							<ShortName>zapsplat_flesh_impact-2.wav</ShortName>
@@ -490,10 +1123,415 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4294451055" Name="DemonMageRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageRun" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2140539667" Name="DemonMageWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageWalk" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2102040365" Name="DemonSpearDeath" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearDeath" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="4061880024" Name="DemonSpearGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearGotHit" DurationType="OneShot" DurationMin="0.305093" DurationMax="0.773455">
+				<Event Id="4294451055" Name="DemonMageRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageRun" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.109796" DurationMax="0.826181">
+					<IncludedMemoryFiles>
+						<File Id="24804190" Language="SFX">
+							<ShortName>demon_step_scratch_silent-11.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-11_10C4C929.wem</Path>
+						</File>
+						<File Id="71401492" Language="SFX">
+							<ShortName>Enemy_step_base-26.wav</ShortName>
+							<Path>SFX\Enemy_step_base-26_10C4C929.wem</Path>
+						</File>
+						<File Id="98842079" Language="SFX">
+							<ShortName>Enemy_step_base-16.wav</ShortName>
+							<Path>SFX\Enemy_step_base-16_10C4C929.wem</Path>
+						</File>
+						<File Id="171160132" Language="SFX">
+							<ShortName>demon_step_scratch_silent-01.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-01_10C4C929.wem</Path>
+						</File>
+						<File Id="196366852" Language="SFX">
+							<ShortName>Enemy_step_base-22.wav</ShortName>
+							<Path>SFX\Enemy_step_base-22_10C4C929.wem</Path>
+						</File>
+						<File Id="207758985" Language="SFX">
+							<ShortName>demon_step_scratch_silent-08.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-08_10C4C929.wem</Path>
+						</File>
+						<File Id="255408422" Language="SFX">
+							<ShortName>Enemy_step_base-24.wav</ShortName>
+							<Path>SFX\Enemy_step_base-24_10C4C929.wem</Path>
+						</File>
+						<File Id="258511751" Language="SFX">
+							<ShortName>Enemy_step_base-02.wav</ShortName>
+							<Path>SFX\Enemy_step_base-02_10C4C929.wem</Path>
+						</File>
+						<File Id="277298309" Language="SFX">
+							<ShortName>demon_step_scratch_silent-05.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-05_10C4C929.wem</Path>
+						</File>
+						<File Id="295774334" Language="SFX">
+							<ShortName>Enemy_step_base-05.wav</ShortName>
+							<Path>SFX\Enemy_step_base-05_10C4C929.wem</Path>
+						</File>
+						<File Id="301701354" Language="SFX">
+							<ShortName>Enemy_step_base-17.wav</ShortName>
+							<Path>SFX\Enemy_step_base-17_10C4C929.wem</Path>
+						</File>
+						<File Id="353955088" Language="SFX">
+							<ShortName>Enemy_step_base-09.wav</ShortName>
+							<Path>SFX\Enemy_step_base-09_10C4C929.wem</Path>
+						</File>
+						<File Id="367061680" Language="SFX">
+							<ShortName>demon_step_scratch_silent-09.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-09_10C4C929.wem</Path>
+						</File>
+						<File Id="396207608" Language="SFX">
+							<ShortName>Enemy_step_base-07.wav</ShortName>
+							<Path>SFX\Enemy_step_base-07_10C4C929.wem</Path>
+						</File>
+						<File Id="467956749" Language="SFX">
+							<ShortName>Enemy_step_base-01.wav</ShortName>
+							<Path>SFX\Enemy_step_base-01_10C4C929.wem</Path>
+						</File>
+						<File Id="492608243" Language="SFX">
+							<ShortName>demon_step_scratch_silent-03.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-03_10C4C929.wem</Path>
+						</File>
+						<File Id="560799079" Language="SFX">
+							<ShortName>Enemy_step_base-06.wav</ShortName>
+							<Path>SFX\Enemy_step_base-06_10C4C929.wem</Path>
+						</File>
+						<File Id="600863541" Language="SFX">
+							<ShortName>Enemy_step_base-20.wav</ShortName>
+							<Path>SFX\Enemy_step_base-20_10C4C929.wem</Path>
+						</File>
+						<File Id="604415728" Language="SFX">
+							<ShortName>Enemy_step_base-25.wav</ShortName>
+							<Path>SFX\Enemy_step_base-25_10C4C929.wem</Path>
+						</File>
+						<File Id="641160198" Language="SFX">
+							<ShortName>Enemy_step_base-04.wav</ShortName>
+							<Path>SFX\Enemy_step_base-04_10C4C929.wem</Path>
+						</File>
+						<File Id="641475269" Language="SFX">
+							<ShortName>Enemy_step_base-10.wav</ShortName>
+							<Path>SFX\Enemy_step_base-10_10C4C929.wem</Path>
+						</File>
+						<File Id="666415761" Language="SFX">
+							<ShortName>Enemy_step_base-03.wav</ShortName>
+							<Path>SFX\Enemy_step_base-03_10C4C929.wem</Path>
+						</File>
+						<File Id="730804282" Language="SFX">
+							<ShortName>Enemy_step_base-12.wav</ShortName>
+							<Path>SFX\Enemy_step_base-12_10C4C929.wem</Path>
+						</File>
+						<File Id="783788799" Language="SFX">
+							<ShortName>Enemy_step_base-13.wav</ShortName>
+							<Path>SFX\Enemy_step_base-13_10C4C929.wem</Path>
+						</File>
+						<File Id="785809794" Language="SFX">
+							<ShortName>Enemy_step_base-15.wav</ShortName>
+							<Path>SFX\Enemy_step_base-15_10C4C929.wem</Path>
+						</File>
+						<File Id="813265807" Language="SFX">
+							<ShortName>demon_step_scratch_silent-07.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-07_10C4C929.wem</Path>
+						</File>
+						<File Id="832786376" Language="SFX">
+							<ShortName>Enemy_step_base-19.wav</ShortName>
+							<Path>SFX\Enemy_step_base-19_10C4C929.wem</Path>
+						</File>
+						<File Id="833624610" Language="SFX">
+							<ShortName>Enemy_step_base-08.wav</ShortName>
+							<Path>SFX\Enemy_step_base-08_10C4C929.wem</Path>
+						</File>
+						<File Id="856926027" Language="SFX">
+							<ShortName>demon_step_scratch_silent-04.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-04_10C4C929.wem</Path>
+						</File>
+						<File Id="861058294" Language="SFX">
+							<ShortName>Enemy_step_base-23.wav</ShortName>
+							<Path>SFX\Enemy_step_base-23_10C4C929.wem</Path>
+						</File>
+						<File Id="894401206" Language="SFX">
+							<ShortName>Enemy_step_base-14.wav</ShortName>
+							<Path>SFX\Enemy_step_base-14_10C4C929.wem</Path>
+						</File>
+						<File Id="929662836" Language="SFX">
+							<ShortName>Enemy_step_base-21.wav</ShortName>
+							<Path>SFX\Enemy_step_base-21_10C4C929.wem</Path>
+						</File>
+						<File Id="940788076" Language="SFX">
+							<ShortName>demon_step_scratch_silent-06.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-06_10C4C929.wem</Path>
+						</File>
+						<File Id="952264963" Language="SFX">
+							<ShortName>Enemy_step_base-11.wav</ShortName>
+							<Path>SFX\Enemy_step_base-11_10C4C929.wem</Path>
+						</File>
+						<File Id="991791601" Language="SFX">
+							<ShortName>demon_step_scratch_silent-02.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-02_10C4C929.wem</Path>
+						</File>
+						<File Id="998089398" Language="SFX">
+							<ShortName>demon_step_scratch_silent-10.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-10_10C4C929.wem</Path>
+						</File>
+						<File Id="1023197066" Language="SFX">
+							<ShortName>demon_step_scratch_silent-12.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-12_10C4C929.wem</Path>
+						</File>
+						<File Id="1038418626" Language="SFX">
+							<ShortName>Enemy_step_base-18.wav</ShortName>
+							<Path>SFX\Enemy_step_base-18_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2140539667" Name="DemonMageWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonMage\DemonMageWalk" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.123242" DurationMax="0.927357">
+					<IncludedMemoryFiles>
+						<File Id="24804190" Language="SFX">
+							<ShortName>demon_step_scratch_silent-11.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-11_10C4C929.wem</Path>
+						</File>
+						<File Id="71401492" Language="SFX">
+							<ShortName>Enemy_step_base-26.wav</ShortName>
+							<Path>SFX\Enemy_step_base-26_10C4C929.wem</Path>
+						</File>
+						<File Id="98842079" Language="SFX">
+							<ShortName>Enemy_step_base-16.wav</ShortName>
+							<Path>SFX\Enemy_step_base-16_10C4C929.wem</Path>
+						</File>
+						<File Id="171160132" Language="SFX">
+							<ShortName>demon_step_scratch_silent-01.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-01_10C4C929.wem</Path>
+						</File>
+						<File Id="196366852" Language="SFX">
+							<ShortName>Enemy_step_base-22.wav</ShortName>
+							<Path>SFX\Enemy_step_base-22_10C4C929.wem</Path>
+						</File>
+						<File Id="207758985" Language="SFX">
+							<ShortName>demon_step_scratch_silent-08.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-08_10C4C929.wem</Path>
+						</File>
+						<File Id="255408422" Language="SFX">
+							<ShortName>Enemy_step_base-24.wav</ShortName>
+							<Path>SFX\Enemy_step_base-24_10C4C929.wem</Path>
+						</File>
+						<File Id="258511751" Language="SFX">
+							<ShortName>Enemy_step_base-02.wav</ShortName>
+							<Path>SFX\Enemy_step_base-02_10C4C929.wem</Path>
+						</File>
+						<File Id="277298309" Language="SFX">
+							<ShortName>demon_step_scratch_silent-05.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-05_10C4C929.wem</Path>
+						</File>
+						<File Id="295774334" Language="SFX">
+							<ShortName>Enemy_step_base-05.wav</ShortName>
+							<Path>SFX\Enemy_step_base-05_10C4C929.wem</Path>
+						</File>
+						<File Id="301701354" Language="SFX">
+							<ShortName>Enemy_step_base-17.wav</ShortName>
+							<Path>SFX\Enemy_step_base-17_10C4C929.wem</Path>
+						</File>
+						<File Id="353955088" Language="SFX">
+							<ShortName>Enemy_step_base-09.wav</ShortName>
+							<Path>SFX\Enemy_step_base-09_10C4C929.wem</Path>
+						</File>
+						<File Id="367061680" Language="SFX">
+							<ShortName>demon_step_scratch_silent-09.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-09_10C4C929.wem</Path>
+						</File>
+						<File Id="396207608" Language="SFX">
+							<ShortName>Enemy_step_base-07.wav</ShortName>
+							<Path>SFX\Enemy_step_base-07_10C4C929.wem</Path>
+						</File>
+						<File Id="467956749" Language="SFX">
+							<ShortName>Enemy_step_base-01.wav</ShortName>
+							<Path>SFX\Enemy_step_base-01_10C4C929.wem</Path>
+						</File>
+						<File Id="492608243" Language="SFX">
+							<ShortName>demon_step_scratch_silent-03.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-03_10C4C929.wem</Path>
+						</File>
+						<File Id="560799079" Language="SFX">
+							<ShortName>Enemy_step_base-06.wav</ShortName>
+							<Path>SFX\Enemy_step_base-06_10C4C929.wem</Path>
+						</File>
+						<File Id="600863541" Language="SFX">
+							<ShortName>Enemy_step_base-20.wav</ShortName>
+							<Path>SFX\Enemy_step_base-20_10C4C929.wem</Path>
+						</File>
+						<File Id="604415728" Language="SFX">
+							<ShortName>Enemy_step_base-25.wav</ShortName>
+							<Path>SFX\Enemy_step_base-25_10C4C929.wem</Path>
+						</File>
+						<File Id="641160198" Language="SFX">
+							<ShortName>Enemy_step_base-04.wav</ShortName>
+							<Path>SFX\Enemy_step_base-04_10C4C929.wem</Path>
+						</File>
+						<File Id="641475269" Language="SFX">
+							<ShortName>Enemy_step_base-10.wav</ShortName>
+							<Path>SFX\Enemy_step_base-10_10C4C929.wem</Path>
+						</File>
+						<File Id="666415761" Language="SFX">
+							<ShortName>Enemy_step_base-03.wav</ShortName>
+							<Path>SFX\Enemy_step_base-03_10C4C929.wem</Path>
+						</File>
+						<File Id="730804282" Language="SFX">
+							<ShortName>Enemy_step_base-12.wav</ShortName>
+							<Path>SFX\Enemy_step_base-12_10C4C929.wem</Path>
+						</File>
+						<File Id="783788799" Language="SFX">
+							<ShortName>Enemy_step_base-13.wav</ShortName>
+							<Path>SFX\Enemy_step_base-13_10C4C929.wem</Path>
+						</File>
+						<File Id="785809794" Language="SFX">
+							<ShortName>Enemy_step_base-15.wav</ShortName>
+							<Path>SFX\Enemy_step_base-15_10C4C929.wem</Path>
+						</File>
+						<File Id="813265807" Language="SFX">
+							<ShortName>demon_step_scratch_silent-07.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-07_10C4C929.wem</Path>
+						</File>
+						<File Id="832786376" Language="SFX">
+							<ShortName>Enemy_step_base-19.wav</ShortName>
+							<Path>SFX\Enemy_step_base-19_10C4C929.wem</Path>
+						</File>
+						<File Id="833624610" Language="SFX">
+							<ShortName>Enemy_step_base-08.wav</ShortName>
+							<Path>SFX\Enemy_step_base-08_10C4C929.wem</Path>
+						</File>
+						<File Id="856926027" Language="SFX">
+							<ShortName>demon_step_scratch_silent-04.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-04_10C4C929.wem</Path>
+						</File>
+						<File Id="861058294" Language="SFX">
+							<ShortName>Enemy_step_base-23.wav</ShortName>
+							<Path>SFX\Enemy_step_base-23_10C4C929.wem</Path>
+						</File>
+						<File Id="894401206" Language="SFX">
+							<ShortName>Enemy_step_base-14.wav</ShortName>
+							<Path>SFX\Enemy_step_base-14_10C4C929.wem</Path>
+						</File>
+						<File Id="929662836" Language="SFX">
+							<ShortName>Enemy_step_base-21.wav</ShortName>
+							<Path>SFX\Enemy_step_base-21_10C4C929.wem</Path>
+						</File>
+						<File Id="940788076" Language="SFX">
+							<ShortName>demon_step_scratch_silent-06.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-06_10C4C929.wem</Path>
+						</File>
+						<File Id="952264963" Language="SFX">
+							<ShortName>Enemy_step_base-11.wav</ShortName>
+							<Path>SFX\Enemy_step_base-11_10C4C929.wem</Path>
+						</File>
+						<File Id="991791601" Language="SFX">
+							<ShortName>demon_step_scratch_silent-02.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-02_10C4C929.wem</Path>
+						</File>
+						<File Id="998089398" Language="SFX">
+							<ShortName>demon_step_scratch_silent-10.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-10_10C4C929.wem</Path>
+						</File>
+						<File Id="1023197066" Language="SFX">
+							<ShortName>demon_step_scratch_silent-12.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-12_10C4C929.wem</Path>
+						</File>
+						<File Id="1038418626" Language="SFX">
+							<ShortName>Enemy_step_base-18.wav</ShortName>
+							<Path>SFX\Enemy_step_base-18_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2102040365" Name="DemonSpearDeath" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearDeath" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.966286" DurationMax="1.137033">
+					<IncludedMemoryFiles>
+						<File Id="10195113" Language="SFX">
+							<ShortName>Body_drop-10.wav</ShortName>
+							<Path>SFX\Body_drop-10_10C4C929.wem</Path>
+						</File>
+						<File Id="44324885" Language="SFX">
+							<ShortName>Body_drop-16.wav</ShortName>
+							<Path>SFX\Body_drop-16_10C4C929.wem</Path>
+						</File>
+						<File Id="67213548" Language="SFX">
+							<ShortName>Body_drop-17.wav</ShortName>
+							<Path>SFX\Body_drop-17_10C4C929.wem</Path>
+						</File>
+						<File Id="79386932" Language="SFX">
+							<ShortName>Body_drop-02.wav</ShortName>
+							<Path>SFX\Body_drop-02_10C4C929.wem</Path>
+						</File>
+						<File Id="100649528" Language="SFX">
+							<ShortName>Body_drop-15.wav</ShortName>
+							<Path>SFX\Body_drop-15_10C4C929.wem</Path>
+						</File>
+						<File Id="161961000" Language="SFX">
+							<ShortName>Body_drop-13.wav</ShortName>
+							<Path>SFX\Body_drop-13_10C4C929.wem</Path>
+						</File>
+						<File Id="255977918" Language="SFX">
+							<ShortName>Body_drop-06.wav</ShortName>
+							<Path>SFX\Body_drop-06_10C4C929.wem</Path>
+						</File>
+						<File Id="296731365" Language="SFX">
+							<ShortName>Body_drop-09.wav</ShortName>
+							<Path>SFX\Body_drop-09_10C4C929.wem</Path>
+						</File>
+						<File Id="300011866" Language="SFX">
+							<ShortName>Body_drop-03.wav</ShortName>
+							<Path>SFX\Body_drop-03_10C4C929.wem</Path>
+						</File>
+						<File Id="367056665" Language="SFX">
+							<ShortName>Demon_Death-01.wav</ShortName>
+							<Path>SFX\Demon_Death-01_10C4C929.wem</Path>
+						</File>
+						<File Id="408725488" Language="SFX">
+							<ShortName>Body_drop-05.wav</ShortName>
+							<Path>SFX\Body_drop-05_10C4C929.wem</Path>
+						</File>
+						<File Id="470947489" Language="SFX">
+							<ShortName>Demon_Death-03.wav</ShortName>
+							<Path>SFX\Demon_Death-03_10C4C929.wem</Path>
+						</File>
+						<File Id="679461730" Language="SFX">
+							<ShortName>Body_drop-11.wav</ShortName>
+							<Path>SFX\Body_drop-11_10C4C929.wem</Path>
+						</File>
+						<File Id="680110789" Language="SFX">
+							<ShortName>Body_drop-08.wav</ShortName>
+							<Path>SFX\Body_drop-08_10C4C929.wem</Path>
+						</File>
+						<File Id="712942219" Language="SFX">
+							<ShortName>Body_drop-14.wav</ShortName>
+							<Path>SFX\Body_drop-14_10C4C929.wem</Path>
+						</File>
+						<File Id="813197766" Language="SFX">
+							<ShortName>Body_drop-04.wav</ShortName>
+							<Path>SFX\Body_drop-04_10C4C929.wem</Path>
+						</File>
+						<File Id="813472964" Language="SFX">
+							<ShortName>Demon_Death-02.wav</ShortName>
+							<Path>SFX\Demon_Death-02_10C4C929.wem</Path>
+						</File>
+						<File Id="864660415" Language="SFX">
+							<ShortName>Body_drop-07.wav</ShortName>
+							<Path>SFX\Body_drop-07_10C4C929.wem</Path>
+						</File>
+						<File Id="917863250" Language="SFX">
+							<ShortName>Body_drop-19.wav</ShortName>
+							<Path>SFX\Body_drop-19_10C4C929.wem</Path>
+						</File>
+						<File Id="929295031" Language="SFX">
+							<ShortName>Body_drop-01.wav</ShortName>
+							<Path>SFX\Body_drop-01_10C4C929.wem</Path>
+						</File>
+						<File Id="948354709" Language="SFX">
+							<ShortName>Body_drop-18.wav</ShortName>
+							<Path>SFX\Body_drop-18_10C4C929.wem</Path>
+						</File>
+						<File Id="971210847" Language="SFX">
+							<ShortName>Body_drop-12.wav</ShortName>
+							<Path>SFX\Body_drop-12_10C4C929.wem</Path>
+						</File>
+						<File Id="1047246517" Language="SFX">
+							<ShortName>Body_drop-20.wav</ShortName>
+							<Path>SFX\Body_drop-20_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4061880024" Name="DemonSpearGotHit" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearGotHit" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.305093" DurationMax="0.773455">
 					<IncludedMemoryFiles>
 						<File Id="6507290" Language="SFX">
 							<ShortName>zapsplat_flesh_impact-2.wav</ShortName>
@@ -593,9 +1631,319 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="537156876" Name="DemonSpearRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearRun" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3167257242" Name="DemonSpearWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearWalk" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2867028574" Name="FighterSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\FighterSwing" DurationType="OneShot" DurationMin="0.338367" DurationMax="0.667410">
+				<Event Id="537156876" Name="DemonSpearRun" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearRun" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.109796" DurationMax="0.826181">
+					<IncludedMemoryFiles>
+						<File Id="24804190" Language="SFX">
+							<ShortName>demon_step_scratch_silent-11.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-11_10C4C929.wem</Path>
+						</File>
+						<File Id="71401492" Language="SFX">
+							<ShortName>Enemy_step_base-26.wav</ShortName>
+							<Path>SFX\Enemy_step_base-26_10C4C929.wem</Path>
+						</File>
+						<File Id="98842079" Language="SFX">
+							<ShortName>Enemy_step_base-16.wav</ShortName>
+							<Path>SFX\Enemy_step_base-16_10C4C929.wem</Path>
+						</File>
+						<File Id="171160132" Language="SFX">
+							<ShortName>demon_step_scratch_silent-01.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-01_10C4C929.wem</Path>
+						</File>
+						<File Id="196366852" Language="SFX">
+							<ShortName>Enemy_step_base-22.wav</ShortName>
+							<Path>SFX\Enemy_step_base-22_10C4C929.wem</Path>
+						</File>
+						<File Id="207758985" Language="SFX">
+							<ShortName>demon_step_scratch_silent-08.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-08_10C4C929.wem</Path>
+						</File>
+						<File Id="255408422" Language="SFX">
+							<ShortName>Enemy_step_base-24.wav</ShortName>
+							<Path>SFX\Enemy_step_base-24_10C4C929.wem</Path>
+						</File>
+						<File Id="258511751" Language="SFX">
+							<ShortName>Enemy_step_base-02.wav</ShortName>
+							<Path>SFX\Enemy_step_base-02_10C4C929.wem</Path>
+						</File>
+						<File Id="277298309" Language="SFX">
+							<ShortName>demon_step_scratch_silent-05.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-05_10C4C929.wem</Path>
+						</File>
+						<File Id="295774334" Language="SFX">
+							<ShortName>Enemy_step_base-05.wav</ShortName>
+							<Path>SFX\Enemy_step_base-05_10C4C929.wem</Path>
+						</File>
+						<File Id="301701354" Language="SFX">
+							<ShortName>Enemy_step_base-17.wav</ShortName>
+							<Path>SFX\Enemy_step_base-17_10C4C929.wem</Path>
+						</File>
+						<File Id="353955088" Language="SFX">
+							<ShortName>Enemy_step_base-09.wav</ShortName>
+							<Path>SFX\Enemy_step_base-09_10C4C929.wem</Path>
+						</File>
+						<File Id="367061680" Language="SFX">
+							<ShortName>demon_step_scratch_silent-09.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-09_10C4C929.wem</Path>
+						</File>
+						<File Id="396207608" Language="SFX">
+							<ShortName>Enemy_step_base-07.wav</ShortName>
+							<Path>SFX\Enemy_step_base-07_10C4C929.wem</Path>
+						</File>
+						<File Id="467956749" Language="SFX">
+							<ShortName>Enemy_step_base-01.wav</ShortName>
+							<Path>SFX\Enemy_step_base-01_10C4C929.wem</Path>
+						</File>
+						<File Id="492608243" Language="SFX">
+							<ShortName>demon_step_scratch_silent-03.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-03_10C4C929.wem</Path>
+						</File>
+						<File Id="560799079" Language="SFX">
+							<ShortName>Enemy_step_base-06.wav</ShortName>
+							<Path>SFX\Enemy_step_base-06_10C4C929.wem</Path>
+						</File>
+						<File Id="600863541" Language="SFX">
+							<ShortName>Enemy_step_base-20.wav</ShortName>
+							<Path>SFX\Enemy_step_base-20_10C4C929.wem</Path>
+						</File>
+						<File Id="604415728" Language="SFX">
+							<ShortName>Enemy_step_base-25.wav</ShortName>
+							<Path>SFX\Enemy_step_base-25_10C4C929.wem</Path>
+						</File>
+						<File Id="641160198" Language="SFX">
+							<ShortName>Enemy_step_base-04.wav</ShortName>
+							<Path>SFX\Enemy_step_base-04_10C4C929.wem</Path>
+						</File>
+						<File Id="641475269" Language="SFX">
+							<ShortName>Enemy_step_base-10.wav</ShortName>
+							<Path>SFX\Enemy_step_base-10_10C4C929.wem</Path>
+						</File>
+						<File Id="666415761" Language="SFX">
+							<ShortName>Enemy_step_base-03.wav</ShortName>
+							<Path>SFX\Enemy_step_base-03_10C4C929.wem</Path>
+						</File>
+						<File Id="730804282" Language="SFX">
+							<ShortName>Enemy_step_base-12.wav</ShortName>
+							<Path>SFX\Enemy_step_base-12_10C4C929.wem</Path>
+						</File>
+						<File Id="783788799" Language="SFX">
+							<ShortName>Enemy_step_base-13.wav</ShortName>
+							<Path>SFX\Enemy_step_base-13_10C4C929.wem</Path>
+						</File>
+						<File Id="785809794" Language="SFX">
+							<ShortName>Enemy_step_base-15.wav</ShortName>
+							<Path>SFX\Enemy_step_base-15_10C4C929.wem</Path>
+						</File>
+						<File Id="813265807" Language="SFX">
+							<ShortName>demon_step_scratch_silent-07.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-07_10C4C929.wem</Path>
+						</File>
+						<File Id="832786376" Language="SFX">
+							<ShortName>Enemy_step_base-19.wav</ShortName>
+							<Path>SFX\Enemy_step_base-19_10C4C929.wem</Path>
+						</File>
+						<File Id="833624610" Language="SFX">
+							<ShortName>Enemy_step_base-08.wav</ShortName>
+							<Path>SFX\Enemy_step_base-08_10C4C929.wem</Path>
+						</File>
+						<File Id="856926027" Language="SFX">
+							<ShortName>demon_step_scratch_silent-04.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-04_10C4C929.wem</Path>
+						</File>
+						<File Id="861058294" Language="SFX">
+							<ShortName>Enemy_step_base-23.wav</ShortName>
+							<Path>SFX\Enemy_step_base-23_10C4C929.wem</Path>
+						</File>
+						<File Id="894401206" Language="SFX">
+							<ShortName>Enemy_step_base-14.wav</ShortName>
+							<Path>SFX\Enemy_step_base-14_10C4C929.wem</Path>
+						</File>
+						<File Id="929662836" Language="SFX">
+							<ShortName>Enemy_step_base-21.wav</ShortName>
+							<Path>SFX\Enemy_step_base-21_10C4C929.wem</Path>
+						</File>
+						<File Id="940788076" Language="SFX">
+							<ShortName>demon_step_scratch_silent-06.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-06_10C4C929.wem</Path>
+						</File>
+						<File Id="952264963" Language="SFX">
+							<ShortName>Enemy_step_base-11.wav</ShortName>
+							<Path>SFX\Enemy_step_base-11_10C4C929.wem</Path>
+						</File>
+						<File Id="991791601" Language="SFX">
+							<ShortName>demon_step_scratch_silent-02.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-02_10C4C929.wem</Path>
+						</File>
+						<File Id="998089398" Language="SFX">
+							<ShortName>demon_step_scratch_silent-10.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-10_10C4C929.wem</Path>
+						</File>
+						<File Id="1023197066" Language="SFX">
+							<ShortName>demon_step_scratch_silent-12.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-12_10C4C929.wem</Path>
+						</File>
+						<File Id="1038418626" Language="SFX">
+							<ShortName>Enemy_step_base-18.wav</ShortName>
+							<Path>SFX\Enemy_step_base-18_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3167257242" Name="DemonSpearWalk" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\DemonSpearWalk" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.123242" DurationMax="0.927357">
+					<IncludedMemoryFiles>
+						<File Id="24804190" Language="SFX">
+							<ShortName>demon_step_scratch_silent-11.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-11_10C4C929.wem</Path>
+						</File>
+						<File Id="71401492" Language="SFX">
+							<ShortName>Enemy_step_base-26.wav</ShortName>
+							<Path>SFX\Enemy_step_base-26_10C4C929.wem</Path>
+						</File>
+						<File Id="98842079" Language="SFX">
+							<ShortName>Enemy_step_base-16.wav</ShortName>
+							<Path>SFX\Enemy_step_base-16_10C4C929.wem</Path>
+						</File>
+						<File Id="171160132" Language="SFX">
+							<ShortName>demon_step_scratch_silent-01.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-01_10C4C929.wem</Path>
+						</File>
+						<File Id="196366852" Language="SFX">
+							<ShortName>Enemy_step_base-22.wav</ShortName>
+							<Path>SFX\Enemy_step_base-22_10C4C929.wem</Path>
+						</File>
+						<File Id="207758985" Language="SFX">
+							<ShortName>demon_step_scratch_silent-08.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-08_10C4C929.wem</Path>
+						</File>
+						<File Id="255408422" Language="SFX">
+							<ShortName>Enemy_step_base-24.wav</ShortName>
+							<Path>SFX\Enemy_step_base-24_10C4C929.wem</Path>
+						</File>
+						<File Id="258511751" Language="SFX">
+							<ShortName>Enemy_step_base-02.wav</ShortName>
+							<Path>SFX\Enemy_step_base-02_10C4C929.wem</Path>
+						</File>
+						<File Id="277298309" Language="SFX">
+							<ShortName>demon_step_scratch_silent-05.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-05_10C4C929.wem</Path>
+						</File>
+						<File Id="295774334" Language="SFX">
+							<ShortName>Enemy_step_base-05.wav</ShortName>
+							<Path>SFX\Enemy_step_base-05_10C4C929.wem</Path>
+						</File>
+						<File Id="301701354" Language="SFX">
+							<ShortName>Enemy_step_base-17.wav</ShortName>
+							<Path>SFX\Enemy_step_base-17_10C4C929.wem</Path>
+						</File>
+						<File Id="353955088" Language="SFX">
+							<ShortName>Enemy_step_base-09.wav</ShortName>
+							<Path>SFX\Enemy_step_base-09_10C4C929.wem</Path>
+						</File>
+						<File Id="367061680" Language="SFX">
+							<ShortName>demon_step_scratch_silent-09.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-09_10C4C929.wem</Path>
+						</File>
+						<File Id="396207608" Language="SFX">
+							<ShortName>Enemy_step_base-07.wav</ShortName>
+							<Path>SFX\Enemy_step_base-07_10C4C929.wem</Path>
+						</File>
+						<File Id="467956749" Language="SFX">
+							<ShortName>Enemy_step_base-01.wav</ShortName>
+							<Path>SFX\Enemy_step_base-01_10C4C929.wem</Path>
+						</File>
+						<File Id="492608243" Language="SFX">
+							<ShortName>demon_step_scratch_silent-03.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-03_10C4C929.wem</Path>
+						</File>
+						<File Id="560799079" Language="SFX">
+							<ShortName>Enemy_step_base-06.wav</ShortName>
+							<Path>SFX\Enemy_step_base-06_10C4C929.wem</Path>
+						</File>
+						<File Id="600863541" Language="SFX">
+							<ShortName>Enemy_step_base-20.wav</ShortName>
+							<Path>SFX\Enemy_step_base-20_10C4C929.wem</Path>
+						</File>
+						<File Id="604415728" Language="SFX">
+							<ShortName>Enemy_step_base-25.wav</ShortName>
+							<Path>SFX\Enemy_step_base-25_10C4C929.wem</Path>
+						</File>
+						<File Id="641160198" Language="SFX">
+							<ShortName>Enemy_step_base-04.wav</ShortName>
+							<Path>SFX\Enemy_step_base-04_10C4C929.wem</Path>
+						</File>
+						<File Id="641475269" Language="SFX">
+							<ShortName>Enemy_step_base-10.wav</ShortName>
+							<Path>SFX\Enemy_step_base-10_10C4C929.wem</Path>
+						</File>
+						<File Id="666415761" Language="SFX">
+							<ShortName>Enemy_step_base-03.wav</ShortName>
+							<Path>SFX\Enemy_step_base-03_10C4C929.wem</Path>
+						</File>
+						<File Id="730804282" Language="SFX">
+							<ShortName>Enemy_step_base-12.wav</ShortName>
+							<Path>SFX\Enemy_step_base-12_10C4C929.wem</Path>
+						</File>
+						<File Id="783788799" Language="SFX">
+							<ShortName>Enemy_step_base-13.wav</ShortName>
+							<Path>SFX\Enemy_step_base-13_10C4C929.wem</Path>
+						</File>
+						<File Id="785809794" Language="SFX">
+							<ShortName>Enemy_step_base-15.wav</ShortName>
+							<Path>SFX\Enemy_step_base-15_10C4C929.wem</Path>
+						</File>
+						<File Id="813265807" Language="SFX">
+							<ShortName>demon_step_scratch_silent-07.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-07_10C4C929.wem</Path>
+						</File>
+						<File Id="832786376" Language="SFX">
+							<ShortName>Enemy_step_base-19.wav</ShortName>
+							<Path>SFX\Enemy_step_base-19_10C4C929.wem</Path>
+						</File>
+						<File Id="833624610" Language="SFX">
+							<ShortName>Enemy_step_base-08.wav</ShortName>
+							<Path>SFX\Enemy_step_base-08_10C4C929.wem</Path>
+						</File>
+						<File Id="856926027" Language="SFX">
+							<ShortName>demon_step_scratch_silent-04.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-04_10C4C929.wem</Path>
+						</File>
+						<File Id="861058294" Language="SFX">
+							<ShortName>Enemy_step_base-23.wav</ShortName>
+							<Path>SFX\Enemy_step_base-23_10C4C929.wem</Path>
+						</File>
+						<File Id="894401206" Language="SFX">
+							<ShortName>Enemy_step_base-14.wav</ShortName>
+							<Path>SFX\Enemy_step_base-14_10C4C929.wem</Path>
+						</File>
+						<File Id="929662836" Language="SFX">
+							<ShortName>Enemy_step_base-21.wav</ShortName>
+							<Path>SFX\Enemy_step_base-21_10C4C929.wem</Path>
+						</File>
+						<File Id="940788076" Language="SFX">
+							<ShortName>demon_step_scratch_silent-06.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-06_10C4C929.wem</Path>
+						</File>
+						<File Id="952264963" Language="SFX">
+							<ShortName>Enemy_step_base-11.wav</ShortName>
+							<Path>SFX\Enemy_step_base-11_10C4C929.wem</Path>
+						</File>
+						<File Id="991791601" Language="SFX">
+							<ShortName>demon_step_scratch_silent-02.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-02_10C4C929.wem</Path>
+						</File>
+						<File Id="998089398" Language="SFX">
+							<ShortName>demon_step_scratch_silent-10.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-10_10C4C929.wem</Path>
+						</File>
+						<File Id="1023197066" Language="SFX">
+							<ShortName>demon_step_scratch_silent-12.wav</ShortName>
+							<Path>SFX\demon_step_scratch_silent-12_10C4C929.wem</Path>
+						</File>
+						<File Id="1038418626" Language="SFX">
+							<ShortName>Enemy_step_base-18.wav</ShortName>
+							<Path>SFX\Enemy_step_base-18_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2867028574" Name="FighterSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonFighter\FighterSwing" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.338367" DurationMax="0.667410">
 					<IncludedMemoryFiles>
 						<File Id="215669193" Language="SFX">
 							<ShortName>sword_swoosh-16.wav</ShortName>
@@ -663,8 +2011,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="478914142" Name="SpearSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\SpearSwing" DurationType="OneShot" DurationMin="0.503433" DurationMax="0.681812">
+				<Event Id="478914142" Name="SpearSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\SpearSwing" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.680975" DurationMax="2.052494">
 					<IncludedMemoryFiles>
+						<File Id="126838165" Language="SFX">
+							<ShortName>Demon_Laugh-01.wav</ShortName>
+							<Path>SFX\Demon_Laugh-01_10C4C929.wem</Path>
+						</File>
 						<File Id="215669193" Language="SFX">
 							<ShortName>sword_swoosh-16.wav</ShortName>
 							<Path>SFX\sword_swoosh-16_F2382A79.wem</Path>
@@ -680,6 +2032,10 @@
 						<File Id="413299443" Language="SFX">
 							<ShortName>sword_swoosh-02.wav</ShortName>
 							<Path>SFX\sword_swoosh-02_6EC86333.wem</Path>
+						</File>
+						<File Id="501166631" Language="SFX">
+							<ShortName>Demon_Laugh-03.wav</ShortName>
+							<Path>SFX\Demon_Laugh-03_10C4C929.wem</Path>
 						</File>
 						<File Id="658697373" Language="SFX">
 							<ShortName>sword_swoosh-07.wav</ShortName>
@@ -700,6 +2056,10 @@
 						<File Id="833641402" Language="SFX">
 							<ShortName>sword_swoosh-03.wav</ShortName>
 							<Path>SFX\sword_swoosh-03_974BFA51.wem</Path>
+						</File>
+						<File Id="855730719" Language="SFX">
+							<ShortName>Demon_Laugh-02.wav</ShortName>
+							<Path>SFX\Demon_Laugh-02_10C4C929.wem</Path>
 						</File>
 						<File Id="894742505" Language="SFX">
 							<ShortName>sword_swoosh-05.wav</ShortName>
@@ -733,14 +2093,184 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3062523257" Language="SFX" Hash="2208580073">
+		<SoundBank Id="3062523257" Language="SFX" Hash="3308152881">
 			<ObjectPath>\SoundBanks\Default Work Unit\Misc</ObjectPath>
 			<ShortName>Misc</ShortName>
 			<Path>Misc.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3619229476" Name="GateClose" ObjectPath="\Events\Default Work Unit\Misc\GateClose" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3619229476" Name="GateClose" ObjectPath="\Events\Default Work Unit\Misc\GateClose" MaxAttenuation="75.000000" DurationType="OneShot" DurationMin="1.618694" DurationMax="1.966481">
+					<IncludedMemoryFiles>
+						<File Id="7840349" Language="SFX">
+							<ShortName>gate_ratter-06.wav</ShortName>
+							<Path>SFX\gate_ratter-06_10C4C929.wem</Path>
+						</File>
+						<File Id="26637972" Language="SFX">
+							<ShortName>gate_ratter-05.wav</ShortName>
+							<Path>SFX\gate_ratter-05_10C4C929.wem</Path>
+						</File>
+						<File Id="57524203" Language="SFX">
+							<ShortName>Gate_bonk-02.wav</ShortName>
+							<Path>SFX\Gate_bonk-02_10C4C929.wem</Path>
+						</File>
+						<File Id="241260239" Language="SFX">
+							<ShortName>gate_ratter-09.wav</ShortName>
+							<Path>SFX\gate_ratter-09_10C4C929.wem</Path>
+						</File>
+						<File Id="347073772" Language="SFX">
+							<ShortName>gate_ratter-11.wav</ShortName>
+							<Path>SFX\gate_ratter-11_10C4C929.wem</Path>
+						</File>
+						<File Id="402490884" Language="SFX">
+							<ShortName>gate_ratter-08.wav</ShortName>
+							<Path>SFX\gate_ratter-08_10C4C929.wem</Path>
+						</File>
+						<File Id="415726805" Language="SFX">
+							<ShortName>gate_ratter-03.wav</ShortName>
+							<Path>SFX\gate_ratter-03_10C4C929.wem</Path>
+						</File>
+						<File Id="495324305" Language="SFX">
+							<ShortName>Gate_bonk-03.wav</ShortName>
+							<Path>SFX\Gate_bonk-03_10C4C929.wem</Path>
+						</File>
+						<File Id="504486060" Language="SFX">
+							<ShortName>gate_ratter-10.wav</ShortName>
+							<Path>SFX\gate_ratter-10_10C4C929.wem</Path>
+						</File>
+						<File Id="639212356" Language="SFX">
+							<ShortName>gate_ratter-02.wav</ShortName>
+							<Path>SFX\gate_ratter-02_10C4C929.wem</Path>
+						</File>
+						<File Id="642569345" Language="SFX">
+							<ShortName>gate_ratter-07.wav</ShortName>
+							<Path>SFX\gate_ratter-07_10C4C929.wem</Path>
+						</File>
+						<File Id="837634257" Language="SFX">
+							<ShortName>gate_ratter-01.wav</ShortName>
+							<Path>SFX\gate_ratter-01_10C4C929.wem</Path>
+						</File>
+						<File Id="863317168" Language="SFX">
+							<ShortName>gate_ratter-04.wav</ShortName>
+							<Path>SFX\gate_ratter-04_10C4C929.wem</Path>
+						</File>
+						<File Id="1042487583" Language="SFX">
+							<ShortName>Gate_bonk-01.wav</ShortName>
+							<Path>SFX\Gate_bonk-01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3677793184" Name="GateOpen" ObjectPath="\Events\Default Work Unit\Misc\GateOpen" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2903112632" Name="PotDrink" ObjectPath="\Events\Default Work Unit\Misc\PotDrink" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3983732716" Name="PotionSlurp" ObjectPath="\Events\Default Work Unit\Misc\PotionSlurp" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.667166" DurationMax="1.993994">
+					<IncludedMemoryFiles>
+						<File Id="5639057" Language="SFX">
+							<ShortName>Water_wiggle-10.wav</ShortName>
+							<Path>SFX\Water_wiggle-10_F3377E40.wem</Path>
+						</File>
+						<File Id="40795977" Language="SFX">
+							<ShortName>Water_wiggle-09.wav</ShortName>
+							<Path>SFX\Water_wiggle-09_75683096.wem</Path>
+						</File>
+						<File Id="79933934" Language="SFX">
+							<ShortName>Water_wiggle-08.wav</ShortName>
+							<Path>SFX\Water_wiggle-08_512BFE41.wem</Path>
+						</File>
+						<File Id="164226321" Language="SFX">
+							<ShortName>Water_wiggle-14.wav</ShortName>
+							<Path>SFX\Water_wiggle-14_D227DD2E.wem</Path>
+						</File>
+						<File Id="235591222" Language="SFX">
+							<ShortName>Water_wiggle-15.wav</ShortName>
+							<Path>SFX\Water_wiggle-15_3779AC35.wem</Path>
+						</File>
+						<File Id="247713937" Language="SFX">
+							<ShortName>Water_wiggle-17.wav</ShortName>
+							<Path>SFX\Water_wiggle-17_7E960E63.wem</Path>
+						</File>
+						<File Id="261928504" Language="SFX">
+							<ShortName>Water_wiggle-18.wav</ShortName>
+							<Path>SFX\Water_wiggle-18_1E6DC45A.wem</Path>
+						</File>
+						<File Id="314562905" Language="SFX">
+							<ShortName>Water_wiggle-07.wav</ShortName>
+							<Path>SFX\Water_wiggle-07_B17DE86B.wem</Path>
+						</File>
+						<File Id="324278692" Language="SFX">
+							<ShortName>Slurp_fluid-03.wav</ShortName>
+							<Path>SFX\Slurp_fluid-03_5925F659.wem</Path>
+						</File>
+						<File Id="359254337" Language="SFX">
+							<ShortName>Water_wiggle-16.wav</ShortName>
+							<Path>SFX\Water_wiggle-16_E8191916.wem</Path>
+						</File>
+						<File Id="372934453" Language="SFX">
+							<ShortName>Slurp_fluid-01.wav</ShortName>
+							<Path>SFX\Slurp_fluid-01_B246AFE3.wem</Path>
+						</File>
+						<File Id="378979345" Language="SFX">
+							<ShortName>Water_wiggle-20.wav</ShortName>
+							<Path>SFX\Water_wiggle-20_A74845F3.wem</Path>
+						</File>
+						<File Id="388070918" Language="SFX">
+							<ShortName>Water_wiggle-13.wav</ShortName>
+							<Path>SFX\Water_wiggle-13_B96A3A44.wem</Path>
+						</File>
+						<File Id="401320048" Language="SFX">
+							<ShortName>Water_wiggle-01.wav</ShortName>
+							<Path>SFX\Water_wiggle-01_F80A06FB.wem</Path>
+						</File>
+						<File Id="484833414" Language="SFX">
+							<ShortName>Water_wiggle-11.wav</ShortName>
+							<Path>SFX\Water_wiggle-11_A4A81950.wem</Path>
+						</File>
+						<File Id="485084476" Language="SFX">
+							<ShortName>Water_wiggle-05.wav</ShortName>
+							<Path>SFX\Water_wiggle-05_AD4B29BC.wem</Path>
+						</File>
+						<File Id="535187601" Language="SFX">
+							<ShortName>Water_wiggle-21.wav</ShortName>
+							<Path>SFX\Water_wiggle-21_D96DF0AB.wem</Path>
+						</File>
+						<File Id="552216735" Language="SFX">
+							<ShortName>Water_wiggle-12.wav</ShortName>
+							<Path>SFX\Water_wiggle-12_CD289B76.wem</Path>
+						</File>
+						<File Id="616749521" Language="SFX">
+							<ShortName>Slurp_fluid-05.wav</ShortName>
+							<Path>SFX\Slurp_fluid-05_78DAE56E.wem</Path>
+						</File>
+						<File Id="654912400" Language="SFX">
+							<ShortName>Water_wiggle-02.wav</ShortName>
+							<Path>SFX\Water_wiggle-02_1F830844.wem</Path>
+						</File>
+						<File Id="661938081" Language="SFX">
+							<ShortName>Slurp_fluid-02.wav</ShortName>
+							<Path>SFX\Slurp_fluid-02_75E7441B.wem</Path>
+						</File>
+						<File Id="674336694" Language="SFX">
+							<ShortName>Water_wiggle-04.wav</ShortName>
+							<Path>SFX\Water_wiggle-04_6BE346BA.wem</Path>
+						</File>
+						<File Id="760057847" Language="SFX">
+							<ShortName>Water_wiggle-19.wav</ShortName>
+							<Path>SFX\Water_wiggle-19_5C3D543C.wem</Path>
+						</File>
+						<File Id="825080279" Language="SFX">
+							<ShortName>Slurp_fluid-04.wav</ShortName>
+							<Path>SFX\Slurp_fluid-04_7939A509.wem</Path>
+						</File>
+						<File Id="930071137" Language="SFX">
+							<ShortName>Water_wiggle-22.wav</ShortName>
+							<Path>SFX\Water_wiggle-22_EFB70A77.wem</Path>
+						</File>
+						<File Id="1026201699" Language="SFX">
+							<ShortName>Water_wiggle-06.wav</ShortName>
+							<Path>SFX\Water_wiggle-06_B8AD3DC5.wem</Path>
+						</File>
+						<File Id="1040080044" Language="SFX">
+							<ShortName>Water_wiggle-03.wav</ShortName>
+							<Path>SFX\Water_wiggle-03_B9ACD56C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX" Hash="1325801604">
