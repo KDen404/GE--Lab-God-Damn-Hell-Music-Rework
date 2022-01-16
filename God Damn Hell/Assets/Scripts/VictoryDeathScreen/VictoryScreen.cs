@@ -23,7 +23,7 @@ public class VictoryScreen : MonoBehaviour
         victorypanel.gameObject.GetComponent<Image>().color = imageColor;
 
         messageColor = victoryMessage.color;
-        messageColor.a = -0.3f;
+        messageColor.a = 0;
         victoryMessage.color = messageColor;
 
         exitButton.gameObject.SetActive(false);

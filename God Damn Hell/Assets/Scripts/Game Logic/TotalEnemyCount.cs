@@ -5,7 +5,7 @@ using UnityEngine;
 public class TotalEnemyCount : MonoBehaviour
 {
     public List<Transform> totalEnemyCount;
-    public int totalEnemiesAlive;
+    public int totalEnemiesAlive = -1;
 
     
     void Update()

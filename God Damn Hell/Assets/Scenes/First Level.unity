@@ -2902,6 +2902,7 @@ MonoBehaviour:
   - {fileID: 1642147582}
   - {fileID: 956726367}
   - {fileID: 956726366}
+  instantiatedEnemies: []
 --- !u!4 &163028171
 Transform:
   m_ObjectHideFlags: 0
@@ -2977,7 +2978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalEnemyCount: []
-  totalEnemiesAlive: 0
+  totalEnemiesAlive: -1
 --- !u!114 &163028175
 MonoBehaviour:
   m_ObjectHideFlags: 0
