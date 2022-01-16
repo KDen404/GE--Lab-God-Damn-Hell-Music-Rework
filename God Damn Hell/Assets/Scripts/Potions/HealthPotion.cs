@@ -8,7 +8,7 @@ public class HealthPotion : MonoBehaviour
     {
         // If the colliding object is a player (checked via layer!), add 3 HP but clamp the current HP to the players max HP to avoid overflow
         PlayerStats playerstats = other.GetComponent<PlayerStats>();
-        playerstats.currentHealthPoints = (int)Mathf.Clamp(playerstats.currentHealthPoints + 3, 0f, playerstats.maxHealthPoints);
+        playerstats.currentHealthPoints = (int)Mathf.Clamp(playerstats.currentHealthPoints + 6, 0f, playerstats.maxHealthPoints);
         AkSoundEngine.PostEvent("PotionSlurp", gameObject);
         Destroy(gameObject);
     }
