@@ -13,7 +13,7 @@ public class GateLogic : MonoBehaviour
         {
             iTween.MoveTo(gates[i], iTween.Hash("y", gates[i].transform.position.y + 20, "time", duration));
             //iTween.MoveTo(gates[i], new Vector3(gates[i].transform.position.x, gates[i].transform.position.y + 20, gates[i].transform.position.z), duration);
-            AkSoundEngine.PostEvent("GateOpen", gameObject);
+            AkSoundEngine.PostEvent("GateOpen", gates[i].gameObject);
         }
     }
 
@@ -23,7 +23,7 @@ public class GateLogic : MonoBehaviour
         {
             iTween.MoveTo(gates[i], iTween.Hash("y", gates[i].transform.position.y - 20, "time", duration));
             //iTween.MoveTo(gates[i], new Vector3(gates[i].transform.position.x, gates[i].transform.position.y - 20, gates[i].transform.position.z), duration);
-            AkSoundEngine.PostEvent("GateClose", gameObject);
+            AkSoundEngine.PostEvent("GateClose", gates[i].gameObject);
         }
     }
 }
