@@ -16,7 +16,7 @@ public class DemonMageHit : MonoBehaviour
     {
         if (other.gameObject.transform.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerStats>().currentHealthPoints--; // Needs an actual number later on
+            other.gameObject.GetComponent<PlayerStats>().currentHealthPoints -= 8; // Needs an actual number later on
             Destroy(gameObject);
         }
         else

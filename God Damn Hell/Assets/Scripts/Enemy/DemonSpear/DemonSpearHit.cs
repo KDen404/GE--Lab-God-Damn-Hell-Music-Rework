@@ -25,7 +25,7 @@ public class DemonSpearHit : MonoBehaviour
         // lastHit acts as a cooldown so the player cant get hit multiple times within one animation
         if (lastHit >= 1f && other.gameObject.transform.tag == "Player" && (animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1") || animator.GetCurrentAnimatorStateInfo(1).IsName("Attack2")))
         {
-            other.gameObject.GetComponent<PlayerStats>().currentHealthPoints--; // Needs an actual number later on
+            other.gameObject.GetComponent<PlayerStats>().currentHealthPoints -= 4; // Needs an actual number later on
             lastHit = 0;
         }
         else if (other.gameObject.transform.tag == "Shield")
