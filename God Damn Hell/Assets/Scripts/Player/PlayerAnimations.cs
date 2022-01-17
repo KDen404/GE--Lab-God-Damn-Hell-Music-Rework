@@ -150,7 +150,7 @@ public class PlayerAnimations : MonoBehaviour
 
     private void Block()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButton("Fire2"))
         {
             animator.SetBool("isBlocking", true);
         }
@@ -160,11 +160,7 @@ public class PlayerAnimations : MonoBehaviour
         }
 
         // Activates / deactivate colliders to avoid unintended blocking and hitbox shenanigans
-        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Block"))
-        {
-            shieldCollider.enabled = true;
-        }
-        else
+        if (!animator.GetCurrentAnimatorStateInfo(2).IsName("Block"))
         {
             shieldCollider.enabled = false;
         }

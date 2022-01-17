@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordCollider : MonoBehaviour
+public class EquipColliders : MonoBehaviour
 {
     public BoxCollider swordCollider;
+    public BoxCollider shieldCollider;
 
     public void EnableSwordCollider()
     {
         swordCollider.enabled = true;
     }
 
-    public void DisableSwordcollider()
+    public void DisableSwordCollider()
     {
         swordCollider.enabled = false;
+    }
+
+    public void EnableShieldCollider()
+    {
+        shieldCollider.enabled = true;
     }
 }

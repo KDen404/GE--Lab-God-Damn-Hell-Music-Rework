@@ -248,8 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4ae1988bf683548aad09873cbd6e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopRotation: 0
-  stopMovement: 0
   swordCollider: {fileID: 3340821566274758243}
   shieldCollider: {fileID: 3340821566654011886}
 --- !u!114 &3340821567399859192
@@ -1161,18 +1159,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8073148903746086981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2494310649980611520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f1192a1b16c644285c4714056eda18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4402193579724706128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,3 +1172,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swordCollider: {fileID: 3340821566274758243}
+  shieldCollider: {fileID: 3340821566654011886}
+--- !u!114 &8073148903746086981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494310649980611520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f1192a1b16c644285c4714056eda18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
