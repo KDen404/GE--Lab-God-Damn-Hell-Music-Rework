@@ -5,16 +5,31 @@ using UnityEngine;
 public class PauseScreen : MonoBehaviour
 {
     public GameObject pauseMenuBackground;
+
+    public GameObject deathScreen;
+    public GameObject victoryScreen;
+
     private void Start()
     {
         pauseMenuBackground.SetActive(false);
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(deathScreen.activeSelf || victoryScreen.activeSelf)      // if you win or die, the pausemenu can no longer be opend, and is forfully closed if open
         {
-            togglePauseScreen();
+            if (pauseMenuBackground.activeSelf)             //closes the pauseMenu
+            {
+                togglePauseScreen();
+            }
         }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                togglePauseScreen();
+            }
+        }
+
     }
 
     public void togglePauseScreen()
