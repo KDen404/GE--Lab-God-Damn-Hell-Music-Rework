@@ -150,7 +150,7 @@ public class PlayerAnimations : MonoBehaviour
 
     private void Block()
     {
-        if (Input.GetAxis("Fire2") != 0)
+        if (Input.GetButtonDown("Fire2"))
         {
             animator.SetBool("isBlocking", true);
         }
