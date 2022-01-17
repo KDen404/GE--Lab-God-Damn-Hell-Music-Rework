@@ -6,12 +6,12 @@ public class SwordCollider : MonoBehaviour
 {
     public BoxCollider swordCollider;
 
-    public void enableSwordCollider()
+    public void EnableSwordCollider()
     {
         swordCollider.enabled = true;
     }
 
-    public void disableSwordcollider()
+    public void DisableSwordcollider()
     {
         swordCollider.enabled = false;
     }

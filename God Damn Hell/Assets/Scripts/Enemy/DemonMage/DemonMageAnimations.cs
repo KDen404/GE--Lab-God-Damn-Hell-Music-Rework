@@ -16,13 +16,10 @@ public class DemonMageAnimations : MonoBehaviour
 
     // Attack
     public bool inAttackRange = false;
-    private float random;
     public GameObject pyroball;
     public GameObject fireball;
-    private GameObject castedObject;
     public Transform pyroballEmpty;
     public Transform fireballEmpty;
-    private bool isCasting = false;
 
     // Die
     private Collider demonMageCollider;
@@ -57,41 +54,25 @@ public class DemonMageAnimations : MonoBehaviour
     {
         if (demonMageMovement.activated == true)
         {
-            if (agent.remainingDistance <= 8)
-            {
-                agent.ResetPath();
-                animator.SetFloat("WalkRunFloat", 0f);
-            }
-            else
-            {
-                animator.SetFloat("WalkRunFloat", 1f);
-            }
+            animator.SetFloat("WalkRunFloat", 1f);
+        }
+        else
+        {
+            animator.SetFloat("WalkRunFloat", 0f);
         }
     }
 
     private void Attack()
     {
         // If the player is close enough start attacking
-        if (inAttackRange == true && isCasting == false)
+        if (inAttackRange == true)
         {
-            animator.SetFloat("AttackFloat", 1f);
-            isCasting = true;
-            StartCoroutine(DemonMageCast());
+            animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
         }
         else
         {
             animator.SetFloat("AttackFloat", 0f);
-            if (!animator.GetCurrentAnimatorStateInfo(1).IsName("Attack1"))
-            {
-                isCasting = false;
-            }
         }
-    }
-
-    private IEnumerator DemonMageCast()
-    {
-        yield return new WaitForSeconds(1f);
-        Instantiate(fireball, new Vector3(transform.position.x, 3f, transform.position.z + 2), transform.rotation);
     }
 
     private void Die()
@@ -114,14 +95,12 @@ public class DemonMageAnimations : MonoBehaviour
     private IEnumerator DieCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
-        animator.enabled = false;
-        yield return new WaitForSeconds(3.5f);
-        GetComponentInParent<AlarmOtherEnemiesRework>().activityHasChanged = true;
         Destroy(gameObject);
     }
 
     private void GetHit()
     {
+        // Checks if the mage was hit and if so, play the trigger
         if (tempHealthPoints != demonMageStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
@@ -129,6 +108,8 @@ public class DemonMageAnimations : MonoBehaviour
         }
     }
 
+    // Time variable counts up and another variable calculates a random number
+    // If time > random number, calculate a new location nearby and move there
     private void IdleWalk()
     {
         if (demonMageMovement.activated == false)

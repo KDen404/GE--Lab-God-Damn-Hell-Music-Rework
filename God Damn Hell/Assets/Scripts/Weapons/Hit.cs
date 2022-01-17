@@ -20,7 +20,7 @@ public class Hit : MonoBehaviour
         {
             countPushBack += Time.deltaTime;
             // Should be a vector for a proper knockback simulation
-            //enemy.transform.position += -enemy.transform.forward * tempKnockbackStrength * Time.deltaTime;
+
             enemy.transform.position += (enemy.transform.position - player.transform.position) * tempKnockbackStrength * Time.deltaTime;
 
             if (countPushBack >= 0.5f)

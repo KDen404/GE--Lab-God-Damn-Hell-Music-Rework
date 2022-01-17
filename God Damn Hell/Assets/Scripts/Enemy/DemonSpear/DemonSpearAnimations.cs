@@ -98,6 +98,7 @@ public class DemonSpearAnimations : MonoBehaviour
 
     private void GetHit()
     {
+        // Checks if the mage was hit and if so, play the trigger
         if (tempHealthPoints != demonSpearStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
@@ -105,6 +106,8 @@ public class DemonSpearAnimations : MonoBehaviour
         }
     }
 
+    // Time variable counts up and another variable calculates a random number
+    // If time > random number, calculate a new location nearby and move there
     private void IdleWalk()
     {
         if (demonSpearMovement.activated == false)

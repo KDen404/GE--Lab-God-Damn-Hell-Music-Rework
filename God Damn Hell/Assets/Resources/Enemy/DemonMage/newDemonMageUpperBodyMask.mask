@@ -6,8 +6,8 @@ AvatarMask:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DemonMageUpperBodyMask
-  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Name: newDemonMageUpperBodyMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   m_Elements:
   - m_Path: 
     m_Weight: 1
@@ -24,31 +24,31 @@ AvatarMask:
   - m_Path: Armature/Control/HandControl.R/HandControl.R_end
     m_Weight: 1
   - m_Path: Armature/Control/HipsControl
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.L/MiddleLeg.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.L/MiddleLeg.L/LowerLeg.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.L/MiddleLeg.L/LowerLeg.L/Foot.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.L/MiddleLeg.L/LowerLeg.L/Foot.L/Foot.L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.R/MiddleLeg.R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.R/MiddleLeg.R/LowerLeg.R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.R/MiddleLeg.R/LowerLeg.R/Foot.R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/UpperLeg.R/MiddleLeg.R/LowerLeg.R/Foot.R/Foot.R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/Waist
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/HipsControl/Hips/Waist/Chest
     m_Weight: 1
   - m_Path: Armature/Control/HipsControl/Hips/Waist/Chest/Neck
@@ -166,18 +166,18 @@ AvatarMask:
   - m_Path: Armature/Control/HipsControl/Hips/Waist/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Weapon.R/Weapon.R_end
     m_Weight: 1
   - m_Path: Armature/Control/LegControl.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/LegControl.L/LegTarget.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/LegControl.L/LegTarget.L/LegTarget.L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/LegControl.R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/LegControl.R/LegTarget.R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Armature/Control/LegControl.R/LegTarget.R/LegTarget.R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: DemonMage
     m_Weight: 1
   - m_Path: Robe
-    m_Weight: 0
+    m_Weight: 1

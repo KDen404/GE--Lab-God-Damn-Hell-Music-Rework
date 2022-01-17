@@ -28,8 +28,6 @@ public class DemonFighterAnimations : MonoBehaviour
     private float timeCount;
     private NavMeshAgent agent;
 
-    private bool game_active = true;
-
     private void Start()
     {
         demonFighterStats = GetComponent<Stats>();
@@ -102,6 +100,7 @@ public class DemonFighterAnimations : MonoBehaviour
 
     private void GetHit()
     {
+        // Checks if the mage was hit and if so, play the trigger
         if (tempHealthPoints != demonFighterStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");
@@ -109,6 +108,8 @@ public class DemonFighterAnimations : MonoBehaviour
         }
     }
 
+    // Time variable counts up and another variable calculates a random number
+    // If time > random number, calculate a new location nearby and move there
     private void IdleWalk()
     {
         if (demonFighterMovement.activated == false)

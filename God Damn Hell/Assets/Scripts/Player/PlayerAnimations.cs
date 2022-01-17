@@ -17,10 +17,6 @@ public class PlayerAnimations : MonoBehaviour
     // GetHit
     private int tempHealth;
 
-    // Die
-    public bool stopRotation = false;
-    public bool stopMovement = false;
-
     // Attack
     public BoxCollider swordCollider;
     public BoxCollider shieldCollider;
