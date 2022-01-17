@@ -84,7 +84,7 @@ MonoBehaviour:
   inAttackRange: 0
   pyroball: {fileID: 120877211919455206, guid: 74a7d2406f9211b449e62b352a52d725, type: 3}
   fireball: {fileID: 120877211919455206, guid: 90d8710887ed50d4eb488d2412865176, type: 3}
-  pyroballEmpty: {fileID: 6116462572709641451}
+  pyroballEmpty: {fileID: 0}
   fireballEmpty: {fileID: 2186809603473555946}
 --- !u!114 &-5175627471050837415
 MonoBehaviour:
@@ -162,36 +162,6 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
---- !u!1 &7493596330294468836
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6116462572709641451}
-  m_Layer: 6
-  m_Name: PyroballEmpty
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6116462572709641451
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7493596330294468836}
-  m_LocalRotation: {x: -0, y: -0, z: -0.000000014901161, w: 1}
-  m_LocalPosition: {x: -1.4908801, y: 2.5227425, z: 0.033048913}
-  m_LocalScale: {x: 0.36721146, y: 0.36721146, z: 0.36721146}
-  m_Children: []
-  m_Father: {fileID: 751257902372457513}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8367905818329129004
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +190,7 @@ Transform:
   m_LocalScale: {x: 0.36721146, y: 0.36721146, z: 0.36721146}
   m_Children: []
   m_Father: {fileID: 751257902372457513}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1001972205558492098
 PrefabInstance:
@@ -1490,7 +1460,7 @@ MonoBehaviour:
   fireball: {fileID: 872717875459736038, guid: 90d8710887ed50d4eb488d2412865176, type: 3}
   fireballEmpty: {fileID: 2186809603473555946}
   pyroball: {fileID: 872717875459736038, guid: 74a7d2406f9211b449e62b352a52d725, type: 3}
-  pyroballEmpty: {fileID: 6116462572709641451}
+  pyroballEmpty: {fileID: 0}
 --- !u!114 &5214816245083688958
 MonoBehaviour:
   m_ObjectHideFlags: 0

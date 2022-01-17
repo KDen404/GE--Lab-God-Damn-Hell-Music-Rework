@@ -67,7 +67,7 @@ public class DemonMageAnimations : MonoBehaviour
         // If the player is close enough start attacking
         if (inAttackRange == true)
         {
-            animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
+            animator.SetFloat("AttackFloat", 1f);
         }
         else
         {
