@@ -48,6 +48,8 @@ public class DemonMageMovement : MonoBehaviour
             {
                 demonMageAnimations.inAttackRange = false;
             }
+
+            transform.LookAt(player.transform);
         }
         else
         {

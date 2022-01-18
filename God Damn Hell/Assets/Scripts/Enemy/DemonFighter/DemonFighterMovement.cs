@@ -45,6 +45,8 @@ public class DemonFighterMovement : MonoBehaviour
             {
                 demonFighterAnimations.inAttackRange = false;
             }
+
+            transform.LookAt(player.transform);
         }
         else
         {

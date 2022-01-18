@@ -42,6 +42,8 @@ public class DemonSpearMovement : MonoBehaviour
             {
                 demonSpearAnimations.inAttackRange = false;
             }
+
+            transform.LookAt(player.transform);
         }
         else
         {
