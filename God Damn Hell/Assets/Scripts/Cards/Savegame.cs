@@ -8,5 +8,7 @@ public class Savegame{
     public string equipmentSafedataHead = "emptyString";
     public string equipmentSafedataTop = "emptyString";
     public string equipmentSafedataBottom = "emptyString";
+    
+    public int potionNumber = 0;
 }
 
