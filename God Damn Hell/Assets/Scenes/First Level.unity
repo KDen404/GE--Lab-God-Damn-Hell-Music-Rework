@@ -22252,6 +22252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1776517764}
   - component: {fileID: 1776517763}
+  - component: {fileID: 1776517765}
   m_Layer: 0
   m_Name: CardSystem
   m_TagString: Untagged
@@ -22272,6 +22273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 879987173}
+  potionNumberDisplay: {fileID: 0}
+  potionSpritesList: []
 --- !u!4 &1776517764
 Transform:
   m_ObjectHideFlags: 0
@@ -22286,6 +22289,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1776517765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776517762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e019ba238717c984f8f9cbb786ec2521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardsystemPotionInformation: {fileID: 1776517763}
+  player: {fileID: 879987173}
 --- !u!1001 &1779840268
 PrefabInstance:
   m_ObjectHideFlags: 0

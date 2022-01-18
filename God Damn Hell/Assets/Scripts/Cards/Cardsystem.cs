@@ -113,4 +113,9 @@ public class Cardsystem : MonoBehaviour
             potionNumberDisplay.sprite = potionSpritesList[savegame.potionNumber];
         }
     }
+
+    public int getPotionNumber()
+    {
+        return savegame.potionNumber;
+    }
 }
