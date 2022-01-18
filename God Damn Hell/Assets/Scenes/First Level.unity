@@ -6906,6 +6906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7028369745644691090, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
+      propertyPath: currentPotionNumber
+      value: 
+      objectReference: {fileID: 1776517762}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
 --- !u!1001 &511733046
@@ -11346,6 +11350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7028369745644691090, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
+      propertyPath: currentPotionNumber
+      value: 
+      objectReference: {fileID: 1776517762}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
 --- !u!1001 &864924663
@@ -15320,6 +15328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle
       objectReference: {fileID: 0}
+    - target: {fileID: 7028369745644691090, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
+      propertyPath: currentPotionNumber
+      value: 
+      objectReference: {fileID: 1776517762}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
 --- !u!1 &1172691207
@@ -22091,6 +22103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle
       objectReference: {fileID: 0}
+    - target: {fileID: 7028369745644691090, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
+      propertyPath: currentPotionNumber
+      value: 
+      objectReference: {fileID: 1776517762}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21d24e4d4e6e94b47857104fb24d05c2, type: 3}
 --- !u!1001 &1736647446
@@ -22451,6 +22467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e019ba238717c984f8f9cbb786ec2521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  consumablePotions: 0
   cardsystemPotionInformation: {fileID: 1776517763}
   player: {fileID: 879987173}
   potionNumberDisplay: {fileID: 1219361362}
