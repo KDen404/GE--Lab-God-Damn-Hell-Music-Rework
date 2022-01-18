@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-
+using UnityEngine.UI;
 
 public class Cardsystem : MonoBehaviour
 {
@@ -13,6 +13,8 @@ public class Cardsystem : MonoBehaviour
     private string savegamePath;
     public static Savegame savegame = null;
 
+    public Image potionNumberDisplay;
+    public Sprite[] potionSpritesList;          // list  of the Number Sprites
 
     private void Start()
     {
@@ -101,5 +103,19 @@ public class Cardsystem : MonoBehaviour
             }
         }
         
+    }
+
+    public void changePotionNumber(int changeAmount)
+    {
+        if ((savegame.potionNumber + changeAmount >= 0) && (savegame.potionNumber + changeAmount <= 2))        // potionNumber restricted to a Number between 0 and 2
+        {
+            savegame.potionNumber += changeAmount;
+            potionNumberDisplay.sprite = potionSpritesList[savegame.potionNumber];
+        }
+    }
+
+    public int getPotionNumber()
+    {
+        return savegame.potionNumber;
     }
 }
