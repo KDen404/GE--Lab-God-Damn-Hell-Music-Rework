@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthPotion : MonoBehaviour
 {
     // Stefans Version, Instant consumption on walk over
-
+    // Martin implemented the inventory right before the deadline, hence this code still exists and is mentioned in the documentary
     //private void OnTriggerEnter(Collider other)
     //{
     //    // If the colliding object is a player (checked via layer!), add 3 HP but clamp the current HP to the players max HP to avoid overflow

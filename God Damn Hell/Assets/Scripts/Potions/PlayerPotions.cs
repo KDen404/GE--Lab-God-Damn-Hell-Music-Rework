@@ -35,6 +35,7 @@ public class PlayerPotions : MonoBehaviour
     private void ConsumePotion()
     {
         playerStats.currentHealthPoints = (int)Mathf.Clamp(playerStats.currentHealthPoints + 6, 0f, playerStats.maxHealthPoints);
+        AkSoundEngine.PostEvent("PotionSlurp", gameObject);
         UpdatePotionSprite();
     }
 
