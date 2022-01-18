@@ -7,8 +7,7 @@ public class TotalEnemyCount : MonoBehaviour
     public List<Transform> totalEnemyCount;
     public int totalEnemiesAlive = -1;
 
-    
-    void Update()
+    private void Start()
     {
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -27,7 +26,10 @@ public class TotalEnemyCount : MonoBehaviour
                 }
             }
         }
+    }
 
+    void Update()
+    {
         totalEnemyCount.RemoveAll(GameObject => GameObject == null);
         totalEnemiesAlive = totalEnemyCount.Count;
     }
