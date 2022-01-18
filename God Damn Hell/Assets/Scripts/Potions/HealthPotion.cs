@@ -17,10 +17,10 @@ public class HealthPotion : MonoBehaviour
 
 
     // Martins Version, collect Potions, instead of instant cosumption
-    private GameObject currentPotionNumber;
+    public GameObject currentPotionNumber;
     private void Start()
     {
-        currentPotionNumber = GameObject.Find("Card and PotionSystem");
+        //currentPotionNumber = GameObject.Find("Card and PotionSystem");
     }
     private void OnTriggerEnter(Collider other)
     {
