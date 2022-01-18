@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPotions : MonoBehaviour
 {
-    private int consumablePotions;
+    public int consumablePotions;
     public Cardsystem cardsystemPotionInformation;
     public GameObject player;
     private PlayerStats playerStats;
+
+    public Image potionNumberDisplay;
+    public Sprite[] potionSpritesList;          // list  of the Number Sprites
 
     private void Start()
     {
         consumablePotions = cardsystemPotionInformation.getPotionNumber();
         playerStats = player.GetComponent<PlayerStats>();
+        potionNumberDisplay.sprite = potionSpritesList[consumablePotions];
     }
 
     private void Update()
@@ -30,6 +35,11 @@ public class PlayerPotions : MonoBehaviour
     private void ConsumePotion()
     {
         playerStats.currentHealthPoints = (int)Mathf.Clamp(playerStats.currentHealthPoints + 6, 0f, playerStats.maxHealthPoints);
-        Debug.Log("consumed");
+        UpdatePotionSprite();
+    }
+
+    public void UpdatePotionSprite()
+    {
+        potionNumberDisplay.sprite = potionSpritesList[consumablePotions];
     }
 }
