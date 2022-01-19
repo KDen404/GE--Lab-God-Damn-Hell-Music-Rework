@@ -792,7 +792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7caa5ab9010b2fb458c31f747ac60da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 5688606930959994286}
   leftHandCollider: {fileID: 4566672803003381672}
   rightHandCollider: {fileID: 5859606112042328417}
 --- !u!1 &3199929043063401749
@@ -2887,6 +2886,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7caa5ab9010b2fb458c31f747ac60da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 5688606930959994286}
   leftHandCollider: {fileID: 4566672803003381672}
   rightHandCollider: {fileID: 5859606112042328417}

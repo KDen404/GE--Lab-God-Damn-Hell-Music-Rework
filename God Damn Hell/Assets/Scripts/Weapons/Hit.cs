@@ -5,7 +5,7 @@ using UnityEngine;
 public class Hit : MonoBehaviour
 {
     public Animator animator;
-    public GameObject player;
+    public Transform player;
     private Transform enemy;
     private float countPushBack;
     private bool enemyHit = false;
@@ -19,9 +19,8 @@ public class Hit : MonoBehaviour
         if (enemyHit == true)
         {
             countPushBack += Time.deltaTime;
-            // Should be a vector for a proper knockback simulation
 
-            enemy.transform.position += (enemy.transform.position - player.transform.position) * tempKnockbackStrength * Time.deltaTime;
+            enemy.transform.position += (enemy.position - player.position) * tempKnockbackStrength * Time.deltaTime;
 
             if (countPushBack >= 0.5f)
             {
@@ -32,8 +31,7 @@ public class Hit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // lastHit so the player cant hit the enemy more than once in one animation turn
-        // and checking if the player is actually attacking or else the weapon can damage just by colliding with an enemy outside any animation
+        // Only works if the other object is an enemy
         if (other.gameObject.transform.tag == "Enemy")
         {
             other.gameObject.transform.GetComponent<Stats>().healthPoints--;

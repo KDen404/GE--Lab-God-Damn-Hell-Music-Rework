@@ -24,7 +24,7 @@ public class PlayerAnimations : MonoBehaviour
     //AttackBlock is in EnemyHit!
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         animator = GetComponentInChildren<Animator>();
         playerstats = GetComponent<PlayerStats>();

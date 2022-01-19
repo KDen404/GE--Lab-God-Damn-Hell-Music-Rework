@@ -5472,7 +5472,7 @@ MonoBehaviour:
   - {fileID: 614592269}
   - {fileID: 1968708839}
   - {fileID: 1172691209}
-  numbersString: 
+  amountEnemies: 0
 --- !u!114 &374256919
 MonoBehaviour:
   m_ObjectHideFlags: 0

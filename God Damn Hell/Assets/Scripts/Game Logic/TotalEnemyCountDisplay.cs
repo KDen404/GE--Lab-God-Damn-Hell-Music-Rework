@@ -8,7 +8,6 @@ public class TotalEnemyCountDisplay : MonoBehaviour
     public TotalEnemyCount enemyCount;
     public Image[] numbers;
     public int amountEnemies;
-    private string number;
 
     private void Update()
     {
