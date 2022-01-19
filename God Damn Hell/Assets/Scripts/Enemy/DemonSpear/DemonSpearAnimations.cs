@@ -80,7 +80,6 @@ public class DemonSpearAnimations : MonoBehaviour
             {
                 animator.SetBool("IsDeadBool", true);
                 //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
-                //Debug.Log("activity changed");
                 demonSpearMovement.enabled = false;
                 demonSpearCollider.enabled = false;
                 agent.enabled = false;
