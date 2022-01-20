@@ -4162,7 +4162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 566697173478544007, guid: 655d6f5b1cfb44e4f9627423d59397a3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 566697173875296601, guid: 655d6f5b1cfb44e4f9627423d59397a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 566697174370057830, guid: 655d6f5b1cfb44e4f9627423d59397a3, type: 3}
       propertyPath: m_AnchoredPosition.y
