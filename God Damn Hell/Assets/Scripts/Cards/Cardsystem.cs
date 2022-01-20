@@ -87,8 +87,6 @@ public class Cardsystem : MonoBehaviour
         {
             searchForItem(childToTest.GetChild(i));
         }
-        if (childToTest.childCount == 0)    // all Children without children,    optional but probably faster
-        {
             if (childToTest.name == searchedItem)     // if its the searched item
             {
                 bool invertState = !childToTest.gameObject.activeSelf;  // inverts the Activity State of the object (to unequip on click)
@@ -101,7 +99,6 @@ public class Cardsystem : MonoBehaviour
 
                 saveItemNameToSavegame();
             }
-        }
         
     }
 
