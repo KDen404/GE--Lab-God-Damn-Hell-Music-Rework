@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1545821079	IngameMusic			\Default Work Unit\Music\IngameMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	529376960	InGameMusicLOOP	C:\Users\kden4\Documents\GitHub\GE--Lab-God-Damn-Hell\God Damn Hell\God Damn Hell_WwiseProject\.cache\Mac\SFX\IngameMusic_473538CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\InGameMusicAsLoop\InGameMusicLOOP		8043968
+	794817073	IngameMusicStart	C:\Users\kden4\Documents\GitHub\GE--Lab-God-Damn-Hell\God Damn Hell\God Damn Hell_WwiseProject\.cache\Mac\SFX\IngameMusic_8F5AC696.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\InGameMusicAsLoop\IngameMusicStart		10054992
+

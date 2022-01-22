@@ -382,7 +382,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2242381963" Language="SFX" Hash="2654251362">
+		<SoundBank Id="2242381963" Language="SFX" Hash="3011870261">
 			<ObjectPath>\SoundBanks\Default Work Unit\Enemies</ObjectPath>
 			<ShortName>Enemies</ShortName>
 			<Path>Enemies.bnk</Path>
@@ -2011,7 +2011,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="478914142" Name="SpearSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\SpearSwing" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.680975" DurationMax="2.052494">
+				<Event Id="478914142" Name="SpearSwing" ObjectPath="\Events\Default Work Unit\Enemy\DemonSpear\SpearSwing" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.524854" DurationMax="1.855840">
 					<IncludedMemoryFiles>
 						<File Id="126838165" Language="SFX">
 							<ShortName>Demon_Laugh-01.wav</ShortName>
