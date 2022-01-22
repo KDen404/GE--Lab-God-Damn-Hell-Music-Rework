@@ -9,6 +9,7 @@ public class TotalEnemyCountDisplay : MonoBehaviour
     public Image[] numbers;
     public int amountEnemies;
 
+    // Only works in Update()
     private void Update()
     {
         amountEnemies = enemyCount.totalEnemiesAlive;
