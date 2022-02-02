@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+// Could have been a child class to avoid the copy paste anti-pattern
 public class DemonFighterAnimations : MonoBehaviour
 {
     // General fields
@@ -49,6 +50,7 @@ public class DemonFighterAnimations : MonoBehaviour
         IdleWalk();
     }
 
+    // Call the run animation if the enemy spotted the player
     private void Run()
     {
         if (demonFighterMovement.activated == true)
@@ -61,9 +63,9 @@ public class DemonFighterAnimations : MonoBehaviour
         }
     }
 
+    // If the player is close enough start attacking
     private void Attack()
     {
-        // If the player is close enough start attacking
         if (inAttackRange == true)
         {
             animator.SetFloat("AttackFloat", Random.Range(0f, 1f));
@@ -74,15 +76,15 @@ public class DemonFighterAnimations : MonoBehaviour
         }
     }
 
+    // Play animation when dead
     private void Die()
     {
-        // Play animation when dead
         if (demonFighterStats.healthPoints <= 0)
         {
+            // Didnt work as a trigger, therefore Im checking if the object is already in the animation
             if (!animator.GetCurrentAnimatorStateInfo(3).IsName("Death"))
             {
                 animator.SetBool("IsDeadBool", true);
-                //GetComponentInParent<AlarmOtherEnemies>().activityHasChanged = true;
                 demonFighterMovement.enabled = false;
                 demonFighterCollider.enabled = false;
                 agent.enabled = false;
@@ -91,6 +93,7 @@ public class DemonFighterAnimations : MonoBehaviour
         }
     }
 
+    // Destroy the object after a certain time after it died
     private IEnumerator DieCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
@@ -98,9 +101,9 @@ public class DemonFighterAnimations : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // Checks if the mage was hit and if so, play the trigger
     private void GetHit()
     {
-        // Checks if the mage was hit and if so, play the trigger
         if (tempHealthPoints != demonFighterStats.healthPoints)
         {
             animator.SetTrigger("GetHitTrigger");

@@ -10,6 +10,8 @@ public class TotalEnemyCountDisplay : MonoBehaviour
     public int amountEnemies;
 
     // Only works in Update()
+    // Counts the enemies in the entire level and enables / disables sprites that reflect the remaining enemies alive
+    // Better solution would have been to collect all the enemies once and update the sprites when an enemy object gets destroyed
     private void Update()
     {
         amountEnemies = enemyCount.totalEnemiesAlive;

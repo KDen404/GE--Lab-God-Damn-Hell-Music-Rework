@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Sound Events that get called in the animation event system
 public class PlayerAnimationSounds : MonoBehaviour
 {
     public void RunSound()

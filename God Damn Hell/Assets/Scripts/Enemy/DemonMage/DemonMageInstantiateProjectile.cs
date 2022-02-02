@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Instantiates projectiles at specific times of the animation in the animation event system
 public class DemonMageInstantiateProjectile : MonoBehaviour
 {
     public Transform fireball;

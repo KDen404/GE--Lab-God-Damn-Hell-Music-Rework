@@ -7,6 +7,8 @@ public class GateLogic : MonoBehaviour
     public GameObject[] gates;
     public float duration = 10;
 
+
+    // Functions that respectively open and close the gates if the room entrance colliders get triggered
     public void OpenGates()
     {
         for (int i = 0; i < gates.Length; i++)

@@ -548,8 +548,8 @@ MonoBehaviour:
         guid: 5d9ca7d697b7de4eb05a7b0c58c5de1c
       Path: Events\Default Work Unit\Enemy\DemonSpear\SpearSwing
       maxAttenuation: 50
-      maxDuration: 2.052494
-      minDuration: 1.680975
+      maxDuration: 1.85584
+      minDuration: 1.524854
   - PhysicalPath: Events\Misc.wwu
     PathAndIcons:
     - ElementName: Events

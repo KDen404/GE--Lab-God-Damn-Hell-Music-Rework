@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Sound events that get called in the animation event system
 public class DemonSpearAnimationSounds : MonoBehaviour
 {
     public void DemonSpearRunSound()

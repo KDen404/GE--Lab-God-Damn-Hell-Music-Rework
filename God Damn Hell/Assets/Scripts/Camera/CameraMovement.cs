@@ -17,9 +17,11 @@ public class CameraMovement : MonoBehaviour
     {
         
     }
+
+    // Takes the players position and recalculates it with given numbers for its own position
+    // This is necessary as the constraints Unity provides cause massive issues in the compiled version of the game
     void LateUpdate()
     {
-        // Code can get removed and be replaced with a constraint on the object once settings have been figured out
         transform.position = new Vector3(playerObject.transform.position.x, Height, playerObject.transform.position.z - Distance);
 
         cameraRotation.eulerAngles = new Vector3(Angle, 0, 0);
