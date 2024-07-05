@@ -1,3 +1,20 @@
+/*******************************************************************************
+The content of this file includes portions of the proprietary AUDIOKINETIC Wwise
+Technology released in source code form as part of the game integration package.
+The content of this file may not be used without valid licenses to the
+AUDIOKINETIC Wwise Technology.
+Note that the use of the game engine is subject to the Unity(R) Terms of
+Service at https://unity3d.com/legal/terms-of-service
+ 
+License Usage
+ 
+Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
+this file in accordance with the end user license agreement provided with the
+software or, alternatively, in accordance with the terms contained
+in a written agreement between you and Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
+*******************************************************************************/
+
 #if !(UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
 
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
@@ -28,35 +45,48 @@ namespace AK.Wwise
 		public void Load(bool decodeBank = false, bool saveDecodedBank = false)
 		{
 			if (IsValid())
-				AkAddressableBankManager.Instance.LoadBank(WwiseObjectReference.AddressableBank, decodeBank, saveDecodedBank);
+			{
+				AkAddressableBankManager.Instance.LoadBank(WwiseObjectReference.AddressableBank, decodeBank, saveDecodedBank, loadAsync: false);
+			}
 		}
 
 		public void LoadAsync(AkCallbackManager.BankCallback callback = null)
-		{
-			throw new System.Exception("Wwise Addressables : Use Load() when loading banks with the Wwise Addressables package");
+		{	
+			if(IsValid())
+			{
+				AkAddressableBankManager.Instance.LoadBank(WwiseObjectReference.AddressableBank, loadAsync: true);
+			}
 		}
 		public void Unload()
 		{
 			if (IsValid())
+			{
 				AkAddressableBankManager.Instance.UnloadBank(WwiseObjectReference.AddressableBank);
+			}
 		}
 #else
 		public void Load(bool decodeBank = false, bool saveDecodedBank = false)
 		{
 			if (IsValid())
+			{
 				AkBankManager.LoadBank(Name, decodeBank, saveDecodedBank);
+			}
 		}
 
 		public void LoadAsync(AkCallbackManager.BankCallback callback = null)
 		{
 			if (IsValid())
+			{
 				AkBankManager.LoadBankAsync(Name, callback);
+			}
 		}
 
 		public void Unload()
 		{
 			if (IsValid())
+			{
 				AkBankManager.UnloadBank(Name);
+			}
 		}
 #endif
 	}

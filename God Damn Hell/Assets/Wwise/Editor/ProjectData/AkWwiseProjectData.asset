@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 370de44575768f489e640f7dd0ba779e
     GuidInternal: 
-    m_lastTime: -8585601955195276621
+    m_lastTime: -8584865370074031798
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2c4f1467dae49a4684554f9a29b9d07a
     GuidInternal: 
-    m_lastTime: -8585601955198541047
+    m_lastTime: -8584865370076879003
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 66687670ee694d489d62771cc1401dcb
     GuidInternal: 
-    m_lastTime: -8585592720494572662
+    m_lastTime: -8584823065848370613
     List:
     - name: Enemies
       guid: 1ac8e7d03180264a9b66060591639457
@@ -150,7 +150,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 96f2b1fe20fa0144813ad43ca98083c2
     GuidInternal: 
-    m_lastTime: -8585593231197917325
+    m_lastTime: -8584865370076741117
     List: []
   - PhysicalPath: Events\Enemy.wwu
     PathAndIcons:
@@ -166,7 +166,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Enemy
     guid: ece04a65bd84f141aac4a2bebacece28
     GuidInternal: 
-    m_lastTime: -8585592720498858502
+    m_lastTime: -8584865370075139140
     List:
     - name: DemonFighter
       guid: 07622ac31fbd6d4e98278145d69136ed
@@ -209,8 +209,8 @@ MonoBehaviour:
         guid: 8aa2823b2d5a904a9cfb2b2573e872df
       Path: Events\Default Work Unit\Enemy\DemonFighter\DemonFighterDeath
       maxAttenuation: 50
-      maxDuration: 1.137033
-      minDuration: 0.966286
+      maxDuration: 1.1370331
+      minDuration: 0.9662859
     - name: DemonFighterGotHit
       guid: 2aa18b7d7a5eaf4eae604c777d19f439
       id: 3929558812
@@ -232,8 +232,8 @@ MonoBehaviour:
         guid: 2aa18b7d7a5eaf4eae604c777d19f439
       Path: Events\Default Work Unit\Enemy\DemonFighter\DemonFighterGotHit
       maxAttenuation: 50
-      maxDuration: 0.773455
-      minDuration: 0.305093
+      maxDuration: 0.7734552
+      minDuration: 0.3050934
     - name: DemonFighterRun
       guid: f1dcaee7bf695a47a8c20b939643c4ca
       id: 36191336
@@ -255,8 +255,8 @@ MonoBehaviour:
         guid: f1dcaee7bf695a47a8c20b939643c4ca
       Path: Events\Default Work Unit\Enemy\DemonFighter\DemonFighterRun
       maxAttenuation: 50
-      maxDuration: 0.826181
-      minDuration: 0.109796
+      maxDuration: 0.8261809
+      minDuration: 0.109795704
     - name: DemonFighterWalk
       guid: 116346a43c2ab14392345706942471b7
       id: 3496783742
@@ -278,8 +278,8 @@ MonoBehaviour:
         guid: 116346a43c2ab14392345706942471b7
       Path: Events\Default Work Unit\Enemy\DemonFighter\DemonFighterWalk
       maxAttenuation: 50
-      maxDuration: 0.927357
-      minDuration: 0.123242
+      maxDuration: 0.9273568
+      minDuration: 0.123241514
     - name: DemonMage
       guid: 99b76998652a124b92f3f2a1892a62de
       id: 2777782264
@@ -321,8 +321,8 @@ MonoBehaviour:
         guid: 381a7a90091ccc448d8b8a3de2ee122c
       Path: Events\Default Work Unit\Enemy\DemonMage\DemonMageDeath
       maxAttenuation: 50
-      maxDuration: 1.137033
-      minDuration: 0.966286
+      maxDuration: 1.1370331
+      minDuration: 0.9662859
     - name: DemonMageGotHit
       guid: 640fce8e412f174f9f8655aadd5550e6
       id: 1895283565
@@ -344,8 +344,8 @@ MonoBehaviour:
         guid: 640fce8e412f174f9f8655aadd5550e6
       Path: Events\Default Work Unit\Enemy\DemonMage\DemonMageGotHit
       maxAttenuation: 50
-      maxDuration: 0.773455
-      minDuration: 0.305093
+      maxDuration: 0.7734552
+      minDuration: 0.3050934
     - name: DemonMageRun
       guid: a5e5851d2dd94448864d52c1cf98341c
       id: 4294451055
@@ -367,8 +367,8 @@ MonoBehaviour:
         guid: a5e5851d2dd94448864d52c1cf98341c
       Path: Events\Default Work Unit\Enemy\DemonMage\DemonMageRun
       maxAttenuation: 50
-      maxDuration: 0.826181
-      minDuration: 0.109796
+      maxDuration: 0.8261809
+      minDuration: 0.109795704
     - name: DemonMageWalk
       guid: c5a6f1253f8c8d4c994f9b1ca33aa1ba
       id: 2140539667
@@ -390,8 +390,8 @@ MonoBehaviour:
         guid: c5a6f1253f8c8d4c994f9b1ca33aa1ba
       Path: Events\Default Work Unit\Enemy\DemonMage\DemonMageWalk
       maxAttenuation: 50
-      maxDuration: 0.927357
-      minDuration: 0.123242
+      maxDuration: 0.9273568
+      minDuration: 0.123241514
     - name: DemonSpear
       guid: f88a30bb235c704e83062b3787461d9d
       id: 2894295441
@@ -433,8 +433,8 @@ MonoBehaviour:
         guid: 45517284ba4dc94bbacc7aec97ca6c80
       Path: Events\Default Work Unit\Enemy\DemonSpear\DemonSpearDeath
       maxAttenuation: 50
-      maxDuration: 1.137033
-      minDuration: 0.966286
+      maxDuration: 1.1370331
+      minDuration: 0.9662859
     - name: DemonSpearGotHit
       guid: 111b8a315054344b92b79ba7964586a3
       id: 4061880024
@@ -456,8 +456,8 @@ MonoBehaviour:
         guid: 111b8a315054344b92b79ba7964586a3
       Path: Events\Default Work Unit\Enemy\DemonSpear\DemonSpearGotHit
       maxAttenuation: 50
-      maxDuration: 0.773455
-      minDuration: 0.305093
+      maxDuration: 0.7734552
+      minDuration: 0.3050934
     - name: DemonSpearRun
       guid: 91bb24e514641546a248c14ebc598237
       id: 537156876
@@ -479,8 +479,8 @@ MonoBehaviour:
         guid: 91bb24e514641546a248c14ebc598237
       Path: Events\Default Work Unit\Enemy\DemonSpear\DemonSpearRun
       maxAttenuation: 50
-      maxDuration: 0.826181
-      minDuration: 0.109796
+      maxDuration: 0.8261809
+      minDuration: 0.109795704
     - name: DemonSpearWalk
       guid: 3e3cd659a05fca49abaa0d0f0e582d76
       id: 3167257242
@@ -502,8 +502,8 @@ MonoBehaviour:
         guid: 3e3cd659a05fca49abaa0d0f0e582d76
       Path: Events\Default Work Unit\Enemy\DemonSpear\DemonSpearWalk
       maxAttenuation: 50
-      maxDuration: 0.927357
-      minDuration: 0.123242
+      maxDuration: 0.9273568
+      minDuration: 0.123241514
     - name: FighterSwing
       guid: 2cc4a78a9e08f445809053adef1be168
       id: 2867028574
@@ -525,8 +525,8 @@ MonoBehaviour:
         guid: 2cc4a78a9e08f445809053adef1be168
       Path: Events\Default Work Unit\Enemy\DemonFighter\FighterSwing
       maxAttenuation: 50
-      maxDuration: 0.66741
-      minDuration: 0.338367
+      maxDuration: 0.66740966
+      minDuration: 0.3383667
     - name: SpearSwing
       guid: 5d9ca7d697b7de4eb05a7b0c58c5de1c
       id: 478914142
@@ -548,8 +548,8 @@ MonoBehaviour:
         guid: 5d9ca7d697b7de4eb05a7b0c58c5de1c
       Path: Events\Default Work Unit\Enemy\DemonSpear\SpearSwing
       maxAttenuation: 50
-      maxDuration: 1.85584
-      minDuration: 1.524854
+      maxDuration: 2.0524943
+      minDuration: 1.6809751
   - PhysicalPath: Events\Misc.wwu
     PathAndIcons:
     - ElementName: Events
@@ -564,8 +564,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Misc
     guid: 38851f663c90cb47ab344da8a1d968e0
     GuidInternal: 
-    m_lastTime: -8585592586743377645
+    m_lastTime: -8584814955844147276
     List:
+    - name: DeathScreen
+      guid: 5b423e392e800c41999190c81aea64d7
+      id: 4036716357
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 96f2b1fe20fa0144813ad43ca98083c2
+      - ElementName: Misc
+        ObjectType: 12
+        guid: 38851f663c90cb47ab344da8a1d968e0
+      - ElementName: DeathScreen
+        ObjectType: 3
+        guid: 5b423e392e800c41999190c81aea64d7
+      Path: Events\Default Work Unit\Misc\DeathScreen
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: GateClose
       guid: b3b3c070976665489ae22edc56af7111
       id: 3619229476
@@ -584,8 +604,8 @@ MonoBehaviour:
         guid: b3b3c070976665489ae22edc56af7111
       Path: Events\Default Work Unit\Misc\GateClose
       maxAttenuation: 75
-      maxDuration: 1.966481
-      minDuration: 1.618694
+      maxDuration: 1.9664813
+      minDuration: 1.6186938
     - name: GateOpen
       guid: d4d0f2df37ca994db47a3bb5a7362679
       id: 3677793184
@@ -604,8 +624,8 @@ MonoBehaviour:
         guid: d4d0f2df37ca994db47a3bb5a7362679
       Path: Events\Default Work Unit\Misc\GateOpen
       maxAttenuation: 75
-      maxDuration: 0.895419
-      minDuration: 0.348299
+      maxDuration: 0.8954195
+      minDuration: 0.34829932
     - name: PotionSlurp
       guid: 18486217dd504f40a14574ff45f84a41
       id: 3983732716
@@ -624,7 +644,7 @@ MonoBehaviour:
         guid: 18486217dd504f40a14574ff45f84a41
       Path: Events\Default Work Unit\Misc\PotionSlurp
       maxAttenuation: 25
-      maxDuration: 1.993994
+      maxDuration: 1.9939939
       minDuration: 1.9
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
@@ -640,28 +660,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Music
     guid: b78cf16ee38bc442ac0cbbbc194feecb
     GuidInternal: 
-    m_lastTime: -8585593231197907325
+    m_lastTime: -8584814939962621205
     List:
-    - name: IngameMusic
-      guid: 3019900727b088438f60c4274010b18d
-      id: 1545821079
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 96f2b1fe20fa0144813ad43ca98083c2
-      - ElementName: Music
-        ObjectType: 12
-        guid: b78cf16ee38bc442ac0cbbbc194feecb
-      - ElementName: IngameMusic
-        ObjectType: 3
-        guid: 3019900727b088438f60c4274010b18d
-      Path: Events\Default Work Unit\Music\IngameMusic
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Main_Menu
       guid: 2cf0a6c6ff06204e849dee12c2032dc7
       id: 2005704188
@@ -680,8 +680,128 @@ MonoBehaviour:
         guid: 2cf0a6c6ff06204e849dee12c2032dc7
       Path: Events\Default Work Unit\Music\Main_Menu
       maxAttenuation: 0
-      maxDuration: 253.93124
-      minDuration: 253.93124
+      maxDuration: -1
+      minDuration: -1
+    - name: MusicTransitionToIngame
+      guid: eb6d37d6e0afab4fad781c901cbb7873
+      id: 482996935
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 96f2b1fe20fa0144813ad43ca98083c2
+      - ElementName: Music
+        ObjectType: 12
+        guid: b78cf16ee38bc442ac0cbbbc194feecb
+      - ElementName: MusicTransitionToIngame
+        ObjectType: 3
+        guid: eb6d37d6e0afab4fad781c901cbb7873
+      Path: Events\Default Work Unit\Music\MusicTransitionToIngame
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MusicTransitionToMainMenu
+      guid: d9fa03c0e135af48b42c6db502918efb
+      id: 3851999622
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 96f2b1fe20fa0144813ad43ca98083c2
+      - ElementName: Music
+        ObjectType: 12
+        guid: b78cf16ee38bc442ac0cbbbc194feecb
+      - ElementName: MusicTransitionToMainMenu
+        ObjectType: 3
+        guid: d9fa03c0e135af48b42c6db502918efb
+      Path: Events\Default Work Unit\Music\MusicTransitionToMainMenu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayerIsLowHP
+      guid: 1c641d89f9986e4a8338411c59b22b4d
+      id: 2805338576
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 96f2b1fe20fa0144813ad43ca98083c2
+      - ElementName: Music
+        ObjectType: 12
+        guid: b78cf16ee38bc442ac0cbbbc194feecb
+      - ElementName: PlayerIsLowHP
+        ObjectType: 3
+        guid: 1c641d89f9986e4a8338411c59b22b4d
+      Path: Events\Default Work Unit\Music\PlayerIsLowHP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PlayerIsNotLowHP
+      guid: d317497ea92e6e4b883f7f057dfd8f5d
+      id: 173344789
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 96f2b1fe20fa0144813ad43ca98083c2
+      - ElementName: Music
+        ObjectType: 12
+        guid: b78cf16ee38bc442ac0cbbbc194feecb
+      - ElementName: PlayerIsNotLowHP
+        ObjectType: 3
+        guid: d317497ea92e6e4b883f7f057dfd8f5d
+      Path: Events\Default Work Unit\Music\PlayerIsNotLowHP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TransitionFromBattleToMoodTrack
+      guid: 0ad7f035025c244fbd38306fbe38a084
+      id: 701728277
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 96f2b1fe20fa0144813ad43ca98083c2
+      - ElementName: Music
+        ObjectType: 12
+        guid: b78cf16ee38bc442ac0cbbbc194feecb
+      - ElementName: TransitionFromBattleToMoodTrack
+        ObjectType: 3
+        guid: 0ad7f035025c244fbd38306fbe38a084
+      Path: Events\Default Work Unit\Music\TransitionFromBattleToMoodTrack
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TransitionFromMoodToBattleTrack
+      guid: 408a38875a2dce4d885819bf2afde531
+      id: 2351484233
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 96f2b1fe20fa0144813ad43ca98083c2
+      - ElementName: Music
+        ObjectType: 12
+        guid: b78cf16ee38bc442ac0cbbbc194feecb
+      - ElementName: TransitionFromMoodToBattleTrack
+        ObjectType: 3
+        guid: 408a38875a2dce4d885819bf2afde531
+      Path: Events\Default Work Unit\Music\TransitionFromMoodToBattleTrack
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -696,7 +816,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Player
     guid: ba88319e4c7f1a409355cef3459a8722
     GuidInternal: 
-    m_lastTime: -8585593231197907325
+    m_lastTime: -8584865370075188595
     List:
     - name: AttackBlocked
       guid: 44282d15a635f34ab222814e82d1f867
@@ -716,8 +836,8 @@ MonoBehaviour:
         guid: 44282d15a635f34ab222814e82d1f867
       Path: Events\Default Work Unit\Player\AttackBlocked
       maxAttenuation: 50
-      maxDuration: 0.31702
-      minDuration: 0.134817
+      maxDuration: 0.31702012
+      minDuration: 0.13481662
     - name: PlayerDeath
       guid: 3ebf0579a8d2cb46b5c5d776c70013a5
       id: 1656947812
@@ -736,8 +856,8 @@ MonoBehaviour:
         guid: 3ebf0579a8d2cb46b5c5d776c70013a5
       Path: Events\Default Work Unit\Player\PlayerDeath
       maxAttenuation: 50
-      maxDuration: 12.242012
-      minDuration: 11.121379
+      maxDuration: 2.242012
+      minDuration: 1.1213793
     - name: PlayerGotHit
       guid: c6768961fade74459e39011e43cf52b8
       id: 855695183
@@ -756,8 +876,8 @@ MonoBehaviour:
         guid: c6768961fade74459e39011e43cf52b8
       Path: Events\Default Work Unit\Player\PlayerGotHit
       maxAttenuation: 50
-      maxDuration: 0.918609
-      minDuration: 0.304093
+      maxDuration: 0.91860926
+      minDuration: 0.30409342
     - name: PlayerRun
       guid: e7e0f0093fe64f4380ff4515ec78639b
       id: 3964335501
@@ -776,8 +896,8 @@ MonoBehaviour:
         guid: e7e0f0093fe64f4380ff4515ec78639b
       Path: Events\Default Work Unit\Player\PlayerRun
       maxAttenuation: 50
-      maxDuration: 0.585114
-      minDuration: 0.392186
+      maxDuration: 0.58511424
+      minDuration: 0.39218593
     - name: SwordSwing
       guid: 807272d301bc384b95d380c995c1d3f7
       id: 1328934038
@@ -796,8 +916,8 @@ MonoBehaviour:
         guid: 807272d301bc384b95d380c995c1d3f7
       Path: Events\Default Work Unit\Player\SwordSwing
       maxAttenuation: 50
-      maxDuration: 0.381812
-      minDuration: 0.203433
+      maxDuration: 0.38181177
+      minDuration: 0.20343314
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -810,7 +930,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6998021113b3504b8077a724c13c14ad
     GuidInternal: 
-    m_lastTime: -8585601955201715154
+    m_lastTime: -8584823746810956889
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -824,8 +944,140 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7978cba7b82a99408f90c187c9a553d7
     GuidInternal: 
-    m_lastTime: -8585601955195286625
-    List: []
+    m_lastTime: -8584814959362599982
+    List:
+    - name: InCombat
+      guid: 3b46528843245248b329e871facf5a6f
+      id: 3373579172
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7978cba7b82a99408f90c187c9a553d7
+      - ElementName: InCombat
+        ObjectType: 9
+        guid: 3b46528843245248b329e871facf5a6f
+      Path: States\Default Work Unit\InCombat
+      values:
+      - name: Alive
+        guid: 82df4d7b47c9ad4cb298d7a0ff38f098
+        id: 655265632
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: InCombat
+          ObjectType: 9
+          guid: 3b46528843245248b329e871facf5a6f
+        - ElementName: Alive
+          ObjectType: 8
+          guid: 82df4d7b47c9ad4cb298d7a0ff38f098
+      - name: Dead
+        guid: c7c1d855f495064f8301eab8f152789d
+        id: 2044049779
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: InCombat
+          ObjectType: 9
+          guid: 3b46528843245248b329e871facf5a6f
+        - ElementName: Dead
+          ObjectType: 8
+          guid: c7c1d855f495064f8301eab8f152789d
+      - name: LowHealth
+        guid: f0b2fcf1d4af9340826b84c43a67e137
+        id: 1017222595
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: InCombat
+          ObjectType: 9
+          guid: 3b46528843245248b329e871facf5a6f
+        - ElementName: LowHealth
+          ObjectType: 8
+          guid: f0b2fcf1d4af9340826b84c43a67e137
+      - name: None
+        guid: bcb575819ce9b84d8fb1dd3d187b14ee
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: InCombat
+          ObjectType: 9
+          guid: 3b46528843245248b329e871facf5a6f
+        - ElementName: None
+          ObjectType: 8
+          guid: bcb575819ce9b84d8fb1dd3d187b14ee
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: InExploringTheDungeon
+      guid: 502ce3c8ede8d348bb62659089ba70c9
+      id: 439849305
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7978cba7b82a99408f90c187c9a553d7
+      - ElementName: InExploringTheDungeon
+        ObjectType: 9
+        guid: 502ce3c8ede8d348bb62659089ba70c9
+      Path: States\Default Work Unit\InExploringTheDungeon
+      values:
+      - name: Exploring
+        guid: 02c3b9c47cef1042ad4c45e94706a151
+        id: 1823678183
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: InExploringTheDungeon
+          ObjectType: 9
+          guid: 502ce3c8ede8d348bb62659089ba70c9
+        - ElementName: Exploring
+          ObjectType: 8
+          guid: 02c3b9c47cef1042ad4c45e94706a151
+      - name: None
+        guid: 7674745602006c4e9fe371c3acd055d8
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: InExploringTheDungeon
+          ObjectType: 9
+          guid: 502ce3c8ede8d348bb62659089ba70c9
+        - ElementName: None
+          ObjectType: 8
+          guid: 7674745602006c4e9fe371c3acd055d8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -838,7 +1090,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: fcd0045ebe7a404680651efee7be0637
     GuidInternal: 
-    m_lastTime: -8585601955195276621
+    m_lastTime: -8584814940112955973
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -852,10 +1104,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e8dee53f79efbe489ad73132f3cf0e2c
     GuidInternal: 
-    m_lastTime: -8585601955195276621
+    m_lastTime: -8584865370075628260
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

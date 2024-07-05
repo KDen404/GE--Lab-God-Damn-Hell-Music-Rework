@@ -1,9 +1,20 @@
 #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
+/*******************************************************************************
+The content of this file includes portions of the proprietary AUDIOKINETIC Wwise
+Technology released in source code form as part of the game integration package.
+The content of this file may not be used without valid licenses to the
+AUDIOKINETIC Wwise Technology.
+Note that the use of the game engine is subject to the Unity(R) Terms of
+Service at https://unity3d.com/legal/terms-of-service
+ 
+License Usage
+ 
+Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
+this file in accordance with the end user license agreement provided with the
+software or, alternatively, in accordance with the terms contained
+in a written agreement between you and Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
+*******************************************************************************/
 
 /// <summary>
 ///     Event callback information.
@@ -22,6 +33,7 @@ public class AkEventCallbackMsg
 }
 
 [UnityEngine.AddComponentMenu("Wwise/AkEvent")]
+[UnityEngine.ExecuteInEditMode]
 [UnityEngine.RequireComponent(typeof(AkGameObj))]
 /// @brief Helper class that knows a Wwise Event and when to trigger it in Unity. As of 2017.2.0, the AkEvent inspector has buttons for play/stop, play multiple, stop multiple, and stop all.
 /// Play/Stop will play or stop the event such that it can be previewed both in edit mode and play mode. When multiple objects are selected, Play Multiple and Stop Multiple will play or stop the associated AkEvent for each object.
@@ -72,6 +84,20 @@ public class AkEvent : AkDragDropTriggerHandler
 	public float transitionDuration = 0.0f;
 
 	private AkEventCallbackMsg EventCallbackMsg = null;
+	
+	protected override void Awake()
+	{
+		base.Awake();
+#if UNITY_EDITOR
+		var reference = AkWwiseTypes.DragAndDropObjectReference;
+		if (reference)
+		{
+			UnityEngine.GUIUtility.hotControl = 0;
+			data.ObjectReference = reference;
+			AkWwiseTypes.DragAndDropObjectReference = null;
+		}
+#endif
+	}
 
 	protected override void Start()
 	{
@@ -81,7 +107,11 @@ public class AkEvent : AkDragDropTriggerHandler
 #endif
 
 		if (useCallbacks)
+		{
 			EventCallbackMsg = new AkEventCallbackMsg { sender = gameObject };
+		}
+
+		soundEmitterObject = gameObject;
 
 		base.Start();
 	}
@@ -92,7 +122,9 @@ public class AkEvent : AkDragDropTriggerHandler
 		EventCallbackMsg.info = in_info;
 
 		for (var i = 0; i < Callbacks.Count; ++i)
+		{
 			Callbacks[i].CallFunction(EventCallbackMsg);
+		}
 	}
 
 	public override void HandleEvent(UnityEngine.GameObject in_gameObject)
@@ -132,7 +164,7 @@ public class AkEvent : AkDragDropTriggerHandler
 
 	public void Stop(int _transitionDuration, AkCurveInterpolation _curveInterpolation)
 	{
-		data.Stop(soundEmitterObject, _transitionDuration, _curveInterpolation);
+		data.Stop(soundEmitterObject ? soundEmitterObject : gameObject, _transitionDuration, _curveInterpolation);
 	}
 
 	#region Obsolete

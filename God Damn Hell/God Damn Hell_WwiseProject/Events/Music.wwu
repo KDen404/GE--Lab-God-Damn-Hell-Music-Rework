@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" SchemaVersion="103" RootDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" ParentDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}">
+<WwiseDocument Type="WorkUnit" ID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" SchemaVersion="119" RootDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" ParentDocumentID="{FEB1F296-FA20-4401-813A-D43CA98083C2}">
 	<Events>
 		<WorkUnit Name="Music" ID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" OwnerID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="IngameMusic" ID="{07901930-B027-4388-8F60-C4274010B18D}">
+				<Event Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}">
 					<ChildrenList>
-						<Action Name="" ID="{E173750E-18B3-44F6-BD9A-B581C666959F}" ShortID="430640306">
+						<Action Name="" ID="{51F0B9D9-DA7E-4951-BFA7-7AA7AC4F0291}" ShortID="319152432">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="InGameMusicAsLoop" ID="{9809B02E-CB67-4608-92A1-50C1D44D4736}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+									<ObjectRef Name="MainMenu_60BPM_FINISHED" ID="{C5376C32-0890-4732-AB7F-FA33D5ADD190}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}">
+				<Event Name="MusicTransitionToIngame" ID="{D6376DEB-AFE0-4FAB-AD78-1C901CBB7873}">
 					<ChildrenList>
-						<Action Name="" ID="{652FAE91-2B8B-48F9-9748-B5E588587717}" ShortID="368938746">
+						<Action Name="" ID="{956B6707-78E8-49BA-8F66-60AF231DD7D2}" ShortID="396683907">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{EEF4AC90-65AB-4C06-968A-59B259F0AE29}" ShortID="226695789">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MainTheme" ID="{CAA43D79-034F-4DA9-8A2A-B372EEC9633E}" WorkUnitID="{654BAB2A-58EA-42B1-B7A9-80AE121DCFCC}"/>
+									<ObjectRef Name="MusicSwitch" ID="{2F82B590-D5C2-406A-83EC-E3530339C4D8}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9EB91990-3BCB-4242-A384-EEFA84CD4A1F}" ShortID="233824918">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Exploring" ID="{C4B9C302-EF7C-4210-AD4C-45E94706A151}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MusicTransitionToMainMenu" ID="{C003FAD9-35E1-48AF-B42C-6DB502918EFB}">
+					<ChildrenList>
+						<Action Name="" ID="{F2D5EA7E-6DFE-4D57-B4DA-3D11E0BFF66F}" ShortID="698327558">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{2F82B590-D5C2-406A-83EC-E3530339C4D8}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3C52A3AA-A0C1-409C-9556-E8CCC54E6E96}" ShortID="442551333">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenu_60BPM_FINISHED" ID="{C5376C32-0890-4732-AB7F-FA33D5ADD190}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TransitionFromMoodToBattleTrack" ID="{87388A40-2D5A-4DCE-8858-19BF2AFDE531}"/>
+				<Event Name="TransitionFromBattleToMoodTrack" ID="{35F0D70A-5C02-4F24-BD38-306FBE38A084}"/>
+				<Event Name="PlayerIsLowHP" ID="{891D641C-98F9-4A6E-8338-411C59B22B4D}">
+					<ChildrenList>
+						<Action Name="" ID="{E02454B9-2A7B-4CBB-B4DD-2CFF2C76A3A6}" ShortID="94035037">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LowHealth" ID="{F1FCB2F0-AFD4-4093-826B-84C43A67E137}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayerIsNotLowHP" ID="{7E4917D3-2EA9-4B6E-883F-7F057DFD8F5D}">
+					<ChildrenList>
+						<Action Name="" ID="{17F99188-222D-44AD-A814-E142464A5CBA}" ShortID="401698232">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alive" ID="{7B4DDF82-C947-4CAD-B298-D7A0FF38F098}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

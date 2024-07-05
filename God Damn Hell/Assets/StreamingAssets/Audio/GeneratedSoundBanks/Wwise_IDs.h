@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID ATTACKBLOCKED = 1654192851U;
+        static const AkUniqueID DEATHSCREEN = 4036716357U;
         static const AkUniqueID DEMONFIGHTERDEATH = 725206385U;
         static const AkUniqueID DEMONFIGHTERGOTHIT = 3929558812U;
         static const AkUniqueID DEMONFIGHTERRUN = 36191336U;
@@ -29,15 +30,48 @@ namespace AK
         static const AkUniqueID FIGHTERSWING = 2867028574U;
         static const AkUniqueID GATECLOSE = 3619229476U;
         static const AkUniqueID GATEOPEN = 3677793184U;
-        static const AkUniqueID INGAMEMUSIC = 1545821079U;
         static const AkUniqueID MAIN_MENU = 2005704188U;
+        static const AkUniqueID MUSICTRANSITIONTOINGAME = 482996935U;
+        static const AkUniqueID MUSICTRANSITIONTOMAINMENU = 3851999622U;
         static const AkUniqueID PLAYERDEATH = 1656947812U;
         static const AkUniqueID PLAYERGOTHIT = 855695183U;
+        static const AkUniqueID PLAYERISLOWHP = 2805338576U;
+        static const AkUniqueID PLAYERISNOTLOWHP = 173344789U;
         static const AkUniqueID PLAYERRUN = 3964335501U;
         static const AkUniqueID POTIONSLURP = 3983732716U;
         static const AkUniqueID SPEARSWING = 478914142U;
         static const AkUniqueID SWORDSWING = 1328934038U;
+        static const AkUniqueID TRANSITIONFROMBATTLETOMOODTRACK = 701728277U;
+        static const AkUniqueID TRANSITIONFROMMOODTOBATTLETRACK = 2351484233U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace INCOMBAT
+        {
+            static const AkUniqueID GROUP = 3373579172U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ALIVE = 655265632U;
+                static const AkUniqueID DEAD = 2044049779U;
+                static const AkUniqueID LOWHEALTH = 1017222595U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace INCOMBAT
+
+        namespace INEXPLORINGTHEDUNGEON
+        {
+            static const AkUniqueID GROUP = 439849305U;
+
+            namespace STATE
+            {
+                static const AkUniqueID EXPLORING = 1823678183U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace INEXPLORINGTHEDUNGEON
+
+    } // namespace STATES
 
     namespace BANKS
     {

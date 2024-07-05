@@ -54,7 +54,6 @@ public class VictoryScreen : MonoBehaviour
                     if (this.transform.GetChild(1).gameObject.activeSelf)
                     {
                         //stoppt die musik beim auftreten des Victory Screens
-                        enemyInformation.GetComponent<PlayMusicOnStart>().stop_music();
                         // Deaktiviert alle Gegner wenn Victory screen aktiviert (stopt ebenfalls den sound bug)
                         for (int i = 0; i < enemyInformation.GetComponent<TotalEnemyCount>().totalEnemyCount.Count; i++)
                         {

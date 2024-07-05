@@ -1,3 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	439849305	InExploringTheDungeon			\Default Work Unit\InExploringTheDungeon	
+	3373579172	InCombat			\Default Work Unit\InCombat	
+
+State	ID	Name	State Group			Notes
+	748895195	None	InExploringTheDungeon			
+	1823678183	Exploring	InExploringTheDungeon			
+	655265632	Alive	InCombat			
+	748895195	None	InCombat			
+	1017222595	LowHealth	InCombat			
+	2044049779	Dead	InCombat			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

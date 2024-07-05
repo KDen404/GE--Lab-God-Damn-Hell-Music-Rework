@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{70766866-69EE-484D-9D62-771CC1401DCB}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{70766866-69EE-484D-9D62-771CC1401DCB}" SchemaVersion="119">
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{70766866-69EE-484D-9D62-771CC1401DCB}" PersistMode="Standalone">
 			<ChildrenList>
@@ -34,7 +34,10 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{EA420338-1D8B-4741-8A37-9524247F6AE3}">
 					<ObjectInclusionList>
-						<ObjectRef Name="IngameMusic" ID="{07901930-B027-4388-8F60-C4274010B18D}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MusicTransitionToMainMenu" ID="{C003FAD9-35E1-48AF-B42C-6DB502918EFB}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MusicTransitionToIngame" ID="{D6376DEB-AFE0-4FAB-AD78-1C901CBB7873}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

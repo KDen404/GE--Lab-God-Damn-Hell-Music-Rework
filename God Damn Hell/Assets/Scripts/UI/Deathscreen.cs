@@ -50,20 +50,16 @@ public class Deathscreen : MonoBehaviour
                 messageColor.a += timediff;
                 deathMessage.color = messageColor;
 
-                
-
                 if (imageColor.a >= 1.0f)
                 {
+                    AkSoundEngine.PostEvent("DeathScreen", this.gameObject);
                     if (this.transform.GetChild(0).gameObject.activeSelf)
                     {
-                        //stoppt die musik beim auftreten des Victory Screens
-                        level_empty.GetComponent<PlayMusicOnStart>().stop_music();
-                        //Deaktiviert alle Gegner wenn Victory screen aktiviert (stopt ebenfalls den sound bug)
+                        //Deaktiviert alle Gegner wenn Victory screen aktiviert
                         for (int i = 0; i < level_empty.GetComponent<TotalEnemyCount>().totalEnemyCount.Count; i++)
                         {
                             level_empty.GetComponent<TotalEnemyCount>().totalEnemyCount[i].gameObject.SetActive(false);
                         }
-
                     }
 
                     exitButton.gameObject.SetActive(true);

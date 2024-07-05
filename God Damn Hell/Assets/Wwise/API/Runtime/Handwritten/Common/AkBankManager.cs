@@ -1,9 +1,20 @@
 #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
+/*******************************************************************************
+The content of this file includes portions of the proprietary AUDIOKINETIC Wwise
+Technology released in source code form as part of the game integration package.
+The content of this file may not be used without valid licenses to the
+AUDIOKINETIC Wwise Technology.
+Note that the use of the game engine is subject to the Unity(R) Terms of
+Service at https://unity3d.com/legal/terms-of-service
+ 
+License Usage
+ 
+Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
+this file in accordance with the end user license agreement provided with the
+software or, alternatively, in accordance with the terms contained
+in a written agreement between you and Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
+*******************************************************************************/
 
 /// @brief Maintains the list of loaded SoundBanks loaded. This is currently used only with AkAmbient objects.
 public static class AkBankManager
@@ -25,12 +36,20 @@ public static class AkBankManager
 
 	internal static void Reset()
 	{
-		m_BankHandles.Clear();
+		lock (m_BankHandles)
+		{
+			m_BankHandles.Clear();
+		}
+
 		BanksToUnload.Clear();
 	}
 
 	public static void ReloadAllBanks()
 	{
+		if (!AkSoundEngine.IsInitialized())
+		{
+			return;
+		}
 		lock (m_BankHandles)
 		{
 			foreach (var bankHandle in m_BankHandles.Values)
@@ -128,6 +147,18 @@ public static class AkBankManager
 		}
 	}
 
+	public static void UnloadAllBanks()
+	{
+		lock (m_BankHandles)
+		{
+			foreach(var bank in m_BankHandles)
+			{
+				bank.Value.UnloadBank(false);
+			}
+			Reset();
+		}
+	}
+
 	private class BankHandle
 	{
 		protected readonly string bankName;
@@ -148,11 +179,6 @@ public static class AkBankManager
 
 		public void LoadBank()
 		{
-#if UNITY_EDITOR
-			if (!AkSoundEngine.EditorIsSoundEngineLoaded)
-				return;
-#endif
-
 			if (RefCount == 0 && !BanksToUnload.Remove(this))
 			{
 				var res = DoLoadBank();

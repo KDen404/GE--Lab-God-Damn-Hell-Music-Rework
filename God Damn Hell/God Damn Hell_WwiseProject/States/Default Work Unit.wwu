@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="InCombat" ID="{8852463B-2443-4852-B329-E871FACF5A6F}">
+					<ChildrenList>
+						<State Name="None" ID="{8175B5BC-E99C-4DB8-8FB1-DD3D187B14EE}"/>
+						<State Name="Alive" ID="{7B4DDF82-C947-4CAD-B298-D7A0FF38F098}"/>
+						<State Name="Dead" ID="{55D8C1C7-95F4-4F06-8301-EAB8F152789D}"/>
+						<State Name="LowHealth" ID="{F1FCB2F0-AFD4-4093-826B-84C43A67E137}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="InExploringTheDungeon" ID="{C8E32C50-E8ED-48D3-BB62-659089BA70C9}">
+					<ChildrenList>
+						<State Name="None" ID="{56747476-0002-4E6C-9FE3-71C3ACD055D8}"/>
+						<State Name="Exploring" ID="{C4B9C302-EF7C-4210-AD4C-45E94706A151}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

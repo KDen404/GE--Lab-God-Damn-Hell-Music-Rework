@@ -8,7 +8,7 @@ public class DemonMageHit : MonoBehaviour
     {
         if (other.gameObject.transform.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerStats>().currentHealthPoints -= 8;
+            other.gameObject.GetComponent<PlayerStats>().Hit(8);
             Destroy(gameObject);
         }
         else

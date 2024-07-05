@@ -1824,6 +1824,7 @@ GameObject:
   - component: {fileID: 118553582}
   - component: {fileID: 118553581}
   - component: {fileID: 118553583}
+  - component: {fileID: 118553584}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1889,11 +1890,24 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1d20e08a65917f54ca85e674cecac035, type: 2}
   decodeBank: 0
+  overrideLoadSetting: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &118553584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118553580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0b542a4a4ce0f4484aff8f58ad0e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &121575057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2996,6 +3010,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d3d3f2b5309f0164eaecd43f5e1dc699, type: 2}
   decodeBank: 0
+  overrideLoadSetting: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
@@ -8472,7 +8487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859191, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859191, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8480,7 +8495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859191, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 37.95
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 3340821567399859191, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8522,6 +8537,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3340821567399859197, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
+      propertyPath: WWiseGlobal
+      value: 
+      objectReference: {fileID: 118553580}
     - target: {fileID: 3340821567399859197, guid: fa4d696bbb9ad884d82927514fc875a8, type: 3}
       propertyPath: maxHealthPoints
       value: 20
@@ -27306,8 +27325,8 @@ Transform:
   - {fileID: 141356073}
   - {fileID: 819494822}
   - {fileID: 53260416}
-  - {fileID: 1002704648}
   - {fileID: 1476465576}
+  - {fileID: 1002704648}
   m_Father: {fileID: 1446894312}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
