@@ -1,14 +1,16 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	439849305	InExploringTheDungeon			\Default Work Unit\InExploringTheDungeon	
-	3373579172	InCombat			\Default Work Unit\InCombat	
+	655265632	Alive			\Default Work Unit\Alive	
+	1017222595	LowHealth			\Default Work Unit\LowHealth	
+	2044049779	Dead			\Default Work Unit\Dead	
 
 State	ID	Name	State Group			Notes
-	748895195	None	InExploringTheDungeon			
-	1823678183	Exploring	InExploringTheDungeon			
-	655265632	Alive	InCombat			
-	748895195	None	InCombat			
-	1017222595	LowHealth	InCombat			
-	2044049779	Dead	InCombat			
+	748895195	None	Alive			
+	1823678183	Exploring	Alive			
+	3373579172	InCombat	Alive			
+	748895195	None	LowHealth			
+	1017222595	LowHealth	LowHealth			
+	748895195	None	Dead			
+	4092160813	YesYouAreDead	Dead			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

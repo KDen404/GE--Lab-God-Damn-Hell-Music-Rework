@@ -5,10 +5,52 @@
 			<ChildrenList>
 				<Event Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}">
 					<ChildrenList>
+						<Action Name="" ID="{71197E3B-01D9-4A92-963B-622D27E01EC9}" ShortID="1026460596">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="7"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{2F82B590-D5C2-406A-83EC-E3530339C4D8}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{51F0B9D9-DA7E-4951-BFA7-7AA7AC4F0291}" ShortID="319152432">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MainMenu_60BPM_FINISHED" ID="{C5376C32-0890-4732-AB7F-FA33D5ADD190}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4925F329-A411-494E-8B12-1B010BDE1C0D}" ShortID="1036305469">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="None" ID="{AD986787-8EB2-418B-BBD1-35B6EF216CCE}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4FFF5F81-323A-4385-96A2-044726355433}" ShortID="626333988">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="None" ID="{F4E5B8A2-3406-424B-B83F-97344C786895}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{04D61A45-5BCA-45B4-AB17-57AC466A9C54}" ShortID="916326763">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="None" ID="{761FEAD9-DF8D-474D-8B20-898DA533754D}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -24,23 +66,23 @@
 							</PropertyList>
 							<ReferenceList/>
 						</Action>
-						<Action Name="" ID="{EEF4AC90-65AB-4C06-968A-59B259F0AE29}" ShortID="226695789">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="1.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MusicSwitch" ID="{2F82B590-D5C2-406A-83EC-E3530339C4D8}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{9EB91990-3BCB-4242-A384-EEFA84CD4A1F}" ShortID="233824918">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Exploring" ID="{C4B9C302-EF7C-4210-AD4C-45E94706A151}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+									<ObjectRef Name="Exploring" ID="{75A0F7FB-A250-4BBA-ACA8-66FEA6F8AD0E}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EEF4AC90-65AB-4C06-968A-59B259F0AE29}" ShortID="226695789">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{2F82B590-D5C2-406A-83EC-E3530339C4D8}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -69,8 +111,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TransitionFromMoodToBattleTrack" ID="{87388A40-2D5A-4DCE-8858-19BF2AFDE531}"/>
-				<Event Name="TransitionFromBattleToMoodTrack" ID="{35F0D70A-5C02-4F24-BD38-306FBE38A084}"/>
+				<Event Name="TransitionFromMoodToBattleTrack" ID="{87388A40-2D5A-4DCE-8858-19BF2AFDE531}">
+					<ChildrenList>
+						<Action Name="" ID="{C3B35108-D4E9-46E8-B2D7-A26B559F941C}" ShortID="628157344">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InCombat" ID="{DAFA2E03-A82E-4788-86BC-4410ECF356DD}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TransitionFromBattleToMoodTrack" ID="{35F0D70A-5C02-4F24-BD38-306FBE38A084}">
+					<ChildrenList>
+						<Action Name="" ID="{9EDD6859-1DFB-4548-920D-E2906EE59936}" ShortID="1037315422">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Exploring" ID="{75A0F7FB-A250-4BBA-ACA8-66FEA6F8AD0E}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="PlayerIsLowHP" ID="{891D641C-98F9-4A6E-8338-411C59B22B4D}">
 					<ChildrenList>
 						<Action Name="" ID="{E02454B9-2A7B-4CBB-B4DD-2CFF2C76A3A6}" ShortID="94035037">
@@ -79,7 +147,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LowHealth" ID="{F1FCB2F0-AFD4-4093-826B-84C43A67E137}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+									<ObjectRef Name="LowHealth" ID="{FF518B6C-D2C0-42CF-AAAF-D734C2598BF3}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -93,7 +161,51 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Alive" ID="{7B4DDF82-C947-4CAD-B298-D7A0FF38F098}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+									<ObjectRef Name="None" ID="{761FEAD9-DF8D-474D-8B20-898DA533754D}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayerTriggeredGate" ID="{28E220C0-6D0A-465D-9B74-5D9C5346BBD3}">
+					<ChildrenList>
+						<Action Name="" ID="{E530202A-5F10-4F32-8B11-4E3BF4C704EE}" ShortID="511578248">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{2F82B590-D5C2-406A-83EC-E3530339C4D8}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F28CB8FC-359E-4E93-B382-A13505E74E88}" ShortID="458764180">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="2">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9255C016-057A-4AAA-9F69-370BA4F050EC}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InCombat" ID="{DAFA2E03-A82E-4788-86BC-4410ECF356DD}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{99D522FE-380A-46CD-9AA2-9C72634DA275}" ShortID="66853823">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="5"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{2F82B590-D5C2-406A-83EC-E3530339C4D8}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

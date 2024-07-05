@@ -23,13 +23,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{BC7005AF-F218-4A59-A04A-E50B5D2568F0}" ShortID="427523148">
+						<Action Name="" ID="{124A81DE-0DAB-4DEB-A38C-012904234389}" ShortID="988794365">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
+								<Property Name="ActionType" Type="int16" Value="22"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TransitionFromBattleToMoodTrack" ID="{35F0D70A-5C02-4F24-BD38-306FBE38A084}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}"/>
+									<ObjectRef Name="Exploring" ID="{75A0F7FB-A250-4BBA-ACA8-66FEA6F8AD0E}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -44,50 +44,9 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{F7AF9937-49F6-492F-8CA0-4657A44D617C}" ShortID="654076254">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-								<Property Name="Delay" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TransitionFromMoodToBattleTrack" ID="{87388A40-2D5A-4DCE-8858-19BF2AFDE531}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="DeathScreen" ID="{393E425B-802E-410C-9991-90C81AEA64D7}">
-					<ChildrenList>
-						<Action Name="" ID="{DA223AF4-5B98-4738-8B52-D921A172F116}" ShortID="1016567210">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="3"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList/>
-							<ChildrenList>
-								<EventActionException Name="" ID="{9E185DFF-3B02-4287-95FC-D31D6D75D946}">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MainMenu_60BPM_FINISHED" ID="{C5376C32-0890-4732-AB7F-FA33D5ADD190}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
-										</Reference>
-									</ReferenceList>
-								</EventActionException>
-							</ChildrenList>
-						</Action>
-						<Action Name="" ID="{F7504906-5210-44CB-ABB3-449807D7BFAF}" ShortID="997772225">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MainMenu_60BPM_FINISHED" ID="{C5376C32-0890-4732-AB7F-FA33D5ADD190}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<Event Name="DeathScreen" ID="{393E425B-802E-410C-9991-90C81AEA64D7}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

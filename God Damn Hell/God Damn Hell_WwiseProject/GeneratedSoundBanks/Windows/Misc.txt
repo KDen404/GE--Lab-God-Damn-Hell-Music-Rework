@@ -1,6 +1,4 @@
 Event	ID	Name			Wwise Object Path	Notes
-	701728277	TransitionFromBattleToMoodTrack			\Default Work Unit\Music\TransitionFromBattleToMoodTrack	
-	2351484233	TransitionFromMoodToBattleTrack			\Default Work Unit\Music\TransitionFromMoodToBattleTrack	
 	3619229476	GateClose			\Default Work Unit\Misc\GateClose	
 	3677793184	GateOpen			\Default Work Unit\Misc\GateOpen	
 	3983732716	PotionSlurp			\Default Work Unit\Misc\PotionSlurp	

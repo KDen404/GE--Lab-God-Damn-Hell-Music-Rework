@@ -6,6 +6,17 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+    
+    void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+ 
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindObjectOfType<PlayerStats>().Reset();
+        return;
+    }
         
 }
 

@@ -45,6 +45,27 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{B15B7721-B59E-43AA-B824-305740F1C67A}" ShortID="742068662">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{2F82B590-D5C2-406A-83EC-E3530339C4D8}" WorkUnitID="{7D95DB6F-045F-49FA-A0F7-CAD5DB323F38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{38FDBF47-DFEA-49AC-A21E-B554B986E90F}" ShortID="832801515">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="YesYouAreDead" ID="{5A79F36B-A9BF-4A9B-9893-369019EC654C}" WorkUnitID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="AttackBlocked" ID="{152D2844-35A6-4AF3-B222-814E82D1F867}">

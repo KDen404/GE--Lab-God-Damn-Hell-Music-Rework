@@ -36,7 +36,11 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Music" ID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MusicTransitionToMainMenu" ID="{C003FAD9-35E1-48AF-B42C-6DB502918EFB}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerIsLowHP" ID="{891D641C-98F9-4A6E-8338-411C59B22B4D}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerIsNotLowHP" ID="{7E4917D3-2EA9-4B6E-883F-7F057DFD8F5D}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TransitionFromMoodToBattleTrack" ID="{87388A40-2D5A-4DCE-8858-19BF2AFDE531}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Main_Menu" ID="{C6A6F02C-06FF-4E20-849D-EE12C2032DC7}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TransitionFromBattleToMoodTrack" ID="{35F0D70A-5C02-4F24-BD38-306FBE38A084}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MusicTransitionToIngame" ID="{D6376DEB-AFE0-4FAB-AD78-1C901CBB7873}" WorkUnitID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

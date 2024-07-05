@@ -38,6 +38,7 @@ namespace AK
         static const AkUniqueID PLAYERISLOWHP = 2805338576U;
         static const AkUniqueID PLAYERISNOTLOWHP = 173344789U;
         static const AkUniqueID PLAYERRUN = 3964335501U;
+        static const AkUniqueID PLAYERTRIGGEREDGATE = 4123291968U;
         static const AkUniqueID POTIONSLURP = 3983732716U;
         static const AkUniqueID SPEARSWING = 478914142U;
         static const AkUniqueID SWORDSWING = 1328934038U;
@@ -47,29 +48,39 @@ namespace AK
 
     namespace STATES
     {
-        namespace INCOMBAT
+        namespace ALIVE
         {
-            static const AkUniqueID GROUP = 3373579172U;
-
-            namespace STATE
-            {
-                static const AkUniqueID ALIVE = 655265632U;
-                static const AkUniqueID DEAD = 2044049779U;
-                static const AkUniqueID LOWHEALTH = 1017222595U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace INCOMBAT
-
-        namespace INEXPLORINGTHEDUNGEON
-        {
-            static const AkUniqueID GROUP = 439849305U;
+            static const AkUniqueID GROUP = 655265632U;
 
             namespace STATE
             {
                 static const AkUniqueID EXPLORING = 1823678183U;
+                static const AkUniqueID INCOMBAT = 3373579172U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace INEXPLORINGTHEDUNGEON
+        } // namespace ALIVE
+
+        namespace DEAD
+        {
+            static const AkUniqueID GROUP = 2044049779U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID YESYOUAREDEAD = 4092160813U;
+            } // namespace STATE
+        } // namespace DEAD
+
+        namespace LOWHEALTH
+        {
+            static const AkUniqueID GROUP = 1017222595U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LOWHEALTH = 1017222595U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace LOWHEALTH
 
     } // namespace STATES
 

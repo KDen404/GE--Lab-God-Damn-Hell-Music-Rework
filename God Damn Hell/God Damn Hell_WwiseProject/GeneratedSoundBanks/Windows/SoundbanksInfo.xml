@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{AA6BB2E3-A4D4-06B4-C96E-7DE723C9A478}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{9A7CE5D0-4F36-4712-0104-E772BD26BCEE}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
@@ -378,6 +378,9 @@
 							<PluginRef Id="2949243095"/>
 						</ShareSets>
 					</PluginRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="2044049779" Id="4092160813" Name="YesYouAreDead"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="855695183" Name="PlayerGotHit" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.30409342" DurationMax="0.91860926">
 					<MediaRefs>
@@ -437,8 +440,16 @@
 					</PluginRefs>
 				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="2044049779" Name="Dead">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="4092160813" Name="YesYouAreDead"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D2F9809F-6E5C-A6BF-3DB5-10C485987B51}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D1208EF9-BCBF-BD65-5ECC-E6F35B112802}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -451,23 +462,28 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<StateGroups>
-				<StateGroup Id="439849305" Name="InExploringTheDungeon">
+				<StateGroup Id="655265632" Name="Alive">
 					<States>
 						<State Id="748895195" Name="None"/>
 						<State Id="1823678183" Name="Exploring"/>
+						<State Id="3373579172" Name="InCombat"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="3373579172" Name="InCombat">
+				<StateGroup Id="1017222595" Name="LowHealth">
 					<States>
-						<State Id="655265632" Name="Alive"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="1017222595" Name="LowHealth"/>
-						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2044049779" Name="Dead">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="4092160813" Name="YesYouAreDead"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2005704188" Type="User" Language="SFX" Hash="{4DD742FD-924E-30AC-3F76-07E9DE770904}">
+		<SoundBank Id="2005704188" Type="User" Language="SFX" Hash="{1696B652-3903-CEC6-4230-7418CD3EAA50}">
 			<ShortName>Main_Menu</ShortName>
 			<Path>Main_Menu.bnk</Path>
 			<Media>
@@ -496,8 +512,32 @@
 						<MediaRef Id="658715313"/>
 						<MediaRef Id="981199895"/>
 					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="655265632" Id="748895195" Name="None"/>
+					</ActionSetState>
 				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="655265632" Name="Alive">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1823678183" Name="Exploring"/>
+						<State Id="3373579172" Name="InCombat"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1017222595" Name="LowHealth">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1017222595" Name="LowHealth"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2044049779" Name="Dead">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="4092160813" Name="YesYouAreDead"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="2242381963" Type="User" Language="SFX" Hash="{579F9595-54F2-A4E8-2F56-3CB034FF0804}">
 			<ShortName>Enemies</ShortName>
@@ -1524,7 +1564,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3062523257" Type="User" Language="SFX" Hash="{A45E9DB7-40B0-21CA-739C-6778ABB485EE}">
+		<SoundBank Id="3062523257" Type="User" Language="SFX" Hash="{4FE9E90E-23D1-7B75-66B7-9C7CF07086C0}">
 			<ShortName>Misc</ShortName>
 			<Path>Misc.bnk</Path>
 			<Media>
@@ -1773,9 +1813,6 @@
 							<PluginRef Id="2791153688"/>
 						</ShareSets>
 					</PluginRefs>
-					<ActionPostEvent>
-						<ActionPostEventEntry Id="2351484233" Name="TransitionFromMoodToBattleTrack"/>
-					</ActionPostEvent>
 				</Event>
 				<Event Id="3677793184" Name="GateOpen" MaxAttenuation="75" DurationType="OneShot" DurationMin="0.34829932" DurationMax="0.8954195">
 					<MediaRefs>
@@ -1799,9 +1836,9 @@
 							<PluginRef Id="2791153688"/>
 						</ShareSets>
 					</PluginRefs>
-					<ActionPostEvent>
-						<ActionPostEventEntry Id="701728277" Name="TransitionFromBattleToMoodTrack"/>
-					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="655265632" Id="1823678183" Name="Exploring"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="3983732716" Name="PotionSlurp" MaxAttenuation="25" DurationType="OneShot" DurationMin="1.9" DurationMax="1.9939939">
 					<MediaRefs>
@@ -1835,29 +1872,24 @@
 						<MediaRef Id="1040080044"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="701728277" Name="TransitionFromBattleToMoodTrack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2351484233" Name="TransitionFromMoodToBattleTrack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="655265632" Name="Alive">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1823678183" Name="Exploring"/>
+						<State Id="3373579172" Name="InCombat"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{F88B01C8-2B2E-A5D3-0B38-49A8DE2D7BDF}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{C758FBAF-6170-CD9F-A474-E8D533D4B545}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
-				<File Id="147057287" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>bedrohliche main menu musik 120 bpm 4-Pauke Tief Martzialisch.wav</ShortName>
-					<CachePath>SFX/bedrohliche main menu musik 120 bpm 4-Pauke Tief Martzialisch_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="183053261" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>violinen battle track 100BPM loop 2-Strings Ensemble.wav</ShortName>
 					<CachePath>SFX/violinen battle track 100BPM loop 2-Strings Ensemble_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="198023434" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>bedrohliche main menu musik 120 bpm 2-Strings Ensemble Staccato.wav</ShortName>
-					<CachePath>SFX/bedrohliche main menu musik 120 bpm 2-Strings Ensemble Staccato_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="241957627" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PlayerDeathViolins 90BPM.wav</ShortName>
-					<CachePath>SFX/PlayerDeathViolins 90BPM_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="320370752" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mood track Loop 1-Strings Ensemble Legato.wav</ShortName>
@@ -1871,14 +1903,6 @@
 					<ShortName>bedrohliche main menu musik 120 bpm Intro.wav</ShortName>
 					<CachePath>SFX/bedrohliche main menu musik 120 bpm Intro_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="396451921" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>bedrohliche main menu musik 120 bpm 3-Ghosts On Tape (Multisampled).wav</ShortName>
-					<CachePath>SFX/bedrohliche main menu musik 120 bpm 3-Ghosts On Tape (Multisampled)_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="456013616" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>bedrohliche main menu musik 120 bpm 1-Bowed Wind Harp.wav</ShortName>
-					<CachePath>SFX/bedrohliche main menu musik 120 bpm 1-Bowed Wind Harp_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="470581352" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mood track Intro.wav</ShortName>
 					<CachePath>SFX/mood track Intro_FBC78EF0.wem</CachePath>
@@ -1886,6 +1910,10 @@
 				<File Id="508777971" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>violinen battle track 100BPM loop 1-Strings Ensemble Staccato.wav</ShortName>
 					<CachePath>SFX/violinen battle track 100BPM loop 1-Strings Ensemble Staccato_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="541448955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MoodTrack 120 bpm Loop 2-Strings Ensemble Staccato.wav</ShortName>
+					<CachePath>SFX/MoodTrack 120 bpm Loop 2-Strings Ensemble Staccato_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="654475227" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>violinen battle track 100BPM Intro.wav</ShortName>
@@ -1895,6 +1923,10 @@
 					<ShortName>mood track Loop 3-Pauke Tief Martzialisch.wav</ShortName>
 					<CachePath>SFX/mood track Loop 3-Pauke Tief Martzialisch_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="665736435" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MoodTrack 120 bpm Loop 3-Ghosts On Tape (Multisampled).wav</ShortName>
+					<CachePath>SFX/MoodTrack 120 bpm Loop 3-Ghosts On Tape (Multisampled)_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="679307793" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>violinen battle track 100BPM loop 4-Double Bass Solo Staccato.wav</ShortName>
 					<CachePath>SFX/violinen battle track 100BPM loop 4-Double Bass Solo Staccato_FBC78EF0.wem</CachePath>
@@ -1902,6 +1934,10 @@
 				<File Id="684434495" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TransitionToDeath 120BPM.wav</ShortName>
 					<CachePath>SFX/TransitionToDeath 120BPM_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="702704374" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TransitionTobattleTrack 120BPM.wav</ShortName>
+					<CachePath>SFX/TransitionTobattleTrack 120BPM_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="801593023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>violinen battle track 120BPM loop 3-Pauke Tief Martzialisch.wav</ShortName>
@@ -1915,9 +1951,17 @@
 					<ShortName>violinen battle track 120BPM loop 4-Double Bass Solo Staccato.wav</ShortName>
 					<CachePath>SFX/violinen battle track 120BPM loop 4-Double Bass Solo Staccato_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="868506054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MoodTrack 120 bpm Loop 1-Bowed Wind Harp.wav</ShortName>
+					<CachePath>SFX/MoodTrack 120 bpm Loop 1-Bowed Wind Harp_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="911459853" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>violinen battle track 120BPM loop 1-Strings Ensemble Staccato.wav</ShortName>
 					<CachePath>SFX/violinen battle track 120BPM loop 1-Strings Ensemble Staccato_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="972047074" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MoodTrack 120 bpm Loop 4-Pauke Tief Martzialisch.wav</ShortName>
+					<CachePath>SFX/MoodTrack 120 bpm Loop 4-Pauke Tief Martzialisch_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="981199895" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mood track Loop 2-Double Bass Solo.wav</ShortName>
@@ -1932,70 +1976,107 @@
 						<MediaRef Id="658715313"/>
 						<MediaRef Id="981199895"/>
 					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="655265632" Id="748895195" Name="None"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="482996935" Name="MusicTransitionToIngame" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="684434495"/>
+						<MediaRef Id="702704374"/>
 					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="3373579172" Id="655265632"/>
+							<SwitchValue GroupType="State" GroupId="655265632" Id="1823678183"/>
 							<Children>
 								<SwitchContainer>
-									<SwitchValue GroupType="State" GroupId="439849305" Id="0"/>
-									<MediaRefs>
-										<MediaRef Id="183053261"/>
-										<MediaRef Id="508777971"/>
-										<MediaRef Id="654475227"/>
-										<MediaRef Id="679307793"/>
-										<MediaRef Id="833502042"/>
-									</MediaRefs>
+									<SwitchValue GroupType="State" GroupId="1017222595" Id="748895195"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="2044049779" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="393579115"/>
+												<MediaRef Id="541448955"/>
+												<MediaRef Id="665736435"/>
+												<MediaRef Id="868506054"/>
+												<MediaRef Id="972047074"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="3373579172" Id="1017222595"/>
+							<SwitchValue GroupType="State" GroupId="655265632" Id="3373579172"/>
 							<Children>
 								<SwitchContainer>
-									<SwitchValue GroupType="State" GroupId="439849305" Id="0"/>
-									<MediaRefs>
-										<MediaRef Id="360514191"/>
-										<MediaRef Id="801593023"/>
-										<MediaRef Id="852077194"/>
-										<MediaRef Id="911459853"/>
-									</MediaRefs>
+									<SwitchValue GroupType="State" GroupId="1017222595" Id="748895195"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="2044049779" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="183053261"/>
+												<MediaRef Id="508777971"/>
+												<MediaRef Id="654475227"/>
+												<MediaRef Id="679307793"/>
+												<MediaRef Id="833502042"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="3373579172" Id="2044049779"/>
+							<SwitchValue GroupType="State" GroupId="655265632" Id="3373579172"/>
 							<Children>
 								<SwitchContainer>
-									<SwitchValue GroupType="State" GroupId="439849305" Id="0"/>
-									<MediaRefs>
-										<MediaRef Id="241957627"/>
-									</MediaRefs>
+									<SwitchValue GroupType="State" GroupId="1017222595" Id="1017222595"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="2044049779" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="360514191"/>
+												<MediaRef Id="801593023"/>
+												<MediaRef Id="852077194"/>
+												<MediaRef Id="911459853"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="3373579172" Id="748895195"/>
+							<SwitchValue GroupType="State" GroupId="655265632" Id="1823678183"/>
 							<Children>
 								<SwitchContainer>
-									<SwitchValue GroupType="State" GroupId="439849305" Id="1823678183"/>
-									<MediaRefs>
-										<MediaRef Id="147057287"/>
-										<MediaRef Id="198023434"/>
-										<MediaRef Id="393579115"/>
-										<MediaRef Id="396451921"/>
-										<MediaRef Id="456013616"/>
-									</MediaRefs>
+									<SwitchValue GroupType="State" GroupId="1017222595" Id="1017222595"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="2044049779" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="393579115"/>
+												<MediaRef Id="541448955"/>
+												<MediaRef Id="665736435"/>
+												<MediaRef Id="868506054"/>
+												<MediaRef Id="972047074"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="655265632" Id="0"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1017222595" Id="0"/>
+									<Children/>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="439849305" Id="1823678183" Name="Exploring"/>
+						<ActionSetStateEntry GroupId="655265632" Id="1823678183" Name="Exploring"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3851999622" Name="MusicTransitionToMainMenu" DurationType="Infinite">
@@ -2008,34 +2089,52 @@
 				</Event>
 				<Event Id="2805338576" Name="PlayerIsLowHP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="3373579172" Id="1017222595" Name="LowHealth"/>
+						<ActionSetStateEntry GroupId="1017222595" Id="1017222595" Name="LowHealth"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="173344789" Name="PlayerIsNotLowHP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="3373579172" Id="655265632" Name="Alive"/>
+						<ActionSetStateEntry GroupId="1017222595" Id="748895195" Name="None"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="701728277" Name="TransitionFromBattleToMoodTrack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2351484233" Name="TransitionFromMoodToBattleTrack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4123291968" Name="PlayerTriggeredGate" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="655265632" Id="3373579172" Name="InCombat"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="701728277" Name="TransitionFromBattleToMoodTrack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="655265632" Id="1823678183" Name="Exploring"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2351484233" Name="TransitionFromMoodToBattleTrack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="655265632" Id="3373579172" Name="InCombat"/>
+					</ActionSetState>
+				</Event>
 			</Events>
 			<StateGroups>
-				<StateGroup Id="439849305" Name="InExploringTheDungeon">
+				<StateGroup Id="655265632" Name="Alive">
 					<States>
 						<State Id="748895195" Name="None"/>
 						<State Id="1823678183" Name="Exploring"/>
+						<State Id="3373579172" Name="InCombat"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="3373579172" Name="InCombat">
+				<StateGroup Id="1017222595" Name="LowHealth">
 					<States>
-						<State Id="655265632" Name="Alive"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="1017222595" Name="LowHealth"/>
-						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2044049779" Name="Dead">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="4092160813" Name="YesYouAreDead"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BCC92D23-C746-2EA9-7832-DF583B813125}</FileHash>
+	<FileHash>{29FCFE88-3155-1A56-686F-3121F2228035}</FileHash>
 </SoundBanksInfo>

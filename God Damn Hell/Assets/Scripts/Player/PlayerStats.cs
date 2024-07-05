@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,9 +13,17 @@ public class PlayerStats : MonoBehaviour
     public bool alive = true;
     [CanBeNull] public GameObject WWiseGlobal;
     private uint playingID;
+    
+    public void Reset()
+    {
+        currentHealthPoints = 20;
+        alive = true;
+    }
 
     public void Hit(int damage)
     {
+        if (currentHealthPoints <= 0)
+            return;
         currentHealthPoints -= damage;
         
         if (WWiseGlobal != null)

@@ -3,18 +3,23 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{A7CB7879-2AB8-4099-8F90-C187C9A553D7}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="InCombat" ID="{8852463B-2443-4852-B329-E871FACF5A6F}">
+				<StateGroup Name="Alive" ID="{658FE569-97FF-4F5C-BC7F-D40E3976A7DC}">
 					<ChildrenList>
-						<State Name="None" ID="{8175B5BC-E99C-4DB8-8FB1-DD3D187B14EE}"/>
-						<State Name="Alive" ID="{7B4DDF82-C947-4CAD-B298-D7A0FF38F098}"/>
-						<State Name="Dead" ID="{55D8C1C7-95F4-4F06-8301-EAB8F152789D}"/>
-						<State Name="LowHealth" ID="{F1FCB2F0-AFD4-4093-826B-84C43A67E137}"/>
+						<State Name="None" ID="{AD986787-8EB2-418B-BBD1-35B6EF216CCE}"/>
+						<State Name="Exploring" ID="{75A0F7FB-A250-4BBA-ACA8-66FEA6F8AD0E}"/>
+						<State Name="InCombat" ID="{DAFA2E03-A82E-4788-86BC-4410ECF356DD}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="InExploringTheDungeon" ID="{C8E32C50-E8ED-48D3-BB62-659089BA70C9}">
+				<StateGroup Name="LowHealth" ID="{DAE42BE0-80B8-477C-A99B-38F55B4D58DB}">
 					<ChildrenList>
-						<State Name="None" ID="{56747476-0002-4E6C-9FE3-71C3ACD055D8}"/>
-						<State Name="Exploring" ID="{C4B9C302-EF7C-4210-AD4C-45E94706A151}"/>
+						<State Name="None" ID="{761FEAD9-DF8D-474D-8B20-898DA533754D}"/>
+						<State Name="LowHealth" ID="{FF518B6C-D2C0-42CF-AAAF-D734C2598BF3}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Dead" ID="{D44826EF-1176-4E2F-84ED-58556DC9966F}">
+					<ChildrenList>
+						<State Name="None" ID="{F4E5B8A2-3406-424B-B83F-97344C786895}"/>
+						<State Name="YesYouAreDead" ID="{5A79F36B-A9BF-4A9B-9893-369019EC654C}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

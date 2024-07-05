@@ -31,23 +31,24 @@ public class MusicManager : MonoBehaviour
 
     public void PlayerHPState(int PlayerHP)
     {
-        if (PlayerHP <= 4 && !isPlayerLowHP)
-        {
-            playingID = AkSoundEngine.PostEvent("PlayerIsLowHP", this.gameObject);
-            isPlayerLowHP = true;
-        }
-
-        if (PlayerHP > 4 && isPlayerLowHP)
+        if (PlayerHP <= 0)
+            return;
+        
+        if (PlayerHP > 8 && isPlayerLowHP)
         {
             playingID = AkSoundEngine.PostEvent("PlayerIsNotLowHP", this.gameObject);
             isPlayerLowHP = false;
         }
-
-        if (PlayerHP <= 0)
-        {
-            playingID = AkSoundEngine.PostEvent("PlayerIsNotLowHP", this.gameObject);
-        }
         
-            
+        if (PlayerHP <= 8 && !isPlayerLowHP)
+        {
+            playingID = AkSoundEngine.PostEvent("PlayerIsLowHP", this.gameObject);
+            isPlayerLowHP = true;
+        }
+    }
+
+    public void PlayerTriggeredGate()
+    {
+        playingID = AkSoundEngine.PostEvent("PlayerTriggeredGate", this.gameObject);
     }
 }

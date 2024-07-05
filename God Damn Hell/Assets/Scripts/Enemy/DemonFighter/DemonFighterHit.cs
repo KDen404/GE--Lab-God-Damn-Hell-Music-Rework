@@ -12,7 +12,7 @@ public class DemonFighterHit : MonoBehaviour
         // Colliders are on the enemies hands, code below only works if the target hit is the player or the shield
         if (other.gameObject.transform.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerStats>().Hit(3);
+            other.gameObject.GetComponent<PlayerStats>().Hit(2);
         }
         else if (other.gameObject.transform.tag == "Shield")
         {
