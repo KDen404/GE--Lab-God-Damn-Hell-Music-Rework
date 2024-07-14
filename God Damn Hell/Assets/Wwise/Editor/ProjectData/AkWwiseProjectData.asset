@@ -150,7 +150,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 96f2b1fe20fa0144813ad43ca98083c2
     GuidInternal: 
-    m_lastTime: -8584865370076741117
+    m_lastTime: -8584814147272466795
     List: []
   - PhysicalPath: Events\Enemy.wwu
     PathAndIcons:
@@ -564,7 +564,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Misc
     guid: 38851f663c90cb47ab344da8a1d968e0
     GuidInternal: 
-    m_lastTime: -8584814346534632262
+    m_lastTime: -8584814228341988699
     List:
     - name: DeathScreen
       guid: 5b423e392e800c41999190c81aea64d7
@@ -660,7 +660,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Music
     guid: b78cf16ee38bc442ac0cbbbc194feecb
     GuidInternal: 
-    m_lastTime: -8584814346534592413
+    m_lastTime: -8584814222163901513
     List:
     - name: Main_Menu
       guid: 2cf0a6c6ff06204e849dee12c2032dc7
@@ -762,6 +762,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: PlayerTriggeredGate
+      guid: c020e2280a6d5d469b745d9c5346bbd3
+      id: 4123291968
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 96f2b1fe20fa0144813ad43ca98083c2
+      - ElementName: Music
+        ObjectType: 12
+        guid: b78cf16ee38bc442ac0cbbbc194feecb
+      - ElementName: PlayerTriggeredGate
+        ObjectType: 3
+        guid: c020e2280a6d5d469b745d9c5346bbd3
+      Path: Events\Default Work Unit\Music\PlayerTriggeredGate
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: TransitionFromBattleToMoodTrack
       guid: 0ad7f035025c244fbd38306fbe38a084
       id: 701728277
@@ -816,7 +836,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Player
     guid: ba88319e4c7f1a409355cef3459a8722
     GuidInternal: 
-    m_lastTime: -8584865370075188595
+    m_lastTime: -8584814216885469632
     List:
     - name: AttackBlocked
       guid: 44282d15a635f34ab222814e82d1f867
@@ -944,11 +964,11 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7978cba7b82a99408f90c187c9a553d7
     GuidInternal: 
-    m_lastTime: -8584814959362599982
+    m_lastTime: -8584814251454103450
     List:
-    - name: InCombat
-      guid: 3b46528843245248b329e871facf5a6f
-      id: 3373579172
+    - name: Alive
+      guid: 69e58f65ff975c4fbc7fd40e3976a7dc
+      id: 655265632
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -956,95 +976,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7978cba7b82a99408f90c187c9a553d7
-      - ElementName: InCombat
+      - ElementName: Alive
         ObjectType: 9
-        guid: 3b46528843245248b329e871facf5a6f
-      Path: States\Default Work Unit\InCombat
-      values:
-      - name: Alive
-        guid: 82df4d7b47c9ad4cb298d7a0ff38f098
-        id: 655265632
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 7978cba7b82a99408f90c187c9a553d7
-        - ElementName: InCombat
-          ObjectType: 9
-          guid: 3b46528843245248b329e871facf5a6f
-        - ElementName: Alive
-          ObjectType: 8
-          guid: 82df4d7b47c9ad4cb298d7a0ff38f098
-      - name: Dead
-        guid: c7c1d855f495064f8301eab8f152789d
-        id: 2044049779
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 7978cba7b82a99408f90c187c9a553d7
-        - ElementName: InCombat
-          ObjectType: 9
-          guid: 3b46528843245248b329e871facf5a6f
-        - ElementName: Dead
-          ObjectType: 8
-          guid: c7c1d855f495064f8301eab8f152789d
-      - name: LowHealth
-        guid: f0b2fcf1d4af9340826b84c43a67e137
-        id: 1017222595
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 7978cba7b82a99408f90c187c9a553d7
-        - ElementName: InCombat
-          ObjectType: 9
-          guid: 3b46528843245248b329e871facf5a6f
-        - ElementName: LowHealth
-          ObjectType: 8
-          guid: f0b2fcf1d4af9340826b84c43a67e137
-      - name: None
-        guid: bcb575819ce9b84d8fb1dd3d187b14ee
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 7978cba7b82a99408f90c187c9a553d7
-        - ElementName: InCombat
-          ObjectType: 9
-          guid: 3b46528843245248b329e871facf5a6f
-        - ElementName: None
-          ObjectType: 8
-          guid: bcb575819ce9b84d8fb1dd3d187b14ee
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: InExploringTheDungeon
-      guid: 502ce3c8ede8d348bb62659089ba70c9
-      id: 439849305
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7978cba7b82a99408f90c187c9a553d7
-      - ElementName: InExploringTheDungeon
-        ObjectType: 9
-        guid: 502ce3c8ede8d348bb62659089ba70c9
-      Path: States\Default Work Unit\InExploringTheDungeon
+        guid: 69e58f65ff975c4fbc7fd40e3976a7dc
+      Path: States\Default Work Unit\Alive
       values:
       - name: Exploring
-        guid: 02c3b9c47cef1042ad4c45e94706a151
+        guid: fbf7a07550a2ba4baca866fea6f8ad0e
         id: 1823678183
         PathAndIcons:
         - ElementName: States
@@ -1053,14 +991,30 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 7978cba7b82a99408f90c187c9a553d7
-        - ElementName: InExploringTheDungeon
+        - ElementName: Alive
           ObjectType: 9
-          guid: 502ce3c8ede8d348bb62659089ba70c9
+          guid: 69e58f65ff975c4fbc7fd40e3976a7dc
         - ElementName: Exploring
           ObjectType: 8
-          guid: 02c3b9c47cef1042ad4c45e94706a151
+          guid: fbf7a07550a2ba4baca866fea6f8ad0e
+      - name: InCombat
+        guid: 032efada2ea8884786bc4410ecf356dd
+        id: 3373579172
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: Alive
+          ObjectType: 9
+          guid: 69e58f65ff975c4fbc7fd40e3976a7dc
+        - ElementName: InCombat
+          ObjectType: 8
+          guid: 032efada2ea8884786bc4410ecf356dd
       - name: None
-        guid: 7674745602006c4e9fe371c3acd055d8
+        guid: 876798adb28e8b41bbd135b6ef216cce
         id: 748895195
         PathAndIcons:
         - ElementName: States
@@ -1069,12 +1023,112 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 7978cba7b82a99408f90c187c9a553d7
-        - ElementName: InExploringTheDungeon
+        - ElementName: Alive
           ObjectType: 9
-          guid: 502ce3c8ede8d348bb62659089ba70c9
+          guid: 69e58f65ff975c4fbc7fd40e3976a7dc
         - ElementName: None
           ObjectType: 8
-          guid: 7674745602006c4e9fe371c3acd055d8
+          guid: 876798adb28e8b41bbd135b6ef216cce
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Dead
+      guid: ef2648d476112f4e84ed58556dc9966f
+      id: 2044049779
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7978cba7b82a99408f90c187c9a553d7
+      - ElementName: Dead
+        ObjectType: 9
+        guid: ef2648d476112f4e84ed58556dc9966f
+      Path: States\Default Work Unit\Dead
+      values:
+      - name: None
+        guid: a2b8e5f406344b42b83f97344c786895
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: Dead
+          ObjectType: 9
+          guid: ef2648d476112f4e84ed58556dc9966f
+        - ElementName: None
+          ObjectType: 8
+          guid: a2b8e5f406344b42b83f97344c786895
+      - name: YesYouAreDead
+        guid: 6bf3795abfa99b4a9893369019ec654c
+        id: 4092160813
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: Dead
+          ObjectType: 9
+          guid: ef2648d476112f4e84ed58556dc9966f
+        - ElementName: YesYouAreDead
+          ObjectType: 8
+          guid: 6bf3795abfa99b4a9893369019ec654c
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: LowHealth
+      guid: e02be4dab8807c47a99b38f55b4d58db
+      id: 1017222595
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7978cba7b82a99408f90c187c9a553d7
+      - ElementName: LowHealth
+        ObjectType: 9
+        guid: e02be4dab8807c47a99b38f55b4d58db
+      Path: States\Default Work Unit\LowHealth
+      values:
+      - name: LowHealth
+        guid: 6c8b51ffc0d2cf42aaafd734c2598bf3
+        id: 1017222595
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: LowHealth
+          ObjectType: 9
+          guid: e02be4dab8807c47a99b38f55b4d58db
+        - ElementName: LowHealth
+          ObjectType: 8
+          guid: 6c8b51ffc0d2cf42aaafd734c2598bf3
+      - name: None
+        guid: d9ea1f768ddf4d478b20898da533754d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7978cba7b82a99408f90c187c9a553d7
+        - ElementName: LowHealth
+          ObjectType: 9
+          guid: e02be4dab8807c47a99b38f55b4d58db
+        - ElementName: None
+          ObjectType: 8
+          guid: d9ea1f768ddf4d478b20898da533754d
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1090,7 +1144,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: fcd0045ebe7a404680651efee7be0637
     GuidInternal: 
-    m_lastTime: -8584814940112955973
+    m_lastTime: -8584814133290571088
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu

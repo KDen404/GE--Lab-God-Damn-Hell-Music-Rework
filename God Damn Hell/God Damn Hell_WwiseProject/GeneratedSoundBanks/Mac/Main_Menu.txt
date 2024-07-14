@@ -2,5 +2,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	2005704188	Main_Menu			\Default Work Unit\Music\Main_Menu	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	206766459	MainTheme	C:\Users\kden4\Documents\GitHub\GE--Lab-God-Damn-Hell\God Damn Hell\God Damn Hell_WwiseProject\.cache\Mac\SFX\Devils step_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\MainTheme		44793600
+	320370752	mood track Loop 1-Strings Ensemble Legato	C:\Users\denni\CSharpProject\GE--Lab-God-Damn-Hell-Music-Rework\God Damn Hell\God Damn Hell_WwiseProject\.cache\Mac\SFX\mood track Loop 1-Strings Ensemble Legato_FBC78EF0.wem		\Interactive Music Hierarchy\GameMusic\MainMenu_60BPM_FINISHED\MainMenu_Loop_60BPM_FadeInStringsAndBass_FINISHED\mood track Loop 1-Strings Ensemble Legato		3456096
+	470581352	mood track Intro	C:\Users\denni\CSharpProject\GE--Lab-God-Damn-Hell-Music-Rework\God Damn Hell\God Damn Hell_WwiseProject\.cache\Mac\SFX\mood track Intro_FBC78EF0.wem		\Interactive Music Hierarchy\GameMusic\MainMenu_60BPM_FINISHED\MainMenu_Intro_60BPM_FINISHED\mood track Intro		7920096
+	658715313	mood track Loop 3-Pauke Tief Martzialisch	C:\Users\denni\CSharpProject\GE--Lab-God-Damn-Hell-Music-Rework\God Damn Hell\God Damn Hell_WwiseProject\.cache\Mac\SFX\mood track Loop 3-Pauke Tief Martzialisch_FBC78EF0.wem		\Interactive Music Hierarchy\GameMusic\MainMenu_60BPM_FINISHED\MainMenu_Loop_60BPM_FadeOutBass_FINISHED\mood track Loop 3-Pauke Tief Martzialisch		3456096
+	981199895	mood track Loop 2-Double Bass Solo	C:\Users\denni\CSharpProject\GE--Lab-God-Damn-Hell-Music-Rework\God Damn Hell\God Damn Hell_WwiseProject\.cache\Mac\SFX\mood track Loop 2-Double Bass Solo_FBC78EF0.wem		\Interactive Music Hierarchy\GameMusic\MainMenu_60BPM_FINISHED\MainMenu_Loop_60BPM_FadeInStringsAndBass_FINISHED\mood track Loop 2-Double Bass Solo		3456096
 

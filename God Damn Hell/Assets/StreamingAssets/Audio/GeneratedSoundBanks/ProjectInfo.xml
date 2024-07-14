@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="God Damn Hell_WwiseProject" GUID="{A1DF4D5E-CE93-41C5-9476-22374F6B3CFF}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../../../../God Damn Hell_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{236BA92A-E98A-4F73-9C1B-630C28A81A89}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../God Damn Hell_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{E07A5E0E-99A1-4525-9521-F38C4B94677C}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../God Damn Hell_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{A0703BB2-B8F4-471A-9378-69B83BC1E43A}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{083B04F4-BD14-5E5A-18B8-54F43E0E34F3}</FileHash>
+</ProjectInfo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{FEB1F296-FA20-4401-813A-D43CA98083C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Misc" ID="{661F8538-903C-47CB-AB34-4DA8A1D968E0}" PersistMode="Reference"/>
+				<WorkUnit Name="Enemy" ID="{654AE0EC-84BD-41F1-AAC4-A2BEBACECE28}" PersistMode="Reference"/>
+				<WorkUnit Name="Music" ID="{6EF18CB7-8BE3-42C4-AC0C-BBBC194FEECB}" PersistMode="Reference"/>
+				<WorkUnit Name="Player" ID="{9E3188BA-7F4C-401A-9355-CEF3459A8722}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

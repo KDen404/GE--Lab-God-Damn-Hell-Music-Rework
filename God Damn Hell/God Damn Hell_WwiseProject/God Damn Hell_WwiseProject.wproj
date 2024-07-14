@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="119" WwiseVersion="v2023.1.2" WwiseBuild="8444">
+<WwiseDocument Type="Project" SchemaVersion="119" WwiseVersion="v2023.1.4" WwiseBuild="8496">
 	<ProjectInfo>
 		<Project Name="God Damn Hell_WwiseProject" ID="{A1DF4D5E-CE93-41C5-9476-22374F6B3CFF}">
 			<Platforms>
@@ -25,6 +25,7 @@
 						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjE0NTczIiBtYXNrPSJOWkRMNDYyMyIgZW5jPSIwIj48bGlj ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwz LDEwLDE0IiBleHBpcmVzPSIyMDI0LTEyLTMxIiAgLz48bGljZW5zZSBpZD0iMjEi IG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9IjIsMywxMCwx NCIgZXhwaXJlcz0iMjAyNC0xMi0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1l PSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDEwLDE0 IiBleHBpcmVzPSIyMDI0LTEyLTMxIiAgLz48bGljZW5zZSBpZD0iMjUiIG5hbWU9 IkFsbCBXd2lzZSBQbHVnLUlucyIgdHlwZT0iMyIgIGV4cGlyZXM9IjIwMjQtMTIt MzEiICAvPjwvcHJvamVjdD4=|ZJxsaqIeJN0buY1DXzrUhBqiA4iHH4iB9fJQEVa cksqNbCaez5hV0VOBVh8jAqzN/pYfk1PqM/bty+jCIDhTqwnVy9HPV29Rfw5GtK9 oP88bMufnANxSgypHaG9WXiZAWeB8YXOgAoFvN+VMvNV2Wu+g8ldNzebcuYW687L zF5KezM4/YKOvdC8YGZs6pM2RiIEWYc9adOWuJzNT/51kY0yV/aI/gxB2k8PCKh4 l57w0AqhgyuXl8Rxkaqm3+hOpJuxWHYWOvZ4naU/tNoquUlxmrdtdKTV6yq3E96K Qa0yPidlkRFkcwOfxODmk+9DjI4H+oT1+vSGe8yeOD/xVcg== "/>
 				<Property Name="RemoveUnusedGeneratedFiles" Type="bool" Value="False"/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
@@ -61,22 +62,6 @@
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2021.1|Build=7749|VersionName=v2021.1.5|Config=Release"/>
-			
-				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjE0NTczIiBtYXNrPSJOWkRMNDYyMyIgZW5jPSIwIj48bGlj
-ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwz
-LDEwLDE0IiBleHBpcmVzPSIyMDI0LTEyLTMxIiAgLz48bGljZW5zZSBpZD0iMjEi
-IG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9IjIsMywxMCwx
-NCIgZXhwaXJlcz0iMjAyNC0xMi0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1l
-PSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDEwLDE0
-IiBleHBpcmVzPSIyMDI0LTEyLTMxIiAgLz48bGljZW5zZSBpZD0iMjUiIG5hbWU9
-IkFsbCBXd2lzZSBQbHVnLUlucyIgdHlwZT0iMyIgIGV4cGlyZXM9IjIwMjQtMTIt
-MzEiICAvPjwvcHJvamVjdD4=|ZJxsaqIeJN0buY1DXzrUhBqiA4iHH4iB9fJQEVa
-cksqNbCaez5hV0VOBVh8jAqzN/pYfk1PqM/bty+jCIDhTqwnVy9HPV29Rfw5GtK9
-oP88bMufnANxSgypHaG9WXiZAWeB8YXOgAoFvN+VMvNV2Wu+g8ldNzebcuYW687L
-zF5KezM4/YKOvdC8YGZs6pM2RiIEWYc9adOWuJzNT/51kY0yV/aI/gxB2k8PCKh4
-l57w0AqhgyuXl8Rxkaqm3+hOpJuxWHYWOvZ4naU/tNoquUlxmrdtdKTV6yq3E96K
-Qa0yPidlkRFkcwOfxODmk+9DjI4H+oT1+vSGe8yeOD/xVcg==
-"/>
 			</PropertyList>
 			<MiscSettings>
 				<MiscSettingEntry Name="Cache"><![CDATA[.cache]]></MiscSettingEntry>
@@ -11706,6 +11691,9 @@ Qa0yPidlkRFkcwOfxODmk+9DjI4H+oT1+vSGe8yeOD/xVcg==
 					</ObsOccCurve>
 				</ObsOccCurves>
 			</EnvironmentalSettings>
+			<LogCentralIgnoreList>
+				<IgnoreItem MessageId="None"/>
+			</LogCentralIgnoreList>
 			<DefaultConversion Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}"/>
 			<PhysicalFolderList>
 				<PhysicalFolder Path="Actor-Mixer Hierarchy">
